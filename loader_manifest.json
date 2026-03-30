@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-03-30T06:21:33Z",
+  "estimated_startup_total_bytes": 11207897,
+  "required_resources": [
+    {
+      "path": "flutter.js",
+      "size_bytes": 9553
+    },
+    {
+      "path": "flutter_bootstrap.js",
+      "size_bytes": 26379
+    },
+    {
+      "path": "main.dart.js",
+      "size_bytes": 3922779
+    },
+    {
+      "path": "flutter_service_worker.js",
+      "size_bytes": 784
+    },
+    {
+      "path": "assets/AssetManifest.bin",
+      "size_bytes": 1748
+    },
+    {
+      "path": "assets/AssetManifest.bin.json",
+      "size_bytes": 2334
+    },
+    {
+      "path": "assets/FontManifest.json",
+      "size_bytes": 544
+    },
+    {
+      "path": "manifest.json",
+      "size_bytes": 1004
+    },
+    {
+      "path": "version.json",
+      "size_bytes": 89
+    }
+  ],
+  "optional_groups": [
+    {
+      "id": "renderer_js",
+      "max_candidate_bytes": 86859,
+      "candidates": [
+        {
+          "path": "canvaskit/canvaskit.js",
+          "size_bytes": 86859
+        },
+        {
+          "path": "canvaskit/chromium/canvaskit.js",
+          "size_bytes": 86496
+        },
+        {
+          "path": "canvaskit/skwasm.js",
+          "size_bytes": 63437
+        },
+        {
+          "path": "canvaskit/skwasm_heavy.js",
+          "size_bytes": 63550
+        }
+      ]
+    },
+    {
+      "id": "renderer_wasm",
+      "max_candidate_bytes": 7155824,
+      "candidates": [
+        {
+          "path": "canvaskit/canvaskit.wasm",
+          "size_bytes": 7155824
+        },
+        {
+          "path": "canvaskit/chromium/canvaskit.wasm",
+          "size_bytes": 5686880
+        },
+        {
+          "path": "canvaskit/skwasm.wasm",
+          "size_bytes": 3549782
+        },
+        {
+          "path": "canvaskit/skwasm_heavy.wasm",
+          "size_bytes": 5140187
+        }
+      ]
+    }
+  ]
+}

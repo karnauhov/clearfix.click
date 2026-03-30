@@ -36,13 +36,579 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"425cfb54d01a9472b3e81d9e76fd63a4a44cfbcb","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
 
 
-_flutter.loader.load(
-    {
-        onEntrypointLoaded: async function(engineInitializer) {
-            // Initialize the Flutter engine
-            let appRunner = await engineInitializer.initializeEngine({useColorEmoji: true,});
-            // Run the app
-            await appRunner.runApp();
-          }
+(() => {
+  const loader = document.getElementById('app-loader');
+  const loaderMessage = document.getElementById('app-loader-message');
+  const loaderVersion = document.getElementById('app-loader-version');
+  const loaderProgress = document.getElementById('app-loader-progress');
+  const loaderProgressFill = document.getElementById('app-loader-progress-fill');
+  const loaderProgressText = document.getElementById('app-loader-progress-text');
+  const flutterReadySelector = 'flutter-view, flt-glass-pane';
+  const loaderManifestUrl = 'loader_manifest.json';
+  const loaderStartTimeMs = Date.now();
+  const basePath = normalizeBasePath(new URL(document.baseURI).pathname);
+
+  // Keep this list in sync with AppLocalizations.languages() in
+  // lib/core/localization/localization.dart.
+  const supportedWebLoaderLocales = ['en', 'fr', 'uk', 'ru', 'hi', 'zh_Hans'];
+
+  // IMPORTANT: these web loader strings are separate from ARB/localization_lookup.
+  // When a new locale is added in the app, add its translation here too.
+  const copyByLocale = {
+    en: {
+      loadingWebApp: 'Loading web application...',
+      progressAriaLabel: 'Web app loading progress',
+      versionPrefix: 'Version',
+      versionFallback: 'Version -- (--)',
+    },
+    fr: {
+      loadingWebApp: "Chargement de l'application web...",
+      progressAriaLabel: "Progression du chargement de l'application web",
+      versionPrefix: 'Version',
+      versionFallback: 'Version -- (--)',
+    },
+    uk: {
+      loadingWebApp: 'Завантажуємо веб-застосунок...',
+      progressAriaLabel: 'Прогрес завантаження веб-застосунку',
+      versionPrefix: 'Версія',
+      versionFallback: 'Версія -- (--)',
+    },
+    ru: {
+      loadingWebApp: 'Загружаем веб-приложение...',
+      progressAriaLabel: 'Прогресс загрузки веб-приложения',
+      versionPrefix: 'Версия',
+      versionFallback: 'Версия -- (--)',
+    },
+    hi: {
+      loadingWebApp: 'वेब ऐप लोड हो रहा है...',
+      progressAriaLabel: 'वेब ऐप लोडिंग प्रगति',
+      versionPrefix: 'संस्करण',
+      versionFallback: 'संस्करण -- (--)',
+    },
+    zh_Hans: {
+      loadingWebApp: '正在加载 Web 应用...',
+      progressAriaLabel: 'Web 应用加载进度',
+      versionPrefix: '版本',
+      versionFallback: '版本 -- (--)',
+    },
+  };
+
+  validateCopyCoverage();
+
+  const locale = resolveLocale();
+  const copy = copyByLocale[locale] ?? copyByLocale.en;
+  document.documentElement.lang = locale === 'zh_Hans' ? 'zh-Hans' : locale;
+
+  if (loaderMessage) {
+    loaderMessage.textContent = copy.loadingWebApp;
+  }
+
+  if (loaderProgress) {
+    loaderProgress.setAttribute('aria-label', copy.progressAriaLabel);
+  }
+
+  if (loaderVersion) {
+    loaderVersion.textContent = copy.versionFallback;
+  }
+
+  let currentProgressPercent = 3;
+  renderProgress(currentProgressPercent);
+
+  let loaderManifest = null;
+  const requiredResourcesByPath = new Map();
+  const optionalResourcesByPath = new Map();
+  const optionalGroupMaxBytes = new Map();
+  const selectedOptionalPathByGroup = new Map();
+  const countedResourcePaths = new Set();
+  let loadedTrackedBytes = 0;
+  let processedPerformanceEntries = 0;
+
+  void Promise.all([loadVersionInfo(copy), loadLoaderManifest()]).then(
+    ([versionText, manifest]) => {
+      if (loaderVersion && versionText) {
+        loaderVersion.textContent = versionText;
+      }
+      setLoaderManifest(manifest);
+    },
+  );
+
+  let loaderCanDismiss = false;
+  let loaderDismissed = false;
+  let observer;
+  let progressTimerId = window.setInterval(tickProgress, 120);
+  tickProgress();
+
+  _flutter.loader.load({
+    serviceWorkerSettings: {
+      serviceWorkerVersion: String(
+          '"2481585301" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */'.replace(/^"|"$/g, '')),
+    },
+    onEntrypointLoaded: async (engineInitializer) => {
+      try {
+        const appRunner = await engineInitializer.initializeEngine({
+          useColorEmoji: true,
+        });
+        await appRunner.runApp();
+        loaderCanDismiss = true;
+        observeFlutterReady();
+        requestAnimationFrame(() =>
+            requestAnimationFrame(dismissLoaderWhenFlutterReady));
+      } catch (_) {
+        // Keep splash visible on bootstrap failure.
+        stopProgressTimer();
+      }
+    },
+  });
+
+  function resolveLocale() {
+    const languageTag = (
+      (Array.isArray(navigator.languages) && navigator.languages[0]) ||
+      navigator.language ||
+      'en'
+    ).toLowerCase();
+
+    if (languageTag.startsWith('fr')) {
+      return 'fr';
     }
-);
+    if (languageTag.startsWith('uk')) {
+      return 'uk';
+    }
+    if (languageTag.startsWith('ru')) {
+      return 'ru';
+    }
+    if (languageTag.startsWith('hi')) {
+      return 'hi';
+    }
+    if (
+      languageTag.startsWith('zh-hans') ||
+      languageTag.startsWith('zh_hans') ||
+      languageTag.startsWith('zh-cn') ||
+      languageTag.startsWith('zh-sg') ||
+      languageTag.startsWith('zh')
+    ) {
+      return 'zh_Hans';
+    }
+    return 'en';
+  }
+
+  async function loadVersionInfo(currentCopy) {
+    try {
+      const response = await fetch('version.json', { cache: 'no-store' });
+      if (!response.ok) {
+        return null;
+      }
+
+      const payload = await response.json();
+      const version = normalizeField(payload.version);
+      const buildNumber = normalizeField(payload.build_number);
+      if (!version || !buildNumber) {
+        return null;
+      }
+
+      return `${currentCopy.versionPrefix} ${version} (${buildNumber})`;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function normalizeField(value) {
+    if (typeof value !== 'string') {
+      return '';
+    }
+    return value.trim();
+  }
+
+  async function loadLoaderManifest() {
+    try {
+      const response = await fetch(loaderManifestUrl, { cache: 'no-store' });
+      if (!response.ok) {
+        return null;
+      }
+      const payload = await response.json();
+      return normalizeLoaderManifest(payload);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function normalizeLoaderManifest(payload) {
+    if (!payload || payload.schema_version !== 1) {
+      return null;
+    }
+
+    const requiredResources = normalizeResourceList(payload.required_resources);
+    const optionalGroupsRaw = Array.isArray(payload.optional_groups)
+      ? payload.optional_groups
+      : [];
+    const optionalGroups = [];
+
+    for (const optionalGroupRaw of optionalGroupsRaw) {
+      const groupId = normalizeGroupId(optionalGroupRaw.id);
+      if (!groupId) {
+        continue;
+      }
+      const candidates = normalizeResourceList(optionalGroupRaw.candidates);
+      if (candidates.length === 0) {
+        continue;
+      }
+
+      let maxCandidateBytes = 0;
+      for (const candidate of candidates) {
+        if (candidate.sizeBytes > maxCandidateBytes) {
+          maxCandidateBytes = candidate.sizeBytes;
+        }
+      }
+
+      optionalGroups.push({
+        id: groupId,
+        maxCandidateBytes,
+        candidates,
+      });
+    }
+
+    if (requiredResources.length === 0 && optionalGroups.length === 0) {
+      return null;
+    }
+
+    return {
+      requiredResources,
+      optionalGroups,
+    };
+  }
+
+  function normalizeResourceList(listValue) {
+    if (!Array.isArray(listValue)) {
+      return [];
+    }
+
+    const resources = [];
+    for (const item of listValue) {
+      const path = normalizeManifestPath(item?.path);
+      const sizeBytes = normalizePositiveInt(item?.size_bytes);
+      if (!path || sizeBytes <= 0) {
+        continue;
+      }
+      resources.push({ path, sizeBytes });
+    }
+
+    return resources;
+  }
+
+  function normalizeManifestPath(rawPath) {
+    if (typeof rawPath !== 'string') {
+      return '';
+    }
+
+    let normalized = rawPath.trim().replaceAll('\\', '/');
+    while (normalized.startsWith('/')) {
+      normalized = normalized.slice(1);
+    }
+    return normalized;
+  }
+
+  function normalizeGroupId(rawId) {
+    if (typeof rawId !== 'string') {
+      return '';
+    }
+    return rawId.trim();
+  }
+
+  function setLoaderManifest(manifest) {
+    loaderManifest = manifest;
+    requiredResourcesByPath.clear();
+    optionalResourcesByPath.clear();
+    optionalGroupMaxBytes.clear();
+    selectedOptionalPathByGroup.clear();
+    countedResourcePaths.clear();
+    loadedTrackedBytes = 0;
+    processedPerformanceEntries = 0;
+
+    if (!loaderManifest) {
+      return;
+    }
+
+    for (const requiredResource of loaderManifest.requiredResources) {
+      requiredResourcesByPath.set(requiredResource.path, requiredResource.sizeBytes);
+    }
+
+    for (const optionalGroup of loaderManifest.optionalGroups) {
+      optionalGroupMaxBytes.set(optionalGroup.id, optionalGroup.maxCandidateBytes);
+      for (const candidate of optionalGroup.candidates) {
+        optionalResourcesByPath.set(candidate.path, {
+          groupId: optionalGroup.id,
+          sizeBytes: candidate.sizeBytes,
+        });
+      }
+    }
+
+    collectLoadedBytesFromPerformance();
+  }
+
+  function tickProgress() {
+    collectLoadedBytesFromPerformance();
+    const targetProgress = computeTargetProgress();
+    animateProgressTo(targetProgress);
+  }
+
+  function collectLoadedBytesFromPerformance() {
+    if (!loaderManifest || typeof performance === 'undefined') {
+      return;
+    }
+
+    const entries = performance.getEntriesByType('resource');
+    if (!Array.isArray(entries) || entries.length === 0) {
+      return;
+    }
+
+    for (let i = processedPerformanceEntries; i < entries.length; i += 1) {
+      const entry = entries[i];
+      const resourcePath = normalizeResourcePath(entry.name);
+      if (!resourcePath || countedResourcePaths.has(resourcePath)) {
+        continue;
+      }
+
+      const requiredSize = requiredResourcesByPath.get(resourcePath);
+      if (requiredSize) {
+        countedResourcePaths.add(resourcePath);
+        loadedTrackedBytes += resolveLoadedBytes(entry, requiredSize);
+        continue;
+      }
+
+      const optionalResource = optionalResourcesByPath.get(resourcePath);
+      if (!optionalResource) {
+        continue;
+      }
+
+      const selectedPath = selectedOptionalPathByGroup.get(optionalResource.groupId);
+      if (!selectedPath) {
+        selectedOptionalPathByGroup.set(optionalResource.groupId, resourcePath);
+      }
+
+      if (selectedOptionalPathByGroup.get(optionalResource.groupId) !== resourcePath) {
+        continue;
+      }
+
+      countedResourcePaths.add(resourcePath);
+      loadedTrackedBytes += resolveLoadedBytes(entry, optionalResource.sizeBytes);
+    }
+
+    processedPerformanceEntries = entries.length;
+  }
+
+  function resolveLoadedBytes(entry, fallbackBytes) {
+    const decodedBodySize = normalizePositiveInt(entry.decodedBodySize);
+    if (decodedBodySize > 0) {
+      return decodedBodySize;
+    }
+
+    const encodedBodySize = normalizePositiveInt(entry.encodedBodySize);
+    if (encodedBodySize > 0) {
+      return encodedBodySize;
+    }
+
+    const transferSize = normalizePositiveInt(entry.transferSize);
+    if (transferSize > 0) {
+      return transferSize;
+    }
+
+    return fallbackBytes;
+  }
+
+  function normalizePositiveInt(value) {
+    if (typeof value === 'number' && Number.isFinite(value) && value > 0) {
+      return Math.round(value);
+    }
+
+    if (typeof value === 'string' && value.trim() !== '') {
+      const parsed = Number(value);
+      if (Number.isFinite(parsed) && parsed > 0) {
+        return Math.round(parsed);
+      }
+    }
+
+    return 0;
+  }
+
+  function normalizeBasePath(pathname) {
+    let normalized = pathname || '/';
+    if (!normalized.startsWith('/')) {
+      normalized = `/${normalized}`;
+    }
+    if (!normalized.endsWith('/')) {
+      normalized = `${normalized}/`;
+    }
+    return normalized;
+  }
+
+  function normalizeResourcePath(resourceUrl) {
+    try {
+      const parsedUrl = new URL(resourceUrl, window.location.href);
+      if (parsedUrl.origin !== window.location.origin) {
+        return null;
+      }
+
+      let pathname = parsedUrl.pathname;
+      if (pathname.startsWith(basePath)) {
+        pathname = pathname.slice(basePath.length);
+      }
+      while (pathname.startsWith('/')) {
+        pathname = pathname.slice(1);
+      }
+      if (!pathname) {
+        return null;
+      }
+      return decodeURIComponent(pathname);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function computeTargetProgress() {
+    const fallbackFloor = Math.min(36, 4 + (Date.now() - loaderStartTimeMs) / 240);
+    let targetProgress = fallbackFloor;
+
+    const measuredProgress = computeMeasuredProgress();
+    if (measuredProgress == null) {
+      const timedFallbackProgress = Math.min(
+        88,
+        6 + (Date.now() - loaderStartTimeMs) / 115,
+      );
+      targetProgress = Math.max(targetProgress, timedFallbackProgress);
+    } else {
+      targetProgress = Math.max(targetProgress, measuredProgress);
+    }
+
+    if (loaderCanDismiss) {
+      targetProgress = Math.max(targetProgress, 98);
+    }
+    if (loaderDismissed) {
+      targetProgress = 100;
+    }
+
+    return Math.min(100, targetProgress);
+  }
+
+  function computeMeasuredProgress() {
+    if (!loaderManifest) {
+      return null;
+    }
+
+    const expectedTotalBytes = computeExpectedTotalBytes();
+    if (expectedTotalBytes <= 0) {
+      return null;
+    }
+
+    const progressRatio = Math.min(1, loadedTrackedBytes / expectedTotalBytes);
+    return 4 + progressRatio * 90;
+  }
+
+  function computeExpectedTotalBytes() {
+    let expectedTotalBytes = 0;
+
+    for (const requiredSize of requiredResourcesByPath.values()) {
+      expectedTotalBytes += requiredSize;
+    }
+
+    for (const [groupId, groupMaxBytes] of optionalGroupMaxBytes.entries()) {
+      const selectedPath = selectedOptionalPathByGroup.get(groupId);
+      if (!selectedPath) {
+        expectedTotalBytes += groupMaxBytes;
+        continue;
+      }
+
+      const selectedResource = optionalResourcesByPath.get(selectedPath);
+      expectedTotalBytes += selectedResource?.sizeBytes ?? groupMaxBytes;
+    }
+
+    return expectedTotalBytes;
+  }
+
+  function animateProgressTo(targetProgress) {
+    if (targetProgress <= currentProgressPercent) {
+      return;
+    }
+
+    const delta = targetProgress - currentProgressPercent;
+    const step = Math.max(0.35, Math.min(3.2, delta * 0.18));
+    currentProgressPercent = Math.min(targetProgress, currentProgressPercent + step);
+    renderProgress(currentProgressPercent);
+  }
+
+  function renderProgress(progressPercent) {
+    const clampedProgress = Math.max(0, Math.min(100, progressPercent));
+    const roundedProgress = Math.round(clampedProgress);
+
+    if (loaderProgressFill) {
+      loaderProgressFill.style.width = `${clampedProgress.toFixed(2)}%`;
+    }
+
+    if (loaderProgressText) {
+      loaderProgressText.textContent = `${roundedProgress}%`;
+    }
+
+    if (loaderProgress) {
+      loaderProgress.setAttribute('aria-valuenow', `${roundedProgress}`);
+    }
+  }
+
+  function setProgressImmediate(progressPercent) {
+    currentProgressPercent = Math.max(0, Math.min(100, progressPercent));
+    renderProgress(currentProgressPercent);
+  }
+
+  function stopProgressTimer() {
+    if (progressTimerId != null) {
+      window.clearInterval(progressTimerId);
+      progressTimerId = null;
+    }
+  }
+
+  function validateCopyCoverage() {
+    for (const localeKey of supportedWebLoaderLocales) {
+      const localeCopy = copyByLocale[localeKey];
+      if (
+        !localeCopy ||
+        !localeCopy.loadingWebApp ||
+        !localeCopy.progressAriaLabel ||
+        !localeCopy.versionPrefix ||
+        !localeCopy.versionFallback
+      ) {
+        console.warn(
+          `[web-loader] Missing translation for locale "${localeKey}". ` +
+            'Add copy in web/flutter_bootstrap.js when adding a new app locale.',
+        );
+      }
+    }
+  }
+
+  function observeFlutterReady() {
+    if (!loader || loaderDismissed) {
+      return;
+    }
+
+    if (!observer) {
+      observer = new MutationObserver(dismissLoaderWhenFlutterReady);
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+  }
+
+  function dismissLoaderWhenFlutterReady() {
+    if (
+      !loaderCanDismiss ||
+      loaderDismissed ||
+      !document.querySelector(flutterReadySelector)
+    ) {
+      return;
+    }
+
+    loaderDismissed = true;
+    stopProgressTimer();
+    setProgressImmediate(100);
+    observer?.disconnect();
+    document.body.classList.add('app-loaded');
+    window.setTimeout(() => loader?.remove(), 320);
+  }
+})();
