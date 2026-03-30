@@ -140,8 +140,9 @@ _flutter.buildConfig = {"engineRevision":"425cfb54d01a9472b3e81d9e76fd63a4a44cfb
 
   _flutter.loader.load({
     serviceWorkerSettings: {
-      serviceWorkerVersion: String(
-          '"2481585301" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */'.replace(/^"|"$/g, '')),
+      serviceWorkerVersion: parseServiceWorkerVersion(
+        `"762892597" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
+      ),
     },
     onEntrypointLoaded: async (engineInitializer) => {
       try {
@@ -216,6 +217,24 @@ _flutter.buildConfig = {"engineRevision":"425cfb54d01a9472b3e81d9e76fd63a4a44cfb
       return '';
     }
     return value.trim();
+  }
+
+  function parseServiceWorkerVersion(rawValue) {
+    const normalized = String(rawValue ?? '').trim();
+    if (
+      normalized.length === 0 ||
+      normalized === 'null' ||
+      /^\{\{[^}]+\}\}$/.test(normalized)
+    ) {
+      return null;
+    }
+
+    const quotedMatch = normalized.match(/^"([^"]+)"/);
+    if (quotedMatch) {
+      return quotedMatch[1];
+    }
+
+    return normalized.replace(/^"|"$/g, '');
   }
 
   async function loadLoaderManifest() {

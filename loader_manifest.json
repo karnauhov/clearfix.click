@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-03-30T06:21:33Z",
-  "estimated_startup_total_bytes": 11207897,
+  "generated_at_utc": "2026-03-30T06:58:45Z",
+  "estimated_startup_total_bytes": 11208339,
   "required_resources": [
     {
       "path": "flutter.js",
@@ -9,11 +9,11 @@
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 26379
+      "size_bytes": 26797
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 3922779
+      "size_bytes": 3922803
     },
     {
       "path": "flutter_service_worker.js",
