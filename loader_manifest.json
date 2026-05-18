@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-15T08:33:45Z",
-  "estimated_startup_total_bytes": 5045365,
+  "generated_at_utc": "2026-05-18T05:41:08Z",
+  "estimated_startup_total_bytes": 5060147,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 13941,
-    "raw_size_bytes": 56185,
+    "raw_size_bytes": 56184,
     "gzip_size_bytes": 13941
   },
   "required_resources": [
@@ -61,9 +61,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 9471,
-      "raw_size_bytes": 17440,
-      "gzip_size_bytes": 9471
+      "size_bytes": 9544,
+      "raw_size_bytes": 17560,
+      "gzip_size_bytes": 9544
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf",
@@ -96,15 +96,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1174,
+      "size_bytes": 1178,
       "raw_size_bytes": 5934,
-      "gzip_size_bytes": 1174
+      "gzip_size_bytes": 1178
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1268925,
-      "raw_size_bytes": 4559901,
-      "gzip_size_bytes": 1268925
+      "size_bytes": 1283543,
+      "raw_size_bytes": 4620653,
+      "gzip_size_bytes": 1283543
     },
     {
       "path": "manifest.json",
@@ -148,18 +148,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 2853,
+      "max_candidate_bytes": 2940,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 2853,
-          "raw_size_bytes": 2853
+          "size_bytes": 2940,
+          "raw_size_bytes": 2940
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 934,
-          "raw_size_bytes": 3806,
-          "gzip_size_bytes": 934
+          "size_bytes": 996,
+          "raw_size_bytes": 3922,
+          "gzip_size_bytes": 996
         }
       ]
     },
