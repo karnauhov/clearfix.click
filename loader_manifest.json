@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-18T05:41:08Z",
-  "estimated_startup_total_bytes": 5060147,
+  "generated_at_utc": "2026-05-20T04:57:11Z",
+  "estimated_startup_total_bytes": 5425493,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 13941,
-    "raw_size_bytes": 56184,
-    "gzip_size_bytes": 13941
+    "size_bytes": 14092,
+    "raw_size_bytes": 56617,
+    "gzip_size_bytes": 14092
   },
   "required_resources": [
     {
       "path": "assets/FontManifest.json",
-      "size_bytes": 190,
-      "raw_size_bytes": 544,
-      "gzip_size_bytes": 190
+      "size_bytes": 194,
+      "raw_size_bytes": 598,
+      "gzip_size_bytes": 194
     },
     {
       "path": "assets/assets/images/canada_contour.svg",
@@ -61,27 +61,27 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 9544,
-      "raw_size_bytes": 17560,
-      "gzip_size_bytes": 9544
+      "size_bytes": 9652,
+      "raw_size_bytes": 17760,
+      "gzip_size_bytes": 9652
     },
     {
-      "path": "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf",
-      "size_bytes": 121318,
-      "raw_size_bytes": 207972,
-      "gzip_size_bytes": 121318
+      "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Brands-Regular-400.otf",
+      "size_bytes": 140436,
+      "raw_size_bytes": 215132,
+      "gzip_size_bytes": 140436
     },
     {
-      "path": "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf",
-      "size_bytes": 26725,
-      "raw_size_bytes": 68004,
-      "gzip_size_bytes": 26725
+      "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Free-Regular-400.otf",
+      "size_bytes": 36467,
+      "raw_size_bytes": 87340,
+      "gzip_size_bytes": 36467
     },
     {
-      "path": "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf",
-      "size_bytes": 170745,
-      "raw_size_bytes": 419720,
-      "gzip_size_bytes": 170745
+      "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Free-Solid-900.otf",
+      "size_bytes": 185591,
+      "raw_size_bytes": 414664,
+      "gzip_size_bytes": 185591
     },
     {
       "path": "favicon.ico",
@@ -96,15 +96,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1178,
-      "raw_size_bytes": 5934,
-      "gzip_size_bytes": 1178
+      "size_bytes": 1195,
+      "raw_size_bytes": 5990,
+      "gzip_size_bytes": 1195
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1283543,
-      "raw_size_bytes": 4620653,
-      "gzip_size_bytes": 1283543
+      "size_bytes": 1576404,
+      "raw_size_bytes": 5640029,
+      "gzip_size_bytes": 1576404
     },
     {
       "path": "manifest.json",
@@ -148,78 +148,78 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 2940,
+      "max_candidate_bytes": 3048,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 2940,
-          "raw_size_bytes": 2940
+          "size_bytes": 3048,
+          "raw_size_bytes": 3048
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 996,
-          "raw_size_bytes": 3922,
-          "gzip_size_bytes": 996
+          "size_bytes": 1039,
+          "raw_size_bytes": 4066,
+          "gzip_size_bytes": 1039
         }
       ]
     },
     {
       "id": "renderer_js",
-      "max_candidate_bytes": 27460,
+      "max_candidate_bytes": 27461,
       "candidates": [
         {
           "path": "canvaskit/canvaskit.js",
-          "size_bytes": 27460,
+          "size_bytes": 27461,
           "raw_size_bytes": 86859,
-          "gzip_size_bytes": 27460
+          "gzip_size_bytes": 27461
         },
         {
           "path": "canvaskit/chromium/canvaskit.js",
-          "size_bytes": 27417,
+          "size_bytes": 27418,
           "raw_size_bytes": 86496,
-          "gzip_size_bytes": 27417
+          "gzip_size_bytes": 27418
         },
         {
           "path": "canvaskit/skwasm.js",
-          "size_bytes": 17023,
-          "raw_size_bytes": 63437,
-          "gzip_size_bytes": 17023
+          "size_bytes": 17006,
+          "raw_size_bytes": 63316,
+          "gzip_size_bytes": 17006
         },
         {
           "path": "canvaskit/skwasm_heavy.js",
-          "size_bytes": 17034,
-          "raw_size_bytes": 63550,
-          "gzip_size_bytes": 17034
+          "size_bytes": 17015,
+          "raw_size_bytes": 63429,
+          "gzip_size_bytes": 17015
         }
       ]
     },
     {
       "id": "renderer_wasm",
-      "max_candidate_bytes": 2870173,
+      "max_candidate_bytes": 2898563,
       "candidates": [
         {
           "path": "canvaskit/canvaskit.wasm",
-          "size_bytes": 2870173,
-          "raw_size_bytes": 7155824,
-          "gzip_size_bytes": 2870173
+          "size_bytes": 2898563,
+          "raw_size_bytes": 7229467,
+          "gzip_size_bytes": 2898563
         },
         {
           "path": "canvaskit/chromium/canvaskit.wasm",
-          "size_bytes": 2153324,
-          "raw_size_bytes": 5686880,
-          "gzip_size_bytes": 2153324
+          "size_bytes": 2181707,
+          "raw_size_bytes": 5760502,
+          "gzip_size_bytes": 2181707
         },
         {
           "path": "canvaskit/skwasm.wasm",
-          "size_bytes": 1513025,
-          "raw_size_bytes": 3549782,
-          "gzip_size_bytes": 1513025
+          "size_bytes": 1531680,
+          "raw_size_bytes": 3580947,
+          "gzip_size_bytes": 1531680
         },
         {
           "path": "canvaskit/skwasm_heavy.wasm",
-          "size_bytes": 2256309,
-          "raw_size_bytes": 5140187,
-          "gzip_size_bytes": 2256309
+          "size_bytes": 2275537,
+          "raw_size_bytes": 5172643,
+          "gzip_size_bytes": 2275537
         }
       ]
     }
