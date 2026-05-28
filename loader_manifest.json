@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-27T05:27:00Z",
-  "estimated_startup_total_bytes": 5428178,
+  "generated_at_utc": "2026-05-28T06:28:45Z",
+  "estimated_startup_total_bytes": 5236731,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 14093,
@@ -56,14 +56,14 @@
     },
     {
       "path": "assets/assets/images/splash_screen.jpg",
-      "size_bytes": 115248,
-      "raw_size_bytes": 115248
+      "size_bytes": 109079,
+      "raw_size_bytes": 109079
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 9652,
-      "raw_size_bytes": 17760,
-      "gzip_size_bytes": 9652
+      "size_bytes": 8445,
+      "raw_size_bytes": 15972,
+      "gzip_size_bytes": 8445
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Brands-Regular-400.otf",
@@ -79,9 +79,9 @@
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Free-Solid-900.otf",
-      "size_bytes": 185591,
-      "raw_size_bytes": 414664,
-      "gzip_size_bytes": 185591
+      "size_bytes": 1738,
+      "raw_size_bytes": 2500,
+      "gzip_size_bytes": 1738
     },
     {
       "path": "favicon.ico",
@@ -96,15 +96,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1197,
-      "raw_size_bytes": 5990,
-      "gzip_size_bytes": 1197
+      "size_bytes": 1185,
+      "raw_size_bytes": 5982,
+      "gzip_size_bytes": 1185
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1579086,
-      "raw_size_bytes": 5651501,
-      "gzip_size_bytes": 1579086
+      "size_bytes": 1579575,
+      "raw_size_bytes": 5652747,
+      "gzip_size_bytes": 1579575
     },
     {
       "path": "manifest.json",
@@ -114,9 +114,9 @@
     },
     {
       "path": "version.json",
-      "size_bytes": 88,
+      "size_bytes": 87,
       "raw_size_bytes": 89,
-      "gzip_size_bytes": 88
+      "gzip_size_bytes": 87
     }
   ],
   "optional_groups": [
@@ -148,18 +148,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 3048,
+      "max_candidate_bytes": 2354,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 3048,
-          "raw_size_bytes": 3048
+          "size_bytes": 2354,
+          "raw_size_bytes": 2354
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 1039,
-          "raw_size_bytes": 4066,
-          "gzip_size_bytes": 1039
+          "size_bytes": 815,
+          "raw_size_bytes": 3142,
+          "gzip_size_bytes": 815
         }
       ]
     },
