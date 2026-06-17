@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-06-02T06:41:39Z",
-  "estimated_startup_total_bytes": 5276114,
+  "generated_at_utc": "2026-06-17T07:37:52Z",
+  "estimated_startup_total_bytes": 5200848,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 14094,
-    "raw_size_bytes": 56618,
-    "gzip_size_bytes": 14094
+    "size_bytes": 14030,
+    "raw_size_bytes": 56380,
+    "gzip_size_bytes": 14030
   },
   "required_resources": [
     {
@@ -61,9 +61,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 9313,
-      "raw_size_bytes": 17388,
-      "gzip_size_bytes": 9313
+      "size_bytes": 9410,
+      "raw_size_bytes": 17592,
+      "gzip_size_bytes": 9410
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Brands-Regular-400.otf",
@@ -96,15 +96,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1180,
+      "size_bytes": 1182,
       "raw_size_bytes": 5982,
-      "gzip_size_bytes": 1180
+      "gzip_size_bytes": 1182
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1618093,
-      "raw_size_bytes": 5855929,
-      "gzip_size_bytes": 1618093
+      "size_bytes": 1590598,
+      "raw_size_bytes": 5766651,
+      "gzip_size_bytes": 1590598
     },
     {
       "path": "manifest.json",
@@ -165,61 +165,61 @@
     },
     {
       "id": "renderer_js",
-      "max_candidate_bytes": 27461,
+      "max_candidate_bytes": 27477,
       "candidates": [
         {
           "path": "canvaskit/canvaskit.js",
-          "size_bytes": 27461,
-          "raw_size_bytes": 86859,
-          "gzip_size_bytes": 27461
+          "size_bytes": 27477,
+          "raw_size_bytes": 86619,
+          "gzip_size_bytes": 27477
         },
         {
           "path": "canvaskit/chromium/canvaskit.js",
-          "size_bytes": 27418,
-          "raw_size_bytes": 86496,
-          "gzip_size_bytes": 27418
+          "size_bytes": 27435,
+          "raw_size_bytes": 86256,
+          "gzip_size_bytes": 27435
         },
         {
           "path": "canvaskit/skwasm.js",
-          "size_bytes": 17006,
-          "raw_size_bytes": 63316,
-          "gzip_size_bytes": 17006
+          "size_bytes": 16397,
+          "raw_size_bytes": 60657,
+          "gzip_size_bytes": 16397
         },
         {
           "path": "canvaskit/skwasm_heavy.js",
-          "size_bytes": 17015,
-          "raw_size_bytes": 63429,
-          "gzip_size_bytes": 17015
+          "size_bytes": 16412,
+          "raw_size_bytes": 60770,
+          "gzip_size_bytes": 16412
         }
       ]
     },
     {
       "id": "renderer_wasm",
-      "max_candidate_bytes": 2898563,
+      "max_candidate_bytes": 2850741,
       "candidates": [
         {
           "path": "canvaskit/canvaskit.wasm",
-          "size_bytes": 2898563,
-          "raw_size_bytes": 7229467,
-          "gzip_size_bytes": 2898563
+          "size_bytes": 2850741,
+          "raw_size_bytes": 7083768,
+          "gzip_size_bytes": 2850741
         },
         {
           "path": "canvaskit/chromium/canvaskit.wasm",
-          "size_bytes": 2181707,
-          "raw_size_bytes": 5760502,
-          "gzip_size_bytes": 2181707
+          "size_bytes": 2160241,
+          "raw_size_bytes": 5708955,
+          "gzip_size_bytes": 2160241
         },
         {
           "path": "canvaskit/skwasm.wasm",
-          "size_bytes": 1531680,
-          "raw_size_bytes": 3580947,
-          "gzip_size_bytes": 1531680
+          "size_bytes": 1512864,
+          "raw_size_bytes": 3551820,
+          "gzip_size_bytes": 1512864
         },
         {
           "path": "canvaskit/skwasm_heavy.wasm",
-          "size_bytes": 2275537,
-          "raw_size_bytes": 5172643,
-          "gzip_size_bytes": 2275537
+          "size_bytes": 2239094,
+          "raw_size_bytes": 5047312,
+          "gzip_size_bytes": 2239094
         }
       ]
     }
