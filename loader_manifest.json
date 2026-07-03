@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-07-03T13:54:11Z",
+  "generated_at_utc": "2026-07-03T14:33:14Z",
   "estimated_startup_total_bytes": 5263298,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 14057,
+    "size_bytes": 14058,
     "raw_size_bytes": 56430,
-    "gzip_size_bytes": 14057
+    "gzip_size_bytes": 14058
   },
   "required_resources": [
     {
@@ -120,9 +120,9 @@
     },
     {
       "path": "version.json",
-      "size_bytes": 88,
+      "size_bytes": 87,
       "raw_size_bytes": 89,
-      "gzip_size_bytes": 88
+      "gzip_size_bytes": 87
     }
   ],
   "optional_groups": [
