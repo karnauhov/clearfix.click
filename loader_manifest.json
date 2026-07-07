@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-07-03T14:33:14Z",
-  "estimated_startup_total_bytes": 5263298,
+  "generated_at_utc": "2026-07-07T06:52:54Z",
+  "estimated_startup_total_bytes": 5270001,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 14058,
@@ -35,8 +35,8 @@
     },
     {
       "path": "assets/assets/images/logo.png",
-      "size_bytes": 36345,
-      "raw_size_bytes": 36345
+      "size_bytes": 30437,
+      "raw_size_bytes": 30437
     },
     {
       "path": "assets/assets/images/logo_android.png",
@@ -60,10 +60,28 @@
       "raw_size_bytes": 109079
     },
     {
+      "path": "assets/assets/images/store_app_store.svg",
+      "size_bytes": 1429,
+      "raw_size_bytes": 2895,
+      "gzip_size_bytes": 1429
+    },
+    {
+      "path": "assets/assets/images/store_google_play.svg",
+      "size_bytes": 496,
+      "raw_size_bytes": 871,
+      "gzip_size_bytes": 496
+    },
+    {
+      "path": "assets/assets/images/store_microsoft.svg",
+      "size_bytes": 566,
+      "raw_size_bytes": 1103,
+      "gzip_size_bytes": 566
+    },
+    {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 11398,
-      "raw_size_bytes": 20800,
-      "gzip_size_bytes": 11398
+      "size_bytes": 12052,
+      "raw_size_bytes": 21764,
+      "gzip_size_bytes": 12052
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Brands-Regular-400.otf",
@@ -97,20 +115,20 @@
     },
     {
       "path": "favicon.png",
-      "size_bytes": 1243,
-      "raw_size_bytes": 1243
+      "size_bytes": 858,
+      "raw_size_bytes": 858
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1207,
-      "raw_size_bytes": 6124,
-      "gzip_size_bytes": 1207
+      "size_bytes": 1275,
+      "raw_size_bytes": 6590,
+      "gzip_size_bytes": 1275
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1649024,
-      "raw_size_bytes": 6034639,
-      "gzip_size_bytes": 1649024
+      "size_bytes": 1664671,
+      "raw_size_bytes": 6094878,
+      "gzip_size_bytes": 1664671
     },
     {
       "path": "manifest.json",
@@ -120,52 +138,52 @@
     },
     {
       "path": "version.json",
-      "size_bytes": 87,
+      "size_bytes": 88,
       "raw_size_bytes": 89,
-      "gzip_size_bytes": 87
+      "gzip_size_bytes": 88
     }
   ],
   "optional_groups": [
     {
       "id": "pwa_icon",
-      "max_candidate_bytes": 38885,
+      "max_candidate_bytes": 32611,
       "candidates": [
         {
           "path": "icons/Icon-192.png",
-          "size_bytes": 9033,
-          "raw_size_bytes": 9033
+          "size_bytes": 7363,
+          "raw_size_bytes": 7363
         },
         {
           "path": "icons/Icon-512.png",
-          "size_bytes": 38885,
-          "raw_size_bytes": 38885
+          "size_bytes": 32611,
+          "raw_size_bytes": 32611
         },
         {
           "path": "icons/Icon-maskable-192.png",
-          "size_bytes": 9033,
-          "raw_size_bytes": 9033
+          "size_bytes": 7363,
+          "raw_size_bytes": 7363
         },
         {
           "path": "icons/Icon-maskable-512.png",
-          "size_bytes": 38885,
-          "raw_size_bytes": 38885
+          "size_bytes": 32611,
+          "raw_size_bytes": 32611
         }
       ]
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 2354,
+      "max_candidate_bytes": 2763,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 2354,
-          "raw_size_bytes": 2354
+          "size_bytes": 2763,
+          "raw_size_bytes": 2763
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 815,
-          "raw_size_bytes": 3142,
-          "gzip_size_bytes": 815
+          "size_bytes": 973,
+          "raw_size_bytes": 3686,
+          "gzip_size_bytes": 973
         }
       ]
     },

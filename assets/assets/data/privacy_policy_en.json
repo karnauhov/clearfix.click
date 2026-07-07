@@ -1,0 +1,178 @@
+{
+  "title": "Privacy Policy",
+  "sections": [
+    {
+      "heading": "Overview",
+      "paragraphs": [
+        "Last updated: [INSERT DATE].",
+        "ClearFix (referred to as \"we\", \"us\" or \"our\") is a Canada-focused on-demand marketplace connecting homeowners and businesses with local skilled professionals for repairs, home improvements, construction, and cleaning jobs. ClearFix operates a website and mobile application at https://www.clearfix.click. ClearFix is operated by [INSERT FULL LEGAL NAME] (Physical Address: [INSERT PHYSICAL ADDRESS]). This Privacy Policy explains how we collect, use, disclose, and protect personal information in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and other applicable Canadian privacy laws."
+      ]
+    },
+    {
+      "heading": "Information We Collect",
+      "paragraphs": [
+        "When you use our website or mobile application (the \"Service\"), we may collect the following types of personal information from you:",
+        "We do not collect any payment card details. All payments are processed through third-party payment providers. We do not store your credit or debit card information on our systems."
+      ],
+      "bullets": [
+        {
+          "label": "Personal Details",
+          "body": "Name, email address, phone number, postal address, company name (if applicable)."
+        },
+        {
+          "label": "Account Information",
+          "body": "Username, password, and other registration information you provide when creating an account."
+        },
+        {
+          "label": "Service Details",
+          "body": "Information about the jobs or services requested or provided through our platform (including job descriptions, addresses, photos, etc.), and any ratings or feedback you provide."
+        },
+        {
+          "label": "Communications",
+          "body": "Any messages, comments, or other information you submit through the Service or send to our customer support."
+        },
+        {
+          "label": "Device and Usage Data",
+          "body": "Information collected automatically when you use the Service, such as your IP address, device type, operating system, browser information, and your interactions with the website and app."
+        },
+        {
+          "label": "Analytics Data",
+          "body": "Data collected through Google Analytics about how you use our Service, including pages visited, time spent on pages, and other usage statistics."
+        },
+        {
+          "label": "Location Data",
+          "body": "Approximate or precise location information from your device if you permit location services (for example, to connect you with professionals in your area)."
+        }
+      ]
+    },
+    {
+      "heading": "How We Use Your Information",
+      "paragraphs": [
+        "We use the personal information we collect for the following purposes:"
+      ],
+      "bullets": [
+        {
+          "label": "To provide and manage the Service",
+          "body": "To facilitate the provision of services, to communicate with you about your account and orders, and to respond to your requests or inquiries."
+        },
+        {
+          "label": "To process payments",
+          "body": "To complete transactions through third-party payment processors. ClearFix does not handle or store your payment card data."
+        },
+        {
+          "label": "To improve and develop our services",
+          "body": "To analyze usage of the Service, to enhance and customize the user experience, to fix issues, and to improve our platform."
+        },
+        {
+          "label": "To send promotional communications",
+          "body": "With your consent, we may send newsletters, offers, or other marketing materials. You can withdraw your consent at any time."
+        },
+        {
+          "label": "For customer support",
+          "body": "To respond to your questions, comments, or complaints, and to provide support."
+        },
+        {
+          "label": "To comply with legal obligations",
+          "body": "To detect and prevent fraud, enforce our terms, and comply with applicable laws and regulations."
+        }
+      ]
+    },
+    {
+      "heading": "How We Share Your Information",
+      "paragraphs": [
+        "We may share your personal information with:"
+      ],
+      "bullets": [
+        {
+          "label": "Service Professionals",
+          "body": "The professionals you hire or engage through our platform. For example, if you request a service, we will share your name, contact details, and job information with the selected professional so they can perform the work."
+        },
+        {
+          "label": "Service Providers and Partners",
+          "body": "Such as payment processors, hosting providers, email service providers, analytics providers (like Google Analytics), and other third-party vendors who assist us in operating our Service. These third parties are contractually obligated to keep your information confidential."
+        },
+        {
+          "label": "Legal and Regulatory Authorities",
+          "body": "When required by law or to protect our rights and safety (e.g., in response to law enforcement requests or legal claims)."
+        },
+        {
+          "label": "Business Transfers",
+          "body": "In the event of a merger, acquisition, or sale of assets, your information may be transferred to a new owner."
+        },
+        {
+          "label": "Aggregated or De-identified Data",
+          "body": "We may use or share aggregated demographic or usage data that does not directly identify you."
+        }
+      ]
+    },
+    {
+      "heading": "Cookies and Similar Technologies",
+      "paragraphs": [
+        "We use cookies and similar tracking technologies on our website and app to improve user experience and analyze usage. These may include:"
+      ],
+      "bullets": [
+        {
+          "label": "Cookies",
+          "body": "Small data files stored on your device to recognize your browser and remember your preferences."
+        },
+        {
+          "label": "Google Analytics",
+          "body": "We use Google Analytics to collect information about use of our Service. Google Analytics collects data such as your IP address (which may be anonymized), browser type, device information, and pages visited. For more information on how Google Analytics collects and processes data, see the Google Privacy Policy at https://policies.google.com/privacy."
+        },
+        {
+          "label": "Opting out",
+          "body": "You can set your browser or device to disable cookies. To opt out of Google Analytics tracking, you can use Google's Analytics Opt-out Browser Add-on or other tools provided by Google."
+        }
+      ]
+    },
+    {
+      "heading": "Data Retention",
+      "paragraphs": [
+        "We retain personal information only as long as necessary to fulfill the purposes described in this Privacy Policy or to comply with legal requirements. For example, we may keep your data for the period you have an active account and for a reasonable time thereafter (e.g., [INSERT RETENTION PERIOD YEARS] years). After this time, personal information will be securely deleted or anonymized."
+      ]
+    },
+    {
+      "heading": "Security",
+      "paragraphs": [
+        "We implement reasonable technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction. However, no system can be completely secure, and we cannot guarantee the absolute security of your information."
+      ]
+    },
+    {
+      "heading": "Your Rights",
+      "paragraphs": [
+        "Under Canadian privacy laws (such as PIPEDA), you have the right to:",
+        "To exercise these rights, please contact us using the contact information below."
+      ],
+      "bullets": [
+        {
+          "body": "Access the personal information we hold about you."
+        },
+        {
+          "body": "Request corrections of inaccurate or incomplete personal information."
+        },
+        {
+          "body": "Withdraw consent at any time (subject to legal or contractual restrictions). If you withdraw consent, we will stop using or disclosing your information, except as required by law or for our legal rights."
+        },
+        {
+          "body": "Lodge a complaint with the Office of the Privacy Commissioner of Canada if you believe your privacy rights have been violated."
+        }
+      ]
+    },
+    {
+      "heading": "Changes to this Privacy Policy",
+      "paragraphs": [
+        "We may update this Privacy Policy from time to time. We will post the revised policy on this page with a new \"Last updated\" date. If we make material changes, we will notify you (e.g., via email or in-app notification). Continued use of our Service after changes constitutes acceptance of the updated policy."
+      ]
+    },
+    {
+      "heading": "Contact Information",
+      "paragraphs": [
+        "If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact the operator of ClearFix at:",
+        "Email: ok.ai11.link@gmail.com",
+        "Address: [INSERT PHYSICAL ADDRESS].",
+        "You may also contact the Office of the Privacy Commissioner of Canada at the following address for privacy-related inquiries:",
+        "Office of the Privacy Commissioner of Canada\n30 Victoria Street\nGatineau, Quebec K1A 1H3\nCanada\nWebsite: https://www.priv.gc.ca"
+      ]
+    }
+  ]
+}

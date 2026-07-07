@@ -1,0 +1,455 @@
+{
+  "libraries": [
+    {
+      "name": "Flutter",
+      "kind": "sdk",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://flutter.dev",
+      "licenseUrl": "https://github.com/flutter/flutter/blob/master/LICENSE"
+    },
+    {
+      "name": "Dart",
+      "kind": "sdk",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://dart.dev",
+      "licenseUrl": "https://github.com/dart-lang/sdk/blob/main/LICENSE"
+    },
+    {
+      "name": "Roboto",
+      "kind": "resource",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://fonts.google.com/specimen/Roboto",
+      "licenseUrl": "https://github.com/googlefonts/roboto/blob/main/LICENSE"
+    },
+    {
+      "name": "SVG Repo icon resources",
+      "kind": "resource",
+      "licenseName": "SVG Repo License",
+      "websiteUrl": "https://www.svgrepo.com",
+      "licenseUrl": "https://www.svgrepo.com/page/licensing"
+    },
+    {
+      "name": "aligned_tooltip",
+      "kind": "package",
+      "version": "0.0.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/aligned_tooltip",
+      "licenseUrl": "https://pub.dev/packages/aligned_tooltip/license"
+    },
+    {
+      "name": "auto_size_text",
+      "kind": "package",
+      "version": "3.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/auto_size_text",
+      "licenseUrl": "https://pub.dev/packages/auto_size_text/license"
+    },
+    {
+      "name": "cached_network_image",
+      "kind": "package",
+      "version": "3.4.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/cached_network_image",
+      "licenseUrl": "https://pub.dev/packages/cached_network_image/license"
+    },
+    {
+      "name": "cloud_firestore",
+      "kind": "package",
+      "version": "5.6.9",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/cloud_firestore",
+      "licenseUrl": "https://pub.dev/packages/cloud_firestore/license"
+    },
+    {
+      "name": "collection",
+      "kind": "package",
+      "version": "1.19.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/collection",
+      "licenseUrl": "https://pub.dev/packages/collection/license"
+    },
+    {
+      "name": "crypto",
+      "kind": "package",
+      "version": "^3.0.6",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/crypto",
+      "licenseUrl": "https://pub.dev/packages/crypto/license"
+    },
+    {
+      "name": "cross_file",
+      "kind": "package",
+      "version": "0.3.4+2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/cross_file",
+      "licenseUrl": "https://pub.dev/packages/cross_file/license"
+    },
+    {
+      "name": "device_info_plus",
+      "kind": "package",
+      "version": "11.5.0",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://pub.dev/packages/device_info_plus",
+      "licenseUrl": "https://pub.dev/packages/device_info_plus/license"
+    },
+    {
+      "name": "dropdown_button2",
+      "kind": "package",
+      "version": "2.3.9",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/dropdown_button2",
+      "licenseUrl": "https://pub.dev/packages/dropdown_button2/license"
+    },
+    {
+      "name": "equatable",
+      "kind": "package",
+      "version": "2.0.7",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/equatable",
+      "licenseUrl": "https://pub.dev/packages/equatable/license"
+    },
+    {
+      "name": "file_picker",
+      "kind": "package",
+      "version": "10.1.9",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/file_picker",
+      "licenseUrl": "https://pub.dev/packages/file_picker/license"
+    },
+    {
+      "name": "firebase_auth",
+      "kind": "package",
+      "version": "5.6.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_auth",
+      "licenseUrl": "https://pub.dev/packages/firebase_auth/license"
+    },
+    {
+      "name": "firebase_core",
+      "kind": "package",
+      "version": "3.14.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_core",
+      "licenseUrl": "https://pub.dev/packages/firebase_core/license"
+    },
+    {
+      "name": "firebase_messaging",
+      "kind": "package",
+      "version": "^15.2.7",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_messaging",
+      "licenseUrl": "https://pub.dev/packages/firebase_messaging/license"
+    },
+    {
+      "name": "firebase_storage",
+      "kind": "package",
+      "version": "^12.4.7",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_storage",
+      "licenseUrl": "https://pub.dev/packages/firebase_storage/license"
+    },
+    {
+      "name": "floating_bottom_navigation_bar",
+      "kind": "package",
+      "version": "1.5.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/floating_bottom_navigation_bar",
+      "licenseUrl": "https://pub.dev/packages/floating_bottom_navigation_bar/license"
+    },
+    {
+      "name": "flutter_bloc",
+      "kind": "package",
+      "version": "9.1.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_bloc",
+      "licenseUrl": "https://pub.dev/packages/flutter_bloc/license"
+    },
+    {
+      "name": "flutter_facebook_auth",
+      "kind": "package",
+      "version": "7.1.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_facebook_auth",
+      "licenseUrl": "https://pub.dev/packages/flutter_facebook_auth/license"
+    },
+    {
+      "name": "flutter_image_compress",
+      "kind": "package",
+      "version": "^2.4.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_image_compress",
+      "licenseUrl": "https://pub.dev/packages/flutter_image_compress/license"
+    },
+    {
+      "name": "flutter_svg",
+      "kind": "package",
+      "version": "2.1.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_svg",
+      "licenseUrl": "https://pub.dev/packages/flutter_svg/license"
+    },
+    {
+      "name": "font_awesome_flutter",
+      "kind": "package",
+      "version": "11.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/font_awesome_flutter",
+      "licenseUrl": "https://pub.dev/packages/font_awesome_flutter/license"
+    },
+    {
+      "name": "from_css_color",
+      "kind": "package",
+      "version": "2.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/from_css_color",
+      "licenseUrl": "https://pub.dev/packages/from_css_color/license"
+    },
+    {
+      "name": "geolocator",
+      "kind": "package",
+      "version": "^14.0.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/geolocator",
+      "licenseUrl": "https://pub.dev/packages/geolocator/license"
+    },
+    {
+      "name": "go_router",
+      "kind": "package",
+      "version": "12.1.3",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/go_router",
+      "licenseUrl": "https://pub.dev/packages/go_router/license"
+    },
+    {
+      "name": "google_fonts",
+      "kind": "package",
+      "version": "6.3.3",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/google_fonts",
+      "licenseUrl": "https://pub.dev/packages/google_fonts/license"
+    },
+    {
+      "name": "google_sign_in",
+      "kind": "package",
+      "version": "6.3.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/google_sign_in",
+      "licenseUrl": "https://pub.dev/packages/google_sign_in/license"
+    },
+    {
+      "name": "http",
+      "kind": "package",
+      "version": "^1.5.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/http",
+      "licenseUrl": "https://pub.dev/packages/http/license"
+    },
+    {
+      "name": "image_picker",
+      "kind": "package",
+      "version": "^1.1.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/image_picker",
+      "licenseUrl": "https://pub.dev/packages/image_picker/license"
+    },
+    {
+      "name": "intl",
+      "kind": "package",
+      "version": "0.20.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/intl",
+      "licenseUrl": "https://pub.dev/packages/intl/license"
+    },
+    {
+      "name": "json_path",
+      "kind": "package",
+      "version": "0.7.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/json_path",
+      "licenseUrl": "https://pub.dev/packages/json_path/license"
+    },
+    {
+      "name": "mime",
+      "kind": "package",
+      "version": "^1.0.4",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/mime",
+      "licenseUrl": "https://pub.dev/packages/mime/license"
+    },
+    {
+      "name": "pdf",
+      "kind": "package",
+      "version": "^3.12.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdf",
+      "licenseUrl": "https://pub.dev/packages/pdf/license"
+    },
+    {
+      "name": "package_info_plus",
+      "kind": "package",
+      "version": "9.0.1",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://pub.dev/packages/package_info_plus",
+      "licenseUrl": "https://pub.dev/packages/package_info_plus/license"
+    },
+    {
+      "name": "provider",
+      "kind": "package",
+      "version": "6.1.5",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/provider",
+      "licenseUrl": "https://pub.dev/packages/provider/license"
+    },
+    {
+      "name": "shared_preferences",
+      "kind": "package",
+      "version": "2.5.3",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/shared_preferences",
+      "licenseUrl": "https://pub.dev/packages/shared_preferences/license"
+    },
+    {
+      "name": "super_clipboard",
+      "kind": "package",
+      "version": "0.9.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/super_clipboard",
+      "licenseUrl": "https://pub.dev/packages/super_clipboard/license"
+    },
+    {
+      "name": "talker_bloc_logger",
+      "kind": "package",
+      "version": "^5.1.15",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/talker_bloc_logger",
+      "licenseUrl": "https://pub.dev/packages/talker_bloc_logger/license"
+    },
+    {
+      "name": "talker_flutter",
+      "kind": "package",
+      "version": "^5.1.15",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/talker_flutter",
+      "licenseUrl": "https://pub.dev/packages/talker_flutter/license"
+    },
+    {
+      "name": "timeago",
+      "kind": "package",
+      "version": "3.7.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/timeago",
+      "licenseUrl": "https://pub.dev/packages/timeago/license"
+    },
+    {
+      "name": "url_launcher",
+      "kind": "package",
+      "version": "6.3.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/url_launcher",
+      "licenseUrl": "https://pub.dev/packages/url_launcher/license"
+    },
+    {
+      "name": "web",
+      "kind": "package",
+      "version": "1.1.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/web",
+      "licenseUrl": "https://pub.dev/packages/web/license"
+    },
+    {
+      "name": "bloc_test",
+      "kind": "dev_package",
+      "version": "10.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/bloc_test",
+      "licenseUrl": "https://pub.dev/packages/bloc_test/license"
+    },
+    {
+      "name": "fake_cloud_firestore",
+      "kind": "dev_package",
+      "version": "^3.1.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/fake_cloud_firestore",
+      "licenseUrl": "https://pub.dev/packages/fake_cloud_firestore/license"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "kind": "dev_package",
+      "version": "^5.4.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_core_platform_interface",
+      "licenseUrl": "https://pub.dev/packages/firebase_core_platform_interface/license"
+    },
+    {
+      "name": "firebase_storage_mocks",
+      "kind": "dev_package",
+      "version": "^0.7.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_storage_mocks",
+      "licenseUrl": "https://pub.dev/packages/firebase_storage_mocks/license"
+    },
+    {
+      "name": "flutter_launcher_icons",
+      "kind": "dev_package",
+      "version": "0.13.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_launcher_icons",
+      "licenseUrl": "https://pub.dev/packages/flutter_launcher_icons/license"
+    },
+    {
+      "name": "flutter_lints",
+      "kind": "dev_package",
+      "version": "4.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_lints",
+      "licenseUrl": "https://pub.dev/packages/flutter_lints/license"
+    },
+    {
+      "name": "image_picker_platform_interface",
+      "kind": "dev_package",
+      "version": "2.11.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/image_picker_platform_interface",
+      "licenseUrl": "https://pub.dev/packages/image_picker_platform_interface/license"
+    },
+    {
+      "name": "integration_test",
+      "kind": "dev_package",
+      "licenseName": "Package license",
+      "websiteUrl": "https://api.flutter.dev/flutter/package-integration_test_integration_test/package-integration_test_integration_test-library.html",
+      "licenseUrl": "https://github.com/flutter/flutter/blob/master/LICENSE"
+    },
+    {
+      "name": "mocktail",
+      "kind": "dev_package",
+      "version": "1.0.4",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/mocktail",
+      "licenseUrl": "https://pub.dev/packages/mocktail/license"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "kind": "dev_package",
+      "version": "^2.1.8",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/plugin_platform_interface",
+      "licenseUrl": "https://pub.dev/packages/plugin_platform_interface/license"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "kind": "dev_package",
+      "version": "^2.4.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/shared_preferences_platform_interface",
+      "licenseUrl": "https://pub.dev/packages/shared_preferences_platform_interface/license"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "kind": "dev_package",
+      "version": "^2.3.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/url_launcher_platform_interface",
+      "licenseUrl": "https://pub.dev/packages/url_launcher_platform_interface/license"
+    }
+  ]
+}
