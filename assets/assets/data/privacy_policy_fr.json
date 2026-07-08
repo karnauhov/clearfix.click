@@ -1,0 +1,149 @@
+{
+  "title": "Politique de confidentialité",
+  "sections": [
+    {
+      "heading": "Aperçu",
+      "paragraphs": [
+        "Dernière mise à jour : {policyLastUpdated}.",
+        "{appName} est une application et un site Web conçus en priorité pour le Canada, accessibles à [{websiteUrl}]({websiteUrl}). Le service est exploité par [{operatorName}]({operatorUrl}). Cette politique explique comment {appName} collecte, utilise, conserve, partage et supprime les renseignements personnels lorsque vous utilisez les comptes, profils, commandes, photos, messages, saisie automatique d'adresse par localisation, soutien et fonctions connexes.",
+        "Nous ne collectons pas de données de carte de paiement et n'affichons pas de publicité dans l'application. Si ces fonctions sont ajoutées, nous mettrons cette politique à jour avant de collecter les renseignements correspondants."
+      ]
+    },
+    {
+      "heading": "Renseignements que nous collectons",
+      "paragraphs": [
+        "Nous collectons uniquement les renseignements nécessaires pour exploiter le service, protéger les comptes, exécuter les flux de commande et aider les utilisateurs."
+      ],
+      "bullets": [
+        {
+          "label": "Compte et authentification",
+          "body": "Adresse courriel, identifiant utilisateur Firebase, nom d'affichage, URL de photo de profil, numéro de téléphone, état de vérification du courriel, état anonyme et identifiants des fournisseurs de connexion. Firebase Authentication gère les mots de passe et les jetons d'authentification; {appName} ne stocke pas votre mot de passe dans Firestore."
+        },
+        {
+          "label": "Profil et préférences",
+          "body": "Nom d'affichage, numéro de téléphone, langue préférée, photo de profil et adresse enregistrée, par exemple pays, province, ville, code postal, lignes d'adresse, unité ou suite, code d'entrée, étage, case postale, route rurale, site, compartiment, boîte, lot, concession, description cadastrale et notes d'accès lorsque vous choisissez de les fournir."
+        },
+        {
+          "label": "Commandes et demandes de service",
+          "body": "Titre de commande, description, catégorie, état, historique d'état, photos, adresse et détails d'accès, coordonnées de localisation facultatives utilisées pour les suggestions d'adresse, horaire, urgence, budget en CAD, préférence pour un reçu fiscal, nom de contact, téléphone de contact, canal de contact préféré, notes du client, motifs de clôture et horodatages."
+        },
+        {
+          "label": "Propositions des fournisseurs et conditions acceptées",
+          "body": "Identifiants du fournisseur et du client, nom d'affichage ou d'entreprise du fournisseur, coordonnées du fournisseur nécessaires à la commande, prix proposé, horaire, conditions, notes de garantie, état de la proposition, instantané du fournisseur accepté et horodatages connexes."
+        },
+        {
+          "label": "Messages et conversations",
+          "body": "Participants à la conversation, contexte de commande ou de proposition, texte du message, expéditeur, rôle du participant, identifiant de message client, heure d'envoi, état de lecture et aperçus du dernier message utilisés pour afficher les listes de conversations et les badges de non-lus."
+        },
+        {
+          "label": "Photos, fichiers et métadonnées",
+          "body": "Photos de profil et photos de commande sélectionnées depuis votre appareil photo, galerie ou sélecteur de fichiers, ainsi que des métadonnées comme le nom de fichier d'origine, le type de contenu, la taille, les dimensions de l'image, la source et l'heure de téléversement."
+        },
+        {
+          "label": "Localisation et saisie automatique d'adresse",
+          "body": "Si vous accordez l'autorisation de localisation de l'appareil, l'application peut demander vos coordonnées actuelles et les envoyer par une fonction Firebase Cloud à Google Geocoding afin de suggérer une adresse canadienne. Vous pouvez refuser ou révoquer l'autorisation de localisation dans les paramètres de votre appareil ou navigateur."
+        },
+        {
+          "label": "Données techniques et de soutien",
+          "body": "Plateforme de l'appareil, navigateur ou système d'exploitation, langue, fuseau horaire, métadonnées de requête Firebase comme l'adresse IP, contexte d'erreur de l'application et messages de soutien que vous nous envoyez. Nous utilisons ces renseignements pour sécuriser le service, diagnostiquer les problèmes et répondre aux demandes."
+        }
+      ]
+    },
+    {
+      "heading": "Mode de conservation",
+      "paragraphs": [
+        "L'application conserve les données de compte et de service dans les services Firebase configurés pour {appName}. Firebase Authentication conserve les dossiers d'authentification. Cloud Firestore conserve les profils d'utilisateurs, commandes, propositions, conversations, messages et métadonnées connexes. Firebase Storage conserve les photos de profil et de commande téléversées. Firebase Cloud Functions traite des tâches côté serveur comme le géocodage d'adresse et le nettoyage après suppression de compte.",
+        "L'application et le navigateur peuvent conserver des préférences locales comme la langue et le thème dans le stockage local de l'application, le stockage du navigateur ou SharedPreferences. Effacer le stockage local peut réinitialiser ces préférences, mais ne supprime pas les données de compte côté serveur."
+      ]
+    },
+    {
+      "heading": "Utilisation des renseignements",
+      "paragraphs": [
+        "Nous utilisons les renseignements personnels aux fins suivantes :"
+      ],
+      "bullets": [
+        {
+          "body": "Créer, authentifier et protéger votre compte."
+        },
+        {
+          "body": "Afficher et mettre à jour votre profil, langue et adresse."
+        },
+        {
+          "body": "Créer, enregistrer, modifier, acheminer et fermer les commandes et demandes de service."
+        },
+        {
+          "body": "Permettre aux clients et fournisseurs d'échanger propositions, conditions acceptées, photos, messages et mises à jour de commande."
+        },
+        {
+          "body": "Fournir des suggestions d'adresse, compteurs de non-lus et réponses de soutien."
+        },
+        {
+          "body": "Maintenir les règles de sécurité, prévenir les abus, déboguer les erreurs, surveiller l'état du service et respecter les obligations légales."
+        }
+      ]
+    },
+    {
+      "heading": "Partage des renseignements",
+      "paragraphs": [
+        "Nous ne vendons pas les renseignements personnels. Nous les partageons uniquement lorsque cela est nécessaire pour fournir le service, lorsque vous nous demandez de le faire ou lorsque la loi l'exige."
+      ],
+      "bullets": [
+        {
+          "label": "Autres participants au service",
+          "body": "Les clients et fournisseurs peuvent voir les renseignements de commande, proposition, contact, photo, état et message nécessaires pour demander, offrir, coordonner et réaliser un service."
+        },
+        {
+          "label": "Services Firebase et Google",
+          "body": "Nous utilisons les services Google Firebase pour l'authentification, la base de données, le stockage, les fonctions cloud, l'hébergement et la messagerie, ainsi que Google Geocoding pour les suggestions d'adresse lorsque vous utilisez la saisie automatique par localisation. Google et Firebase traitent les données selon leurs conditions et contrôles de confidentialité. Plus d'information : [{firebasePrivacyUrl}]({firebasePrivacyUrl}) et [{googlePrivacyUrl}]({googlePrivacyUrl})."
+        },
+        {
+          "label": "Fournisseurs de connexion",
+          "body": "Si vous choisissez la connexion avec Google ou Facebook, le fournisseur concerné traite les données de compte nécessaires à cette fonction de connexion."
+        },
+        {
+          "label": "Besoins légaux, de sécurité et commerciaux",
+          "body": "Nous pouvons divulguer des renseignements pour respecter la loi, faire valoir nos droits et notre sécurité, répondre à des demandes légales valides, enquêter sur des abus ou soutenir une fusion, acquisition, opération de financement ou cession d'actifs."
+        }
+      ]
+    },
+    {
+      "heading": "Conservation et suppression",
+      "paragraphs": [
+        "Nous conservons les renseignements personnels seulement aussi longtemps que nécessaire pour les fins décrites dans cette politique, sauf si une période plus longue est requise pour des raisons légales, de sécurité, comptables, de litige ou de sauvegarde.",
+        "Vous pouvez demander la suppression du compte dans l'application depuis Profil, Modifier le profil, Supprimer le compte, ou en utilisant les renseignements de suppression de compte à [{accountDeletionUrl}]({accountDeletionUrl}). Lorsque votre compte Firebase est supprimé, le processus de nettoyage du backend est conçu pour supprimer votre profil utilisateur, les fichiers de stockage liés à l'utilisateur, commandes, photos de commande, propositions, conversations, messages, états des participants et dossiers connexes. Certaines sauvegardes, journaux, dossiers légaux ou dossiers de soutien peuvent rester pendant une période limitée lorsqu'ils sont requis ou raisonnablement nécessaires."
+      ]
+    },
+    {
+      "heading": "Sécurité",
+      "paragraphs": [
+        "{appName} utilise Firebase Authentication, les règles de sécurité Firestore, les règles Storage, des fonctions serveur authentifiées et la journalisation applicative pour limiter l'accès et protéger les renseignements personnels. L'accès aux dossiers de compte, commande, message et photo est limité aux utilisateurs et rôles de service qui en ont besoin. Aucun service Internet ne peut être garanti comme entièrement sécurisé, mais nous travaillons à maintenir des protections adaptées à la sensibilité des renseignements."
+      ]
+    },
+    {
+      "heading": "Vos choix et droits",
+      "paragraphs": [
+        "Vous pouvez mettre à jour de nombreux détails dans votre profil et les écrans de commande. Vous pouvez changer la langue dans l'application, refuser ou révoquer l'autorisation de localisation dans les paramètres de votre appareil ou navigateur, et effacer le stockage local du navigateur ou de l'application pour réinitialiser les préférences locales.",
+        "Les lois canadiennes sur la protection des renseignements personnels, y compris la LPRPDE, peuvent vous donner le droit d'accéder à vos renseignements personnels, d'en demander la correction, de retirer votre consentement lorsque le consentement est la base du traitement, de poser des questions et de contester nos pratiques de confidentialité. Pour exercer ces droits, contactez-nous à [{privacyContactEmail}](mailto:{privacyContactEmail}). Vous pouvez aussi communiquer avec le Commissariat à la protection de la vie privée du Canada à [{opcUrl}]({opcUrl})."
+      ]
+    },
+    {
+      "heading": "Enfants et renseignements sensibles",
+      "paragraphs": [
+        "{appName} n'est pas destiné aux enfants. N'utilisez pas le service si vous n'avez pas l'âge requis pour conclure un contrat de service dans votre province ou territoire. N'incluez pas de renseignements sensibles dans les commandes, messages, photos ou demandes de soutien sauf si cela est nécessaire pour la demande de service."
+      ]
+    },
+    {
+      "heading": "Traitement international",
+      "paragraphs": [
+        "{appName} est conçu en priorité pour le Canada, mais Firebase, Google, les fournisseurs de connexion et les systèmes de soutien peuvent traiter ou conserver des renseignements à l'extérieur de votre province, territoire ou pays. Lorsque les renseignements sont traités à l'extérieur du Canada, ils peuvent être soumis aux lois de cet endroit. Nous nous appuyons sur les garanties et conditions de confidentialité de nos fournisseurs pour ce traitement."
+      ]
+    },
+    {
+      "heading": "Modifications et contact",
+      "paragraphs": [
+        "Nous pouvons mettre cette politique à jour lorsque l'application, le backend, les fournisseurs de services ou les exigences légales changent. La version actuelle est disponible à [{privacyPolicyUrl}]({privacyPolicyUrl}). Si nous apportons des changements importants, nous fournirons un avis dans l'application, par courriel ou par un autre moyen approprié.",
+        "Pour toute question sur la confidentialité, demande d'accès ou de suppression, plainte ou adresse postale liée à une demande de confidentialité, contactez [{operatorName}]({operatorUrl}) à [{privacyContactEmail}](mailto:{privacyContactEmail})."
+      ]
+    }
+  ]
+}

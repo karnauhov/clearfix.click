@@ -22,6 +22,20 @@
       "licenseUrl": "https://github.com/googlefonts/roboto/blob/main/LICENSE"
     },
     {
+      "name": "Noto Sans Devanagari",
+      "kind": "resource",
+      "licenseName": "SIL Open Font License 1.1",
+      "websiteUrl": "https://fonts.google.com/noto/specimen/Noto+Sans+Devanagari",
+      "licenseUrl": "https://github.com/notofonts/noto-fonts/blob/main/LICENSE"
+    },
+    {
+      "name": "Noto Sans SC",
+      "kind": "resource",
+      "licenseName": "SIL Open Font License 1.1",
+      "websiteUrl": "https://github.com/notofonts/noto-cjk",
+      "licenseUrl": "https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE"
+    },
+    {
       "name": "SVG Repo icon resources",
       "kind": "resource",
       "licenseName": "SVG Repo License",
