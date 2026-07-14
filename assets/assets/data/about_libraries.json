@@ -227,6 +227,22 @@
       "licenseUrl": "https://pub.dev/packages/geolocator/license"
     },
     {
+      "name": "flutter_map",
+      "kind": "package",
+      "version": "^8.3.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_map",
+      "licenseUrl": "https://pub.dev/packages/flutter_map/license"
+    },
+    {
+      "name": "latlong2",
+      "kind": "package",
+      "version": "^0.10.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/latlong2",
+      "licenseUrl": "https://pub.dev/packages/latlong2/license"
+    },
+    {
       "name": "go_router",
       "kind": "package",
       "version": "12.1.3",
@@ -241,14 +257,6 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/google_fonts",
       "licenseUrl": "https://pub.dev/packages/google_fonts/license"
-    },
-    {
-      "name": "google_maps_flutter",
-      "kind": "package",
-      "version": "2.17.1",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/google_maps_flutter",
-      "licenseUrl": "https://pub.dev/packages/google_maps_flutter/license"
     },
     {
       "name": "google_sign_in",

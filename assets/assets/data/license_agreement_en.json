@@ -176,7 +176,7 @@
     {
       "heading": "8. Provider Commission and Financial Terms",
       "paragraphs": [
-        "The provider must pay ClearFix a commission for access to the service, the ability to find orders, submit proposals, communicate with customers, and use order management tools. The basic provider commission is {providerCommissionPercent} of the final transaction amount for the order, unless the interface, written notice, or separate terms set another rate.",
+        "The provider must pay ClearFix a commission for access to the service, the ability to find orders, submit proposals, communicate with customers, and use order management tools. The basic provider commission is {specialistCommissionPercent} of the final transaction amount for the order, unless the interface, written notice, or separate terms set another rate.",
         "The commission is payable after order completion, acceptance, actual performance, or another event shown in the interface or agreed by the parties. If the customer and provider found each other through ClearFix, the commission may remain payable even if payment between them occurs outside ClearFix, unless the Operator has expressly waived it in writing.",
         "Customers do not pay the ClearFix platform commission under the basic model. Customer payments to providers are separate payments for work or services and are not Operator revenue, unless a future ClearFix payment function, paid customer option, or separate agreement states otherwise.",
         "If the provider does not pay a due commission, ClearFix may limit access to new orders, hide proposals, restrict messaging for new transactions, suspend provider functions, offset amounts where legally permitted, or require payment before restoring access."
