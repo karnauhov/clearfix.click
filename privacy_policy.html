@@ -2,17 +2,318 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta http-equiv="refresh" content="0; url=/privacy-policy">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9B0102">
+  <meta name="description" content="ClearFix Privacy Policy">
   <title>Privacy Policy - ClearFix</title>
-  <script>
-    window.location.replace('/privacy-policy' + window.location.search + window.location.hash);
-  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --primary: #9B0102;
+      --on-primary: #FFFFFF;
+      --surface: #F5F5F5;
+      --card: #FFFFFF;
+      --on-surface: #000000;
+      --on-surface-variant: #333333;
+      --outline-variant: #C7C7C7;
+      --focus: #9B0102;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: var(--surface);
+      font-family: Roboto, "Noto Sans", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--surface);
+      color: var(--on-surface);
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .top-bar {
+      min-height: 56px;
+      display: grid;
+      grid-template-columns: 48px 1fr 48px;
+      align-items: center;
+      padding: 4px;
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .top-bar h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+
+    .back-link {
+      width: 48px;
+      height: 48px;
+      display: inline-grid;
+      place-items: center;
+      color: var(--on-primary);
+      font-size: 32px;
+      line-height: 1;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      background: rgb(255 255 255 / 12%);
+    }
+
+    .page-content {
+      width: min(720px, 100%);
+      margin: 0 auto;
+      padding: 24px 24px;
+    }
+
+    .section-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .policy-card {
+      padding: 16px;
+      background: var(--card);
+      border: 1px solid var(--outline-variant);
+      border-radius: 24px;
+    }
+
+    .policy-card h2 {
+      margin: 0;
+      color: var(--on-surface);
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .policy-card p {
+      margin: 8px 0 0;
+      color: var(--on-surface-variant);
+    }
+
+    .policy-card ul {
+      display: grid;
+      gap: 8px;
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .policy-card li {
+      display: grid;
+      grid-template-columns: 6px 1fr;
+      column-gap: 10px;
+      align-items: start;
+      color: var(--on-surface-variant);
+    }
+
+    .policy-card li::before {
+      width: 6px;
+      height: 6px;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      content: "";
+    }
+
+    .policy-card li > :not(:first-child) {
+      grid-column: 2;
+    }
+
+    .policy-card strong {
+      display: block;
+      color: var(--on-surface);
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+    }
+
+    .policy-card a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 599px) {
+      .page-content { padding: 24px 16px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #CB0000;
+        --surface: #121212;
+        --card: #0D0D0D;
+        --on-surface: #FFFFFF;
+        --on-surface-variant: #B0B0B0;
+        --outline-variant: #5A5A5A;
+        --focus: #CB0000;
+      }
+    }
+  </style>
 </head>
 <body>
-  <p>
-    The ClearFix Privacy Policy is available at
-    <a href="/privacy-policy">/privacy-policy</a>.
-  </p>
+  <header class="top-bar">
+    <a class="back-link" href="/" aria-label="Back to ClearFix">‹</a>
+    <h1>Privacy Policy</h1>
+    <span aria-hidden="true"></span>
+  </header>
+  <main class="page-content">
+      <div class="section-list">
+    <section class="policy-card">
+      <h2>Overview</h2>
+      <p>Last updated: July 8, 2026.</p>
+      <p>ClearFix is a Canada-first app and website available at <a href="https://www.clearfix.click">https://www.clearfix.click</a>. The service is operated by <a href="https://example.com">OLOL</a>. This policy explains how ClearFix collects, uses, stores, shares, and deletes personal information when you use accounts, profiles, orders, photos, messages, location autofill, support, and related features.</p>
+      <p>We do not collect payment card data or run in-app advertising. If those features are added, we will update this policy before collecting the related information.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Information We Collect</h2>
+      <p>We collect only the information needed to run the service, protect accounts, complete order workflows, and support users.</p>
+      <ul>
+      <li>
+        <strong>Account and authentication</strong>
+        <span>Email address, Firebase user ID, display name, profile photo URL, phone number, email verification state, anonymous state, and sign-in provider IDs. Firebase Authentication handles passwords and authentication tokens; ClearFix does not store your password in Firestore.</span>
+      </li>
+      <li>
+        <strong>Profile and preferences</strong>
+        <span>Display name, phone number, preferred language, profile photo, and saved address details such as country, province, city, postal code, street lines, unit or suite, buzzer, floor, PO Box, rural route, site, compartment, box, lot, concession, legal land description, and access notes when you choose to provide them.</span>
+      </li>
+      <li>
+        <strong>Orders and service requests</strong>
+        <span>Order title, description, category, status, status history, photos, address and access details, optional location coordinates used for address suggestions, schedule, urgency, budget in CAD, tax receipt preference, contact name, contact phone, preferred contact channel, customer notes, closure reasons, and timestamps.</span>
+      </li>
+      <li>
+        <strong>Provider proposals and accepted terms</strong>
+        <span>Provider and customer IDs, provider display or company name, provider contact details needed for the order, proposed price, schedule, terms, warranty notes, proposal state, accepted provider snapshot, and related timestamps.</span>
+      </li>
+      <li>
+        <strong>Messages and conversations</strong>
+        <span>Conversation participants, order or proposal context, message text, message sender, participant role, client message ID, sent time, read state, and last-message previews used to show conversation lists and unread badges.</span>
+      </li>
+      <li>
+        <strong>Photos, files, and metadata</strong>
+        <span>Profile photos and order photos selected from your camera, gallery, or file picker, plus metadata such as original file name, content type, size, image dimensions, source, and upload time.</span>
+      </li>
+      <li>
+        <strong>Location and address autofill</strong>
+        <span>If you grant device location permission, the app may request your current coordinates and send them through a Firebase Cloud Function to Google Geocoding so it can suggest a Canadian address. You can deny or revoke location permission in your device or browser settings.</span>
+      </li>
+      <li>
+        <strong>Technical and support data</strong>
+        <span>Device platform, browser or operating system details, locale, time zone, Firebase request metadata such as IP address, app error context, and support messages you send to us. We use this information to secure the service, diagnose issues, and respond to requests.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>How Information Is Stored</h2>
+      <p>The app stores account and service data in Firebase services configured for ClearFix. Firebase Authentication stores authentication records. Cloud Firestore stores user profiles, orders, proposals, conversations, messages, and related metadata. Firebase Storage stores uploaded profile and order photos. Firebase Cloud Functions process server-side tasks such as address geocoding and account deletion cleanup.</p>
+      <p>The app and browser may store local preferences such as language and theme in local app storage, browser storage, or SharedPreferences. Clearing local storage may reset these preferences but does not delete server-side account data.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>How We Use Information</h2>
+      <p>We use personal information for the following purposes:</p>
+      <ul>
+      <li>
+
+        <span>Create, authenticate, and protect your account.</span>
+      </li>
+      <li>
+
+        <span>Show and update your profile, language, and address.</span>
+      </li>
+      <li>
+
+        <span>Create, save, edit, route, and close orders and service requests.</span>
+      </li>
+      <li>
+
+        <span>Let customers and providers exchange proposals, accepted terms, photos, messages, and order updates.</span>
+      </li>
+      <li>
+
+        <span>Provide address suggestions, unread counts, and support responses.</span>
+      </li>
+      <li>
+
+        <span>Maintain security rules, prevent misuse, debug errors, monitor service health, and comply with legal obligations.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>When We Share Information</h2>
+      <p>We do not sell personal information. We share personal information only when needed to provide the service, when you direct us to share it, or when required by law.</p>
+      <ul>
+      <li>
+        <strong>Other service participants</strong>
+        <span>Customers and providers can see the order, proposal, contact, photo, status, and message information needed to request, offer, coordinate, and complete a service.</span>
+      </li>
+      <li>
+        <strong>Firebase and Google services</strong>
+        <span>We use Google Firebase services for authentication, database, storage, cloud functions, hosting, and messaging, and Google Geocoding for address suggestions when you use location autofill. Google and Firebase process data under their terms and privacy controls. More information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</span>
+      </li>
+      <li>
+        <strong>Sign-in providers</strong>
+        <span>If you choose Google or Facebook sign-in, the related provider processes the account data required for that sign-in feature.</span>
+      </li>
+      <li>
+        <strong>Legal, safety, and business needs</strong>
+        <span>We may disclose information to comply with law, enforce rights and security, respond to valid legal requests, investigate abuse, or support a merger, acquisition, financing, or transfer of assets.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>Retention and Deletion</h2>
+      <p>We keep personal information only as long as needed for the purposes in this policy, unless a longer period is required for legal, security, accounting, dispute, or backup reasons.</p>
+      <p>You can request account deletion in the app from Profile, Edit Profile, Delete account, or by using the account deletion information at <a href="https://www.clearfix.click/account_deletion_instruction.html">https://www.clearfix.click/account_deletion_instruction.html</a>. When your Firebase account is deleted, the backend cleanup process is designed to remove your user profile, user-scoped storage files, orders, order photos, proposals, conversations, messages, participant states, and related records. Some backups, logs, legal records, or support records may remain for a limited period when required or reasonably necessary.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Security</h2>
+      <p>ClearFix uses Firebase Authentication, Firestore security rules, Storage rules, authenticated server functions, and application logging to limit access and protect personal information. Access to account, order, message, and photo records is scoped to the users and service roles that need it. No internet service can be guaranteed to be completely secure, but we work to keep protections appropriate to the sensitivity of the information.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Your Choices and Rights</h2>
+      <p>You can update many details in your account profile and order screens. You can change language in the app, deny or revoke location permission in your device or browser settings, and clear local browser or app storage if you want to reset local preferences.</p>
+      <p>Canadian privacy laws, including PIPEDA, may give you rights to access personal information, request correction, withdraw consent where consent is the basis for processing, ask questions, and challenge our privacy practices. To exercise these rights, contact us at <a href="mailto:ok.ai11.link@gmail.com">ok.ai11.link@gmail.com</a>. You may also contact the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a>.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Children and Sensitive Information</h2>
+      <p>ClearFix is not intended for children. Do not use the service if you are not old enough to enter into a service contract in your province or territory. Do not include sensitive information in orders, messages, photos, or support requests unless it is necessary for the service request.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>International Processing</h2>
+      <p>ClearFix is Canada-first, but Firebase, Google, sign-in providers, and support systems may process or store information outside your province, territory, or country. When information is processed outside Canada, it may be subject to the laws of that location. We rely on service provider safeguards and privacy terms for this processing.</p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Changes and Contact</h2>
+      <p>We may update this policy when the app, backend, service providers, or legal requirements change. The current version is available at <a href="https://www.clearfix.click/privacy_policy.html">https://www.clearfix.click/privacy_policy.html</a>. If we make material changes, we will provide notice in the app, by email, or by another appropriate method.</p>
+      <p>For privacy questions, access or deletion requests, complaints, or a mailing address for a privacy request, contact <a href="https://example.com">OLOL</a> at <a href="mailto:ok.ai11.link@gmail.com">ok.ai11.link@gmail.com</a>.</p>
+    </section>
+      </div>
+  </main>
 </body>
 </html>
