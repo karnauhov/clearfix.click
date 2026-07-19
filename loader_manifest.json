@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-07-17T09:06:05Z",
-  "estimated_startup_total_bytes": 5342012,
+  "generated_at_utc": "2026-07-19T06:52:20Z",
+  "estimated_startup_total_bytes": 5354173,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 14057,
-    "raw_size_bytes": 56430,
-    "gzip_size_bytes": 14057
+    "size_bytes": 14056,
+    "raw_size_bytes": 56429,
+    "gzip_size_bytes": 14056
   },
   "required_resources": [
     {
@@ -79,9 +79,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 12704,
-      "raw_size_bytes": 22904,
-      "gzip_size_bytes": 12704
+      "size_bytes": 13109,
+      "raw_size_bytes": 23436,
+      "gzip_size_bytes": 13109
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Brands-Regular-400.otf",
@@ -120,15 +120,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1278,
+      "size_bytes": 1287,
       "raw_size_bytes": 6592,
-      "gzip_size_bytes": 1278
+      "gzip_size_bytes": 1287
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1734764,
-      "raw_size_bytes": 6353044,
-      "gzip_size_bytes": 1734764
+      "size_bytes": 1746512,
+      "raw_size_bytes": 6403319,
+      "gzip_size_bytes": 1746512
     },
     {
       "path": "manifest.json",
