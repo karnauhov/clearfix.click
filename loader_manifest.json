@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-07-20T07:53:01Z",
-  "estimated_startup_total_bytes": 5360828,
+  "generated_at_utc": "2026-07-20T11:17:22Z",
+  "estimated_startup_total_bytes": 5361764,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 14058,
@@ -126,9 +126,9 @@
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1753171,
-      "raw_size_bytes": 6437966,
-      "gzip_size_bytes": 1753171
+      "size_bytes": 1754107,
+      "raw_size_bytes": 6441533,
+      "gzip_size_bytes": 1754107
     },
     {
       "path": "manifest.json",
