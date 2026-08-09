@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-07-28T09:41:30Z",
-  "estimated_startup_total_bytes": 5384484,
+  "generated_at_utc": "2026-08-09T06:42:44Z",
+  "estimated_startup_total_bytes": 5387514,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 14057,
+    "size_bytes": 14058,
     "raw_size_bytes": 56430,
-    "gzip_size_bytes": 14057
+    "gzip_size_bytes": 14058
   },
   "required_resources": [
     {
       "path": "assets/FontManifest.json",
-      "size_bytes": 194,
-      "raw_size_bytes": 598,
-      "gzip_size_bytes": 194
+      "size_bytes": 222,
+      "raw_size_bytes": 724,
+      "gzip_size_bytes": 222
     },
     {
       "path": "assets/assets/images/canada_contour.svg",
@@ -79,9 +79,15 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 13337,
-      "raw_size_bytes": 23904,
-      "gzip_size_bytes": 13337
+      "size_bytes": 13453,
+      "raw_size_bytes": 24156,
+      "gzip_size_bytes": 13453
+    },
+    {
+      "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
+      "size_bytes": 1011,
+      "raw_size_bytes": 1472,
+      "gzip_size_bytes": 1011
     },
     {
       "path": "assets/packages/font_awesome_flutter/lib/fonts/Font-Awesome-7-Brands-Regular-400.otf",
@@ -120,15 +126,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1278,
-      "raw_size_bytes": 6592,
-      "gzip_size_bytes": 1278
+      "size_bytes": 1317,
+      "raw_size_bytes": 6766,
+      "gzip_size_bytes": 1317
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1776603,
-      "raw_size_bytes": 6529608,
-      "gzip_size_bytes": 1776603
+      "size_bytes": 1778323,
+      "raw_size_bytes": 6546093,
+      "gzip_size_bytes": 1778323
     },
     {
       "path": "manifest.json",
@@ -172,18 +178,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 4027,
+      "max_candidate_bytes": 4142,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 4027,
-          "raw_size_bytes": 4027
+          "size_bytes": 4142,
+          "raw_size_bytes": 4142
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 1309,
-          "raw_size_bytes": 5374,
-          "gzip_size_bytes": 1309
+          "size_bytes": 1352,
+          "raw_size_bytes": 5526,
+          "gzip_size_bytes": 1352
         }
       ]
     },

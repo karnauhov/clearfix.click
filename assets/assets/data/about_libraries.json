@@ -15,6 +15,14 @@
       "licenseUrl": "https://github.com/dart-lang/sdk/blob/main/LICENSE"
     },
     {
+      "name": "Firebase C++ SDK",
+      "kind": "resource",
+      "version": "12.6.0",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://github.com/firebase/firebase-cpp-sdk",
+      "licenseUrl": "https://github.com/firebase/firebase-cpp-sdk/blob/main/LICENSE"
+    },
+    {
       "name": "Roboto",
       "kind": "resource",
       "licenseName": "Apache-2.0",
@@ -43,6 +51,54 @@
       "licenseUrl": "https://www.svgrepo.com/page/licensing"
     },
     {
+      "name": "Cloud SQL Node.js Connector",
+      "kind": "package",
+      "version": "1.11.3",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://github.com/GoogleCloudPlatform/cloud-sql-nodejs-connector",
+      "licenseUrl": "https://github.com/GoogleCloudPlatform/cloud-sql-nodejs-connector/blob/main/LICENSE"
+    },
+    {
+      "name": "Google Cloud Tasks Node.js client",
+      "kind": "package",
+      "version": "6.3.0",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://github.com/googleapis/google-cloud-node/tree/main/packages/google-cloud-tasks",
+      "licenseUrl": "https://github.com/googleapis/google-cloud-node/blob/main/LICENSE"
+    },
+    {
+      "name": "Google Auth Library for Node.js",
+      "kind": "package",
+      "version": "10.9.1",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://github.com/googleapis/google-auth-library-nodejs",
+      "licenseUrl": "https://github.com/googleapis/google-auth-library-nodejs/blob/main/LICENSE"
+    },
+    {
+      "name": "node-postgres",
+      "kind": "package",
+      "version": "8.22.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://github.com/brianc/node-postgres",
+      "licenseUrl": "https://github.com/brianc/node-postgres/blob/master/LICENSE"
+    },
+    {
+      "name": "PGlite",
+      "kind": "dev_package",
+      "version": "0.5.4",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://pglite.dev",
+      "licenseUrl": "https://github.com/electric-sql/pglite/blob/main/LICENSE"
+    },
+    {
+      "name": "PGlite PostGIS",
+      "kind": "dev_package",
+      "version": "0.2.4",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://pglite.dev/extensions/",
+      "licenseUrl": "https://github.com/electric-sql/pglite/blob/main/LICENSE"
+    },
+    {
       "name": "aligned_tooltip",
       "kind": "package",
       "version": "0.0.1",
@@ -69,10 +125,18 @@
     {
       "name": "cloud_firestore",
       "kind": "package",
-      "version": "5.6.9",
+      "version": "6.0.2",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/cloud_firestore",
       "licenseUrl": "https://pub.dev/packages/cloud_firestore/license"
+    },
+    {
+      "name": "cloud_functions",
+      "kind": "package",
+      "version": "6.0.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/cloud_functions",
+      "licenseUrl": "https://pub.dev/packages/cloud_functions/license"
     },
     {
       "name": "collection",
@@ -97,6 +161,14 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/cross_file",
       "licenseUrl": "https://pub.dev/packages/cross_file/license"
+    },
+    {
+      "name": "cupertino_icons",
+      "kind": "package",
+      "version": "1.0.8",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/cupertino_icons",
+      "licenseUrl": "https://pub.dev/packages/cupertino_icons/license"
     },
     {
       "name": "device_info_plus",
@@ -133,15 +205,23 @@
     {
       "name": "firebase_auth",
       "kind": "package",
-      "version": "5.6.0",
+      "version": "6.0.2",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/firebase_auth",
       "licenseUrl": "https://pub.dev/packages/firebase_auth/license"
     },
     {
+      "name": "firebase_app_check",
+      "kind": "package",
+      "version": "0.4.1+5",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://pub.dev/packages/firebase_app_check",
+      "licenseUrl": "https://pub.dev/packages/firebase_app_check/license"
+    },
+    {
       "name": "firebase_core",
       "kind": "package",
-      "version": "3.14.0",
+      "version": "4.5.0",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/firebase_core",
       "licenseUrl": "https://pub.dev/packages/firebase_core/license"
@@ -149,7 +229,7 @@
     {
       "name": "firebase_messaging",
       "kind": "package",
-      "version": "^15.2.7",
+      "version": "16.0.2",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/firebase_messaging",
       "licenseUrl": "https://pub.dev/packages/firebase_messaging/license"
@@ -157,18 +237,10 @@
     {
       "name": "firebase_storage",
       "kind": "package",
-      "version": "^12.4.7",
+      "version": "13.0.0",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/firebase_storage",
       "licenseUrl": "https://pub.dev/packages/firebase_storage/license"
-    },
-    {
-      "name": "floating_bottom_navigation_bar",
-      "kind": "package",
-      "version": "1.5.2",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/floating_bottom_navigation_bar",
-      "licenseUrl": "https://pub.dev/packages/floating_bottom_navigation_bar/license"
     },
     {
       "name": "flutter_bloc",
@@ -381,7 +453,7 @@
     {
       "name": "web",
       "kind": "package",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/web",
       "licenseUrl": "https://pub.dev/packages/web/license"
@@ -397,7 +469,7 @@
     {
       "name": "fake_cloud_firestore",
       "kind": "dev_package",
-      "version": "^3.1.0",
+      "version": "4.0.0",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/fake_cloud_firestore",
       "licenseUrl": "https://pub.dev/packages/fake_cloud_firestore/license"
@@ -405,7 +477,7 @@
     {
       "name": "firebase_core_platform_interface",
       "kind": "dev_package",
-      "version": "^5.4.0",
+      "version": "^6.0.2",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/firebase_core_platform_interface",
       "licenseUrl": "https://pub.dev/packages/firebase_core_platform_interface/license"
@@ -413,7 +485,7 @@
     {
       "name": "firebase_storage_mocks",
       "kind": "dev_package",
-      "version": "^0.7.0",
+      "version": "^0.8.1",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/firebase_storage_mocks",
       "licenseUrl": "https://pub.dev/packages/firebase_storage_mocks/license"
