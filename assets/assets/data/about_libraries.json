@@ -51,52 +51,12 @@
       "licenseUrl": "https://www.svgrepo.com/page/licensing"
     },
     {
-      "name": "Cloud SQL Node.js Connector",
-      "kind": "package",
-      "version": "1.11.3",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://github.com/GoogleCloudPlatform/cloud-sql-nodejs-connector",
-      "licenseUrl": "https://github.com/GoogleCloudPlatform/cloud-sql-nodejs-connector/blob/main/LICENSE"
-    },
-    {
-      "name": "Google Cloud Tasks Node.js client",
-      "kind": "package",
-      "version": "6.3.0",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://github.com/googleapis/google-cloud-node/tree/main/packages/google-cloud-tasks",
-      "licenseUrl": "https://github.com/googleapis/google-cloud-node/blob/main/LICENSE"
-    },
-    {
       "name": "Google Auth Library for Node.js",
       "kind": "package",
       "version": "10.9.1",
       "licenseName": "Apache-2.0",
       "websiteUrl": "https://github.com/googleapis/google-auth-library-nodejs",
       "licenseUrl": "https://github.com/googleapis/google-auth-library-nodejs/blob/main/LICENSE"
-    },
-    {
-      "name": "node-postgres",
-      "kind": "package",
-      "version": "8.22.0",
-      "licenseName": "MIT",
-      "websiteUrl": "https://github.com/brianc/node-postgres",
-      "licenseUrl": "https://github.com/brianc/node-postgres/blob/master/LICENSE"
-    },
-    {
-      "name": "PGlite",
-      "kind": "dev_package",
-      "version": "0.5.4",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://pglite.dev",
-      "licenseUrl": "https://github.com/electric-sql/pglite/blob/main/LICENSE"
-    },
-    {
-      "name": "PGlite PostGIS",
-      "kind": "dev_package",
-      "version": "0.2.4",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://pglite.dev/extensions/",
-      "licenseUrl": "https://github.com/electric-sql/pglite/blob/main/LICENSE"
     },
     {
       "name": "aligned_tooltip",
