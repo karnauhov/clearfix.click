@@ -59,6 +59,14 @@
       "licenseUrl": "https://github.com/googleapis/google-auth-library-nodejs/blob/main/LICENSE"
     },
     {
+      "name": "GeoFire Common",
+      "kind": "package",
+      "version": "6.0.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://github.com/firebase/geofire-js",
+      "licenseUrl": "https://github.com/firebase/geofire-js/blob/master/LICENSE"
+    },
+    {
       "name": "aligned_tooltip",
       "kind": "package",
       "version": "0.0.1",
