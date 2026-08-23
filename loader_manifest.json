@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-08-21T10:33:09Z",
-  "estimated_startup_total_bytes": 5438276,
+  "generated_at_utc": "2026-08-23T06:42:34Z",
+  "estimated_startup_total_bytes": 5633156,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 14057,
-    "raw_size_bytes": 56430,
-    "gzip_size_bytes": 14057
+    "size_bytes": 14080,
+    "raw_size_bytes": 56643,
+    "gzip_size_bytes": 14080
   },
   "required_resources": [
     {
@@ -17,21 +17,21 @@
     },
     {
       "path": "assets/assets/images/canada_contour.svg",
-      "size_bytes": 9408,
-      "raw_size_bytes": 19580,
-      "gzip_size_bytes": 9408
+      "size_bytes": 9411,
+      "raw_size_bytes": 19581,
+      "gzip_size_bytes": 9411
     },
     {
       "path": "assets/assets/images/facebook.svg",
-      "size_bytes": 255,
-      "raw_size_bytes": 324,
-      "gzip_size_bytes": 255
+      "size_bytes": 257,
+      "raw_size_bytes": 325,
+      "gzip_size_bytes": 257
     },
     {
       "path": "assets/assets/images/google.svg",
-      "size_bytes": 549,
-      "raw_size_bytes": 1002,
-      "gzip_size_bytes": 549
+      "size_bytes": 551,
+      "raw_size_bytes": 1003,
+      "gzip_size_bytes": 551
     },
     {
       "path": "assets/assets/images/logo.png",
@@ -109,9 +109,9 @@
     },
     {
       "path": "clearfix_push_bridge.js",
-      "size_bytes": 1984,
-      "raw_size_bytes": 7295,
-      "gzip_size_bytes": 1984
+      "size_bytes": 1999,
+      "raw_size_bytes": 7536,
+      "gzip_size_bytes": 1999
     },
     {
       "path": "favicon.ico",
@@ -126,9 +126,9 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1315,
-      "raw_size_bytes": 6766,
-      "gzip_size_bytes": 1315
+      "size_bytes": 1390,
+      "raw_size_bytes": 7523,
+      "gzip_size_bytes": 1390
     },
     {
       "path": "main.dart.js",
@@ -144,9 +144,9 @@
     },
     {
       "path": "version.json",
-      "size_bytes": 87,
+      "size_bytes": 88,
       "raw_size_bytes": 89,
-      "gzip_size_bytes": 87
+      "gzip_size_bytes": 88
     }
   ],
   "optional_groups": [
@@ -255,6 +255,22 @@
     }
   ],
   "external_resources": [
+    {
+      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js",
+      "size_bytes": 23206
+    },
+    {
+      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-auth.js",
+      "size_bytes": 41009
+    },
+    {
+      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-firestore.js",
+      "size_bytes": 116519
+    },
+    {
+      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-storage.js",
+      "size_bytes": 14025
+    },
     {
       "url": "https://accounts.google.com/gsi/client",
       "size_bytes": 100000
