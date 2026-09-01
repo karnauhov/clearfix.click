@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-08-31T08:39:47Z",
-  "estimated_startup_total_bytes": 5771016,
+  "generated_at_utc": "2026-09-01T17:33:11Z",
+  "estimated_startup_total_bytes": 5603342,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 15505,
-    "raw_size_bytes": 59997,
-    "gzip_size_bytes": 15505
+    "size_bytes": 15484,
+    "raw_size_bytes": 59784,
+    "gzip_size_bytes": 15484
   },
   "required_resources": [
     {
@@ -17,21 +17,21 @@
     },
     {
       "path": "assets/assets/images/canada_contour.svg",
-      "size_bytes": 9411,
-      "raw_size_bytes": 19581,
-      "gzip_size_bytes": 9411
+      "size_bytes": 9408,
+      "raw_size_bytes": 19580,
+      "gzip_size_bytes": 9408
     },
     {
       "path": "assets/assets/images/facebook.svg",
-      "size_bytes": 257,
-      "raw_size_bytes": 325,
-      "gzip_size_bytes": 257
+      "size_bytes": 255,
+      "raw_size_bytes": 324,
+      "gzip_size_bytes": 255
     },
     {
       "path": "assets/assets/images/google.svg",
-      "size_bytes": 551,
-      "raw_size_bytes": 1003,
-      "gzip_size_bytes": 551
+      "size_bytes": 549,
+      "raw_size_bytes": 1002,
+      "gzip_size_bytes": 549
     },
     {
       "path": "assets/assets/images/logo.png",
@@ -79,9 +79,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 14109,
-      "raw_size_bytes": 25500,
-      "gzip_size_bytes": 14109
+      "size_bytes": 15150,
+      "raw_size_bytes": 27056,
+      "gzip_size_bytes": 15150
     },
     {
       "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -109,9 +109,9 @@
     },
     {
       "path": "clearfix_push_bridge.js",
-      "size_bytes": 1999,
-      "raw_size_bytes": 7536,
-      "gzip_size_bytes": 1999
+      "size_bytes": 1984,
+      "raw_size_bytes": 7295,
+      "gzip_size_bytes": 1984
     },
     {
       "path": "favicon.ico",
@@ -126,15 +126,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1391,
-      "raw_size_bytes": 7523,
-      "gzip_size_bytes": 1391
+      "size_bytes": 1318,
+      "raw_size_bytes": 6766,
+      "gzip_size_bytes": 1318
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1904480,
-      "raw_size_bytes": 7017793,
-      "gzip_size_bytes": 1904480
+      "size_bytes": 1930640,
+      "raw_size_bytes": 7170285,
+      "gzip_size_bytes": 1930640
     },
     {
       "path": "manifest.json",
@@ -255,22 +255,6 @@
     }
   ],
   "external_resources": [
-    {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js",
-      "size_bytes": 23206
-    },
-    {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-auth.js",
-      "size_bytes": 41009
-    },
-    {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-firestore.js",
-      "size_bytes": 116519
-    },
-    {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-storage.js",
-      "size_bytes": 14025
-    },
     {
       "url": "https://accounts.google.com/gsi/client",
       "size_bytes": 100000
