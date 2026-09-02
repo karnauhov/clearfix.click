@@ -28,7 +28,7 @@
           "body": "Titre de commande, description, catégorie, état, historique d'état, photos, adresse et détails d'accès, coordonnées de localisation facultatives utilisées pour les suggestions d'adresse, horaire, urgence, budget en CAD, préférence pour un reçu fiscal, nom de contact, téléphone de contact, canal de contact préféré, notes du client, motifs de clôture et horodatages."
         },
         {
-          "label": "Propositions des fournisseurs et conditions acceptées",
+          "label": "Propositions des spécialistes et conditions acceptées",
           "body": "Identifiants du fournisseur et du client, nom d'affichage ou d'entreprise du fournisseur, coordonnées du fournisseur nécessaires à la commande, prix proposé, horaire, conditions, notes de garantie, état de la proposition, instantané du fournisseur accepté et horodatages connexes."
         },
         {
