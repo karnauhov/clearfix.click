@@ -67,6 +67,14 @@
       "licenseUrl": "https://github.com/firebase/geofire-js/blob/master/LICENSE"
     },
     {
+      "name": "tz-lookup",
+      "kind": "package",
+      "version": "6.1.25",
+      "licenseName": "CC0-1.0",
+      "websiteUrl": "https://www.npmjs.com/package/tz-lookup",
+      "licenseUrl": "https://github.com/darkskyapp/tz-lookup-oss/blob/master/LICENSE"
+    },
+    {
       "name": "aligned_tooltip",
       "kind": "package",
       "version": "0.0.1",
