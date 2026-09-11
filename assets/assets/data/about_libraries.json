@@ -421,7 +421,7 @@
     {
       "name": "url_launcher",
       "kind": "package",
-      "version": "6.3.1",
+      "version": "6.3.2",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/url_launcher",
       "licenseUrl": "https://pub.dev/packages/url_launcher/license"
@@ -528,6 +528,125 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/url_launcher_platform_interface",
       "licenseUrl": "https://pub.dev/packages/url_launcher_platform_interface/license"
+    },
+    {
+      "name": "code_assets",
+      "kind": "package",
+      "version": "2.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/code_assets",
+      "licenseUrl": "https://pub.dev/packages/code_assets/license"
+    },
+    {
+      "name": "cupertino_ui",
+      "kind": "package",
+      "version": "1.0.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/cupertino_ui",
+      "licenseUrl": "https://pub.dev/packages/cupertino_ui/license"
+    },
+    {
+      "name": "hooks",
+      "kind": "package",
+      "version": "2.2.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/hooks",
+      "licenseUrl": "https://pub.dev/packages/hooks/license"
+    },
+    {
+      "name": "material_ui",
+      "kind": "package",
+      "version": "1.2.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/material_ui",
+      "licenseUrl": "https://pub.dev/packages/material_ui/license"
+    },
+    {
+      "name": "pdfium_dart",
+      "kind": "package",
+      "version": "0.3.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfium_dart",
+      "licenseUrl": "https://pub.dev/packages/pdfium_dart/license"
+    },
+    {
+      "name": "pdfium_flutter",
+      "kind": "package",
+      "version": "0.3.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfium_flutter",
+      "licenseUrl": "https://pub.dev/packages/pdfium_flutter/license"
+    },
+    {
+      "name": "pdfrx",
+      "kind": "package",
+      "version": "2.6.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfrx",
+      "licenseUrl": "https://pub.dev/packages/pdfrx/license"
+    },
+    {
+      "name": "pdfrx_engine",
+      "kind": "package",
+      "version": "0.6.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfrx_engine",
+      "licenseUrl": "https://pub.dev/packages/pdfrx_engine/license"
+    },
+    {
+      "name": "posix",
+      "kind": "package",
+      "version": "6.5.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/posix",
+      "licenseUrl": "https://pub.dev/packages/posix/license"
+    },
+    {
+      "name": "record_use",
+      "kind": "package",
+      "version": "1.1.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/record_use",
+      "licenseUrl": "https://pub.dev/packages/record_use/license"
+    },
+    {
+      "name": "PDFium",
+      "kind": "resource",
+      "licenseName": "BSD-3-Clause and third-party licenses",
+      "websiteUrl": "https://pdfium.googlesource.com/pdfium/",
+      "licenseUrl": "https://pdfium.googlesource.com/pdfium/+/refs/heads/main/LICENSE"
+    },
+    {
+      "name": "IANA Language Subtag Registry",
+      "kind": "resource",
+      "version": "2026-08-08",
+      "licenseName": "Public domain / CC0",
+      "websiteUrl": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+      "licenseUrl": "https://www.iana.org/help/licensing-terms"
+    },
+    {
+      "name": "ISO 639-3 language classification",
+      "kind": "resource",
+      "version": "2026-09-11 snapshot",
+      "licenseName": "Free use of ISO language codes",
+      "websiteUrl": "https://iso639-3.sil.org/code_tables/download_tables",
+      "licenseUrl": "https://www.iso.org/iso-639-language-code"
+    },
+    {
+      "name": "SIL LangTags writing systems",
+      "kind": "resource",
+      "version": "2026-06-09",
+      "licenseName": "MIT",
+      "websiteUrl": "https://github.com/silnrsi/langtags",
+      "licenseUrl": "https://github.com/silnrsi/langtags/blob/master/LICENSE"
+    },
+    {
+      "name": "Unicode CLDR language names",
+      "kind": "resource",
+      "version": "48.2.0",
+      "licenseName": "Unicode-3.0",
+      "websiteUrl": "https://github.com/unicode-org/cldr-json",
+      "licenseUrl": "https://github.com/unicode-org/cldr-json/blob/48.2.0/LICENSE"
     }
   ]
 }
