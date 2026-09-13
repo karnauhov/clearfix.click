@@ -1,6 +1,22 @@
 {
   "libraries": [
     {
+      "name": "PDF-LIB",
+      "kind": "package",
+      "version": "1.17.1",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pdf-lib.js.org",
+      "licenseUrl": "https://github.com/Hopding/pdf-lib/blob/master/LICENSE.md"
+    },
+    {
+      "name": "sharp",
+      "kind": "package",
+      "version": "0.35.4",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://sharp.pixelplumbing.com",
+      "licenseUrl": "https://github.com/lovell/sharp/blob/main/LICENSE"
+    },
+    {
       "name": "Flutter",
       "kind": "sdk",
       "licenseName": "BSD-3-Clause",

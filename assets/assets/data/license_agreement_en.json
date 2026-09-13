@@ -176,41 +176,16 @@
     {
       "heading": "8. Provider Commission and Financial Terms",
       "paragraphs": [
-        "The provider must pay ClearFix a commission for access to the service, the ability to find orders, submit proposals, communicate with customers, and use order management tools. The basic provider commission is {specialistCommissionPercent} of the final transaction amount for the order, unless the interface, written notice, or separate terms set another rate.",
-        "The commission is payable after order completion, acceptance, actual performance, or another event shown in the interface or agreed by the parties. If the customer and provider found each other through ClearFix, the commission may remain payable even if payment between them occurs outside ClearFix, unless the Operator has expressly waived it in writing.",
-        "Customers do not pay the ClearFix platform commission under the basic model. Customer payments to providers are separate payments for work or services and are not Operator revenue, unless a future ClearFix payment function, paid customer option, or separate agreement states otherwise.",
-        "If the provider does not pay a due commission, ClearFix may limit access to new orders, hide proposals, restrict messaging for new transactions, suspend provider functions, offset amounts where legally permitted, or require payment before restoring access."
+        "The provider’s commission is {specialistCommissionPercent} of the Commission base under the rate and rules version recorded by ClearFix on the server in the agreed order terms. All calculation amounts are stored as whole Canadian dollar cents (CAD). The same formula applies to successful completion, cancellation by the customer and cancellation by the provider: Commission base = actual payment received − sales tax included in that payment − allowable materials deduction. Cancellation before a provider is appointed requires no financial settlement.",
+        "Actual payment is the total paid to the provider for the entire order, including deposits and separate transfers, less refunds already made to the customer. It excludes promised future payments and purchases the customer makes directly from a store. An unreturned deposit is not automatically compensation: settlement remains pending until the parties agree its refund or final retention as compensation for services or cancellation. Final agreed retention is included under the same formula. For hourly orders, actual total payment is used without requiring a time log for commission calculation.",
+        "The materials deduction is the documented cost to the provider of materials attributable to the order. Customer purchases, returned goods, personal expenses, reusable tools and purchase tax recoverable by the provider are excluded. The provider’s markup remains in the Commission base. The provider declares one total materials deduction and supplies receipts; item-by-item transcription is not required.",
+        "The tax deduction is the exact sales tax attributable to the stated payment and supported by the provider’s invoice. ClearFix does not determine the provider’s tax status, rates or tax obligations. Personal income taxes are not deductible. One document may support both tax and materials if it contains the necessary information. Technical file validation does not establish the truth or eligibility of a claimed expense.",
+        "The customer states the total paid and the provider states the total received; both confirm the same amount and that all payments and refunds are settled. Materials and tax are the provider’s documented declaration; separate customer approval of each deduction is not required. ClearFix determines the settlement state from these statements and checks. Missing responses, unknown amounts and confirmed zero are distinct. Silence is not consent, zero payment or a commission debt. Work may end while a payment or refund remains unresolved.",
+        "A discrepancy, missing or problematic evidence, or deductions that reduce positive payment to zero or exceed it require review. An authorized support reviewer records their identity, reasons and evidence. A substantiated loss may result in a zero Commission base, but no negative commission arises. A matching file in another order is a reason for review and is not by itself a finding of fraud. Financial statements, calculations and documents are available only to the customer, appointed provider and explicitly authorized support with audited access.",
+        "A settlement is ready for a future invoice only after it is finalized under these rules. Saving a Commission base does not itself issue an invoice, charge a payment or create a debt while a response is pending. Any commission payment deadline must be stated in a separately issued invoice or explicit payment notice when billing is enabled; closing an order alone does not start such a deadline.",
+        "A later refund or additional payment is recorded through a new settlement revision. A changed payment amount requires the other party’s response; changing deductions alone preserves the customer’s confirmation of an unchanged payment. Previous confirmed results and supporting documents remain accessible under the retention and deletion rules. Each finalized revision may be used only once for billing, with subsequent changes accounted for as adjustments, including reductions. Repeating an order starts a new calculation without copying old payments or receipts. The Commission base is a platform calculation and is not described as the provider’s accounting net income."
       ],
-      "bullets": [
-        {
-          "label": "Calculation base",
-          "body": "The final transaction amount includes the amount actually agreed or payable for the work or services, including increases, additional work, repeat arrangements connected to the original order, and other compensation, unless the Operator's rules provide otherwise."
-        },
-        {
-          "label": "Understatement",
-          "body": "The provider must not understate the transaction amount, split payments, disguise compensation, call payment a gift, barter, material reimbursement, or other form if the purpose is to reduce or avoid the ClearFix commission."
-        },
-        {
-          "label": "Taxes",
-          "body": "The provider is independently responsible for GST/HST/PST/QST, income tax, sales tax, invoices, receipts, business records, reporting, deductions, and any other tax or accounting obligations."
-        },
-        {
-          "label": "Currency",
-          "body": "Unless the interface states otherwise, amounts are treated in Canadian dollars (CAD). If another currency is used, the Operator may apply a reasonable conversion method for commission calculation."
-        },
-        {
-          "label": "Disputes over amount",
-          "body": "If the parties disagree about the transaction amount or completion status, the Operator may request explanations, messages, invoices, photos, confirmations, or other records and may reasonably determine the commission base for platform purposes."
-        },
-        {
-          "label": "Access condition",
-          "body": "Payment of the commission may be a condition for continued provider access to new orders, proposals, and other provider functions."
-        },
-        {
-          "label": "No payment processing guarantee",
-          "body": "Unless a dedicated payment function is launched and separate terms apply, ClearFix does not guarantee customer payment to the provider and does not hold money for the parties."
-        }
-      ]
+      "bullets": []
     },
     {
       "heading": "9. Anti-Circumvention and Unfair Conduct",

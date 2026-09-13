@@ -176,41 +176,16 @@
     {
       "heading": "8. Commission du prestataire et conditions financières",
       "paragraphs": [
-        "Le prestataire doit payer à ClearFix une commission pour l’accès au service, la possibilité de trouver des commandes, d’envoyer des propositions, de communiquer avec les clients et d’utiliser les outils de gestion de commande. La commission de base du prestataire est de {specialistCommissionPercent} du montant final de la transaction pour la commande, sauf si l’interface, un avis écrit ou des conditions distinctes fixent un autre taux.",
-        "La commission est exigible après l’achèvement de la commande, l’acceptation, l’exécution effective ou un autre événement indiqué dans l’interface ou convenu par les parties. Si le client et le prestataire se sont trouvés par ClearFix, la commission peut rester due même si le paiement entre eux se fait hors de ClearFix, sauf renonciation écrite expresse de l’Exploitant.",
-        "Les clients ne paient pas la commission de plateforme ClearFix selon le modèle de base. Les paiements des clients aux prestataires sont des paiements distincts pour les travaux ou services et ne constituent pas un revenu de l’Exploitant, sauf si une future fonction de paiement ClearFix, une option client payante ou un accord distinct prévoit le contraire.",
-        "Si le prestataire ne paie pas une commission due, ClearFix peut limiter l’accès aux nouvelles commandes, masquer des propositions, restreindre les messages pour de nouvelles transactions, suspendre les fonctions de prestataire, compenser les montants lorsque la loi le permet ou exiger le paiement avant de rétablir l’accès."
+        "La commission du prestataire correspond à {specialistCommissionPercent} de la Base de commission, selon le taux et la version des règles enregistrés par ClearFix sur le serveur dans les conditions convenues de la commande. Les montants sont conservés en cents entiers de dollars canadiens (CAD). La même formule s’applique à la réalisation, à l’annulation par le client et à l’annulation par le prestataire : Base de commission = paiement effectivement reçu − taxe de vente comprise dans ce paiement − déduction admissible des matériaux. Une annulation avant la désignation d’un prestataire ne nécessite aucun règlement financier.",
+        "Le paiement effectif est le total versé au prestataire pour toute la commande, y compris les acomptes et virements séparés, moins les remboursements déjà effectués au client. Les paiements futurs promis et les achats directs du client en magasin sont exclus. Un acompte non remboursé ne devient pas automatiquement une rémunération : le règlement reste en attente jusqu’à l’accord des parties sur son remboursement ou sa conservation définitive comme rémunération des services ou de l’annulation. La somme définitivement conservée par accord entre dans la même formule. Pour une commande horaire, le paiement total effectif est utilisé sans registre d’heures obligatoire pour calculer la commission.",
+        "La déduction des matériaux est leur coût documenté pour le prestataire, attribuable à la commande. Sont exclus les achats du client, les articles retournés, les dépenses personnelles, les outils réutilisables et les taxes d’achat récupérables par le prestataire. Sa marge reste dans la Base de commission. Le prestataire déclare un montant total et fournit les reçus, sans retranscrire chaque article.",
+        "La déduction fiscale est le montant exact de taxe de vente attribuable au paiement déclaré, justifié par la facture du prestataire. ClearFix ne détermine ni son statut fiscal, ni ses taux, ni ses obligations fiscales. Les impôts personnels sur le revenu ne sont pas déductibles. Un document peut justifier les deux déductions s’il contient les renseignements nécessaires. La validation technique d’un fichier n’établit ni la véracité ni l’admissibilité des dépenses déclarées.",
+        "Le client déclare le total payé et le prestataire le total reçu; les deux confirment le même montant et la fin de tous les paiements et remboursements. Les matériaux et la taxe constituent la déclaration documentée du prestataire; aucune approbation distincte de chaque déduction par le client n’est exigée. ClearFix détermine l’état du règlement d’après ces déclarations et les vérifications. L’absence de réponse, un montant inconnu et un zéro confirmé sont distincts. Le silence ne vaut ni consentement, ni paiement nul, ni dette de commission. Les travaux peuvent cesser pendant qu’un paiement ou remboursement reste en discussion.",
+        "Un écart, des preuves manquantes ou problématiques, ou des déductions annulant un paiement positif ou le dépassant nécessitent un examen. Un agent autorisé consigne son identité, ses motifs et les preuves. Une perte justifiée peut donner une Base de commission nulle, sans commission négative. Un fichier identique utilisé dans une autre commande justifie un examen, sans constituer à lui seul une preuve de fraude. Les déclarations, calculs et documents financiers sont réservés au client, au prestataire désigné et à l’assistance expressément autorisée, dont les accès sont audités.",
+        "Le règlement n’est prêt pour une future facturation qu’après sa finalisation selon ces règles. L’enregistrement de la Base de commission ne constitue pas en soi une facture, un prélèvement ou une dette liée à l’attente d’une réponse. Lorsque la facturation est activée, l’échéance de paiement de la commission doit figurer dans une facture distincte ou un avis de paiement explicite; la clôture seule ne déclenche pas cette échéance.",
+        "Un remboursement tardif ou un paiement supplémentaire crée une nouvelle révision. Une modification du paiement nécessite la réponse de l’autre partie; une modification des seules déductions conserve la confirmation du client concernant le paiement inchangé. Les résultats antérieurement confirmés et leurs documents restent accessibles selon les règles de conservation et de suppression. Chaque révision finalisée ne peut être facturée qu’une fois, les changements ultérieurs donnant lieu à des ajustements, y compris à la baisse. Une commande répétée commence un nouveau calcul sans reprendre les anciens paiements ou reçus. La Base de commission est un calcul de plateforme et n’est pas le revenu net comptable du prestataire."
       ],
-      "bullets": [
-        {
-          "label": "Base de calcul",
-          "body": "Le montant final de la transaction comprend le montant effectivement convenu ou payable pour les travaux ou services, y compris les augmentations, travaux supplémentaires, arrangements répétés liés à la commande initiale et autres rémunérations, sauf règle contraire de l’Exploitant."
-        },
-        {
-          "label": "Sous-déclaration",
-          "body": "Le prestataire ne doit pas sous-déclarer le montant de la transaction, fractionner les paiements, déguiser une rémunération, appeler un paiement cadeau, échange, remboursement de matériaux ou autrement si le but est de réduire ou d’éviter la commission ClearFix."
-        },
-        {
-          "label": "Taxes",
-          "body": "Le prestataire est seul responsable de la GST/HST/PST/QST, de l’impôt sur le revenu, des taxes de vente, factures, reçus, registres commerciaux, déclarations, déductions et autres obligations fiscales ou comptables."
-        },
-        {
-          "label": "Devise",
-          "body": "Sauf indication contraire de l’interface, les montants sont réputés en dollars canadiens (CAD). Si une autre devise est utilisée, l’Exploitant peut appliquer une méthode de conversion raisonnable pour calculer la commission."
-        },
-        {
-          "label": "Litiges sur le montant",
-          "body": "Si les parties sont en désaccord sur le montant de la transaction ou le statut d’achèvement, l’Exploitant peut demander des explications, messages, factures, photos, confirmations ou autres documents et peut déterminer raisonnablement la base de commission aux fins de la plateforme."
-        },
-        {
-          "label": "Condition d’accès",
-          "body": "Le paiement de la commission peut être une condition du maintien de l’accès du prestataire aux nouvelles commandes, propositions et autres fonctions de prestataire."
-        },
-        {
-          "label": "Aucune garantie de traitement des paiements",
-          "body": "Sauf lancement d’une fonction de paiement dédiée et application de conditions distinctes, ClearFix ne garantit pas le paiement du client au prestataire et ne détient pas d’argent pour les parties."
-        }
-      ]
+      "bullets": []
     },
     {
       "heading": "9. Interdiction du contournement et comportement déloyal",
