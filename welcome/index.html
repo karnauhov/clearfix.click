@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5F5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121212">
+  <meta
+    name="description"
+    content="ClearFix is a Canada-first marketplace connecting homeowners and businesses with local skilled professionals for home services, renovation, construction, furniture and cleaning work."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ClearFix">
+  <meta property="og:title" content="ClearFix — Local work, clearly connected">
+  <meta
+    property="og:description"
+    content="A Canada-first marketplace for customers and local skilled professionals."
+  >
+  <meta property="og:url" content="https://www.clearfix.click/welcome">
+  <meta property="og:image" content="https://www.clearfix.click/assets/assets/images/splash_screen.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ClearFix — Local work, clearly connected">
+  <meta
+    name="twitter:description"
+    content="A Canada-first marketplace for customers and local skilled professionals."
+  >
+  <meta name="twitter:image" content="https://www.clearfix.click/assets/assets/images/splash_screen.jpg">
+  <link rel="canonical" href="https://www.clearfix.click/welcome">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <title>ClearFix — Local work, clearly connected</title>
+
+  <style>
+    @font-face {
+      font-family: "ClearFix Roboto";
+      src: url("/assets/assets/fonts/Roboto-Regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: light;
+      --primary: #9B0102;
+      --on-primary: #FFFFFF;
+      --accent: #FFCC00;
+      --surface: #F5F5F5;
+      --surface-low: #F0F0F0;
+      --surface-card: #FFFFFF;
+      --surface-high: #E5E5E5;
+      --text: #000000;
+      --text-muted: #333333;
+      --outline: #757575;
+      --outline-soft: #C7C7C7;
+      --hero-glow: rgba(155, 1, 2, 0.13);
+      --accent-glow: rgba(255, 204, 0, 0.2);
+      --state-hover: rgba(155, 1, 2, 0.07);
+      --shadow: 0 18px 48px rgba(27, 20, 20, 0.1);
+      --frame-radius: 24px;
+      --control-radius: 14px;
+      --page-width: 1180px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --primary: #CB0000;
+        --on-primary: #FFFFFF;
+        --accent: #FFC107;
+        --surface: #121212;
+        --surface-low: #171717;
+        --surface-card: #0D0D0D;
+        --surface-high: #1E1E1E;
+        --text: #FFFFFF;
+        --text-muted: #B0B0B0;
+        --outline: #909090;
+        --outline-soft: #5A5A5A;
+        --hero-glow: rgba(203, 0, 0, 0.2);
+        --accent-glow: rgba(255, 193, 7, 0.12);
+        --state-hover: rgba(203, 0, 0, 0.12);
+        --shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+      }
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      background:
+        radial-gradient(circle at 84% 12%, var(--hero-glow), transparent 30rem),
+        radial-gradient(circle at 4% 46%, var(--accent-glow), transparent 24rem),
+        var(--surface);
+      color: var(--text);
+      font-family: "ClearFix Roboto", Roboto, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      padding: 10px 14px;
+      border-radius: var(--control-radius);
+      background: var(--primary);
+      color: var(--on-primary);
+      font-weight: 700;
+      transform: translateY(-160%);
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid color-mix(in srgb, var(--outline-soft) 76%, transparent);
+      background: color-mix(in srgb, var(--surface) 88%, transparent);
+      backdrop-filter: blur(18px);
+    }
+
+    .header-inner,
+    .page-section,
+    .footer-inner {
+      width: min(calc(100% - 32px), var(--page-width));
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-link img {
+      width: 38px;
+      height: 38px;
+      border: 2px solid var(--primary);
+      border-radius: 50%;
+      object-fit: cover;
+      background: #FFFFFF;
+    }
+
+    .brand-link span {
+      color: var(--primary);
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-left: auto;
+    }
+
+    .main-nav a,
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      text-underline-offset: 4px;
+    }
+
+    .main-nav a:hover,
+    .footer-links a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      padding: 3px;
+      border: 1px solid var(--outline-soft);
+      border-radius: 999px;
+      background: var(--surface-card);
+    }
+
+    .language-switch button {
+      min-width: 42px;
+      min-height: 34px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--text-muted);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .language-switch button:hover {
+      background: var(--state-hover);
+      color: var(--primary);
+    }
+
+    .language-switch button[aria-pressed="true"] {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 20px;
+      border: 2px solid transparent;
+      border-radius: var(--control-radius);
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+      box-shadow: 0 8px 20px color-mix(in srgb, var(--primary) 24%, transparent);
+    }
+
+    .button-secondary {
+      border-color: var(--primary);
+      background: var(--surface-card);
+      color: var(--primary);
+    }
+
+    .button-compact {
+      min-height: 42px;
+      padding: 9px 16px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: min(780px, calc(100svh - 72px));
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+      align-items: center;
+      gap: clamp(42px, 7vw, 96px);
+      padding-block: clamp(72px, 10vw, 132px) 72px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 30px;
+      height: 3px;
+      border-radius: 999px;
+      background: var(--accent);
+      content: "";
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: clamp(44px, 6.5vw, 78px);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin-bottom: 32px;
+      color: var(--text-muted);
+      font-size: clamp(18px, 1.7vw, 21px);
+      line-height: 1.55;
+    }
+
+    .hero-actions,
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .audience-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin: 34px 0 0;
+      padding: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      list-style: none;
+    }
+
+    .audience-list li {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .audience-list li::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 4px var(--hero-glow);
+      content: "";
+    }
+
+    .brand-stage {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 430px;
+      isolation: isolate;
+    }
+
+    .brand-stage::before,
+    .brand-stage::after {
+      position: absolute;
+      z-index: -1;
+      border-radius: 50%;
+      content: "";
+      filter: blur(1px);
+    }
+
+    .brand-stage::before {
+      width: min(90vw, 430px);
+      aspect-ratio: 1;
+      border: 1px solid var(--outline-soft);
+      background: color-mix(in srgb, var(--surface-card) 72%, transparent);
+      box-shadow: var(--shadow);
+    }
+
+    .brand-stage::after {
+      width: min(72vw, 330px);
+      aspect-ratio: 1;
+      border: 1px dashed color-mix(in srgb, var(--primary) 36%, transparent);
+    }
+
+    .brand-hero {
+      position: relative;
+      width: min(92vw, 420px);
+      aspect-ratio: 340 / 220;
+      transform: translateX(-4px);
+      user-select: none;
+    }
+
+    .brand-hero__map {
+      position: absolute;
+      left: 17.06%;
+      top: 0;
+      width: 65.88%;
+      height: 72.73%;
+      object-fit: contain;
+      transform-origin: top center;
+      opacity: 1;
+      transform: scale(1.6);
+    }
+
+    .brand-hero__pin {
+      position: absolute;
+      left: 44.12%;
+      top: 23.64%;
+      width: 17.06%;
+      height: 33.64%;
+      transform-origin: bottom center;
+    }
+
+    .brand-hero__pin-shell {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .brand-hero__pin-logo {
+      position: absolute;
+      left: 17.8%;
+      top: 10.9%;
+      width: 64.4%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .brand-hero__wordmark {
+      position: absolute;
+      left: 14.12%;
+      top: 74.55%;
+      width: 71.76%;
+      color: var(--primary);
+      font-size: clamp(48px, 10vw, 66px);
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.045em;
+      text-align: center;
+      transform-origin: bottom center;
+    }
+
+    .brand-hero.is-intro .brand-hero__map {
+      animation: map-intro 1800ms both;
+    }
+
+    .brand-hero.is-intro .brand-hero__pin {
+      animation: pin-intro 1800ms both;
+    }
+
+    .brand-hero.is-intro .brand-hero__wordmark {
+      animation: wordmark-intro 1800ms both;
+    }
+
+    .brand-hero.is-idle .brand-hero__pin {
+      animation: pin-idle 1000ms ease-in-out both;
+    }
+
+    .brand-hero.is-idle .brand-hero__wordmark {
+      animation: wordmark-idle 1000ms both;
+    }
+
+    @keyframes map-intro {
+      0% { opacity: 0; transform: scale(1.54); }
+      22% { opacity: 1; }
+      23% { transform: scale(1.62); }
+      30%, 100% { opacity: 1; transform: scale(1.6); }
+    }
+
+    @keyframes pin-intro {
+      0%, 18% { transform: translateY(-156px) rotate(-3.4deg) scale(1, 1); }
+      48% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+      51% { transform: translateY(0) rotate(0deg) scale(1.14, 0.84); }
+      61% { transform: translateY(-16px) rotate(1.7deg) scale(0.97, 1.04); }
+      68% { transform: translateY(-6px) rotate(0.7deg) scale(1.01, 0.99); }
+      74%, 100% { transform: translateY(0) rotate(0deg) scale(1, 1); }
+    }
+
+    @keyframes wordmark-intro {
+      0%, 58% { opacity: 0; transform: translateY(24px) scale(0.94); }
+      82% { opacity: 1; transform: translateY(-4px) scale(1.02); }
+      90%, 100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes pin-idle {
+      0% { transform: scaleX(1); }
+      25% { transform: scaleX(0); }
+      50% { transform: scaleX(-1); }
+      75% { transform: scaleX(0); }
+      100% { transform: scaleX(1); }
+    }
+
+    @keyframes wordmark-idle {
+      0% { transform: translateY(0) scale(1, 1); }
+      14% { transform: translateY(2px) scale(1.03, 0.97); }
+      36% { transform: translateY(-8px) scale(0.985, 1.03); }
+      60% { transform: translateY(0) scale(1.02, 0.99); }
+      76% { transform: translateY(-3px) scale(0.995, 1.01); }
+      100% { transform: translateY(0) scale(1, 1); }
+    }
+
+    .section-block {
+      padding-block: clamp(72px, 9vw, 112px);
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h2,
+    .steps-copy h2,
+    .cta-panel h2 {
+      margin-bottom: 16px;
+      font-size: clamp(32px, 4.2vw, 52px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .section-heading > p:last-child,
+    .steps-copy > p:last-child,
+    .cta-panel > p {
+      color: var(--text-muted);
+      font-size: 18px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      grid-column: span 2;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      border: 1px solid var(--outline-soft);
+      border-radius: var(--frame-radius);
+      background: var(--surface-card);
+      box-shadow: 0 10px 28px color-mix(in srgb, var(--text) 7%, transparent);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .service-card:nth-child(4),
+    .service-card:nth-child(5) {
+      grid-column: span 3;
+    }
+
+    .service-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+    }
+
+    .service-index {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: auto;
+      border: 1px solid var(--primary);
+      border-radius: 50%;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .service-card h3 {
+      margin: 28px 0 8px;
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .service-card p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .steps-panel {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
+      gap: clamp(40px, 7vw, 92px);
+      padding: clamp(28px, 5vw, 64px);
+      border: 1px solid var(--outline-soft);
+      border-radius: var(--frame-radius);
+      background: var(--surface-low);
+    }
+
+    .steps-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: clearfix-step;
+    }
+
+    .steps-list li {
+      position: relative;
+      min-height: 128px;
+      padding: 22px 22px 22px 82px;
+      border: 1px solid var(--outline-soft);
+      border-radius: var(--frame-radius);
+      background: var(--surface-card);
+      counter-increment: clearfix-step;
+    }
+
+    .steps-list li::before {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--on-primary);
+      font-size: 13px;
+      font-weight: 800;
+      content: "0" counter(clearfix-step);
+    }
+
+    .steps-list h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .steps-list p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .audience-card {
+      min-height: 270px;
+      padding: clamp(28px, 4vw, 46px);
+      border-radius: var(--frame-radius);
+    }
+
+    .audience-card:first-child {
+      border: 1px solid var(--outline-soft);
+      background: var(--surface-card);
+    }
+
+    .audience-card:last-child {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .audience-card .card-label {
+      margin-bottom: 48px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .audience-card h3 {
+      margin-bottom: 12px;
+      font-size: clamp(26px, 3vw, 36px);
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+    }
+
+    .audience-card p {
+      max-width: 540px;
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 17px;
+    }
+
+    .audience-card:last-child p {
+      color: color-mix(in srgb, var(--on-primary) 84%, transparent);
+    }
+
+    .cta-panel {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(34px, 7vw, 76px);
+      border: 1px solid var(--outline-soft);
+      border-radius: var(--frame-radius);
+      background: var(--surface-card);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-panel::after {
+      position: absolute;
+      right: -70px;
+      bottom: -120px;
+      width: 300px;
+      height: 300px;
+      border: 58px solid var(--accent);
+      border-radius: 50%;
+      opacity: 0.55;
+      content: "";
+      pointer-events: none;
+    }
+
+    .cta-panel > * {
+      position: relative;
+      z-index: 1;
+      max-width: 690px;
+    }
+
+    .site-footer {
+      margin-top: 40px;
+      border-top: 1px solid var(--outline-soft);
+      background: var(--surface-high);
+    }
+
+    .footer-inner {
+      min-height: 132px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 28px;
+    }
+
+    .footer-copy {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .footer-copy strong {
+      color: var(--text);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px 22px;
+    }
+
+    @media (max-width: 860px) {
+      .main-nav {
+        display: none;
+      }
+
+      .language-switch {
+        margin-left: auto;
+      }
+
+      .hero {
+        min-height: 0;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 64px;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-content .eyebrow,
+      .hero-actions,
+      .audience-list {
+        justify-content: center;
+      }
+
+      .hero-copy {
+        margin-inline: auto;
+      }
+
+      .brand-stage {
+        min-height: 400px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .service-card,
+      .service-card:nth-child(4),
+      .service-card:nth-child(5) {
+        grid-column: span 1;
+      }
+
+      .service-card:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .steps-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .header-inner,
+      .page-section,
+      .footer-inner {
+        width: min(calc(100% - 24px), var(--page-width));
+      }
+
+      .header-inner {
+        min-height: 64px;
+        gap: 12px;
+      }
+
+      .brand-link img {
+        width: 34px;
+        height: 34px;
+      }
+
+      .header-app-button {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      h1 {
+        font-size: clamp(40px, 13vw, 58px);
+      }
+
+      .hero-actions .button,
+      .cta-actions .button {
+        width: 100%;
+      }
+
+      .brand-stage {
+        min-height: 330px;
+      }
+
+      .brand-stage::before {
+        width: min(88vw, 350px);
+      }
+
+      .brand-stage::after {
+        width: min(70vw, 280px);
+      }
+
+      .services-grid,
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card,
+      .service-card:last-child {
+        grid-column: auto;
+        min-height: 214px;
+      }
+
+      .steps-panel {
+        padding: 20px;
+      }
+
+      .steps-list li {
+        padding: 74px 20px 20px;
+      }
+
+      .steps-list li::before {
+        top: 18px;
+        left: 20px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .brand-hero__map {
+        opacity: 1;
+        transform: scale(1.6);
+      }
+
+      .brand-hero__pin,
+      .brand-hero__wordmark {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ClearFix",
+      "url": "https://www.clearfix.click/welcome",
+      "email": "clearfix.ca@gmail.com",
+      "areaServed": "CA",
+      "description": "A Canada-first marketplace connecting homeowners and businesses with local skilled professionals.",
+      "knowsAbout": [
+        "Home Services",
+        "Renovation & Finishing",
+        "Construction Services",
+        "Furniture Services",
+        "Cleaning Services"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="https://www.clearfix.click/" aria-label="ClearFix web application">
+        <img src="/assets/assets/images/logo.png" alt="">
+        <span>ClearFix</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation" data-i18n-aria-label="navLabel">
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#how-it-works" data-i18n="navHow">How it works</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="language-switch" role="group" aria-label="Language" data-i18n-aria-label="languageLabel">
+        <button type="button" data-language="en" aria-pressed="true">EN</button>
+        <button type="button" data-language="fr" aria-pressed="false">FR</button>
+      </div>
+
+      <a class="button button-primary button-compact header-app-button" href="https://www.clearfix.click/" data-i18n="openApp">
+        Open web app
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-section hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">Local services, made for Canada</p>
+        <h1 id="hero-title" data-i18n="heroTitle">The right work. The right local professional.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">
+          ClearFix™ is a Canada-first marketplace where homeowners and businesses connect with local skilled professionals for repairs, improvements and everyday projects.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.clearfix.click/" data-i18n="openApp">Open web app</a>
+          <a class="button button-secondary" href="#services" data-i18n="exploreServices">Explore services</a>
+        </div>
+
+        <ul class="audience-list" aria-label="Who ClearFix is for" data-i18n-aria-label="audienceLabel">
+          <li data-i18n="audienceHomeowners">Homeowners</li>
+          <li data-i18n="audienceBusinesses">Businesses</li>
+          <li data-i18n="audienceProfessionals">Skilled professionals</li>
+        </ul>
+      </div>
+
+      <div class="brand-stage" aria-hidden="true">
+        <div class="brand-hero is-intro" id="brand-hero">
+          <img
+            class="brand-hero__map"
+            src="/assets/assets/images/canada_contour.svg"
+            alt=""
+          >
+          <div class="brand-hero__pin">
+            <img
+              class="brand-hero__pin-shell"
+              src="/assets/assets/images/map_marker.svg"
+              alt=""
+            >
+            <img
+              class="brand-hero__pin-logo"
+              src="/assets/assets/images/logo.png"
+              alt=""
+            >
+          </div>
+          <div class="brand-hero__wordmark">ClearFix</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-block" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="servicesEyebrow">What you can find</p>
+        <h2 id="services-title" data-i18n="servicesTitle">One place for the work around you.</h2>
+        <p data-i18n="servicesCopy">
+          Browse the main ClearFix service areas, from everyday maintenance to complete renovation and construction projects.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card" data-category-id="home_master">
+          <div class="service-index">01</div>
+          <h3 data-i18n="categoryHomeTitle">Home Services</h3>
+          <p data-i18n="categoryHomeCopy">Plumbing, electrical, handyman, appliance installation and locksmith work.</p>
+        </article>
+
+        <article class="service-card" data-category-id="finishing_works">
+          <div class="service-index">02</div>
+          <h3 data-i18n="categoryRenovationTitle">Renovation &amp; Finishing</h3>
+          <p data-i18n="categoryRenovationCopy">Painting, flooring, doors, windows, insulation and interior or exterior finishing.</p>
+        </article>
+
+        <article class="service-card" data-category-id="construction_works">
+          <div class="service-index">03</div>
+          <h3 data-i18n="categoryConstructionTitle">Construction Services</h3>
+          <p data-i18n="categoryConstructionCopy">Carpentry, roofing, concrete, foundations, landscaping and general labour.</p>
+        </article>
+
+        <article class="service-card" data-category-id="furniture_works">
+          <div class="service-index">04</div>
+          <h3 data-i18n="categoryFurnitureTitle">Furniture Services</h3>
+          <p data-i18n="categoryFurnitureCopy">Custom builds, assembly, repair, restoration and upholstery.</p>
+        </article>
+
+        <article class="service-card" data-category-id="cleaning_services">
+          <div class="service-index">05</div>
+          <h3 data-i18n="categoryCleaningTitle">Cleaning Services</h3>
+          <p data-i18n="categoryCleaningCopy">Indoor and surface cleaning, plus seasonal outdoor maintenance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section section-block" id="how-it-works" aria-labelledby="how-title">
+      <div class="steps-panel">
+        <div class="steps-copy">
+          <p class="eyebrow" data-i18n="howEyebrow">From first post to finished work</p>
+          <h2 id="how-title" data-i18n="howTitle">Clear communication at every step.</h2>
+          <p data-i18n="howCopy">
+            ClearFix keeps the essential details together so customers and professionals can focus on the work.
+          </p>
+        </div>
+
+        <ol class="steps-list">
+          <li>
+            <h3 data-i18n="stepOneTitle">Describe what you need</h3>
+            <p data-i18n="stepOneCopy">Create an order with the category, details, photos, location and preferred timing.</p>
+          </li>
+          <li>
+            <h3 data-i18n="stepTwoTitle">Connect and agree</h3>
+            <p data-i18n="stepTwoCopy">Review responses, discuss the job and keep agreed terms clear before work begins.</p>
+          </li>
+          <li>
+            <h3 data-i18n="stepThreeTitle">Keep the work organized</h3>
+            <p data-i18n="stepThreeCopy">Use one place for messages, order details and the history of completed work.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="page-section section-block" aria-label="ClearFix audiences" data-i18n-aria-label="audienceCardsLabel">
+      <div class="audience-grid">
+        <article class="audience-card">
+          <p class="card-label" data-i18n="customerLabel">For customers</p>
+          <h3 data-i18n="customerTitle">Turn a project into a clear request.</h3>
+          <p data-i18n="customerCopy">
+            Share what needs doing, compare responses and keep the conversation connected to the order.
+          </p>
+        </article>
+
+        <article class="audience-card">
+          <p class="card-label" data-i18n="professionalLabel">For professionals</p>
+          <h3 data-i18n="professionalTitle">Find relevant local work.</h3>
+          <p data-i18n="professionalCopy">
+            Discover nearby orders, send a proposal and manage work conversations in one place.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section section-block" id="contact" aria-labelledby="contact-title">
+      <div class="cta-panel">
+        <p class="eyebrow" data-i18n="contactEyebrow">Start with ClearFix</p>
+        <h2 id="contact-title" data-i18n="contactTitle">Ready to get work moving?</h2>
+        <p data-i18n="contactCopy">
+          Open the ClearFix app to create or find an order, or contact our support team if you have a question.
+        </p>
+        <div class="cta-actions">
+          <a class="button button-primary" href="https://www.clearfix.click/" data-i18n="openApp">Open web app</a>
+          <a class="button button-secondary" href="mailto:clearfix.ca@gmail.com" data-i18n="emailUs">Email support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        <strong>ClearFix™</strong><br>
+        <span data-i18n="footerCopy">Local work, clearly connected across Canada.</span>
+      </p>
+      <nav class="footer-links" aria-label="Legal and support" data-i18n-aria-label="footerNavLabel">
+        <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>
+        <a href="/privacy_policy.html" data-i18n="privacy">Privacy policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const copy = {
+        en: {
+          pageTitle: 'ClearFix — Local work, clearly connected',
+          pageDescription: 'ClearFix is a Canada-first marketplace connecting homeowners and businesses with local skilled professionals for home services, renovation, construction, furniture and cleaning work.',
+          skip: 'Skip to content',
+          navLabel: 'Primary navigation',
+          languageLabel: 'Language',
+          navServices: 'Services',
+          navHow: 'How it works',
+          navContact: 'Contact',
+          openApp: 'Open web app',
+          heroEyebrow: 'Local services, made for Canada',
+          heroTitle: 'The right work. The right local professional.',
+          heroCopy: 'ClearFix™ is a Canada-first marketplace where homeowners and businesses connect with local skilled professionals for repairs, improvements and everyday projects.',
+          exploreServices: 'Explore services',
+          audienceLabel: 'Who ClearFix is for',
+          audienceHomeowners: 'Homeowners',
+          audienceBusinesses: 'Businesses',
+          audienceProfessionals: 'Skilled professionals',
+          servicesEyebrow: 'What you can find',
+          servicesTitle: 'One place for the work around you.',
+          servicesCopy: 'Browse the main ClearFix service areas, from everyday maintenance to complete renovation and construction projects.',
+          categoryHomeTitle: 'Home Services',
+          categoryHomeCopy: 'Plumbing, electrical, handyman, appliance installation and locksmith work.',
+          categoryRenovationTitle: 'Renovation & Finishing',
+          categoryRenovationCopy: 'Painting, flooring, doors, windows, insulation and interior or exterior finishing.',
+          categoryConstructionTitle: 'Construction Services',
+          categoryConstructionCopy: 'Carpentry, roofing, concrete, foundations, landscaping and general labour.',
+          categoryFurnitureTitle: 'Furniture Services',
+          categoryFurnitureCopy: 'Custom builds, assembly, repair, restoration and upholstery.',
+          categoryCleaningTitle: 'Cleaning Services',
+          categoryCleaningCopy: 'Indoor and surface cleaning, plus seasonal outdoor maintenance.',
+          howEyebrow: 'From first post to finished work',
+          howTitle: 'Clear communication at every step.',
+          howCopy: 'ClearFix keeps the essential details together so customers and professionals can focus on the work.',
+          stepOneTitle: 'Describe what you need',
+          stepOneCopy: 'Create an order with the category, details, photos, location and preferred timing.',
+          stepTwoTitle: 'Connect and agree',
+          stepTwoCopy: 'Review responses, discuss the job and keep agreed terms clear before work begins.',
+          stepThreeTitle: 'Keep the work organized',
+          stepThreeCopy: 'Use one place for messages, order details and the history of completed work.',
+          audienceCardsLabel: 'ClearFix audiences',
+          customerLabel: 'For customers',
+          customerTitle: 'Turn a project into a clear request.',
+          customerCopy: 'Share what needs doing, compare responses and keep the conversation connected to the order.',
+          professionalLabel: 'For professionals',
+          professionalTitle: 'Find relevant local work.',
+          professionalCopy: 'Discover nearby orders, send a proposal and manage work conversations in one place.',
+          contactEyebrow: 'Start with ClearFix',
+          contactTitle: 'Ready to get work moving?',
+          contactCopy: 'Open the ClearFix app to create or find an order, or contact our support team if you have a question.',
+          emailUs: 'Email support',
+          footerCopy: 'Local work, clearly connected across Canada.',
+          footerNavLabel: 'Legal and support',
+          privacy: 'Privacy policy',
+        },
+        fr: {
+          pageTitle: 'ClearFix — Les projets locaux, connectés clairement',
+          pageDescription: 'ClearFix est une place de marché canadienne qui met en relation propriétaires et entreprises avec des professionnels qualifiés locaux.',
+          skip: 'Aller au contenu',
+          navLabel: 'Navigation principale',
+          languageLabel: 'Langue',
+          navServices: 'Services',
+          navHow: 'Fonctionnement',
+          navContact: 'Contact',
+          openApp: 'Ouvrir l’application Web',
+          heroEyebrow: 'Des services locaux pensés pour le Canada',
+          heroTitle: 'Le bon projet. Le bon professionnel local.',
+          heroCopy: 'ClearFix™ est une place de marché canadienne où propriétaires et entreprises trouvent des professionnels qualifiés locaux pour les réparations, les améliorations et les projets du quotidien.',
+          exploreServices: 'Voir les services',
+          audienceLabel: 'À qui s’adresse ClearFix',
+          audienceHomeowners: 'Propriétaires',
+          audienceBusinesses: 'Entreprises',
+          audienceProfessionals: 'Professionnels qualifiés',
+          servicesEyebrow: 'Ce que vous pouvez trouver',
+          servicesTitle: 'Un seul endroit pour vos travaux.',
+          servicesCopy: 'Découvrez les principaux domaines de service ClearFix, de l’entretien courant aux projets complets de rénovation et de construction.',
+          categoryHomeTitle: 'Services à domicile',
+          categoryHomeCopy: 'Plomberie, électricité, bricolage, installation d’appareils et serrurerie.',
+          categoryRenovationTitle: 'Rénovation et finition',
+          categoryRenovationCopy: 'Peinture, sols, portes, fenêtres, isolation et finition intérieure ou extérieure.',
+          categoryConstructionTitle: 'Services de construction',
+          categoryConstructionCopy: 'Menuiserie, toiture, béton, fondations, aménagement paysager et main-d’œuvre générale.',
+          categoryFurnitureTitle: 'Services de mobilier',
+          categoryFurnitureCopy: 'Fabrication sur mesure, assemblage, réparation, restauration et rembourrage.',
+          categoryCleaningTitle: 'Services de nettoyage',
+          categoryCleaningCopy: 'Nettoyage intérieur et des surfaces, ainsi que l’entretien extérieur saisonnier.',
+          howEyebrow: 'De la publication à la fin des travaux',
+          howTitle: 'Une communication claire à chaque étape.',
+          howCopy: 'ClearFix regroupe les détails essentiels pour que clients et professionnels puissent se concentrer sur le travail.',
+          stepOneTitle: 'Décrivez votre besoin',
+          stepOneCopy: 'Créez une demande avec la catégorie, les détails, les photos, le lieu et le moment souhaité.',
+          stepTwoTitle: 'Échangez et convenez',
+          stepTwoCopy: 'Consultez les réponses, discutez du projet et clarifiez les conditions avant le début des travaux.',
+          stepThreeTitle: 'Gardez tout bien organisé',
+          stepThreeCopy: 'Retrouvez au même endroit les messages, les détails de la demande et l’historique des travaux terminés.',
+          audienceCardsLabel: 'Publics ClearFix',
+          customerLabel: 'Pour les clients',
+          customerTitle: 'Transformez un projet en demande claire.',
+          customerCopy: 'Décrivez le travail, comparez les réponses et gardez la conversation liée à la demande.',
+          professionalLabel: 'Pour les professionnels',
+          professionalTitle: 'Trouvez des projets locaux pertinents.',
+          professionalCopy: 'Découvrez des demandes à proximité, envoyez une proposition et gérez vos échanges au même endroit.',
+          contactEyebrow: 'Commencez avec ClearFix',
+          contactTitle: 'Prêt à faire avancer votre projet?',
+          contactCopy: 'Ouvrez l’application ClearFix pour créer ou trouver une demande, ou écrivez à notre équipe de soutien.',
+          emailUs: 'Écrire au soutien',
+          footerCopy: 'Les projets locaux, connectés clairement partout au Canada.',
+          footerNavLabel: 'Liens juridiques et soutien',
+          privacy: 'Politique de confidentialité',
+        },
+      };
+
+      const storageKey = 'clearfix-welcome-language';
+      const buttons = [...document.querySelectorAll('[data-language]')];
+      const metaDescription = document.querySelector('meta[name="description"]');
+      const socialTitle = document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]');
+      const socialDescription = document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]');
+
+      function browserLanguage() {
+        let saved = null;
+        try {
+          saved = window.localStorage.getItem(storageKey);
+        } catch (_) {
+          // Language selection still works when storage is unavailable.
+        }
+        if (saved && copy[saved]) {
+          return saved;
+        }
+        return (navigator.language || '').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+      }
+
+      function setLanguage(language) {
+        const selected = copy[language] ? language : 'en';
+        const values = copy[selected];
+        document.documentElement.lang = selected === 'fr' ? 'fr-CA' : 'en-CA';
+        document.title = values.pageTitle;
+        if (metaDescription) {
+          metaDescription.content = values.pageDescription;
+        }
+        socialTitle.forEach((node) => { node.content = values.pageTitle; });
+        socialDescription.forEach((node) => { node.content = values.pageDescription; });
+        document.querySelectorAll('[data-i18n]').forEach((node) => {
+          const value = values[node.dataset.i18n];
+          if (value) {
+            node.textContent = value;
+          }
+        });
+        document.querySelectorAll('[data-i18n-aria-label]').forEach((node) => {
+          const value = values[node.dataset.i18nAriaLabel];
+          if (value) {
+            node.setAttribute('aria-label', value);
+          }
+        });
+        buttons.forEach((button) => {
+          button.setAttribute('aria-pressed', String(button.dataset.language === selected));
+        });
+        try {
+          window.localStorage.setItem(storageKey, selected);
+        } catch (_) {
+          // Keep the active page language without persisting it.
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => setLanguage(button.dataset.language));
+      });
+      setLanguage(browserLanguage());
+
+      const brandHero = document.getElementById('brand-hero');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let idleTimer = null;
+
+      function playIdle() {
+        if (!brandHero || reducedMotion.matches || brandHero.classList.contains('is-intro') || brandHero.classList.contains('is-idle')) {
+          return;
+        }
+        brandHero.classList.add('is-idle');
+        window.setTimeout(() => brandHero.classList.remove('is-idle'), 1050);
+      }
+
+      if (brandHero && !reducedMotion.matches) {
+        window.setTimeout(() => brandHero.classList.remove('is-intro'), 1850);
+        brandHero.addEventListener('pointerenter', playIdle);
+        brandHero.addEventListener('pointerup', playIdle);
+        idleTimer = window.setInterval(playIdle, 30000);
+      }
+
+      window.addEventListener('pagehide', () => {
+        if (idleTimer !== null) {
+          window.clearInterval(idleTimer);
+        }
+      }, { once: true });
+    })();
+  </script>
+</body>
+</html>
