@@ -17,6 +17,14 @@
       "licenseUrl": "https://github.com/lovell/sharp/blob/main/LICENSE"
     },
     {
+      "name": "Stripe Node.js SDK",
+      "kind": "package",
+      "version": "22.6.2",
+      "licenseName": "MIT",
+      "websiteUrl": "https://github.com/stripe/stripe-node",
+      "licenseUrl": "https://github.com/stripe/stripe-node/blob/master/LICENSE"
+    },
+    {
       "name": "Flutter",
       "kind": "sdk",
       "licenseName": "BSD-3-Clause",
@@ -403,6 +411,14 @@
       "licenseUrl": "https://pub.dev/packages/shared_preferences/license"
     },
     {
+      "name": "sentry_flutter",
+      "kind": "package",
+      "version": "9.30.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/sentry_flutter",
+      "licenseUrl": "https://pub.dev/packages/sentry_flutter/license"
+    },
+    {
       "name": "super_clipboard",
       "kind": "package",
       "version": "0.9.1",
@@ -536,6 +552,14 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/shared_preferences_platform_interface",
       "licenseUrl": "https://pub.dev/packages/shared_preferences_platform_interface/license"
+    },
+    {
+      "name": "sentry_dart_plugin",
+      "kind": "dev_package",
+      "version": "3.4.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/sentry_dart_plugin",
+      "licenseUrl": "https://pub.dev/packages/sentry_dart_plugin/license"
     },
     {
       "name": "url_launcher_platform_interface",

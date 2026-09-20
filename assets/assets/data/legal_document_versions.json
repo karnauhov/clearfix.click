@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "documents": {
+    "privacy_policy": {
+      "revisions": [
+        {
+          "changedOn": "2026-07-06",
+          "effectiveVersion": null,
+          "sourceCommit": "7cef92e6fc9bbce2976bd1a4333f1f7c163b8066",
+          "changedSections": [],
+          "addedSections": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+          "removedSections": []
+        },
+        {
+          "changedOn": "2026-07-08",
+          "effectiveVersion": "2026-07-08",
+          "sourceCommit": "c80d16ed48f151cd7b5a76a3e78f6e466c669dfd",
+          "changedSections": ["1", "2", "4", "5", "6", "7", "8", "11"],
+          "addedSections": ["3", "9", "10"],
+          "removedSections": ["5", "10"]
+        },
+        {
+          "changedOn": "2026-09-02",
+          "effectiveVersion": "2026-07-08",
+          "sourceCommit": "79035ce29877fdd92276d41755381e4788a52ec6",
+          "changedSections": ["2"],
+          "addedSections": [],
+          "removedSections": []
+        },
+        {
+          "changedOn": "2026-09-16",
+          "effectiveVersion": "2026-09-16",
+          "sourceCommit": "7e96340516ccf3f5286a0372ce65802c88f8119e",
+          "changedSections": [],
+          "addedSections": ["3"],
+          "removedSections": []
+        }
+      ]
+    },
+    "license_agreement": {
+      "revisions": [
+        {
+          "changedOn": "2026-07-09",
+          "effectiveVersion": "2026-07-09",
+          "sourceCommit": "72c5e2afb64fc77c7facc92c7cc77342b019fd55",
+          "changedSections": [],
+          "addedSections": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"],
+          "removedSections": []
+        },
+        {
+          "changedOn": "2026-07-14",
+          "effectiveVersion": "2026-07-09",
+          "sourceCommit": "84fc5afd90e5a1b4d66df79b25581658bfa9ecef",
+          "changedSections": ["8"],
+          "addedSections": [],
+          "removedSections": []
+        },
+        {
+          "changedOn": "2026-09-13",
+          "effectiveVersion": "2026-09-13",
+          "sourceCommit": "478da8299efaf9d47e3dac6f34f3cddd5ff0773c",
+          "changedSections": ["8"],
+          "addedSections": [],
+          "removedSections": []
+        },
+        {
+          "changedOn": "2026-09-16",
+          "effectiveVersion": "2026-09-16",
+          "sourceCommit": "7e96340516ccf3f5286a0372ce65802c88f8119e",
+          "changedSections": ["3", "6", "11", "16"],
+          "addedSections": [],
+          "removedSections": []
+        }
+      ]
+    }
+  }
+}

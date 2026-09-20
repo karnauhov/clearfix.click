@@ -62,7 +62,8 @@
         "ClearFix est une plateforme technologique et de communication. ClearFix aide les clients à publier des commandes et aide les prestataires à trouver des commandes, envoyer des propositions, communiquer avec les clients et gérer l’exécution des travaux.",
         "ClearFix n’est pas l’employeur du prestataire, le mandataire du client, le mandataire du prestataire, un entrepreneur, un sous-traitant, une entreprise de construction, une entreprise de nettoyage, un agent de paiement, un garant de paiement, un garant de qualité, un assureur, une caution ni une partie au contrat entre le client et le prestataire, sauf indication expresse dans un accord écrit distinct avec l’Exploitant.",
         "Le contrat de travaux ou de services est conclu directement entre le client et le prestataire. Toutes les conditions essentielles de la transaction, y compris l’étendue des travaux, le prix, les délais, les matériaux, l’accès au lieu, la garantie, la sécurité, l’acceptation, le paiement, les taxes et la responsabilité du résultat, sont convenues indépendamment par les utilisateurs.",
-        "ClearFix peut fournir des outils de vérification, notes, statuts, notifications, historique des messages, modèles de champs, modération, soutien technique et recommandations d’interface. Ces outils ne constituent pas des conseils juridiques, de construction, d’ingénierie, financiers, fiscaux, d’assurance ou autres conseils professionnels."
+        "ClearFix peut fournir des outils de vérification, notes, statuts, notifications, historique des messages, modèles de champs, modération, soutien technique et recommandations d’interface. Ces outils ne constituent pas des conseils juridiques, de construction, d’ingénierie, financiers, fiscaux, d’assurance ou autres conseils professionnels.",
+        "Les spécialistes proposent et exécutent leurs services de manière indépendante. L’inscription, le profil professionnel, les documents téléversés, l’historique, les compteurs, la présence dans les résultats de recherche, les messages ou l’acceptation d’une offre ne constituent pas une recommandation, une certification, une relation d’emploi ou un cautionnement de ClearFix. Dans la mesure permise par la loi, ClearFix n’est pas responsable des actes ou omissions des spécialistes, de leurs employés ou sous-traitants, notamment des déclarations inexactes, de la malhonnêteté, du manque de qualifications, de permis ou d’assurance, des absences, des défauts ou des dommages qu’ils causent. Le client choisit lui-même le prestataire et vérifie les documents et conditions nécessaires aux travaux concernés."
       ],
       "bullets": [
         {
@@ -122,7 +123,8 @@
       "heading": "6. Commandes et obligations du client",
       "paragraphs": [
         "Le client est responsable de l’exactitude, de la légalité, de l’exhaustivité et de la clarté d’une commande. Le client doit décrire honnêtement les travaux ou services demandés, indiquer les conditions importantes, divulguer les risques connus, fournir un accès sûr et légal au lieu et répondre en temps utile aux questions raisonnables du prestataire.",
-        "Le client choisit lui-même le prestataire, convient des conditions de la transaction, contrôle l’exécution, accepte le résultat et paie le prestataire, sauf accord contraire des parties. ClearFix ne perçoit pas de commission de plateforme auprès des clients selon le modèle de base, sauf si un programme payant distinct, l’interface ou un avis écrit indique le contraire."
+        "Le client choisit lui-même le prestataire, convient des conditions de la transaction, contrôle l’exécution, accepte le résultat et paie le prestataire, sauf accord contraire des parties. ClearFix ne perçoit pas de commission de plateforme auprès des clients selon le modèle de base, sauf si un programme payant distinct, l’interface ou un avis écrit indique le contraire.",
+        "Avant d’accepter une offre, le client confirme séparément avoir lu l’avis sur le choix indépendant du spécialiste et les limites de responsabilité de ClearFix."
       ],
       "bullets": [
         {
@@ -230,7 +232,8 @@
       "paragraphs": [
         "ClearFix peut utiliser une modération automatisée et manuelle. Les administrateurs peuvent examiner, masquer, modifier pour le format, limiter la diffusion, refuser, archiver ou supprimer commandes, propositions, messages, profils, photos, fichiers, avis et autres contenus s’ils estiment raisonnablement qu’ils violent l’Accord, la politique de l’entreprise, la loi, les droits d’autrui ou la sécurité de la plateforme.",
         "Il est interdit de publier ou d’envoyer des propos haineux, menaces, harcèlement, insultes, propos humiliants, jurons dirigés contre une personne, contenu indécent, contenu sexuellement explicite, propos discriminatoires, fraude, pourriels, liens malveillants, tentatives d’obtenir des mots de passe ou contenu créant un danger ou un risque juridique.",
-        "En cas de violations répétées, graves ou dangereuses, l’Exploitant peut émettre un avertissement, restreindre temporairement des fonctions, bloquer des messages, masquer des commandes, désactiver des propositions, suspendre le compte, bannir définitivement l’utilisateur ou refuser une future inscription."
+        "En cas de violations répétées, graves ou dangereuses, l’Exploitant peut émettre un avertissement, restreindre temporairement des fonctions, bloquer des messages, masquer des commandes, désactiver des propositions, suspendre le compte, bannir définitivement l’utilisateur ou refuser une future inscription.",
+        "La publication, la réception, le stockage, le traitement technique ou l’affichage d’un profil, document, message ou plainte ne signifient pas en soi que ClearFix a vérifié les renseignements, confirmé les qualifications ou l’honnêteté d’un spécialiste, établi une violation ou approuvé le comportement d’un utilisateur. ClearFix n’assume aucune obligation contractuelle de vérifier préalablement chaque spécialiste et chaque document, de superviser les services en continu ou de garantir la détection des violations. Un profil, un historique de commandes, des indicateurs de la plateforme et l’absence de restrictions du compte ne constituent pas une recommandation ou une garantie de ClearFix."
       ],
       "bullets": [
         {
@@ -336,7 +339,8 @@
       "heading": "16. Confidentialité et données personnelles",
       "paragraphs": [
         "Le traitement des données personnelles dans ClearFix est régi par la Politique de confidentialité : [{privacyPolicyUrl}]({privacyPolicyUrl}). En acceptant l’Accord, l’utilisateur confirme également avoir pris connaissance de la Politique de confidentialité.",
-        "L’utilisateur comprend que les données de commande, profil, proposition, message, photo, techniques et d’utilisation peuvent être traitées pour fournir le service, montrer les commandes aux prestataires pertinents, soutenir la communication, assurer la sécurité, effectuer la modération, calculer les commissions, prévenir la fraude et respecter la loi."
+        "L’utilisateur comprend que les données de commande, profil, proposition, message, photo, techniques et d’utilisation peuvent être traitées pour fournir le service, montrer les commandes aux prestataires pertinents, soutenir la communication, assurer la sécurité, effectuer la modération, calculer les commissions, prévenir la fraude et respecter la loi.",
+        "La Politique de confidentialité s’applique aussi aux spécialistes qui ne sont pas encore désignés comme prestataires : leurs renseignements professionnels, catégories et zone de service, langues et documents téléversés. Les données des offres, accords, travaux et règlements effectifs sont traitées comme décrit dans la Politique de confidentialité."
       ],
       "bullets": [
         {

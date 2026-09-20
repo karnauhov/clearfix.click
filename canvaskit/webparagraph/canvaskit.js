@@ -169,3 +169,5 @@ moduleRtn=da;
 );
 })();
 export default CanvasKitInit;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="650cd68d-7160-5213-bbaa-6bd6d25d3bee")}catch(e){}}();
+//# debugId=650cd68d-7160-5213-bbaa-6bd6d25d3bee

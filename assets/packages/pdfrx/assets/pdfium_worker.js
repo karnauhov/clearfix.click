@@ -3211,3 +3211,5 @@ class StringUtils {
     Pdfium.wasmExports.free(ptr);
   }
 }
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2202dfd9-456a-51a5-9ae6-bf5ac09a0170")}catch(e){}}();
+//# debugId=2202dfd9-456a-51a5-9ae6-bf5ac09a0170

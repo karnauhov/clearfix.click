@@ -189,3 +189,5 @@ function Kd(a,b,c,e,f,h,l){var p=Vd();try{return Qb.get(a)(b,c,e,f,h,l)}catch(t)
 );
 })();
 export default CanvasKitInit;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="dff71f71-8198-5f0d-a9ac-2ef47c1f32ac")}catch(e){}}();
+//# debugId=dff71f71-8198-5f0d-a9ac-2ef47c1f32ac

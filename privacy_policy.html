@@ -81,6 +81,14 @@
       gap: 12px;
     }
 
+    .change-note {
+      margin: 0 0 16px;
+      padding: 12px 16px;
+      color: var(--on-surface);
+      background: color-mix(in srgb, var(--primary) 12%, var(--card));
+      border-radius: 16px;
+    }
+
     .policy-card {
       padding: 16px;
       background: var(--card);
@@ -94,6 +102,11 @@
       font-size: 18px;
       line-height: 24px;
       font-weight: 600;
+    }
+
+    .policy-card--changed {
+      background: color-mix(in srgb, var(--primary) 8%, var(--card));
+      border-color: var(--primary);
     }
 
     .policy-card p {
@@ -174,16 +187,17 @@
     <span aria-hidden="true"></span>
   </header>
   <main class="page-content">
+      <p class="change-note">Changed or added since the previous version: <strong>§ 3</strong>. Each changed heading is marked with an asterisk (*).</p>
       <div class="section-list">
     <section class="policy-card">
-      <h2>Overview</h2>
-      <p>Last updated: July 8, 2026.</p>
+      <h2>1. Overview</h2>
+      <p>Last updated: September 16, 2026.</p>
       <p>ClearFix is a Canada-first app and website available at <a href="https://www.clearfix.click">https://www.clearfix.click</a>. The service is operated by <a href="https://www.clearfix.click/welcome">ClearFix™</a>. This policy explains how ClearFix collects, uses, stores, shares, and deletes personal information when you use accounts, profiles, orders, photos, messages, location autofill, support, and related features.</p>
       <p>We do not collect payment card data or run in-app advertising. If those features are added, we will update this policy before collecting the related information.</p>
     </section>
 
     <section class="policy-card">
-      <h2>Information We Collect</h2>
+      <h2>2. Information We Collect</h2>
       <p>We collect only the information needed to run the service, protect accounts, complete order workflows, and support users.</p>
       <ul>
       <li>
@@ -221,14 +235,22 @@
       </ul>
     </section>
 
+    <section class="policy-card policy-card--changed">
+      <h2>3. Specialists, Providers, and Public Information *</h2>
+      <p>The provisions about specialists apply to users who create a professional profile, search for orders, or submit proposals, even before they are selected as a provider. We process selected service categories, search area and radius, professional headline, service description, experience, education, courses, certifications, service area, native and foreign languages, and voluntarily uploaded professional documents and their metadata. This information is used to find relevant orders, present specialists, and help customers select a provider.</p>
+      <p>Other signed-in users can access a specialist’s name, photo, account type, interface language, registration date, spoken languages, professional information and attached documents, as well as the counters and order history provided by the service. History may include an order’s title, outcome, dates, closure reasons and comments, complaint indicators, and order unavailability. A public profile does not itself disclose email, phone number, or home address. Contact and site access details are disclosed to order participants according to their role and the order stage.</p>
+      <p>In connection with an order, we process proposals, agreed terms, the parties’ responses, work dates and outcomes, closure reasons and comments, messages, and complaints. Financial settlement involves declared payments and refunds, materials and taxes, invoices, receipts and other evidence, commission calculations, calculation revisions, and review records. The customer sees the declared payments, whether they are agreed, and the settlement state. The full calculation, deductions, and supporting documents are accessible only to the appointed provider and specifically authorized support; support access is logged. Complaint dialogues are accessible to registered users under the service’s access rules; ordinary private correspondence does not become public. A complaint or counter is not a finding of fault, dishonesty, or lack of qualification.</p>
+      <p>Posting, receiving, storing, technically processing, or displaying a profile, document, message, or complaint does not by itself mean that ClearFix has verified the information, confirmed a specialist’s qualifications or honesty, established a violation, or endorsed a user’s conduct. ClearFix assumes no contractual obligation to screen every specialist and document in advance, continuously supervise services, or guarantee detection of violations. A profile, order history, platform indicators, and absence of account restrictions are not a ClearFix recommendation or guarantee. Services are performed by an independent specialist. To the extent permitted by law, ClearFix is not liable for their acts or omissions and does not guarantee their qualifications, honesty, safety, or work results.</p>
+    </section>
+
     <section class="policy-card">
-      <h2>How Information Is Stored</h2>
+      <h2>4. How Information Is Stored</h2>
       <p>The app stores account and service data in Firebase services configured for ClearFix. Firebase Authentication stores authentication records. Cloud Firestore stores user profiles, orders, proposals, conversations, messages, and related metadata. Firebase Storage stores uploaded profile and order photos. Firebase Cloud Functions process server-side tasks such as address geocoding and account deletion cleanup.</p>
       <p>The app and browser may store local preferences such as language and theme in local app storage, browser storage, or SharedPreferences. Clearing local storage may reset these preferences but does not delete server-side account data.</p>
     </section>
 
     <section class="policy-card">
-      <h2>How We Use Information</h2>
+      <h2>5. How We Use Information</h2>
       <p>We use personal information for the following purposes:</p>
       <ul>
       <li>
@@ -259,7 +281,7 @@
     </section>
 
     <section class="policy-card">
-      <h2>When We Share Information</h2>
+      <h2>6. When We Share Information</h2>
       <p>We do not sell personal information. We share personal information only when needed to provide the service, when you direct us to share it, or when required by law.</p>
       <ul>
       <li>
@@ -282,34 +304,34 @@
     </section>
 
     <section class="policy-card">
-      <h2>Retention and Deletion</h2>
+      <h2>7. Retention and Deletion</h2>
       <p>We keep personal information only as long as needed for the purposes in this policy, unless a longer period is required for legal, security, accounting, dispute, or backup reasons.</p>
       <p>You can request account deletion in the app from Profile, Edit Profile, Delete account, or by using the account deletion information at <a href="https://www.clearfix.click/account_deletion_instruction.html">https://www.clearfix.click/account_deletion_instruction.html</a>. When your Firebase account is deleted, the backend cleanup process is designed to remove your user profile, user-scoped storage files, orders, order photos, proposals, conversations, messages, participant states, and related records. Some backups, logs, legal records, or support records may remain for a limited period when required or reasonably necessary.</p>
     </section>
 
     <section class="policy-card">
-      <h2>Security</h2>
+      <h2>8. Security</h2>
       <p>ClearFix uses Firebase Authentication, Firestore security rules, Storage rules, authenticated server functions, and application logging to limit access and protect personal information. Access to account, order, message, and photo records is scoped to the users and service roles that need it. No internet service can be guaranteed to be completely secure, but we work to keep protections appropriate to the sensitivity of the information.</p>
     </section>
 
     <section class="policy-card">
-      <h2>Your Choices and Rights</h2>
+      <h2>9. Your Choices and Rights</h2>
       <p>You can update many details in your account profile and order screens. You can change language in the app, deny or revoke location permission in your device or browser settings, and clear local browser or app storage if you want to reset local preferences.</p>
       <p>Canadian privacy laws, including PIPEDA, may give you rights to access personal information, request correction, withdraw consent where consent is the basis for processing, ask questions, and challenge our privacy practices. To exercise these rights, contact us at <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>. You may also contact the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a>.</p>
     </section>
 
     <section class="policy-card">
-      <h2>Children and Sensitive Information</h2>
+      <h2>10. Children and Sensitive Information</h2>
       <p>ClearFix is not intended for children. Do not use the service if you are not old enough to enter into a service contract in your province or territory. Do not include sensitive information in orders, messages, photos, or support requests unless it is necessary for the service request.</p>
     </section>
 
     <section class="policy-card">
-      <h2>International Processing</h2>
+      <h2>11. International Processing</h2>
       <p>ClearFix is Canada-first, but Firebase, Google, sign-in providers, and support systems may process or store information outside your province, territory, or country. When information is processed outside Canada, it may be subject to the laws of that location. We rely on service provider safeguards and privacy terms for this processing.</p>
     </section>
 
     <section class="policy-card">
-      <h2>Changes and Contact</h2>
+      <h2>12. Changes and Contact</h2>
       <p>We may update this policy when the app, backend, service providers, or legal requirements change. The current version is available at <a href="https://www.clearfix.click/privacy_policy.html">https://www.clearfix.click/privacy_policy.html</a>. If we make material changes, we will provide notice in the app, by email, or by another appropriate method.</p>
       <p>For privacy questions, access or deletion requests, complaints, or a mailing address for a privacy request, contact <a href="https://www.clearfix.click/welcome">ClearFix™</a> at <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>.</p>
     </section>

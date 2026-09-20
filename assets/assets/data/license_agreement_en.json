@@ -62,7 +62,8 @@
         "ClearFix is a technology and communication platform. ClearFix helps customers post orders and helps providers find orders, submit proposals, communicate with customers, and manage work performance.",
         "ClearFix is not the provider's employer, the customer's agent, the provider's agent, a contractor, subcontractor, construction company, cleaning company, payment agent, payment guarantor, quality guarantor, insurer, surety, or party to a contract between the customer and the provider, unless expressly stated in a separate written agreement with the Operator.",
         "A contract for work or services is concluded directly between the customer and the provider. All material transaction terms, including scope of work, price, timing, materials, access to the site, warranty, safety, acceptance, payment, taxes, and responsibility for the result, are agreed by the users independently.",
-        "ClearFix may provide verification tools, ratings, statuses, notifications, message history, field templates, moderation, technical support, and interface recommendations. These tools are not legal, construction, engineering, financial, tax, insurance, or other professional advice."
+        "ClearFix may provide verification tools, ratings, statuses, notifications, message history, field templates, moderation, technical support, and interface recommendations. These tools are not legal, construction, engineering, financial, tax, insurance, or other professional advice.",
+        "Specialists independently offer and perform services. Registration, a professional profile, uploaded documents, history, counters, appearance in search, messaging, or acceptance of a proposal do not constitute a ClearFix recommendation, certification, employment relationship, or guarantee. To the extent permitted by law, ClearFix is not liable for acts or omissions of specialists, their workers, or subcontractors, including inaccurate statements, dishonesty, lack of qualifications, licensing or insurance, failure to attend, defects, or damage they cause. Customers independently select providers and check the documents and conditions needed for the specific work."
       ],
       "bullets": [
         {
@@ -122,7 +123,8 @@
       "heading": "6. Orders and Customer Duties",
       "paragraphs": [
         "The customer is responsible for the accuracy, legality, completeness, and clarity of an order. The customer must describe the requested work or service honestly, specify material conditions, disclose known risks, provide safe lawful access to the site, and timely respond to reasonable provider questions.",
-        "The customer independently chooses the provider, agrees on the transaction terms, controls performance, accepts the result, and pays the provider unless the parties agreed otherwise. ClearFix does not collect a platform commission from customers under the basic model, unless a separate paid program, interface, or written notice states otherwise."
+        "The customer independently chooses the provider, agrees on the transaction terms, controls performance, accepts the result, and pays the provider unless the parties agreed otherwise. ClearFix does not collect a platform commission from customers under the basic model, unless a separate paid program, interface, or written notice states otherwise.",
+        "Before accepting an offer, the customer separately acknowledges the notice about independently selecting a specialist and the limits of ClearFix’s responsibility."
       ],
       "bullets": [
         {
@@ -230,7 +232,8 @@
       "paragraphs": [
         "ClearFix may use automated and manual moderation. Administrators may review, hide, edit for formatting, limit distribution, reject, archive, or delete orders, proposals, messages, profiles, photos, files, reviews, and other content if they reasonably believe it violates the Agreement, company policy, law, rights of others, or platform safety.",
         "It is prohibited to post or send hate speech, threats, harassment, insults, humiliating statements, profanity directed at a person, indecent content, sexually explicit content, discriminatory statements, fraud, spam, malicious links, attempts to obtain passwords, or content that creates danger or legal risk.",
-        "For repeated, gross, or dangerous violations, the Operator may issue a warning, temporarily restrict functions, block messages, hide orders, disable proposals, suspend the account, permanently ban the user, or refuse future registration."
+        "For repeated, gross, or dangerous violations, the Operator may issue a warning, temporarily restrict functions, block messages, hide orders, disable proposals, suspend the account, permanently ban the user, or refuse future registration.",
+        "Posting, receiving, storing, technically processing, or displaying a profile, document, message, or complaint does not by itself mean that ClearFix has verified the information, confirmed a specialist’s qualifications or honesty, established a violation, or endorsed a user’s conduct. ClearFix assumes no contractual obligation to screen every specialist and document in advance, continuously supervise services, or guarantee detection of violations. A profile, order history, platform indicators, and absence of account restrictions are not a ClearFix recommendation or guarantee."
       ],
       "bullets": [
         {
@@ -336,7 +339,8 @@
       "heading": "16. Privacy and Personal Data",
       "paragraphs": [
         "Personal data processing in ClearFix is governed by the Privacy Policy: [{privacyPolicyUrl}]({privacyPolicyUrl}). By accepting the Agreement, the user also confirms that they have reviewed the Privacy Policy.",
-        "The user understands that order, profile, proposal, message, photo, technical, and usage data may be processed to provide the service, show orders to relevant providers, support communication, ensure safety, conduct moderation, calculate commissions, prevent fraud, and comply with law."
+        "The user understands that order, profile, proposal, message, photo, technical, and usage data may be processed to provide the service, show orders to relevant providers, support communication, ensure safety, conduct moderation, calculate commissions, prevent fraud, and comply with law.",
+        "The Privacy Policy also applies to specialists not yet appointed as providers: their professional information, service categories and area, languages, and uploaded documents. Proposal, agreement, order performance, and actual settlement data are processed as described in the Privacy Policy."
       ],
       "bullets": [
         {
