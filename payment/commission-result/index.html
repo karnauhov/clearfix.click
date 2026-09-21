@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src https://northamerica-northeast2-clearfix-click.cloudfunctions.net; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f1f4f8">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1d2428">
+  <title>ClearFix</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f1f4f8;
+      --surface: #ffffff;
+      --text: #1d2428;
+      --muted: #53616a;
+      --border: #d7dee3;
+      --success: #247a45;
+      --success-surface: #e8f5ec;
+      --warning: #8a5a00;
+      --warning-surface: #fff3d6;
+      --error: #a53a36;
+      --error-surface: #fdecea;
+      --pending: #315c78;
+      --pending-surface: #e6f0f6;
+      --shadow: 0 12px 34px rgba(29, 36, 40, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #121719;
+        --surface: #1d2428;
+        --text: #eef2f4;
+        --muted: #b7c2c8;
+        --border: #3a464c;
+        --success: #84d49f;
+        --success-surface: #183c27;
+        --warning: #f2c15f;
+        --warning-surface: #463716;
+        --error: #f0a09b;
+        --error-surface: #482421;
+        --pending: #9bc9e6;
+        --pending-surface: #203744;
+        --shadow: 0 12px 34px rgba(0, 0, 0, 0.32);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      place-items: center;
+      width: 100%;
+      max-width: 100vw;
+      padding: 24px;
+      overflow-x: hidden;
+      background: var(--page);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    main {
+      width: calc(100vw - 48px);
+      max-width: 520px;
+      min-width: 0;
+      padding: clamp(24px, 6vw, 40px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .brand {
+      margin: 0 0 24px;
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .status-icon {
+      display: grid;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--success-surface);
+      color: var(--success);
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    main[data-result="cancelled"] .status-icon {
+      background: var(--warning-surface);
+      color: var(--warning);
+    }
+
+    main[data-result="pending"] .status-icon {
+      background: var(--pending-surface);
+      color: var(--pending);
+    }
+
+    main[data-result="failed"] .status-icon {
+      background: var(--error-surface);
+      color: var(--error);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
+    p {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main id="result" data-result="pending" aria-live="polite">
+    <div class="brand">ClearFix</div>
+    <div id="status-icon" class="status-icon" aria-hidden="true">…</div>
+    <h1 id="title">Checking payment</h1>
+    <p id="message">Please wait while ClearFix confirms the result.</p>
+  </main>
+  <script>
+    (function () {
+      'use strict';
+
+      var callbackUrl =
+        'https://northamerica-northeast2-clearfix-click.cloudfunctions.net/' +
+        'stripeCommissionReturnV1';
+      var params = new URLSearchParams(window.location.search);
+      var requestedLocale = (params.get('locale') || navigator.language || 'en')
+        .replace('-', '_');
+      var baseLanguage = requestedLocale.split('_')[0];
+      var language = requestedLocale === 'zh_Hans' || baseLanguage === 'zh'
+        ? 'zh_Hans'
+        : baseLanguage;
+      var supported = ['en', 'fr', 'uk', 'ru', 'hi', 'zh_Hans'];
+      if (supported.indexOf(language) === -1) language = 'en';
+
+      var copy = {
+        en: {
+          pendingTitle: 'Checking payment',
+          pendingBody: 'Please wait while ClearFix confirms the result.',
+          successTitle: 'Payment completed',
+          successBody: 'ClearFix will update automatically. You can close this page.',
+          cancelledTitle: 'Payment not completed',
+          cancelledBody: 'The payment was cancelled or not completed. You can close this page.',
+          failedTitle: 'Payment result unavailable',
+          failedBody: 'Return to ClearFix to check the current payment status.'
+        },
+        fr: {
+          pendingTitle: 'Vérification du paiement',
+          pendingBody: 'Veuillez patienter pendant que ClearFix confirme le résultat.',
+          successTitle: 'Paiement effectué',
+          successBody: 'ClearFix se mettra à jour automatiquement. Vous pouvez fermer cette page.',
+          cancelledTitle: 'Paiement non effectué',
+          cancelledBody: 'Le paiement a été annulé ou n’a pas été effectué. Vous pouvez fermer cette page.',
+          failedTitle: 'Résultat du paiement indisponible',
+          failedBody: 'Revenez dans ClearFix pour vérifier l’état actuel du paiement.'
+        },
+        uk: {
+          pendingTitle: 'Перевірка платежу',
+          pendingBody: 'Зачекайте, поки ClearFix підтвердить результат.',
+          successTitle: 'Платіж виконано',
+          successBody: 'ClearFix оновиться автоматично. Цю сторінку можна закрити.',
+          cancelledTitle: 'Платіж не виконано',
+          cancelledBody: 'Платіж скасовано або не завершено. Цю сторінку можна закрити.',
+          failedTitle: 'Результат платежу недоступний',
+          failedBody: 'Поверніться до ClearFix, щоб перевірити поточний стан платежу.'
+        },
+        ru: {
+          pendingTitle: 'Проверка платежа',
+          pendingBody: 'Подождите, пока ClearFix подтвердит результат.',
+          successTitle: 'Платёж выполнен',
+          successBody: 'ClearFix обновится автоматически. Эту страницу можно закрыть.',
+          cancelledTitle: 'Платёж не выполнен',
+          cancelledBody: 'Платёж отменён или не завершён. Эту страницу можно закрыть.',
+          failedTitle: 'Результат платежа недоступен',
+          failedBody: 'Вернитесь в ClearFix, чтобы проверить текущий статус платежа.'
+        },
+        hi: {
+          pendingTitle: 'भुगतान की जाँच हो रही है',
+          pendingBody: 'ClearFix द्वारा परिणाम की पुष्टि किए जाने तक प्रतीक्षा करें।',
+          successTitle: 'भुगतान पूरा हुआ',
+          successBody: 'ClearFix अपने आप अपडेट हो जाएगा। आप यह पेज बंद कर सकते हैं।',
+          cancelledTitle: 'भुगतान पूरा नहीं हुआ',
+          cancelledBody: 'भुगतान रद्द कर दिया गया या पूरा नहीं हुआ। आप यह पेज बंद कर सकते हैं।',
+          failedTitle: 'भुगतान परिणाम उपलब्ध नहीं है',
+          failedBody: 'भुगतान की मौजूदा स्थिति देखने के लिए ClearFix पर वापस जाएँ।'
+        },
+        zh_Hans: {
+          pendingTitle: '正在核实付款',
+          pendingBody: '请等待 ClearFix 确认结果。',
+          successTitle: '付款已完成',
+          successBody: 'ClearFix 将自动更新。您可以关闭此页面。',
+          cancelledTitle: '付款未完成',
+          cancelledBody: '付款已取消或尚未完成。您可以关闭此页面。',
+          failedTitle: '无法获取付款结果',
+          failedBody: '请返回 ClearFix 查看当前付款状态。'
+        }
+      };
+
+      var requestedResult = params.get('result');
+      var localized = copy[language];
+      var page = document.getElementById('result');
+      var icon = document.getElementById('status-icon');
+      var title = document.getElementById('title');
+      var message = document.getElementById('message');
+
+      document.documentElement.lang = language === 'zh_Hans' ? 'zh-Hans' : language;
+
+      function render(result) {
+        var isSuccess = result === 'success';
+        var isCancelled = result === 'cancelled';
+        var isPending = result === 'pending';
+        page.dataset.result = result;
+        icon.textContent = isSuccess ? '✓' : isCancelled ? '–' : isPending ? '…' : '!';
+        title.textContent = isSuccess
+          ? localized.successTitle
+          : isCancelled
+            ? localized.cancelledTitle
+            : isPending
+              ? localized.pendingTitle
+              : localized.failedTitle;
+        message.textContent = isSuccess
+          ? localized.successBody
+          : isCancelled
+            ? localized.cancelledBody
+            : isPending
+              ? localized.pendingBody
+              : localized.failedBody;
+        document.title = title.textContent + ' — ClearFix';
+      }
+
+      render('pending');
+
+      var returnToken = params.get('return_token');
+      if (!returnToken ||
+          (requestedResult !== 'success' && requestedResult !== 'cancelled')) {
+        render('failed');
+        return;
+      }
+
+      var callbackParams = new URLSearchParams({
+        return_token: returnToken,
+        result: requestedResult,
+        locale: language,
+        format: 'json'
+      });
+      var verificationAttempts = 0;
+
+      function verifyResult() {
+        verificationAttempts += 1;
+        fetch(callbackUrl + '?' + callbackParams.toString(), {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-store',
+          credentials: 'omit',
+          referrerPolicy: 'no-referrer'
+        }).then(function (response) {
+          if (!response.ok) throw new Error('Payment verification failed');
+          return response.json();
+        }).then(function (payload) {
+          if (payload.status === 'success' ||
+              payload.status === 'cancelled' ||
+              payload.status === 'failed') {
+            render(payload.status);
+            return;
+          }
+          if (payload.status === 'pending' && verificationAttempts < 5) {
+            window.setTimeout(verifyResult, 1500);
+            return;
+          }
+          render('failed');
+        }).catch(function () {
+          // The signed Stripe webhook remains authoritative if browser-side
+          // verification is unavailable; the main ClearFix client still updates.
+          render('failed');
+        });
+      }
+
+      verifyResult();
+    })();
+  </script>
+</body>
+</html>

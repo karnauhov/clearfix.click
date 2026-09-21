@@ -32,10 +32,17 @@
         );
       }
 
-      var welcomePath = window.location.pathname.replace(/\/+$/, '');
-      if (welcomePath === '/welcome') {
+      var staticPagePath = window.location.pathname.replace(/\/+$/, '');
+      if (staticPagePath === '/welcome') {
         window.location.replace(
           '/welcome/index.html' + window.location.search + window.location.hash
+        );
+      }
+      if (staticPagePath === '/payment/commission-result') {
+        window.location.replace(
+          '/payment/commission-result/index.html' +
+          window.location.search +
+          window.location.hash
         );
       }
     })();
@@ -371,7 +378,7 @@ _flutter.buildConfig = {"engineRevision":"a804b261645ef8c13eb3d5c44a5c2fb0340c55
   _flutter.loader.load({
     serviceWorkerSettings: {
       serviceWorkerVersion: parseServiceWorkerVersion(
-        `"464475390" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
+        `"2400465823" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
       ),
     },
     onEntrypointLoaded: async (engineInitializer) => {
