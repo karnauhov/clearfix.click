@@ -42,6 +42,19 @@
           "changedSections": ["7"],
           "addedSections": [],
           "removedSections": []
+        },
+        {
+          "changedOn": "2026-09-27",
+          "effectiveVersion": "2026-09-27",
+          "sourceCommit": "c1772d7ee22deb68e0102a90f1dabcc274a4636b",
+          "changeClassification": "substantive",
+          "takesEffectOn": "2026-11-11",
+          "noticeRequired": false,
+          "reconsentRequired": false,
+          "decisionReason": "Pre-release: all current accounts and acceptance records are test data. This is the first production edition, and every production user must expressly accept it.",
+          "changedSections": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+          "addedSections": [],
+          "removedSections": []
         }
       ]
     },
@@ -76,6 +89,19 @@
           "effectiveVersion": "2026-09-16",
           "sourceCommit": "7e96340516ccf3f5286a0372ce65802c88f8119e",
           "changedSections": ["3", "6", "11", "16"],
+          "addedSections": [],
+          "removedSections": []
+        },
+        {
+          "changedOn": "2026-09-27",
+          "effectiveVersion": "2026-09-27",
+          "sourceCommit": "c1772d7ee22deb68e0102a90f1dabcc274a4636b",
+          "changeClassification": "substantive",
+          "takesEffectOn": "2026-11-11",
+          "noticeRequired": false,
+          "reconsentRequired": false,
+          "decisionReason": "Pre-release: all current accounts and acceptance records are test data. This is the first production edition, and every production user must expressly accept it.",
+          "changedSections": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "16", "17", "18", "19", "20", "21", "22", "23"],
           "addedSections": [],
           "removedSections": []
         }

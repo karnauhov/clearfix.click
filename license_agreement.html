@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9B0102">
+  <meta name="description" content="ClearFix License Agreement">
+  <title>License Agreement - ClearFix</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --primary: #9B0102;
+      --on-primary: #FFFFFF;
+      --surface: #F5F5F5;
+      --card: #FFFFFF;
+      --on-surface: #000000;
+      --on-surface-variant: #333333;
+      --outline-variant: #C7C7C7;
+      --focus: #9B0102;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: var(--surface);
+      font-family: Roboto, "Noto Sans", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--surface);
+      color: var(--on-surface);
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .top-bar {
+      min-height: 56px;
+      display: grid;
+      grid-template-columns: 48px 1fr 48px;
+      align-items: center;
+      padding: 4px;
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .top-bar h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+
+    .back-link {
+      width: 48px;
+      height: 48px;
+      display: inline-grid;
+      place-items: center;
+      color: var(--on-primary);
+      font-size: 32px;
+      line-height: 1;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      background: rgb(255 255 255 / 12%);
+    }
+
+    .page-content {
+      width: min(720px, 100%);
+      margin: 0 auto;
+      padding: 24px 24px;
+    }
+
+    .section-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .change-note {
+      margin: 0 0 16px;
+      padding: 12px 16px;
+      color: var(--on-surface);
+      background: color-mix(in srgb, var(--primary) 12%, var(--card));
+      border-radius: 16px;
+    }
+
+    .policy-card {
+      padding: 16px;
+      background: var(--card);
+      border: 1px solid var(--outline-variant);
+      border-radius: 24px;
+    }
+
+    .policy-card h2 {
+      margin: 0;
+      color: var(--on-surface);
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .policy-card--changed {
+      background: color-mix(in srgb, var(--primary) 8%, var(--card));
+      border-color: var(--primary);
+    }
+
+    .policy-card p {
+      margin: 8px 0 0;
+      color: var(--on-surface-variant);
+    }
+
+    .policy-card ul {
+      display: grid;
+      gap: 8px;
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .policy-card li {
+      display: grid;
+      grid-template-columns: 6px 1fr;
+      column-gap: 10px;
+      align-items: start;
+      color: var(--on-surface-variant);
+    }
+
+    .policy-card li::before {
+      width: 6px;
+      height: 6px;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      content: "";
+    }
+
+    .policy-card li > :not(:first-child) {
+      grid-column: 2;
+    }
+
+    .policy-card strong {
+      display: block;
+      color: var(--on-surface);
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+    }
+
+    .policy-card a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 599px) {
+      .page-content { padding: 24px 16px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #CB0000;
+        --surface: #121212;
+        --card: #0D0D0D;
+        --on-surface: #FFFFFF;
+        --on-surface-variant: #B0B0B0;
+        --outline-variant: #5A5A5A;
+        --focus: #CB0000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <a class="back-link" href="/" aria-label="Back to ClearFix">‹</a>
+    <h1>ClearFix License Agreement</h1>
+    <span aria-hidden="true"></span>
+  </header>
+  <main class="page-content">
+      <p class="change-note">Changed or added since the previous version: <strong>§ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 22, 23</strong>. Each changed heading is marked with an asterisk (*).</p>
+      <div class="section-list">
+    <section class="policy-card policy-card--changed">
+      <h2>1. General Terms and Acceptance *</h2>
+      <p>Last updated: September 27, 2026. Effective date: November 11, 2026. This license agreement and terms of use for the ClearFix service are referred to as the Agreement. The Agreement governs access to the app, website, software, profiles, orders, proposals, messages, notifications, moderation, financial settlement, provider commission payment, and other related ClearFix services.</p>
+      <p>This edition takes effect on the effective date stated above. For a new user who accepts it on or after that date, the Agreement takes effect when the user accepts it. For an existing user, this edition takes effect when the user expressly accepts it on or after that date. It does not retroactively change a completed transaction or an accrued right unless applicable law requires otherwise.</p>
+      <p>The service operator is <a href="https://www.clearfix.click/welcome">OLEH CHYSTIAK, the individual operator of the ClearFix service</a>. The service address for legal notices is 5302 49 Avenue, Lacombe, Alberta T4L 1N4, Canada. The same email is used for legally significant notices, contractual inquiries, privacy requests, and support: <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>. The current web version of the Agreement is available at <a href="https://www.clearfix.click/license">https://www.clearfix.click/license</a>.</p>
+      <p>The Operator carries on business under the Alberta-registered trade name [PENDING LEGAL DATA: exact trade name from the Alberta proof of filing]. The registration date is [PENDING LEGAL DATA: registration date from the Alberta proof of filing], and the Alberta registration number or proof-of-filing reference is [PENDING LEGAL DATA: registration number or filing reference from the Alberta proof of filing]. The trade name is not a separate legal entity and does not replace OLEH CHYSTIAK as the contracting Operator.</p>
+      <p>The Agreement applies to ClearFix use connected with a work or service site in Canada. A user may access the app from another country, but an order must concern a site in Canada.</p>
+      <p>The user expressly accepts this Agreement by selecting the required legal confirmation and submitting registration, by accepting a later version through the legal re-consent flow, or by taking another action that the interface clearly identifies as acceptance of specific terms. In the same action, the user confirms that they reviewed the Privacy Policy: <a href="https://www.clearfix.click/privacy_policy.html">https://www.clearfix.click/privacy_policy.html</a>. Where privacy law requires consent, that consent applies only to the purposes and choices described in the Privacy Policy and the interface.</p>
+      <p>If the user does not agree with the Agreement, the user must not complete registration or use protected ClearFix functions. Merely viewing a public legal document does not constitute acceptance. Publishing updated terms or passive continued use does not replace an express acceptance when the interface or applicable law requires one.</p>
+      <ul>
+      <li>
+        <strong>Mandatory rights</strong>
+        <span>Nothing in the Agreement limits non-waivable consumer rights or any other rights that cannot be limited under applicable law.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>2. Terms *</h2>
+      <p>The following terms are used in the Agreement. If a term is not defined separately, it is interpreted according to the meaning of the ClearFix interface, applicable law, and ordinary online service practice.</p>
+      <ul>
+      <li>
+        <strong>ClearFix or Platform</strong>
+        <span>The software product, website, mobile and web app, interfaces, databases, notifications, messages, moderation tools, and other technical means intended for finding, posting, and managing work and service orders.</span>
+      </li>
+      <li>
+        <strong>Operator</strong>
+        <span>OLEH CHYSTIAK, the individual operator of the ClearFix service. Authorized delegates, administrators, contractors, and infrastructure providers may act for limited purposes, but they do not become the contracting operator merely by providing support or technology.</span>
+      </li>
+      <li>
+        <strong>User</strong>
+        <span>Any person who receives access to ClearFix. A user may act as a customer, provider, or use both roles at the same time if allowed by the interface and applicable law.</span>
+      </li>
+      <li>
+        <strong>Customer</strong>
+        <span>A user who posts an order, selects a provider, agrees on terms for work or services, accepts the result, and pays the provider the transaction amount.</span>
+      </li>
+      <li>
+        <strong>Specialist</strong>
+        <span>A user who selects the specialist role, creates a professional profile, searches for orders, or submits proposals.</span>
+      </li>
+      <li>
+        <strong>Provider</strong>
+        <span>A specialist, company, or sole proprietor selected by a customer for a particular order. Duties concerning lawful eligibility, qualifications, licences, permits, proposal accuracy, and commission payment also apply to a specialist before appointment where relevant.</span>
+      </li>
+      <li>
+        <strong>Order</strong>
+        <span>A customer publication describing requested work or services, address or region, timing, budget, photos, notes, and other terms.</span>
+      </li>
+      <li>
+        <strong>Proposal</strong>
+        <span>A provider response to an order, including price, timing, terms, scope of work, exclusions, warranties, notes, and messages.</span>
+      </li>
+      <li>
+        <strong>Transaction</strong>
+        <span>The agreement between a customer and a provider for completing a specific order. The transaction is concluded directly between the customer and the provider; ClearFix does not become a party to that transaction.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>3. Legal Role of ClearFix *</h2>
+      <p>ClearFix is a technology and communication platform. ClearFix helps customers post orders and helps providers find orders, submit proposals, communicate with customers, and manage work performance.</p>
+      <p>ClearFix does not employ providers, perform the ordered work, collect the customer’s payment for that work, or become a party to the transaction between the customer and provider. ClearFix does provide the platform, sets and collects its provider commission, maintains transaction records, applies access and moderation controls, and may review settlement evidence. Nothing in this Agreement excludes a role or duty that applicable law assigns to the Operator based on those actual activities.</p>
+      <p>A contract for work or services is concluded directly between the customer and the provider. All material transaction terms, including scope of work, price, timing, materials, access to the site, warranty, safety, acceptance, payment, taxes, and responsibility for the result, are agreed by the users independently.</p>
+      <p>ClearFix may provide verification tools, ratings, statuses, notifications, message history, field templates, moderation, technical support, and interface recommendations. These tools are not legal, construction, engineering, financial, tax, insurance, or other professional advice.</p>
+      <p>Specialists independently offer and perform services. Registration, a professional profile, uploaded documents, history, counters, appearance in search, messaging, or acceptance of a proposal do not constitute a ClearFix recommendation, certification, employment relationship, or guarantee. ClearFix does not currently verify each specialist or professional document before display. Before work starts, the customer must independently verify the provider’s identity, lawful eligibility to work or carry on business, qualifications, and any licence or permit required for the work. These allocations of responsibility do not exclude duties or liability that applicable law does not allow the Operator to exclude.</p>
+      <ul>
+      <li>
+        <strong>No guarantee of selection</strong>
+        <span>Posting an order does not guarantee receiving proposals, and submitting a proposal does not guarantee selection by the customer.</span>
+      </li>
+      <li>
+        <strong>No guarantee of result</strong>
+        <span>ClearFix does not guarantee user qualification, good faith, ability to pay, lawfulness of actions, licences, work or service quality, unless such a guarantee is expressly provided in a separate written ClearFix program.</span>
+      </li>
+      <li>
+        <strong>User risk</strong>
+        <span>Users independently assess interaction risks, verify documents, licences, insurance, reviews, access conditions, site safety, and the suitability of the chosen counterparty.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>4. Software Product Licence *</h2>
+      <p>Subject to the Agreement, the Operator grants the user a limited, revocable, non-exclusive, non-transferable, non-sublicensable licence to install, open, and use ClearFix only for its intended purpose and within the functions available to the user.</p>
+      <p>The user does not receive ownership of ClearFix, the software code, databases, design, trademarks, trade names, texts, templates, algorithms, business logic, or other intellectual property of the Operator and its licensors.</p>
+      <ul>
+      <li>
+        <strong>Prohibited technical actions</strong>
+        <span>The user must not copy, modify, decompile, reverse engineer, bypass protection, extract databases, disrupt the service, scrape, automate requests without permission, or create derivative products based on ClearFix.</span>
+      </li>
+      <li>
+        <strong>Account access</strong>
+        <span>The licence is linked to the user&#x27;s account and may be limited, suspended, or terminated if the Agreement is breached or if security, legal, or operational risks arise.</span>
+      </li>
+      <li>
+        <strong>Updates</strong>
+        <span>ClearFix may update, change, remove, or add functions, including order, proposal, message, payment, moderation, notification, and profile functions.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>5. Account, Age, and Accuracy of Data *</h2>
+      <p>The user must provide accurate, current, and complete data during registration and while using ClearFix, and must keep that data up to date. The user is responsible for all actions performed through their account.</p>
+      <p>The user must maintain the confidentiality of login credentials, devices, and confirmation codes, must not transfer the account to third parties, and must immediately notify ClearFix of suspected unauthorized access.</p>
+      <p>ClearFix is intended for persons who have reached the age of majority and may lawfully enter into binding obligations in their province or territory. By selecting the legal confirmation, the user makes that representation. ClearFix does not collect a date of birth for routine age verification. If the Operator learns that an account holder may lack legal capacity, the Operator may restrict the account while addressing active orders, required records, privacy rights, and deletion in accordance with applicable law. If the user acts on behalf of a company, organization, or other person, the user confirms that they have sufficient authority.</p>
+      <ul>
+      <li>
+        <strong>Verification</strong>
+        <span>The Operator may request confirmation of identity, contact details, role, authority, licences, insurance, business registration, tax status, or other information when reasonably necessary.</span>
+      </li>
+      <li>
+        <strong>Refusal or restriction</strong>
+        <span>The Operator may refuse registration, restrict functions, hide content, suspend access, or request additional information if data appears inaccurate, outdated, misleading, or risky.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>6. Orders and Customer Duties *</h2>
+      <p>The customer is responsible for the accuracy, legality, completeness, and clarity of an order. The customer must describe the requested work or service honestly, specify material conditions, disclose known risks, provide safe lawful access to the site, and timely respond to reasonable provider questions.</p>
+      <p>The customer independently chooses the provider, agrees on the transaction terms, controls performance, accepts the result, and pays the provider unless the parties agreed otherwise. ClearFix does not collect a platform commission from customers under the basic model, unless a separate paid program, interface, or written notice states otherwise.</p>
+      <p>Before accepting an offer, the customer separately confirms that, before work starts, the customer will independently verify the provider’s identity, qualifications, lawful eligibility to work or carry on business, and any licence or permit required for the work. The customer must assess the documents and decide whether they are sufficient for the work and province.</p>
+      <ul>
+      <li>
+        <strong>Prohibited orders</strong>
+        <span>It is prohibited to post orders that are unlawful, misleading, discriminatory, dangerous, indecent, related to fraud, rights violations, regulated activities without required permits, or intended to bypass ClearFix rules.</span>
+      </li>
+      <li>
+        <strong>Customer materials</strong>
+        <span>The customer must have the rights to photos, descriptions, drawings, documents, addresses, and other materials uploaded to an order and must not disclose third-party personal information without a lawful basis.</span>
+      </li>
+      <li>
+        <strong>Budget and payment</strong>
+        <span>The budget or expected price in the order is informational unless the customer and provider expressly agree that it is binding. Payment terms between the customer and provider must be clear before work begins.</span>
+      </li>
+      <li>
+        <strong>Site safety</strong>
+        <span>The customer must warn the provider about known hazards, access restrictions, building rules, pets, alarm systems, fragile property, and any other circumstances that may affect work or safety.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>7. Proposals and Provider Duties *</h2>
+      <p>The provider is responsible for the accuracy, legality, and feasibility of each proposal. A proposal must reflect the actual price, work scope, timing, exclusions, assumptions, warranty terms, materials, taxes, travel costs, and other material terms.</p>
+      <p>The specialist and provider independently determine whether they may lawfully offer and perform the work or service and bear responsibility for professional competence, lawful eligibility to work or carry on business, licences, permits, insurance, tools, materials, workers, subcontractors, taxes, and compliance with law.</p>
+      <p>A specialist must not submit a proposal for work that the specialist cannot lawfully, safely, or properly perform. Before travelling to the site, the appointed provider must carry current evidence of lawful eligibility and any required licence or permit and must show it to the customer on request. The provider must inform the customer in advance about material changes in price, timing, scope, risks, or ability to perform.</p>
+      <ul>
+      <li>
+        <strong>Provider status</strong>
+        <span>The provider acts independently and is not an employee, worker, agent, partner, franchisee, or representative of ClearFix.</span>
+      </li>
+      <li>
+        <strong>Categories and region</strong>
+        <span>Access to orders may depend on selected categories, region, profile data, account status, commission payment status, moderation decisions, and technical settings of ClearFix.</span>
+      </li>
+      <li>
+        <strong>Communication</strong>
+        <span>The provider must communicate respectfully, respond within reasonable time, and avoid pressure, threats, insults, spam, misleading statements, false cancellation, concealment of an order, or any other attempt to evade the settlement and commission duties for an order recorded in ClearFix.</span>
+      </li>
+      <li>
+        <strong>Completion</strong>
+        <span>After completing an order, the provider must honestly confirm the completion status and provide the customer with any information reasonably needed to accept the result.</span>
+      </li>
+      <li>
+        <strong>Commission duty</strong>
+        <span>After an order is completed, the provider must pay the ClearFix commission under Section 8 to maintain access to other available orders and provider functions.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>8. Provider Commission and Financial Terms *</h2>
+      <p>The provider’s commission is 5% of the Commission base under the rate and rules version recorded by ClearFix on the server in the agreed order terms. All calculation amounts are stored as whole Canadian dollar cents (CAD). The same formula applies to successful completion, cancellation by the customer, and cancellation by the provider: Commission base = actual payment received - sales tax included in that payment - allowable materials deduction. Cancellation before a provider is appointed requires no financial settlement.</p>
+      <p>Actual payment is the total paid to the provider for the entire order, including deposits and separate transfers, less refunds already made to the customer. It excludes promised future payments and purchases the customer makes directly from a store. An unreturned deposit is not automatically compensation: settlement remains pending until the parties agree its refund or final retention as compensation for services or cancellation. Final agreed retention is included under the same formula. For hourly orders, actual total payment is used without requiring a time log for commission calculation.</p>
+      <p>The materials deduction is the documented cost to the provider of materials attributable to the order. Customer purchases, returned goods, personal expenses, reusable tools and purchase tax recoverable by the provider are excluded. The provider’s markup remains in the Commission base. The provider declares one total materials deduction and supplies receipts; item-by-item transcription is not required.</p>
+      <p>The tax deduction is the exact sales tax attributable to the stated payment and supported by the provider’s invoice. ClearFix does not determine the provider’s tax status, rates or tax obligations. Personal income taxes are not deductible. One document may support both tax and materials if it contains the necessary information. Technical file validation does not establish the truth or eligibility of a claimed expense.</p>
+      <p>The customer states the total paid and the provider states the total received; both confirm the same amount and whether all payments and refunds are settled. Materials and tax are the provider’s documented declaration; separate customer approval of each deduction is not required. ClearFix distinguishes awaiting response, payment pending, review required, and finalized states. Missing responses, unknown amounts, and confirmed zero are distinct. Silence is not consent, zero payment, or a commission debt. Work may end while payment or a refund remains unresolved, and the app may later request the missing response.</p>
+      <p>A discrepancy, missing or problematic evidence, repeated evidence, or deductions that reduce positive payment to zero or exceed it require review. An authorized support reviewer records their identity, reasons, and evidence. A substantiated loss may result in a zero Commission base, but no negative commission arises. Financial statements, calculations, and documents are available only to the customer to the limited extent shown in the app, the appointed provider, and explicitly authorized support with audited access.</p>
+      <p>When a completed or post-appointment cancelled order has a finalized positive Commission base, ClearFix calculates the commission on the server, rounds it to the nearest cent, and shows it to the appointed provider as payable. The provider pays the Operator through the protected commission page using the Operator’s Stripe Checkout account. Commission payments are received by OLEH CHYSTIAK. Stripe acts as the payment processor for this payment and is not the provider of the ClearFix platform service. ClearFix does not collect the customer’s payment to the provider and does not receive the provider’s full card number or card security code. A zero commission is marked as not requiring payment. A non-zero amount below Stripe’s minimum standalone CAD charge remains outstanding until ClearFix supports a lawful combined or alternative payment method.</p>
+      <p>The Operator is not registered for GST/HST as of the &#x27;Last updated&#x27; date shown above and does not collect GST/HST on the ClearFix commission. This position depends on the Operator continuing to qualify as a small supplier under applicable law. The Operator monitors the registration threshold. If registration becomes mandatory or the Operator registers voluntarily, ClearFix will update the checkout disclosure, receipts or invoices, and this Agreement before beginning to collect applicable GST/HST. The Operator is the supplier and issuer of receipts or invoices for the ClearFix commission. Stripe processes the payment and hosts or emails the payment receipt on the Operator&#x27;s behalf; ClearFix may also display a link to that receipt. The Operator will provide any additional invoice or tax information required by applicable law upon request at <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>.</p>
+      <p>A duplicate or technically erroneous commission payment will be refunded. If a confirmed settlement correction reduces the commission below the amount already paid, the Operator will refund the overpaid difference. Refunds are issued through Stripe to the original payment method, and the time when funds become available depends on Stripe, the payment network, and the payer&#x27;s financial institution. A correctly calculated and processed commission is not refundable merely because the provider later changes their mind or stops using ClearFix. Filing a payment dispute or chargeback does not by itself automatically suspend or terminate platform access. The Operator may review the evidence, correct the settlement record, respond to an improper dispute, and restore any amount that remains confirmed and unpaid to the provider&#x27;s outstanding balance, which is then subject to the ordinary access restrictions described in this Section. Nothing in this Agreement limits a refund, correction, chargeback, or other payment remedy that cannot lawfully be limited.</p>
+      <p>Returning from Stripe Checkout, closing the browser page, or seeing a client-side success message does not prove payment. ClearFix marks the commission paid only after a signed Stripe event or a server verification of the Checkout Session confirms the exact order, provider, currency, and amount. A cancelled, expired, incomplete, or failed Checkout attempt leaves the commission unpaid. While any provider commission remains unpaid, ClearFix may block new proposals and creation of new conversations while keeping existing conversations available. A later refund or additional payment creates a new settlement revision and adjustment; changing the payment requires the other party’s response, while changing deductions alone preserves confirmation of an unchanged payment. Repeating an order starts a new calculation without copying prior payments or receipts. The Commission base is a platform calculation, not the provider’s accounting net income.</p>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>9. Anti-Circumvention and Unfair Conduct *</h2>
+      <p>The customer normally pays the provider directly, outside ClearFix. Users may exchange contact details and arrange that direct payment when reasonably needed to perform an order. Doing so does not by itself violate this Agreement.</p>
+      <p>Users must not falsely cancel or conceal an order recorded in ClearFix, understate or misreport the actual payment, create duplicate accounts, falsify deductions or evidence, or use another scheme to avoid the settlement record or provider commission that applies to that order. This restriction applies only to obligations for an order recorded in ClearFix under terms disclosed before the relevant commitment; it does not create a commission on unrelated work that was not arranged or recorded through ClearFix.</p>
+      <ul>
+      <li>
+        <strong>Provider liability</strong>
+        <span>If a provider evades the settlement or commission for an order recorded in ClearFix, the provider remains responsible for the commission correctly calculated under Section 8 and may lose access to new orders, proposals, conversations, or the account after applicable notice and review.</span>
+      </li>
+      <li>
+        <strong>Customer participation</strong>
+        <span>If a customer knowingly supplies false settlement information or assists commission evasion for an order recorded in ClearFix, ClearFix may restrict the customer&#x27;s account or order functions under Sections 11 and 20. This does not prevent reasonable support, access to required records, privacy requests, or exercise of non-waivable rights.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>10. Messages, Materials, and User Content *</h2>
+      <p>Users are responsible for all content they post or send in ClearFix, including orders, proposals, profile data, photos, files, messages, reviews, comments, addresses, and other information.</p>
+      <p>By posting content in ClearFix, the user grants the Operator a worldwide, non-exclusive, royalty-free licence to host, store, copy, display, transmit, technically format, and review the content only as reasonably needed to operate, secure, moderate, support, and legally protect ClearFix and its users. The licence lasts while the content remains in the service and, for retained copies, only as long as retention is permitted under the Privacy Policy or applicable law. It ends when the content is deleted, except for necessary backups, transaction records, moderation evidence, disputes, accounting, security, or legal compliance.</p>
+      <ul>
+      <li>
+        <strong>Prohibited content</strong>
+        <span>Content must not be unlawful, false, misleading, discriminatory, hateful, threatening, insulting, obscene, sexually explicit, fraudulent, spam, malicious, infringing, or otherwise contrary to ClearFix rules.</span>
+      </li>
+      <li>
+        <strong>No confidential upload</strong>
+        <span>Users must not upload trade secrets, confidential documents, third-party personal information, passwords, payment card data, medical data, or other sensitive information unless it is necessary and lawful for the order.</span>
+      </li>
+      <li>
+        <strong>Retention</strong>
+        <span>The Operator may retain content and technical records as needed for operation, safety, dispute resolution, commission accounting, legal compliance, fraud prevention, and protection of rights.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>11. Moderation, Communication Rules, and Bans *</h2>
+      <p>ClearFix may use automated and manual moderation. Where access is technically authorized and reasonably necessary for moderation, safety, support, or legal compliance, authorized administrators may review, hide, limit distribution, reject, archive, or delete orders, proposals, messages, profiles, photos, files, reviews, and other content if they reasonably believe it violates the Agreement, law, rights of others, or platform safety.</p>
+      <p>It is prohibited to post or send hate speech, threats, harassment, insults, humiliating statements, profanity directed at a person, indecent content, sexually explicit content, discriminatory statements, fraud, spam, malicious links, attempts to obtain passwords, or content that creates danger or legal risk.</p>
+      <p>ClearFix applies sanctions according to the seriousness, recurrence, intent, actual or likely harm, cooperation, prior history, and reliability of the available evidence. A sanction is not automatically based on the number of complaints. The Operator may remove or limit content separately from an account sanction and may use a stronger sanction immediately when a lower step would not adequately protect users, the service, or legal compliance.</p>
+      <p>Available account measures include a warning that requires acknowledgement, a temporary access restriction with the end time shown to the user, and a permanent ban. The Operator is not required to apply those measures in a fixed sequence. The selected measure and duration depend on the seriousness, recurrence, evidence, risk, and whether a narrower measure can reasonably protect users and the service. Acknowledging a warning confirms receipt, not an admission.</p>
+      <p>The Operator may impose a temporary safety or investigation restriction while reviewing credible fraud, threats, account compromise, unlawful conduct, or a serious safety risk. Where reasonably possible, the notice identifies the reason, start time, end time, and review contact. Information may be withheld when disclosure would compromise safety, an investigation, another person’s rights, or a legal obligation.</p>
+      <p>A permanent ban may be imposed for confirmed fraud or impersonation creating material risk; credible threats, violence, exploitation, or deliberate serious endangerment; unlawful transactions or content; credential theft, malicious code, or payment theft; deliberate evasion of a prior restriction; conduct that causes or is likely to cause severe harm; or a persistent pattern showing that narrower measures have failed. Where evidence is incomplete or the risk can reasonably be controlled, the Operator should prefer a temporary measure pending review.</p>
+      <p>Posting, receiving, storing, technically processing, or displaying a profile, document, message, or complaint does not by itself mean that ClearFix has verified the information, confirmed a specialist’s qualifications or honesty, established a violation, or endorsed a user’s conduct. ClearFix does not currently screen every specialist and document in advance or continuously supervise services and does not guarantee detection of violations. A profile, order history, platform indicators, and absence of account restrictions are not a ClearFix recommendation or guarantee. These statements do not exclude duties imposed by applicable law.</p>
+      <ul>
+      <li>
+        <strong>Moderation discretion</strong>
+        <span>Moderation decisions are made at the Operator&#x27;s reasonable discretion under the criteria above. Similar cases may differ where their context, evidence, intent, harm, cooperation, legal risk, or safety risk differs.</span>
+      </li>
+      <li>
+        <strong>No duty to publish</strong>
+        <span>ClearFix is not obligated to continue publicly displaying user content and does not guarantee that content will remain available in the interface. Retention, deletion, access rights, transaction records, and legal preservation remain subject to the Privacy Policy and applicable law.</span>
+      </li>
+      <li>
+        <strong>Reporting</strong>
+        <span>Users may report suspicious, abusive, unlawful, or unsafe content through available tools or by contacting support.</span>
+      </li>
+      <li>
+        <strong>Notice and review</strong>
+        <span>Where reasonably possible, ClearFix identifies the sanction, reason, start and end time, and available review channel. A user may request review through the support contact in Section 23 and provide relevant evidence. ClearFix may correct, shorten, extend, replace, or revoke a sanction after review. Filing a review does not pause a restriction unless ClearFix says otherwise.</span>
+      </li>
+      <li>
+        <strong>Ban evasion</strong>
+        <span>A blocked user must not create a new account, use another person&#x27;s account, or use technical means to bypass restrictions without written permission from the Operator.</span>
+      </li>
+      <li>
+        <strong>Evidence</strong>
+        <span>The Operator may preserve messages, logs, photos, order history, technical identifiers, and other records to investigate violations, protect users, and defend legal interests.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>12. Verifications, Ratings, Reviews, and Trust</h2>
+      <p>ClearFix may display profiles, statuses, ratings, reviews, order history, verification marks, or other trust signals. These signals are informational only and do not guarantee identity, qualification, legality, availability, quality, safety, or payment.</p>
+      <p>Users must leave honest reviews and must not manipulate ratings, create fake reviews, pressure another user to change a review, offer compensation for a review, or retaliate for a good-faith review.</p>
+      <ul>
+      <li>
+        <strong>Corrections</strong>
+        <span>The Operator may remove or limit reviews that are false, abusive, irrelevant, discriminatory, manipulative, unlawful, or unrelated to the actual transaction.</span>
+      </li>
+      <li>
+        <strong>No reliance guarantee</strong>
+        <span>Users must not rely solely on ratings or marks and must independently assess the counterparty and transaction terms.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>13. Safety, Prohibited Work, and Urgent Situations</h2>
+      <p>Users must comply with safety rules, building rules, workplace requirements, technical standards, and applicable law. Work requiring a licence, permit, certified specialist, inspection, or insurance must be performed only by persons who meet those requirements.</p>
+      <p>ClearFix is not an emergency service. If there is a threat to life, health, property, public safety, gas, electricity, fire, flooding, crime, or another urgent situation, the user must contact the appropriate emergency services, utilities, property manager, insurer, or qualified specialist.</p>
+      <ul>
+      <li>
+        <strong>Prohibited categories</strong>
+        <span>It is prohibited to use ClearFix for unlawful work, dangerous work without proper qualification, weapons, controlled substances, sexual services, exploitation, surveillance without consent, rights violations, or other activities prohibited by the Operator.</span>
+      </li>
+      <li>
+        <strong>Hazardous materials</strong>
+        <span>Work involving asbestos, mold, biological hazards, structural risks, gas, high-voltage systems, regulated HVAC systems, elevators, fire systems, or other hazardous materials and systems requires appropriate qualification and legal compliance.</span>
+      </li>
+      <li>
+        <strong>Right to refuse</strong>
+        <span>The provider may refuse or stop work if conditions are unsafe, unlawful, materially different from the order, or if the customer fails to provide necessary access or information.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>14. Disputes Between Customer and Provider</h2>
+      <p>Disputes about price, quality, timing, materials, access, acceptance, defects, warranty, damage, cancellation, refund, or payment are resolved directly between the customer and provider. ClearFix may provide communication tools and records but is not required to adjudicate the dispute.</p>
+      <p>The Operator may, at its discretion, review messages, order data, photos, proposals, completion status, and other records to decide platform actions, including moderation, access restriction, commission calculation, or support recommendations.</p>
+      <p>Any assistance by ClearFix in communication or review does not make ClearFix a party to the transaction and does not create a duty to compensate the customer, provider, or third party.</p>
+      <ul>
+      <li>
+        <strong>User evidence</strong>
+        <span>Users should keep contracts, invoices, receipts, photos before and after work, correspondence, warranties, permits, and other evidence relevant to the transaction.</span>
+      </li>
+      <li>
+        <strong>Damage and insurance</strong>
+        <span>Claims for damage to property, injury, defects, non-payment, or poor performance must be directed to the responsible user, insurer, competent authority, or court.</span>
+      </li>
+      <li>
+        <strong>Platform measures</strong>
+        <span>Regardless of the outcome of a user dispute, ClearFix may take platform measures if the behaviour creates risk for users, the Operator, or the service.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card">
+      <h2>15. Cancellation, Archiving, and Termination of an Order</h2>
+      <p>An order may be saved as a draft, published, edited, cancelled, moved to work in progress, completed, terminated, or archived according to the functions available in the interface and the current order status.</p>
+      <p>Archiving or cancellation in ClearFix is a platform status and does not automatically terminate obligations that arose directly between the customer and provider, including payment, refund, warranty, liability, taxes, or document obligations.</p>
+      <ul>
+      <li>
+        <strong>Before selection</strong>
+        <span>A customer may cancel or change a published order before selecting a provider, subject to interface limitations and good-faith obligations to users already in communication.</span>
+      </li>
+      <li>
+        <strong>After selection</strong>
+        <span>After accepting a proposal or starting work, cancellation, termination, payment, refund, and compensation terms are resolved between the customer and provider, unless mandatory law or separate ClearFix rules apply.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>16. Privacy and Personal Information *</h2>
+      <p>Personal information processing in ClearFix is described in the Privacy Policy: <a href="https://www.clearfix.click/privacy_policy.html">https://www.clearfix.click/privacy_policy.html</a>. By accepting the Agreement, the user confirms that they reviewed the Privacy Policy. Acceptance of this Agreement does not create consent for an optional privacy purpose that applicable law requires ClearFix to present separately.</p>
+      <p>The user understands that order, profile, proposal, message, photo, technical, diagnostic, payment-status, and usage data may be processed to provide the service, show orders to relevant providers, support communication, ensure safety, conduct moderation, calculate and collect provider commissions, diagnose failures through Sentry, prevent fraud, and comply with law.</p>
+      <p>The Privacy Policy also applies to specialists not yet appointed as providers: their professional information, service categories and area, languages, and uploaded documents. Professional profiles and attachments are visible to active signed-in users. While an order complaint is active, active signed-in users who can access the order can read the complaint dialogue, but only the customer and appointed provider can post. Proposal, agreement, order performance, and actual settlement data are processed as described in the Privacy Policy.</p>
+      <ul>
+      <li>
+        <strong>Other users&#x27; data</strong>
+        <span>Users must use other users&#x27; personal information only for the relevant order and must not sell, publish, transfer, or use it for spam, harassment, discrimination, or unrelated marketing.</span>
+      </li>
+      <li>
+        <strong>Legal requests</strong>
+        <span>The Operator may disclose data where required by law, court order, competent authority request, rights protection, safety, fraud prevention, or enforcement of the Agreement.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>17. Service Availability and Function Changes *</h2>
+      <p>ClearFix is provided on an as-is and as-available basis. The Operator does not guarantee uninterrupted operation, absence of errors, compatibility with every device, permanent storage of content, receipt of notifications, or availability of any function at all times.</p>
+      <p>The Operator may perform maintenance, updates, security measures, technical restrictions, migrations, functional changes, or shutdown of individual functions when reasonably needed for service operation, safety, legal compliance, or business development. Where reasonably practicable, the Operator will give advance notice of a material discontinuance that adversely affects active obligations. Nothing in this section excludes a refund, remedy, or other right that cannot lawfully be excluded.</p>
+      <ul>
+      <li>
+        <strong>Notifications</strong>
+        <span>Notifications, messages, and statuses may be delayed, not delivered, or displayed inaccurately due to device settings, operating system restrictions, internet connection, third-party services, or technical reasons.</span>
+      </li>
+      <li>
+        <strong>Data backup</strong>
+        <span>Users are responsible for saving copies of important documents, photos, invoices, warranties, and other materials outside ClearFix when needed.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>18. Limitation of Liability *</h2>
+      <p>To the maximum extent permitted by law, the Operator is not liable for a user&#x27;s acts or omissions, the quality or outcome of a transaction between users, payment or non-payment between users, or indirect, incidental, special, punitive, or consequential loss that was not reasonably foreseeable.</p>
+      <p>The Operator is not responsible for failures caused solely by third-party services, app stores, operating systems, devices, internet providers, Firebase, Google, Apple, Microsoft, Stripe, Sentry, maps, geocoding, messaging services, or other external systems outside the Operator&#x27;s reasonable control. This does not exclude responsibility for the Operator&#x27;s own selection, configuration, instructions, or use of those services where applicable law imposes that responsibility.</p>
+      <p>If monetary liability of the Operator cannot be excluded but may lawfully be limited, the aggregate liability for the event is limited to the amount paid by the relevant user directly to the Operator for using ClearFix during the three months before the event giving rise to the claim, or CAD 100 if no such payment was made, unless applicable law requires a different remedy or amount.</p>
+      <p>Nothing in this Agreement excludes or limits liability for fraud, fraudulent misrepresentation, wilful misconduct, gross negligence, death or personal injury caused by negligence, breach of a non-waivable privacy or security duty, or any other liability or remedy that applicable law does not permit the Operator to exclude or limit.</p>
+      <ul>
+      <li>
+        <strong>Consumer rights</strong>
+        <span>Some jurisdictions do not allow certain exclusions or limitations of liability. In that case, the limitations apply to the maximum extent permitted by law.</span>
+      </li>
+      <li>
+        <strong>No double recovery</strong>
+        <span>The user may not recover the same loss twice from the Operator, another user, insurer, payment provider, or other person.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>19. Indemnification of the Operator *</h2>
+      <p>To the extent permitted by law, the user will indemnify the Operator against a third-party claim, loss, fine, or reasonable legal cost only to the extent caused by the user&#x27;s unlawful conduct, breach of this Agreement, infringing content, fraud, or negligent performance of a transaction. The user is not responsible under this section to the extent the claim was caused by the Operator&#x27;s negligence, wilful misconduct, or breach of law.</p>
+      <ul>
+      <li>
+        <strong>Grounds</strong>
+        <span>Such grounds include breach of the Agreement, violation of law, user content, transaction dispute, non-payment of commission, tax obligations, lack of a licence or insurance, damage to property or health, fraud, violation of third-party rights, disclosure of personal information, and bad-faith use of ClearFix.</span>
+      </li>
+      <li>
+        <strong>Process</strong>
+        <span>The Operator will give reasonably prompt notice of a covered claim and request reasonable cooperation. The user may participate in the defence with counsel at the user&#x27;s expense. The Operator may control the defence where its interests or legal obligations require it, but will not agree to a settlement that imposes an admission or non-monetary obligation on the user without the user&#x27;s consent, not to be unreasonably withheld.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>20. Suspension and Termination of Access *</h2>
+      <p>The user may stop using ClearFix at any time and may request account deletion as described in the Privacy Policy. Stopping use, deleting the app, or deleting the account does not cancel an unfinished transaction, unresolved dispute, commission debt, record-retention requirement, or other obligation arising from actions already taken.</p>
+      <p>The Operator may temporarily or permanently restrict the user&#x27;s access to ClearFix for the grounds and durations stated in Section 11 if the user violates the Agreement, law, moderation rules, commission obligations, rights of third parties, service safety, or creates liability risk for the Operator or other users. A commission-payment restriction on new proposals or conversations is an operational payment control and does not by itself count as a moderation warning or ban.</p>
+      <p>After access is terminated, the user must not create a new account, use another person&#x27;s account, or bypass technical restrictions without written permission from the Operator.</p>
+      <ul>
+      <li>
+        <strong>Survival of obligations</strong>
+        <span>Terms about commissions, debts, user content, confidentiality, moderation, liability, indemnification, dispute resolution, applicable law, and other terms that by their meaning should survive termination continue to apply.</span>
+      </li>
+      <li>
+        <strong>Data after closure</strong>
+        <span>After account closure, some data may be deleted, anonymized, or retained according to the Privacy Policy, law, accounting requirements, safety, fraud prevention, and dispute resolution.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>21. Changes to the Agreement *</h2>
+      <p>The Operator may change the Agreement to reflect changes in functionality, legal requirements, payment terms, moderation, safety, technical changes, and the ClearFix business model.</p>
+      <p>Material changes will be brought to users&#x27; attention through the app, website, electronic mail, notification, or another reasonable method. The app requires express acceptance of a current Agreement version before protected functions become available when the version recorded for the user is not current. The Privacy Policy is presented for review at the same time, with any separate consent handled as required by applicable law. If the user does not agree with the changes, the user must stop using protected ClearFix functions before the changes take effect, except for actions necessary to close existing obligations.</p>
+      <ul>
+      <li>
+        <strong>Current transactions</strong>
+        <span>Where required by applicable law, transactions already started may remain subject to the terms that were in effect when they were concluded, but continued use of ClearFix may require acceptance of the new Agreement version.</span>
+      </li>
+      <li>
+        <strong>Commission</strong>
+        <span>A change in the commission rate or calculation rules applies to future orders and proposals after notice, unless the law requires otherwise or the Operator expressly states otherwise.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>22. Applicable Law and Disputes with the Operator *</h2>
+      <p>The Agreement is governed by the laws of Canada and, unless mandatory rules require otherwise, the laws of the Province of Alberta. If the user is a consumer, the user may have mandatory rights in the place of residence that this Agreement does not override.</p>
+      <p>Before going to court, the user and the Operator should try to resolve the dispute in good faith by written notice to <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a> describing the facts, requested outcome, available evidence, and contact details. This step is not required where urgent relief, a limitation period, a mandatory consumer process, or applicable law requires otherwise, and sending a notice does not suspend a legal limitation period.</p>
+      <p>If the dispute is not resolved within a reasonable time, it is subject to review by a competent court, unless applicable law requires another mandatory procedure. Nothing limits the Operator&#x27;s right to seek urgent court protection for infringement of intellectual rights, safety, confidentiality, commission circumvention, fraud, or threat of harm.</p>
+      <ul>
+      <li>
+        <strong>User disputes</strong>
+        <span>Disputes between a customer and provider are handled directly between them and do not become a dispute with the Operator only because the transaction was found through ClearFix.</span>
+      </li>
+      <li>
+        <strong>Invalidity of part of the terms</strong>
+        <span>If part of the Agreement is found invalid or unenforceable, the remaining provisions continue to apply, and the invalid provision is replaced by the closest permissible provision in meaning.</span>
+      </li>
+      </ul>
+    </section>
+
+    <section class="policy-card policy-card--changed">
+      <h2>23. Final Terms *</h2>
+      <p>The Agreement, Privacy Policy, and additional rules published in ClearFix or expressly incorporated by reference constitute the entire agreement between the user and the Operator regarding use of ClearFix.</p>
+      <p>The user may not assign rights or obligations under the Agreement without the Operator&#x27;s written consent. The Operator may transfer rights and obligations under the Agreement in connection with reorganization, sale of business, project transfer, change of operator, or engagement of service providers, provided user rights are preserved within the limits of law.</p>
+      <p>The Operator&#x27;s failure to act upon a breach does not waive the right to enforce the Agreement later. Section headings are provided for convenience and do not limit interpretation of the terms.</p>
+      <ul>
+      <li>
+        <strong>Contacts</strong>
+        <span>Questions about the Agreement, moderation, commission, account access, and legal inquiries may be sent to <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>.</span>
+      </li>
+      <li>
+        <strong>Confirmation</strong>
+        <span>By selecting the required legal confirmation and submitting registration or later re-consent, the user expressly accepts this Agreement.</span>
+      </li>
+      </ul>
+    </section>
+      </div>
+  </main>
+</body>
+</html>

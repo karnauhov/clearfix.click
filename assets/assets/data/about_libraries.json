@@ -171,14 +171,6 @@
       "licenseUrl": "https://pub.dev/packages/cupertino_icons/license"
     },
     {
-      "name": "device_info_plus",
-      "kind": "package",
-      "version": "11.5.0",
-      "licenseName": "BSD-3-Clause",
-      "websiteUrl": "https://pub.dev/packages/device_info_plus",
-      "licenseUrl": "https://pub.dev/packages/device_info_plus/license"
-    },
-    {
       "name": "dropdown_button2",
       "kind": "package",
       "version": "2.3.9",

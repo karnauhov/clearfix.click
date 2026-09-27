@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-09-25T08:39:09Z",
-  "estimated_startup_total_bytes": 5912827,
+  "generated_at_utc": "2026-09-27T22:08:08Z",
+  "estimated_startup_total_bytes": 5911799,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 15585,
-    "raw_size_bytes": 60260,
-    "gzip_size_bytes": 15585
+    "size_bytes": 15586,
+    "raw_size_bytes": 60261,
+    "gzip_size_bytes": 15586
   },
   "required_resources": [
     {
@@ -79,9 +79,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 16771,
-      "raw_size_bytes": 29968,
-      "gzip_size_bytes": 16771
+      "size_bytes": 16544,
+      "raw_size_bytes": 29696,
+      "gzip_size_bytes": 16544
     },
     {
       "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -126,15 +126,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1316,
+      "size_bytes": 1319,
       "raw_size_bytes": 6766,
-      "gzip_size_bytes": 1316
+      "gzip_size_bytes": 1319
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 2237717,
-      "raw_size_bytes": 8365517,
-      "gzip_size_bytes": 2237717
+      "size_bytes": 2236912,
+      "raw_size_bytes": 8367234,
+      "gzip_size_bytes": 2236912
     },
     {
       "path": "manifest.json",

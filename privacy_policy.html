@@ -187,18 +187,20 @@
     <span aria-hidden="true"></span>
   </header>
   <main class="page-content">
-      <p class="change-note">Changed or added since the previous version: <strong>§ 7</strong>. Each changed heading is marked with an asterisk (*).</p>
+      <p class="change-note">Changed or added since the previous version: <strong>§ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12</strong>. Each changed heading is marked with an asterisk (*).</p>
       <div class="section-list">
-    <section class="policy-card">
-      <h2>1. Overview</h2>
-      <p>Last updated: September 25, 2026.</p>
-      <p>ClearFix is a Canada-first app and website available at <a href="https://www.clearfix.click">https://www.clearfix.click</a>. The service is operated by <a href="https://www.clearfix.click/welcome">ClearFix™</a>. This policy explains how ClearFix collects, uses, stores, shares, and deletes personal information when you use accounts, profiles, orders, photos, messages, location autofill, support, and related features.</p>
-      <p>We do not collect payment card data or run in-app advertising. If those features are added, we will update this policy before collecting the related information.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>1. Overview *</h2>
+      <p>Last updated: September 27, 2026. Effective date: November 11, 2026.</p>
+      <p>This policy applies to ClearFix processing on and after the effective date. Processing that occurred before that date remains subject to the policy and law applicable at that time. A user&#x27;s request about earlier information is handled under the law in force when the request is made.</p>
+      <p>ClearFix is a Canada-first app and website available at <a href="https://www.clearfix.click/welcome">https://www.clearfix.click/welcome</a>. The service is operated by <a href="https://www.clearfix.click/welcome">OLEH CHYSTIAK, the individual operator of the ClearFix service</a>. This policy explains how ClearFix collects, uses, stores, shares, and deletes personal information when you use accounts, profiles, orders, proposals, messages, files, location autofill, moderation, financial settlement, provider commission payment, support, and related features.</p>
+      <p>The Operator carries on business under the Alberta-registered trade name [PENDING LEGAL DATA: exact trade name from the Alberta proof of filing]. The registration date is [PENDING LEGAL DATA: registration date from the Alberta proof of filing], and the Alberta registration number or proof-of-filing reference is [PENDING LEGAL DATA: registration number or filing reference from the Alberta proof of filing]. The trade name is not a separate legal entity and does not replace OLEH CHYSTIAK as the person responsible for the service.</p>
+      <p>We do not sell personal information, run third-party advertising, or use personal information for marketing unrelated to the ClearFix service. Provider commission payments use Stripe Checkout. Stripe collects payment-method details on its hosted page; ClearFix does not receive full card numbers or card security codes.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>2. Information We Collect</h2>
-      <p>We collect only the information needed to run the service, protect accounts, complete order workflows, and support users.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>2. Information We Collect *</h2>
+      <p>We collect and process the information described below to run the service, protect accounts, complete order workflows, meet legal obligations, and support users.</p>
       <ul>
       <li>
         <strong>Account and authentication</strong>
@@ -226,31 +228,41 @@
       </li>
       <li>
         <strong>Location and address autofill</strong>
-        <span>If you grant device location permission, the app may request your current coordinates and send them through a Firebase Cloud Function to Google Geocoding so it can suggest a Canadian address. You can deny or revoke location permission in your device or browser settings.</span>
+        <span>If you grant device location permission, the app may request your current coordinates and send them through a Firebase Cloud Function to Google Geocoding so it can suggest a Canadian address. When a map is displayed, the app requests map tiles from OpenStreetMap Foundation infrastructure. Those requests can include the requested tile coordinates, which indicate the approximate map area being viewed, and technical request data such as IP address, user agent, and referrer when supplied by the device or browser. You can deny or revoke location permission in your device or browser settings.</span>
       </li>
       <li>
         <strong>Technical and support data</strong>
-        <span>Device platform, browser or operating system details, locale, time zone, Firebase request metadata such as IP address, app error context, and support messages you send to us. We use this information to secure the service, diagnose issues, and respond to requests.</span>
+        <span>Device platform, browser or operating system details, app and build version, locale, time zone, route and lifecycle context, error type, message and stack trace, session and limited performance context, and support messages you send to us. Firebase and other infrastructure providers may also process technical request metadata such as an IP address. We use this information to secure the service, diagnose failures, measure crash-free sessions, and respond to requests. The ClearFix Sentry SDK disables default PII, screenshots, view hierarchy, SDK logs, and automatic interaction data, and removes the event user object before sending an event. Sentry and its network infrastructure may still receive technical request data, including an IP address, subject to the project settings and Sentry controls described below.</span>
+      </li>
+      <li>
+        <strong>Consent and moderation records</strong>
+        <span>Accepted legal-document versions and acceptance times; complaints; moderation warnings and their acknowledgement times; reason codes and moderator messages; temporary-block start and end times; permanent-ban state; and audit or evidence records reasonably needed to apply, review, or defend a moderation decision.</span>
+      </li>
+      <li>
+        <strong>Commission payment records</strong>
+        <span>Commission amount and currency, payment status, Checkout Session and event identifiers, attempt and return status, timestamps, receipt reference, and reconciliation records. Payment-method details entered on Stripe Checkout are collected and processed by Stripe, not stored by ClearFix in Firestore.</span>
       </li>
       </ul>
     </section>
 
-    <section class="policy-card">
-      <h2>3. Specialists, Providers, and Public Information</h2>
+    <section class="policy-card policy-card--changed">
+      <h2>3. Specialists, Providers, and Public Information *</h2>
       <p>The provisions about specialists apply to users who create a professional profile, search for orders, or submit proposals, even before they are selected as a provider. We process selected service categories, search area and radius, professional headline, service description, experience, education, courses, certifications, service area, native and foreign languages, and voluntarily uploaded professional documents and their metadata. This information is used to find relevant orders, present specialists, and help customers select a provider.</p>
-      <p>Other signed-in users can access a specialist’s name, photo, account type, interface language, registration date, spoken languages, professional information and attached documents, as well as the counters and order history provided by the service. History may include an order’s title, outcome, dates, closure reasons and comments, complaint indicators, and order unavailability. A public profile does not itself disclose email, phone number, or home address. Contact and site access details are disclosed to order participants according to their role and the order stage.</p>
-      <p>In connection with an order, we process proposals, agreed terms, the parties’ responses, work dates and outcomes, closure reasons and comments, messages, and complaints. Financial settlement involves declared payments and refunds, materials and taxes, invoices, receipts and other evidence, commission calculations, calculation revisions, and review records. The customer sees the declared payments, whether they are agreed, and the settlement state. The full calculation, deductions, and supporting documents are accessible only to the appointed provider and specifically authorized support; support access is logged. Complaint dialogues are accessible to registered users under the service’s access rules; ordinary private correspondence does not become public. A complaint or counter is not a finding of fault, dishonesty, or lack of qualification.</p>
-      <p>Posting, receiving, storing, technically processing, or displaying a profile, document, message, or complaint does not by itself mean that ClearFix has verified the information, confirmed a specialist’s qualifications or honesty, established a violation, or endorsed a user’s conduct. ClearFix assumes no contractual obligation to screen every specialist and document in advance, continuously supervise services, or guarantee detection of violations. A profile, order history, platform indicators, and absence of account restrictions are not a ClearFix recommendation or guarantee. Services are performed by an independent specialist. To the extent permitted by law, ClearFix is not liable for their acts or omissions and does not guarantee their qualifications, honesty, safety, or work results.</p>
+      <p>An active signed-in user can access a specialist’s name, photo, account type, interface language, registration date, spoken languages, professional information and attached documents, as well as the counters and order history provided by the service. In this policy, public professional information means information available within the authenticated ClearFix service; it is not made available through an unauthenticated public profile. History may include an order’s title, outcome, dates, closure reasons and comments, complaint indicators, and order unavailability. A public profile does not itself disclose email, phone number, or home address. Contact and site access details are disclosed to order participants according to their role and the order stage.</p>
+      <p>In connection with an order, we process proposals, agreed terms, the parties’ responses, work dates and outcomes, closure reasons and comments, messages, and complaints. Financial settlement involves declared payments and refunds, materials and taxes, invoices, receipts and other evidence, commission calculations, calculation revisions, and review records. The customer sees the declared payments, whether they are agreed, and the settlement state. The full calculation, deductions, and supporting documents are accessible only to the appointed provider and specifically authorized support; support access is logged. While a complaint dialogue is active, any active signed-in user who can access the order can read it. Only the customer and appointed provider can post complaint messages; other viewers have read-only access. After the complaint is resolved, its messages are hidden from ordinary users but may be retained for moderation, disputes, security, and legal records. Ordinary private correspondence does not become public. A complaint or counter is not a finding of fault, dishonesty, or lack of qualification.</p>
+      <p>Posting, receiving, storing, technically processing, or displaying a profile, document, message, or complaint does not by itself mean that ClearFix has verified the information, confirmed a specialist’s qualifications or honesty, established a violation, or endorsed a user’s conduct. ClearFix does not currently verify each specialist or professional document before display and does not continuously supervise services. A profile, order history, platform indicators, and absence of account restrictions are not a ClearFix recommendation or guarantee. Services are performed by an independent specialist. Customers must independently assess the provider and the documents required for the work. These statements do not exclude duties or liability that applicable law does not allow the Operator to exclude.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>4. How Information Is Stored</h2>
-      <p>The app stores account and service data in Firebase services configured for ClearFix. Firebase Authentication stores authentication records. Cloud Firestore stores user profiles, orders, proposals, conversations, messages, and related metadata. Firebase Storage stores uploaded profile and order photos. Firebase Cloud Functions process server-side tasks such as address geocoding and account deletion cleanup.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>4. How Information Is Stored *</h2>
+      <p>The app stores account and service data in Firebase services configured for ClearFix. Firebase Authentication stores authentication records. Cloud Firestore stores profiles, legal consents, moderation state, orders, proposals, conversations, messages, notifications, complaints, settlements, commission-payment state, and related metadata. Firebase Storage stores profile and order photos and private settlement evidence. Firebase Cloud Functions process server-side workflows such as geocoding, order search, notifications, settlements, Stripe payment verification, moderation acknowledgement, and account deletion cleanup.</p>
+      <p>Sentry stores diagnostic error, release, session, route, and limited performance data sent by the app for monitoring and troubleshooting. The app-side controls described in Section 2 do not by themselves prove Sentry account-level IP scrubbing, region, or retention settings. Stripe stores and processes the payment and transaction data needed to host Checkout, prevent fraud, process the provider’s commission payment, and return payment status. Their retention practices are governed by their service terms and privacy controls, while ClearFix keeps only the records reasonably needed for its stated purposes.</p>
+      <p>OpenStreetMap tile infrastructure receives map-tile requests when a map is displayed. ClearFix does not send an account identifier with the tile URL, but the request can expose the technical data and approximate viewed map area described in Section 2. OpenStreetMap Foundation and its infrastructure providers handle that request under their own privacy and operational policies.</p>
       <p>The app and browser may store local preferences such as language and theme in local app storage, browser storage, or SharedPreferences. Clearing local storage may reset these preferences but does not delete server-side account data.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>5. How We Use Information</h2>
+    <section class="policy-card policy-card--changed">
+      <h2>5. How We Use Information *</h2>
       <p>We use personal information for the following purposes:</p>
       <ul>
       <li>
@@ -271,18 +283,30 @@
       </li>
       <li>
 
-        <span>Provide address suggestions, unread counts, and support responses.</span>
+        <span>Provide order search, address suggestions, unread counts, localized notifications, complaints, moderation notices, and support responses.</span>
       </li>
       <li>
 
-        <span>Maintain security rules, prevent misuse, debug errors, monitor service health, and comply with legal obligations.</span>
+        <span>Display maps and obtain map tiles for the area a user chooses to view.</span>
+      </li>
+      <li>
+
+        <span>Record and reconcile actual-payment statements, deductions, settlement revisions, provider commissions, and Stripe Checkout results.</span>
+      </li>
+      <li>
+
+        <span>Apply warnings, temporary blocks, permanent bans, content restrictions, payment controls, and appeals or reviews under the License Agreement.</span>
+      </li>
+      <li>
+
+        <span>Maintain security rules, prevent misuse, investigate incidents, debug errors through privacy-minimized Sentry events, monitor service and release health, and comply with legal obligations.</span>
       </li>
       </ul>
     </section>
 
-    <section class="policy-card">
-      <h2>6. When We Share Information</h2>
-      <p>We do not sell personal information. We share personal information only when needed to provide the service, when you direct us to share it, or when required by law.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>6. When We Share Information *</h2>
+      <p>We do not sell personal information, disclose it for third-party advertising, or share it for marketing unrelated to ClearFix. We share personal information only when needed to provide the service, when you direct us to share it, or when required by law.</p>
       <ul>
       <li>
         <strong>Other service participants</strong>
@@ -290,11 +314,23 @@
       </li>
       <li>
         <strong>Firebase and Google services</strong>
-        <span>We use Google Firebase services for authentication, database, storage, cloud functions, hosting, and messaging, and Google Geocoding for address suggestions when you use location autofill. Google and Firebase process data under their terms and privacy controls. More information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</span>
+        <span>We use Google Firebase services for authentication, database, storage, cloud functions, and messaging, and Google Geocoding for address suggestions when you use location autofill. Google and Firebase process data under their terms and privacy controls. More information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</span>
+      </li>
+      <li>
+        <strong>OpenStreetMap map tiles</strong>
+        <span>When a map is displayed, the app requests tiles from OpenStreetMap Foundation infrastructure. The request may contain the tile coordinates and technical request data described in Section 2. More information: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a>.</span>
       </li>
       <li>
         <strong>Sign-in providers</strong>
         <span>If you choose Google or Facebook sign-in, the related provider processes the account data required for that sign-in feature.</span>
+      </li>
+      <li>
+        <strong>Stripe</strong>
+        <span>When an appointed provider opens Stripe Checkout to pay a ClearFix commission, we share the amount, CAD currency, internal order and provider references, return settings, and other metadata needed to create and verify that payment. Stripe independently collects payment-method, contact, device, network, fraud-prevention, and transaction data under its privacy policy: <a href="https://stripe.com/privacy">https://stripe.com/privacy</a>. ClearFix receives payment status and limited transaction identifiers, not the full card number or card security code.</span>
+      </li>
+      <li>
+        <strong>Sentry</strong>
+        <span>We use Sentry as a data processor for error monitoring and release health. Sentry may process the minimized technical event, stack trace, session, release, environment, platform, route, and network metadata described above. The app disables default PII, screenshots, view hierarchy, SDK logs, and automatic interaction collection and removes the event user object before sending. Error text, stack traces, custom context, and network-level request data can still contain information not anticipated by ClearFix, so account-level settings and event sampling must also be maintained. More information: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a>.</span>
       </li>
       <li>
         <strong>Legal, safety, and business needs</strong>
@@ -305,35 +341,38 @@
 
     <section class="policy-card policy-card--changed">
       <h2>7. Retention and Deletion *</h2>
-      <p>We keep personal information only as long as needed for the purposes in this policy, unless a longer period is required for legal, security, accounting, dispute, or backup reasons.</p>
-      <p>You can request account deletion in the app from Profile, Edit Profile, Delete account, or by using the account deletion information at <a href="https://www.clearfix.click/account_deletion_instruction.html">https://www.clearfix.click/account_deletion_instruction.html</a>. When your Firebase account is deleted, backend cleanup removes your user profile, user-scoped storage files, settings, and only the orders you created as a customer, including their order-scoped photos and records. If you participated in an order created by another customer as a provider, proposal author, conversation participant, or complaint participant, the shared business history may be retained for the other participant, service integrity, dispute, accounting, security, and legal purposes. Retained shared records, including proposals, accepted terms, messages, closure comments, complaints, settlements, and public order-history references, are stripped of your display name, company name, profile photo, phone number, and other account-profile identifiers where they are no longer required, and your account is shown as deleted. Existing ordinary conversations with a deleted participant become read-only. Some backups, logs, legal records, or support records may remain for a limited period when required or reasonably necessary.</p>
+      <p>We keep personal information only as long as needed for the purposes in this policy, unless a longer period is required for legal, security, accounting, payment reconciliation, moderation review, dispute, or backup reasons. Diagnostic events in Sentry and payment data in Stripe follow the configured service retention and deletion controls; ClearFix may retain a limited internal incident, payment, or audit record after the corresponding provider event is deleted when reasonably necessary for those purposes.</p>
+      <p>You can request account deletion in the app from Profile, Edit Profile, Delete account, or by using the account deletion information at <a href="https://www.clearfix.click/account_deletion_instruction.html">https://www.clearfix.click/account_deletion_instruction.html</a>. When your Firebase account is deleted, backend cleanup removes your user profile, user-scoped storage files, settings, and only the orders you created as a customer, including their ordinary order-scoped photos and records. Finalized settlements, commission payments, invoices, receipts, refunds, chargebacks, and supporting financial records are not deleted with the account or source order and instead follow the business and legal record schedule below. If you participated in an order created by another customer as a provider, proposal author, conversation participant, or complaint participant, the shared business history may be retained for the other participant, service integrity, dispute, accounting, security, and legal purposes. Retained shared records, including proposals, accepted terms, messages, closure comments, complaints, settlements, and public order-history references, are stripped of your display name, company name, profile photo, phone number, and other account-profile identifiers where they are no longer required, and your account is shown as deleted. Existing ordinary conversations with a deleted participant become read-only. Some backups, logs, legal records, or support records may remain for a limited period when required or reasonably necessary.</p>
+      <p>Account and service-history schedule: while your account remains open, we retain your account, profile, professional documents, legal-consent records, and order-related history, including proposals, messages, complaints, moderation records, and settlements. Keeping this history available is an ongoing ClearFix service purpose and supports repeat orders, account security, support, payment reconciliation, moderation, and disputes. ClearFix does not close or delete an account solely because it is inactive. You choose whether to request account deletion, subject to the limited retention described below.</p>
+      <p>Business and legal record schedule: commission payments, invoices, receipts, tax records, refunds, chargebacks, and the records reasonably needed to support those entries are retained for at least six years from the end of the last tax year to which they relate, or longer when required by law, an unresolved dispute, an audit, a legal hold, or a valid government requirement. A limited record of accepted legal-document versions, material moderation decisions, privacy requests, and related responses may be retained after account deletion when reasonably necessary to establish compliance, protect users, or resolve a claim. Records retained after account deletion are access-restricted and are not used to restore the deleted account or ordinary product history.</p>
+      <p>Technical and provider record schedule: Sentry diagnostic events are retained for up to 30 days. Ordinary application and service logs in Google Cloud&#x27;s default log bucket are retained for 30 days; audit and system logs that Google places in its required log bucket are retained by Google for 400 days and that period cannot be shortened by ClearFix. If scheduled Firestore backups are enabled, they are retained for no more than 30 days. Support mailbox records are retained for up to 24 months after a request is closed, unless they form part of a payment, tax, unresolved dispute, security incident, legal hold, or other record subject to a longer period described in this policy. Temporary Stripe Checkout return-routing records used to deliver a payment result to the correct ClearFix client are scheduled for deletion 30 days after creation. Deleting those temporary routing records does not delete the commission payment record, receipt number, stored receipt URL, invoice, refund, chargeback, or settlement history. Under Stripe&#x27;s current published rules, a hosted receipt does not expire, but its URL expires after 30 days; opening an expired URL prompts the payer to provide the email address associated with the original transaction so Stripe can send a new link. ClearFix-controlled payment and receipt records follow the business and legal record schedule above. Stripe retains the payment data and hosted receipts it controls under Stripe&#x27;s own legal, regulatory, fraud-prevention, and service-retention requirements.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>8. Security</h2>
-      <p>ClearFix uses Firebase Authentication, Firestore security rules, Storage rules, authenticated server functions, and application logging to limit access and protect personal information. Access to account, order, message, and photo records is scoped to the users and service roles that need it. No internet service can be guaranteed to be completely secure, but we work to keep protections appropriate to the sensitivity of the information.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>8. Security *</h2>
+      <p>ClearFix uses Firebase Authentication, Firestore and Storage rules, authenticated server functions, role-scoped projections, signed Stripe webhooks, restricted support access, and privacy-minimized Sentry configuration to limit access and protect personal information. Financial evidence, moderation state, and diagnostic access are restricted according to role and purpose. No internet service can be guaranteed to be completely secure, but we work to keep protections appropriate to the sensitivity of the information.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>9. Your Choices and Rights</h2>
+    <section class="policy-card policy-card--changed">
+      <h2>9. Your Choices and Rights *</h2>
       <p>You can update many details in your account profile and order screens. You can change language in the app, deny or revoke location permission in your device or browser settings, and clear local browser or app storage if you want to reset local preferences.</p>
-      <p>Canadian privacy laws, including PIPEDA, may give you rights to access personal information, request correction, withdraw consent where consent is the basis for processing, ask questions, and challenge our privacy practices. To exercise these rights, contact us at <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>. You may also contact the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a>.</p>
+      <p>Canadian privacy laws, including PIPEDA and applicable provincial laws, may give you rights to access personal information, request correction, withdraw consent where consent is the basis for processing, ask questions, challenge our privacy practices, and, where applicable, request computerized personal information in a structured and commonly used technological format or request cessation of dissemination or de-indexing. Withdrawal may prevent continued use of functions that require the information, and some records may still be retained where permitted or required for existing transactions, accounting, security, moderation, disputes, or law. To exercise a right or make a privacy complaint, contact <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a> and describe the request and the account it concerns without sending passwords or unnecessary identity documents. We may request information reasonably needed to verify identity and authority. We will respond within the time required by applicable law, investigate privacy complaints, and explain any lawful refusal, limitation, extension, or fee. If you are not satisfied, you may contact the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a> or the applicable provincial regulator.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>10. Children and Sensitive Information</h2>
-      <p>ClearFix is not intended for children. Do not use the service if you are not old enough to enter into a service contract in your province or territory. Do not include sensitive information in orders, messages, photos, or support requests unless it is necessary for the service request.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>10. Children and Sensitive Information *</h2>
+      <p>ClearFix is not intended for children. Do not use the service if you are not old enough to enter into a service contract in your province or territory. Do not include sensitive information in orders, messages, photos, or support requests unless it is necessary for the service request. Professional attachments are visible to active signed-in users, and active complaint messages are widely visible to active signed-in users who can access the order, so do not place unnecessary identity, financial, health, or other sensitive information in those materials.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>11. International Processing</h2>
-      <p>ClearFix is Canada-first, but Firebase, Google, sign-in providers, and support systems may process or store information outside your province, territory, or country. When information is processed outside Canada, it may be subject to the laws of that location. We rely on service provider safeguards and privacy terms for this processing.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>11. International Processing *</h2>
+      <p>ClearFix is Canada-first, but Firebase, Google, sign-in providers, Stripe, Sentry, OpenStreetMap tile infrastructure, and support systems may process or store information outside your province, territory, or country, including in the United States and other locations where they or their subprocessors operate. When information is processed outside Canada, it may be subject to the laws and lawful access rules of that location. We use provider contracts where available, security controls, data minimization, and available regional or transfer safeguards for this processing.</p>
     </section>
 
-    <section class="policy-card">
-      <h2>12. Changes and Contact</h2>
-      <p>We may update this policy when the app, backend, service providers, or legal requirements change. The current version is available at <a href="https://www.clearfix.click/privacy_policy.html">https://www.clearfix.click/privacy_policy.html</a>. If we make material changes, we will provide notice in the app, by email, or by another appropriate method.</p>
-      <p>For privacy questions, access or deletion requests, complaints, or a mailing address for a privacy request, contact <a href="https://www.clearfix.click/welcome">ClearFix™</a> at <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>.</p>
+    <section class="policy-card policy-card--changed">
+      <h2>12. Changes and Contact *</h2>
+      <p>We may update this policy when the app, backend, service providers, or legal requirements change. The current version is available at <a href="https://www.clearfix.click/privacy_policy.html">https://www.clearfix.click/privacy_policy.html</a>. If we make material changes, we will provide notice in the app, by email, or by another appropriate method and may require express acceptance before protected functions become available.</p>
+      <p>The accountable privacy contact is OLEH CHYSTIAK, Owner and Privacy Officer, for OLEH CHYSTIAK, the individual operator of the ClearFix service. The service address for privacy and legal notices is 5302 49 Avenue, Lacombe, Alberta T4L 1N4, Canada. The same contact email is used for privacy requests, legal notices, support, and contractual inquiries: <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>. OLHA CHYSTIAK may act as the Operator’s authorized delegate for privacy requests, financial review, moderation, and appeals, including while the Privacy Officer is unavailable. The delegate acts under the Operator’s responsibility, and requests should continue to be sent to the contact email above.</p>
     </section>
       </div>
   </main>
