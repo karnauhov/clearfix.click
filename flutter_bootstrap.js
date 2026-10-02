@@ -155,7 +155,7 @@ _flutter.buildConfig = {"engineRevision":"a804b261645ef8c13eb3d5c44a5c2fb0340c55
   _flutter.loader.load({
     serviceWorkerSettings: {
       serviceWorkerVersion: parseServiceWorkerVersion(
-        `"1444726264" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
+        `"892571525" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
       ),
     },
     onEntrypointLoaded: async (engineInitializer) => {
@@ -1452,6 +1452,6 @@ _flutter.buildConfig = {"engineRevision":"a804b261645ef8c13eb3d5c44a5c2fb0340c55
     window.setTimeout(() => loader?.remove(), 320);
   }
 })();
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4d19078a-f658-5f3c-8503-29e21d8a9b5f")}catch(e){}}();
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2eb54e7c-8e0e-57ac-8ab3-5e4f3326b8c3")}catch(e){}}();
 //# sourceMappingURL=flutter.js.map
-//# debugId=4d19078a-f658-5f3c-8503-29e21d8a9b5f
+//# debugId=2eb54e7c-8e0e-57ac-8ab3-5e4f3326b8c3

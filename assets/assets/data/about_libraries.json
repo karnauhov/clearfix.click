@@ -1,6 +1,13 @@
 {
   "libraries": [
     {
+      "name": "Google Identity Services",
+      "kind": "sdk",
+      "licenseName": "Google APIs Terms of Service",
+      "websiteUrl": "https://developers.google.com/identity/gsi/web",
+      "licenseUrl": "https://developers.google.com/terms"
+    },
+    {
       "name": "PDF-LIB",
       "kind": "package",
       "version": "1.17.1",

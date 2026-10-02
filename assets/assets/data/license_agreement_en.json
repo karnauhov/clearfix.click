@@ -22,44 +22,44 @@
     {
       "heading": "2. Terms",
       "paragraphs": [
-        "The following terms are used in the Agreement. If a term is not defined separately, it is interpreted according to the meaning of the ClearFix interface, applicable law, and ordinary online service practice."
+        "The following terms have the meanings set out below. Terms not separately defined in the Agreement are interpreted in its context and in accordance with applicable law, taking account of their use in the ClearFix interface."
       ],
       "bullets": [
         {
           "label": "ClearFix or Platform",
-          "body": "The software product, website, mobile and web app, interfaces, databases, notifications, messages, moderation tools, and other technical means intended for finding, posting, and managing work and service orders."
+          "body": "The software product, website, mobile, desktop, and web apps, interfaces, databases, notifications, messages, moderation tools, and other technical means intended for finding, posting, and managing work and service orders."
         },
         {
           "label": "Operator",
-          "body": "{operatorName}. Authorized delegates, administrators, contractors, and infrastructure providers may act for limited purposes, but they do not become the contracting operator merely by providing support or technology."
+          "body": "{operatorName}. The Operator is the user's contracting party under this Agreement. Authorized representatives, administrators, contractors, and infrastructure providers may act on the Operator's behalf within the scope of their authorization, but do not become a party to this Agreement merely by providing support or technology."
         },
         {
           "label": "User",
-          "body": "Any person who receives access to ClearFix. A user may act as a customer, provider, or use both roles at the same time if allowed by the interface and applicable law."
+          "body": "Any person who receives access to ClearFix. A user may act as a customer, specialist, or use both roles at the same time if allowed by the interface and applicable law. A specialist becomes a provider for a particular order when selected by its customer."
         },
         {
           "label": "Customer",
-          "body": "A user who posts an order, selects a provider, agrees on terms for work or services, accepts the result, and pays the provider the transaction amount."
+          "body": "A user who creates or posts an order for work or services. The customer's duties concerning provider selection, agreement on terms, acceptance of the result, and payment are governed by the Agreement and the terms of the transaction."
         },
         {
           "label": "Specialist",
-          "body": "A user who selects the specialist role, creates a professional profile, searches for orders, or submits proposals."
+          "body": "A user acting in the specialist role to offer work or services through ClearFix, including by creating a professional profile, searching for orders, or submitting proposals."
         },
         {
           "label": "Provider",
-          "body": "A specialist, company, or sole proprietor selected by a customer for a particular order. Duties concerning lawful eligibility, qualifications, licences, permits, proposal accuracy, and commission payment also apply to a specialist before appointment where relevant."
+          "body": "A specialist, company, or sole proprietor selected by a customer for a particular order. A specialist acting on behalf of a company or sole proprietor must have authority to do so. Requirements concerning lawful eligibility to work or carry on business, qualifications, licences, permits, and proposal accuracy also apply to specialists before selection where relevant. The provider's duty to pay commission arises only under the conditions set out in Section 8."
         },
         {
           "label": "Order",
-          "body": "A customer publication describing requested work or services, address or region, timing, budget, photos, notes, and other terms."
+          "body": "A record created by a customer in ClearFix for requested work or services, including a saved draft or a published order. It may contain a description, address or region, timing, budget, photos, notes, and other terms."
         },
         {
           "label": "Proposal",
-          "body": "A provider response to an order, including price, timing, terms, scope of work, exclusions, warranties, notes, and messages."
+          "body": "A specialist's response to an order setting out proposed terms for work or services, including price, timing, scope of work, exclusions, warranties, notes, and related messages."
         },
         {
           "label": "Transaction",
-          "body": "The agreement between a customer and a provider for completing a specific order. The transaction is concluded directly between the customer and the provider; ClearFix does not become a party to that transaction."
+          "body": "The contract between a customer and a provider for completing a specific order. The transaction is concluded directly between the customer and the provider; the Operator does not become a party to that transaction. This does not exclude duties or liability imposed on the Operator by applicable law for the Operator's own activities."
         }
       ]
     },
@@ -218,21 +218,23 @@
     {
       "heading": "10. Messages, Materials, and User Content",
       "paragraphs": [
-        "Users are responsible for all content they post or send in ClearFix, including orders, proposals, profile data, photos, files, messages, reviews, comments, addresses, and other information.",
-        "By posting content in ClearFix, the user grants the Operator a worldwide, non-exclusive, royalty-free licence to host, store, copy, display, transmit, technically format, and review the content only as reasonably needed to operate, secure, moderate, support, and legally protect ClearFix and its users. The licence lasts while the content remains in the service and, for retained copies, only as long as retention is permitted under the Privacy Policy or applicable law. It ends when the content is deleted, except for necessary backups, transaction records, moderation evidence, disputes, accounting, security, or legal compliance."
+        "Users are responsible for all content they post or send in ClearFix, including orders, proposals, profile data, photos, files, messages, reviews, comments, addresses, and other information. Users must have the rights or permissions needed to share that content and grant the licence below.",
+        "By posting or sending content in ClearFix, the user grants the Operator a worldwide, non-exclusive, royalty-free licence to host, store, copy, display, transmit, technically format, and review the content only as reasonably needed to operate, secure, moderate, support, and legally protect ClearFix and its users.",
+        "The licence lasts while the content remains in the service, subject to the Privacy Policy and applicable law. After the content or account is deleted, the licence continues only for copies retained as reasonably necessary for backups, transaction records, moderation evidence, dispute resolution, accounting, security, or legal compliance, and only for the purposes and periods permitted by the Privacy Policy and applicable law. The licence ends for each copy when that copy is deleted.",
+        "This licence does not transfer ownership of the content to the Operator or authorize making private correspondence public. It does not replace any consent or other lawful basis required to process personal information under the Privacy Policy and applicable law."
       ],
       "bullets": [
         {
           "label": "Prohibited content",
-          "body": "Content must not be unlawful, false, misleading, discriminatory, hateful, threatening, insulting, obscene, sexually explicit, fraudulent, spam, malicious, infringing, or otherwise contrary to ClearFix rules."
+          "body": "Content must not be unlawful, false, misleading, discriminatory, hateful, threatening, insulting, obscene, sexually explicit, fraudulent, malicious, or infringe the rights of others. Spam and any other content contrary to ClearFix rules are prohibited."
         },
         {
-          "label": "No confidential upload",
-          "body": "Users must not upload trade secrets, confidential documents, third-party personal information, passwords, payment card data, medical data, or other sensitive information unless it is necessary and lawful for the order."
+          "label": "Sensitive and confidential information",
+          "body": "User content must not include account passwords, full payment card numbers, or card security codes. Users must not post or send trade secrets, confidential documents, third-party personal information, medical data, or other sensitive information unless disclosing it is necessary for the order and lawful."
         },
         {
           "label": "Retention",
-          "body": "The Operator may retain content and technical records as needed for operation, safety, dispute resolution, commission accounting, legal compliance, fraud prevention, and protection of rights."
+          "body": "The Operator may retain content and technical records only as reasonably necessary for operation, safety, dispute resolution, commission accounting, legal compliance, fraud prevention, and protection of rights, in accordance with the purposes, access restrictions, and retention periods in the Privacy Policy and applicable law."
         }
       ]
     },

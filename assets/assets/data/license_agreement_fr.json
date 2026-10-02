@@ -22,44 +22,44 @@
     {
       "heading": "2. Définitions",
       "paragraphs": [
-        "Les termes suivants sont utilisés dans le Contrat. Si un terme n’est pas défini séparément, il s’interprète selon le sens que lui donne l’interface ClearFix, les lois applicables et les pratiques courantes des services en ligne."
+        "Les termes suivants ont le sens indiqué ci-dessous. Les termes qui ne sont pas définis séparément dans le Contrat s’interprètent dans le contexte de celui-ci et conformément aux lois applicables, en tenant compte de leur utilisation dans l’interface ClearFix."
       ],
       "bullets": [
         {
           "label": "ClearFix ou Plateforme",
-          "body": "Le produit logiciel, le site Web, l’application mobile et Web, les interfaces, les bases de données, les notifications, les messages, les outils de modération et les autres moyens techniques destinés à trouver, publier et gérer des commandes de travaux et de services."
+          "body": "Le produit logiciel, le site Web, les applications mobiles, de bureau et Web, les interfaces, les bases de données, les notifications, les messages, les outils de modération et les autres moyens techniques destinés à trouver, publier et gérer des commandes de travaux et de services."
         },
         {
           "label": "Exploitant",
-          "body": "{operatorName}. Les représentants autorisés, administrateurs, contractants et fournisseurs d’infrastructure peuvent agir à des fins limitées, mais ils ne deviennent pas l’exploitant contractant du seul fait qu’ils fournissent du soutien ou des services technologiques."
+          "body": "{operatorName}. L’Exploitant est la partie avec laquelle l’utilisateur conclut le présent Contrat. Les représentants autorisés, administrateurs, prestataires externes et fournisseurs d’infrastructure peuvent agir au nom de l’Exploitant dans les limites des pouvoirs qui leur sont accordés, mais ne deviennent pas parties au présent Contrat du seul fait qu’ils fournissent du soutien ou des services technologiques."
         },
         {
           "label": "Utilisateur",
-          "body": "Toute personne qui obtient l’accès à ClearFix. Un utilisateur peut agir comme client ou prestataire, ou exercer les deux rôles en même temps si l’interface et les lois applicables le permettent."
+          "body": "Toute personne qui obtient l’accès à ClearFix. Un utilisateur peut agir comme client ou spécialiste, ou exercer les deux rôles en même temps si l’interface et les lois applicables le permettent. Un spécialiste devient prestataire pour une commande précise lorsque le client de cette commande le choisit."
         },
         {
           "label": "Client",
-          "body": "Un utilisateur qui publie une commande, choisit un prestataire, convient des conditions des travaux ou des services, accepte le résultat et verse au prestataire le montant de la transaction."
+          "body": "Un utilisateur qui crée ou publie une commande de travaux ou de services. Les obligations du client concernant le choix du prestataire, l’accord sur les conditions, l’acceptation du résultat et le paiement sont régies par le Contrat et les conditions de la transaction."
         },
         {
           "label": "Spécialiste",
-          "body": "Un utilisateur qui choisit le rôle de spécialiste, crée un profil professionnel, recherche des commandes ou soumet des propositions."
+          "body": "Un utilisateur qui agit dans le rôle de spécialiste pour proposer des travaux ou des services par l’intermédiaire de ClearFix, notamment en créant un profil professionnel, en recherchant des commandes ou en soumettant des propositions."
         },
         {
           "label": "Prestataire",
-          "body": "Un spécialiste, une société ou un entrepreneur individuel choisi par un client pour une commande précise. Les obligations concernant l’admissibilité légale, les qualifications, les licences, les permis, l’exactitude des propositions et le paiement de la commission s’appliquent également, lorsqu’il y a lieu, au spécialiste avant sa désignation."
+          "body": "Un spécialiste, une société ou un entrepreneur individuel choisi par un client pour une commande précise. Un spécialiste qui agit au nom d’une société ou d’un entrepreneur individuel doit disposer des pouvoirs nécessaires. Les exigences concernant le droit légal de travailler ou d’exercer une activité, les qualifications, les licences, les permis et l’exactitude des propositions s’appliquent également aux spécialistes avant leur sélection, lorsqu’il y a lieu. L’obligation du prestataire de payer la commission ne naît que dans les conditions prévues à la section 8."
         },
         {
           "label": "Commande",
-          "body": "Une publication d’un client décrivant les travaux ou les services demandés, l’adresse ou la région, l’échéancier, le budget, les photos, les notes et les autres conditions."
+          "body": "Une fiche créée par un client dans ClearFix pour des travaux ou des services demandés, y compris un brouillon enregistré ou une commande publiée. Elle peut contenir une description, une adresse ou une région, un échéancier, un budget, des photos, des notes et d’autres conditions."
         },
         {
           "label": "Proposition",
-          "body": "Une réponse d’un prestataire à une commande, comprenant le prix, l’échéancier, les conditions, l’étendue des travaux, les exclusions, les garanties, les notes et les messages."
+          "body": "Une réponse d’un spécialiste à une commande qui présente les conditions proposées pour des travaux ou des services, notamment le prix, l’échéancier, l’étendue des travaux, les exclusions, les garanties, les notes et les messages connexes."
         },
         {
           "label": "Transaction",
-          "body": "L’entente conclue entre un client et un prestataire pour l’exécution d’une commande précise. La transaction est conclue directement entre le client et le prestataire; ClearFix ne devient pas partie à cette transaction."
+          "body": "Le contrat entre un client et un prestataire pour l’exécution d’une commande précise. La transaction est conclue directement entre le client et le prestataire; l’Exploitant ne devient pas partie à cette transaction. Cela n’exclut pas les obligations ou la responsabilité que les lois applicables imposent à l’Exploitant pour ses propres activités."
         }
       ]
     },
@@ -216,23 +216,25 @@
       ]
     },
     {
-      "heading": "10. Messages, documents et contenu utilisateur",
+      "heading": "10. Messages, documents et contenu des utilisateurs",
       "paragraphs": [
-        "Les utilisateurs sont responsables de tout le contenu qu’ils publient ou envoient dans ClearFix, y compris les commandes, les propositions, les données de profil, les photos, les fichiers, les messages, les avis, les commentaires, les adresses et les autres renseignements.",
-        "En publiant du contenu dans ClearFix, l’utilisateur accorde à l’Exploitant une licence mondiale, non exclusive et libre de redevances lui permettant d’héberger, de conserver, de copier, d’afficher, de transmettre, de mettre en forme techniquement et d’examiner le contenu uniquement dans la mesure raisonnablement nécessaire pour exploiter, sécuriser, modérer, soutenir et protéger juridiquement ClearFix et ses utilisateurs. La licence demeure en vigueur tant que le contenu reste dans le service et, pour les copies conservées, uniquement pendant la durée permise par la Politique de confidentialité ou les lois applicables. Elle prend fin lorsque le contenu est supprimé, sauf pour les sauvegardes nécessaires, les registres de transaction, les preuves de modération, les différends, la comptabilité, la sécurité ou la conformité légale."
+        "Les utilisateurs sont responsables de tout le contenu qu’ils publient ou envoient dans ClearFix, y compris les commandes, les propositions, les données de profil, les photos, les fichiers, les messages, les avis, les commentaires, les adresses et les autres renseignements. Ils doivent détenir les droits ou les autorisations nécessaires pour partager ce contenu et accorder la licence ci-dessous.",
+        "En publiant ou en envoyant du contenu dans ClearFix, l’utilisateur accorde à l’Exploitant une licence mondiale, non exclusive et libre de redevances lui permettant d’héberger, de conserver, de copier, d’afficher, de transmettre, d’effectuer la mise en forme technique et d’examiner le contenu uniquement dans la mesure raisonnablement nécessaire pour assurer le fonctionnement, la sécurité, la modération et le soutien de ClearFix ainsi que la protection juridique de ClearFix et de ses utilisateurs.",
+        "La licence demeure en vigueur tant que le contenu reste dans le service, sous réserve de la Politique de confidentialité et des lois applicables. Après la suppression du contenu ou du compte, elle demeure en vigueur uniquement pour les copies conservées dans la mesure raisonnablement nécessaire aux sauvegardes, aux registres de transaction, aux preuves de modération, au règlement des différends, à la comptabilité, à la sécurité ou au respect des obligations légales, et uniquement pour les finalités et les durées permises par la Politique de confidentialité et les lois applicables. La licence prend fin pour chaque copie lorsque celle-ci est supprimée.",
+        "Cette licence ne transfère pas la propriété du contenu à l’Exploitant et n’autorise pas la diffusion publique de la correspondance privée. Elle ne remplace pas le consentement ou tout autre fondement juridique requis pour traiter des renseignements personnels conformément à la Politique de confidentialité et aux lois applicables."
       ],
       "bullets": [
         {
           "label": "Contenu interdit",
-          "body": "Le contenu ne doit pas être illégal, faux, trompeur, discriminatoire, haineux, menaçant, insultant, obscène, sexuellement explicite, frauduleux, indésirable, malveillant, contrefaisant ou autrement contraire aux règles de ClearFix."
+          "body": "Le contenu ne doit pas être illégal, faux, trompeur, discriminatoire, haineux, menaçant, insultant, obscène, sexuellement explicite ou frauduleux, ni être malveillant ou porter atteinte aux droits d’autrui. Le pourriel et tout autre contenu contraire aux règles de ClearFix sont interdits."
         },
         {
-          "label": "Aucun téléversement confidentiel",
-          "body": "Les utilisateurs ne doivent pas téléverser de secrets commerciaux, de documents confidentiels, de renseignements personnels de tiers, de mots de passe, de données de carte de paiement, de renseignements médicaux ou d’autres renseignements sensibles, sauf si cela est nécessaire et légal pour la commande."
+          "label": "Renseignements sensibles et confidentiels",
+          "body": "Le contenu des utilisateurs ne doit pas inclure de mots de passe de compte, de numéros complets de carte de paiement ni de codes de sécurité de carte. Les utilisateurs ne doivent pas publier ni envoyer de secrets commerciaux, de documents confidentiels, de renseignements personnels de tiers, de renseignements médicaux ou d’autres renseignements sensibles, sauf si leur divulgation est nécessaire pour la commande et licite."
         },
         {
           "label": "Conservation",
-          "body": "L’Exploitant peut conserver le contenu et les dossiers techniques au besoin aux fins d’exploitation, de sécurité, de règlement des différends, de comptabilisation des commissions, de conformité légale, de prévention de la fraude et de protection des droits."
+          "body": "L’Exploitant peut conserver le contenu et les dossiers techniques uniquement dans la mesure raisonnablement nécessaire au fonctionnement du service, à la sécurité, au règlement des différends, à la comptabilisation des commissions, au respect des obligations légales, à la prévention de la fraude et à la protection des droits, conformément aux finalités, aux restrictions d’accès et aux durées de conservation prévues par la Politique de confidentialité et les lois applicables."
         }
       ]
     },

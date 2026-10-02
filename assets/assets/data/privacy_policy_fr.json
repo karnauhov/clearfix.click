@@ -83,15 +83,15 @@
         "Nous utilisons les renseignements personnels aux fins suivantes :"
       ],
       "bullets": [
-        { "body": "Créer, authentifier et protéger votre compte." },
-        { "body": "Afficher et mettre à jour votre profil, votre langue et votre adresse." },
-        { "body": "Créer, enregistrer, modifier, acheminer et clôturer des commandes et des demandes de service." },
-        { "body": "Permettre aux clients et aux prestataires d’échanger des propositions, des conditions acceptées, des photos, des messages et des mises à jour de commande." },
-        { "body": "Fournir la recherche de commandes, les suggestions d’adresse, les compteurs de messages non lus, les notifications localisées, les plaintes, les avis de modération et les réponses du soutien." },
-        { "body": "Afficher des cartes et obtenir des tuiles cartographiques pour la zone qu’un utilisateur choisit de consulter." },
-        { "body": "Consigner et rapprocher les déclarations de paiements réels, les déductions, les révisions de règlement, les commissions des prestataires et les résultats de Stripe Checkout." },
-        { "body": "Appliquer les avertissements, les blocages temporaires, les bannissements permanents, les restrictions de contenu, les contrôles de paiement et les appels ou réexamens prévus par le Contrat de licence." },
-        { "body": "Maintenir les règles de sécurité, prévenir les abus, enquêter sur les incidents, diagnostiquer les erreurs au moyen d’événements Sentry réduisant au minimum les renseignements personnels, surveiller l’état du service et des versions et respecter les obligations légales." }
+        { "body": "Créer et protéger votre compte et authentifier les connexions." },
+        { "body": "Afficher et mettre à jour votre profil, la langue d’interface choisie et votre adresse." },
+        { "body": "Créer, enregistrer et modifier les commandes et les demandes de service, gérer leur déroulement et les clôturer." },
+        { "body": "Permettre aux clients et aux prestataires d’échanger des propositions, des conditions acceptées, des photos, des messages et des renseignements sur les modifications des commandes." },
+        { "body": "Permettre la recherche de commandes, proposer des adresses, afficher le nombre de messages non lus, envoyer des notifications dans la langue choisie, traiter les plaintes, transmettre les avis de modération et répondre aux demandes de soutien." },
+        { "body": "Afficher des cartes et charger les tuiles cartographiques de la zone qu’un utilisateur choisit de consulter." },
+        { "body": "Consigner et rapprocher les renseignements déclarés par les utilisateurs sur les paiements réels, les déductions, les modifications du calcul du règlement financier, les commissions des prestataires et les résultats des paiements effectués par Stripe Checkout." },
+        { "body": "Appliquer les avertissements, les blocages temporaires, les bannissements permanents, les restrictions de contenu et les contrôles de paiement, et traiter les contestations ou les demandes de réexamen des décisions conformément au Contrat de licence." },
+        { "body": "Maintenir les règles de sécurité, prévenir les abus, enquêter sur les incidents, diagnostiquer les erreurs au moyen d’événements Sentry dont les renseignements personnels sont réduits au minimum, surveiller le bon fonctionnement du service et des versions de l’application et respecter les obligations légales." }
       ]
     },
     {

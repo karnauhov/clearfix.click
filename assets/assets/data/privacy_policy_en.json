@@ -84,31 +84,31 @@
       ],
       "bullets": [
         {
-          "body": "Create, authenticate, and protect your account."
+          "body": "Create and protect your account, and authenticate sign-ins."
         },
         {
-          "body": "Show and update your profile, language, and address."
+          "body": "Show and update your profile, selected interface language, and address."
         },
         {
-          "body": "Create, save, edit, route, and close orders and service requests."
+          "body": "Create, save, edit, manage the progress of, and close orders and service requests."
         },
         {
-          "body": "Let customers and providers exchange proposals, accepted terms, photos, messages, and order updates."
+          "body": "Let customers and providers exchange proposals, accepted terms, photos, messages, and information about changes to orders."
         },
         {
-          "body": "Provide order search, address suggestions, unread counts, localized notifications, complaints, moderation notices, and support responses."
+          "body": "Provide order search and address suggestions, show unread message counts, send notifications in the selected language, handle complaints, give moderation notices, and respond to support requests."
         },
         {
-          "body": "Display maps and obtain map tiles for the area a user chooses to view."
+          "body": "Display maps and load map tiles for the area a user chooses to view."
         },
         {
-          "body": "Record and reconcile actual-payment statements, deductions, settlement revisions, provider commissions, and Stripe Checkout results."
+          "body": "Record and reconcile information users declare about actual payments, deductions, changes to the financial settlement calculation, provider commissions, and payment results from Stripe Checkout."
         },
         {
-          "body": "Apply warnings, temporary blocks, permanent bans, content restrictions, payment controls, and appeals or reviews under the License Agreement."
+          "body": "Apply warnings, temporary blocks, permanent bans, content restrictions, and payment controls, and handle appeals or reviews of decisions under the License Agreement."
         },
         {
-          "body": "Maintain security rules, prevent misuse, investigate incidents, debug errors through privacy-minimized Sentry events, monitor service and release health, and comply with legal obligations."
+          "body": "Maintain security rules, prevent misuse, investigate incidents, diagnose errors using Sentry events in which personal information is minimized, monitor the operational health of the service and app releases, and comply with legal obligations."
         }
       ]
     },
