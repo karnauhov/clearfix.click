@@ -66,11 +66,11 @@
     {
       "heading": "3. Rôle juridique de ClearFix",
       "paragraphs": [
-        "ClearFix est une plateforme technologique et de communication. ClearFix aide les clients à publier des commandes et aide les prestataires à trouver des commandes, à soumettre des propositions, à communiquer avec les clients et à gérer l’exécution des travaux.",
-        "ClearFix n’emploie pas les prestataires, n’exécute pas les travaux commandés, ne perçoit pas le paiement du client pour ces travaux et ne devient pas partie à la transaction entre le client et le prestataire. ClearFix fournit toutefois la plateforme, établit et perçoit sa commission auprès du prestataire, tient des registres de transaction, applique des contrôles d’accès et de modération et peut examiner les justificatifs de règlement. Aucune disposition du présent Contrat n’exclut un rôle ou une obligation que les lois applicables attribuent à l’Exploitant en raison de ces activités réelles.",
-        "Le contrat de travaux ou de services est conclu directement entre le client et le prestataire. Toutes les conditions importantes de la transaction, y compris l’étendue des travaux, le prix, l’échéancier, les matériaux, l’accès au lieu, la garantie, la sécurité, l’acceptation, le paiement, les taxes et la responsabilité du résultat, sont convenues de façon indépendante par les utilisateurs.",
-        "ClearFix peut fournir des outils de vérification, des évaluations, des états, des notifications, un historique des messages, des modèles de champs, des services de modération et de soutien technique ainsi que des recommandations dans l’interface. Ces outils ne constituent pas des conseils juridiques, de construction, d’ingénierie, financiers, fiscaux, d’assurance ou d’autres conseils professionnels.",
-        "Les spécialistes offrent et exécutent leurs services de façon indépendante. L’inscription, un profil professionnel, les documents téléversés, l’historique, les compteurs, la présence dans les résultats de recherche, les messages ou l’acceptation d’une proposition ne constituent ni une recommandation, ni une certification, ni une relation d’emploi, ni une garantie de ClearFix. ClearFix ne vérifie actuellement pas chaque spécialiste ou document professionnel avant son affichage. Avant le début des travaux, le client doit vérifier lui-même l’identité du prestataire, son droit légal de travailler ou d’exercer une activité, ses qualifications et toute licence ou tout permis requis pour les travaux. Cette répartition des responsabilités n’exclut aucune obligation ni responsabilité que les lois applicables ne permettent pas à l’Exploitant d’exclure."
+        "ClearFix est une plateforme technologique et de communication. ClearFix aide les clients à publier des commandes et aide les spécialistes à trouver des commandes, à soumettre des propositions, à communiquer avec les clients et à gérer l’exécution des travaux.",
+        "ClearFix n’emploie pas les prestataires, n’exécute pas les travaux commandés, ne perçoit pas le paiement du client pour ces travaux et ne devient pas partie à la transaction entre le client et le prestataire. ClearFix fournit toutefois la plateforme, établit et perçoit sa commission auprès du prestataire conformément à la section 8, tient des registres de transaction, applique des contrôles d’accès et de modération et peut examiner les justificatifs de règlement. Aucune disposition du présent Contrat n’exclut un rôle, une obligation ou une responsabilité que les lois applicables attribuent à l’Exploitant en raison de ces activités réelles.",
+        "Le contrat de travaux ou de services est conclu directement entre le client et le prestataire. Toutes les conditions importantes de la transaction, y compris l’étendue des travaux, le prix, l’échéancier, les matériaux, l’accès au lieu, les garanties, la sécurité, l’acceptation du résultat, le paiement, les taxes et la responsabilité du résultat, sont convenues de façon indépendante par les utilisateurs, sous réserve des exigences impératives des lois applicables.",
+        "ClearFix peut fournir des outils de vérification, des évaluations, des états, des notifications, un historique des messages, des modèles de champs, des services de modération et de soutien technique ainsi que des recommandations dans l’interface. Ces outils ne constituent pas des conseils en matière de droit, de construction, d’ingénierie, de finances, de fiscalité, d’assurance ou d’autres conseils professionnels.",
+        "Les spécialistes offrent et exécutent leurs services de façon indépendante. L’inscription, un profil professionnel, les documents téléversés, l’historique, les compteurs, la présence dans les résultats de recherche, les messages ou l’acceptation d’une proposition ne constituent pas, à eux seuls, une recommandation ou une certification de ClearFix, ne créent pas une relation d’emploi avec l’Exploitant et ne constituent pas une garantie de ClearFix. ClearFix ne vérifie actuellement pas chaque spécialiste ni chaque document professionnel avant son affichage. Avant le début des travaux, le client doit vérifier lui-même l’identité du prestataire, son droit légal de travailler ou d’exercer une activité, ses qualifications et toute licence ou tout permis requis pour les travaux. Le statut d’emploi est déterminé par les circonstances réelles et les lois applicables. Cette répartition des responsabilités n’exclut aucune obligation ni responsabilité que les lois applicables ne permettent pas à l’Exploitant d’exclure."
       ],
       "bullets": [
         {
@@ -79,10 +79,10 @@
         },
         {
           "label": "Aucune garantie de résultat",
-          "body": "ClearFix ne garantit pas les qualifications, la bonne foi, la capacité de payer, la légalité des actes ou les licences d’un utilisateur, ni la qualité des travaux ou des services, sauf si une telle garantie est expressément offerte dans un programme ClearFix écrit distinct."
+          "body": "ClearFix ne garantit pas les qualifications, la bonne foi, la capacité de payer, la légalité des actes ou la détention des licences requises par un utilisateur, ni la qualité des travaux ou des services, sauf si une telle garantie est expressément offerte dans un programme ClearFix écrit distinct."
         },
         {
-          "label": "Risques assumés par l’utilisateur",
+          "label": "Évaluation des risques liés aux interactions",
           "body": "Les utilisateurs évaluent eux-mêmes les risques liés aux interactions et vérifient les documents, les licences, les assurances, les avis, les conditions d’accès, la sécurité du lieu et l’adéquation de la contrepartie choisie."
         }
       ]
@@ -90,21 +90,21 @@
     {
       "heading": "4. Licence d’utilisation du produit logiciel",
       "paragraphs": [
-        "Sous réserve du Contrat, l’Exploitant accorde à l’utilisateur une licence limitée, révocable, non exclusive, incessible et ne pouvant faire l’objet d’une sous-licence pour installer, ouvrir et utiliser ClearFix uniquement aux fins prévues et dans le cadre des fonctions mises à la disposition de l’utilisateur.",
-        "L’utilisateur n’acquiert aucun droit de propriété sur ClearFix, le code logiciel, les bases de données, la conception, les marques de commerce, les noms commerciaux, les textes, les modèles, les algorithmes, la logique commerciale ou toute autre propriété intellectuelle de l’Exploitant et de ses concédants."
+        "Sous réserve du Contrat, l’Exploitant accorde à l’utilisateur une licence limitée, révocable, non exclusive, incessible et ne pouvant faire l’objet d’une sous-licence pour installer ClearFix, y accéder et l’utiliser uniquement aux fins décrites dans le présent Contrat et dans le cadre des fonctions mises à la disposition de l’utilisateur.",
+        "Cette licence ne transfère aucun droit de propriété sur ClearFix ni sur le code logiciel, les bases de données, la conception, les marques de commerce, les noms commerciaux, les textes, les modèles, les algorithmes, la logique métier ou tout autre élément appartenant à l’Exploitant ou à d’autres titulaires de droits. Les droits relatifs au contenu des utilisateurs sont régis par l’article 10. Les composants tiers restent soumis aux licences qui leur sont applicables, et le présent Contrat ne restreint pas les droits accordés par ces licences, sous réserve de leurs conditions."
       ],
       "bullets": [
         {
           "label": "Actions techniques interdites",
-          "body": "L’utilisateur ne doit pas copier, modifier, décompiler ou désosser le logiciel, contourner les mesures de protection, extraire des bases de données, perturber le service, effectuer du moissonnage, automatiser des demandes sans autorisation ou créer des produits dérivés fondés sur ClearFix."
+          "body": "L’utilisateur ne doit pas copier, modifier, décompiler ou effectuer de la rétro-ingénierie du logiciel ClearFix; contourner ses contrôles d’accès ou ses mesures de sécurité; extraire ses bases de données ou collecter automatiquement son contenu (moissonnage de données); envoyer des requêtes automatisées; perturber le service; ou créer des produits logiciels dérivés de ClearFix. Ces interdictions ne s’appliquent pas aux actes expressément autorisés par le présent Contrat, l’Exploitant, une licence tierce applicable ou la loi applicable, sous réserve du respect des conditions de cette autorisation. L’utilisation des fonctions de copie, de téléchargement et d’exportation mises à disposition dans ClearFix est permise conformément au présent Contrat."
         },
         {
-          "label": "Accès au compte",
-          "body": "La licence est liée au compte de l’utilisateur et peut être limitée, suspendue ou résiliée en cas de violation du Contrat ou de risque de sécurité, juridique ou opérationnel."
+          "label": "Accès au compte et résiliation de la licence",
+          "body": "L’utilisateur doit utiliser son propre compte pour accéder aux fonctions protégées par un compte. Toute restriction, suspension ou résiliation de la licence ou de l’accès au compte est soumise aux motifs, aux procédures et aux garanties prévus aux articles 11, 17 et 20 ainsi qu’à la loi applicable. Ces mesures n’annulent pas les obligations existantes et n’excluent ni les demandes d’assistance, ni les demandes relatives à la protection des renseignements personnels, ni les autres droits qui ne peuvent légalement être exclus. La consultation des documents juridiques publics ne nécessite pas de compte."
         },
         {
           "label": "Mises à jour",
-          "body": "ClearFix peut mettre à jour, modifier, supprimer ou ajouter des fonctions, y compris celles relatives aux commandes, aux propositions, aux messages, aux paiements, à la modération, aux notifications et aux profils."
+          "body": "L’Exploitant peut mettre à jour, modifier, supprimer ou ajouter des fonctions de ClearFix, y compris celles relatives aux commandes, aux propositions, aux messages, aux paiements, à la modération, aux notifications et aux profils, sous réserve de l’article 17. Les modifications du Contrat lui-même sont régies par l’article 21, y compris ses exigences relatives à l’avis et à l’acceptation expresse."
         }
       ]
     },

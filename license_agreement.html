@@ -28,7 +28,7 @@
 
     body {
       margin: 0;
-      min-width: 320px;
+      min-width: 0;
       background: var(--surface);
       color: var(--on-surface);
       font-size: 14px;
@@ -78,6 +78,7 @@
 
     .section-list {
       display: grid;
+      grid-template-columns: minmax(0, 1fr);
       gap: 12px;
     }
 
@@ -90,6 +91,8 @@
     }
 
     .policy-card {
+      min-width: 0;
+      overflow-wrap: anywhere;
       padding: 16px;
       background: var(--card);
       border: 1px solid var(--outline-variant);
@@ -124,7 +127,7 @@
 
     .policy-card li {
       display: grid;
-      grid-template-columns: 6px 1fr;
+      grid-template-columns: 6px minmax(0, 1fr);
       column-gap: 10px;
       align-items: start;
       color: var(--on-surface-variant);
@@ -251,11 +254,11 @@
 
     <section class="policy-card policy-card--changed">
       <h2>3. Legal Role of ClearFix *</h2>
-      <p>ClearFix is a technology and communication platform. ClearFix helps customers post orders and helps providers find orders, submit proposals, communicate with customers, and manage work performance.</p>
-      <p>ClearFix does not employ providers, perform the ordered work, collect the customer’s payment for that work, or become a party to the transaction between the customer and provider. ClearFix does provide the platform, sets and collects its provider commission, maintains transaction records, applies access and moderation controls, and may review settlement evidence. Nothing in this Agreement excludes a role or duty that applicable law assigns to the Operator based on those actual activities.</p>
-      <p>A contract for work or services is concluded directly between the customer and the provider. All material transaction terms, including scope of work, price, timing, materials, access to the site, warranty, safety, acceptance, payment, taxes, and responsibility for the result, are agreed by the users independently.</p>
+      <p>ClearFix is a technology and communication platform. ClearFix helps customers post orders and helps specialists find orders, submit proposals, communicate with customers, and manage work performance.</p>
+      <p>ClearFix does not employ providers, perform the ordered work, collect the customer’s payment for that work, or become a party to the transaction between the customer and provider. ClearFix does provide the platform, sets and collects its provider commission under Section 8, maintains transaction records, applies access and moderation controls, and may review settlement evidence. Nothing in this Agreement excludes any role, duty, or liability that applicable law assigns to the Operator based on those actual activities.</p>
+      <p>A contract for work or services is concluded directly between the customer and the provider. All material transaction terms, including scope of work, price, timing, materials, access to the site, warranties, safety, acceptance of the result, payment, taxes, and responsibility for the result, are agreed by the users independently, subject to mandatory requirements of applicable law.</p>
       <p>ClearFix may provide verification tools, ratings, statuses, notifications, message history, field templates, moderation, technical support, and interface recommendations. These tools are not legal, construction, engineering, financial, tax, insurance, or other professional advice.</p>
-      <p>Specialists independently offer and perform services. Registration, a professional profile, uploaded documents, history, counters, appearance in search, messaging, or acceptance of a proposal do not constitute a ClearFix recommendation, certification, employment relationship, or guarantee. ClearFix does not currently verify each specialist or professional document before display. Before work starts, the customer must independently verify the provider’s identity, lawful eligibility to work or carry on business, qualifications, and any licence or permit required for the work. These allocations of responsibility do not exclude duties or liability that applicable law does not allow the Operator to exclude.</p>
+      <p>Specialists independently offer and perform services. Registration, a professional profile, uploaded documents, history, counters, appearance in search, messaging, or acceptance of a proposal do not by themselves constitute a recommendation or certification by ClearFix, establish an employment relationship with the Operator, or provide a guarantee by ClearFix. ClearFix does not currently verify every specialist or every professional document before display. Before work starts, the customer must independently verify the provider’s identity, lawful eligibility to work or carry on business, qualifications, and any licence or permit required for the work. Employment status is determined by the actual circumstances and applicable law. This allocation of responsibilities does not exclude any duty or liability that applicable law does not allow the Operator to exclude.</p>
       <ul>
       <li>
         <strong>No guarantee of selection</strong>
@@ -263,10 +266,10 @@
       </li>
       <li>
         <strong>No guarantee of result</strong>
-        <span>ClearFix does not guarantee user qualification, good faith, ability to pay, lawfulness of actions, licences, work or service quality, unless such a guarantee is expressly provided in a separate written ClearFix program.</span>
+        <span>ClearFix does not guarantee a user’s qualifications, good faith, ability to pay, lawfulness of actions, possession of required licences, or work or service quality, unless such a guarantee is expressly provided in a separate written ClearFix program.</span>
       </li>
       <li>
-        <strong>User risk</strong>
+        <strong>Assessment of interaction risks</strong>
         <span>Users independently assess interaction risks, verify documents, licences, insurance, reviews, access conditions, site safety, and the suitability of the chosen counterparty.</span>
       </li>
       </ul>
@@ -274,20 +277,20 @@
 
     <section class="policy-card policy-card--changed">
       <h2>4. Software Product Licence *</h2>
-      <p>Subject to the Agreement, the Operator grants the user a limited, revocable, non-exclusive, non-transferable, non-sublicensable licence to install, open, and use ClearFix only for its intended purpose and within the functions available to the user.</p>
-      <p>The user does not receive ownership of ClearFix, the software code, databases, design, trademarks, trade names, texts, templates, algorithms, business logic, or other intellectual property of the Operator and its licensors.</p>
+      <p>Subject to the Agreement, the Operator grants the user a limited, revocable, non-exclusive, non-transferable, non-sublicensable licence to install, access, and use ClearFix only for the purposes described in this Agreement and within the functions available to the user.</p>
+      <p>This licence does not transfer ownership of ClearFix or of any software code, databases, design, trademarks, trade names, texts, templates, algorithms, business logic, or other materials belonging to the Operator or other rights holders. Rights in user content are governed by Section 10. Third-party components remain subject to their applicable licences, and this Agreement does not restrict the rights granted by those licences, subject to their conditions.</p>
       <ul>
       <li>
         <strong>Prohibited technical actions</strong>
-        <span>The user must not copy, modify, decompile, reverse engineer, bypass protection, extract databases, disrupt the service, scrape, automate requests without permission, or create derivative products based on ClearFix.</span>
+        <span>The user must not copy, modify, decompile, or reverse engineer the ClearFix software; circumvent its access controls or security measures; extract its databases or automatically collect its content (scraping); send automated requests; disrupt the service; or create derivative software products based on ClearFix. These restrictions do not apply to actions expressly permitted by this Agreement, the Operator, an applicable third-party licence, or applicable law, provided the conditions of that permission are met. Use of copying, download, and export functions made available in ClearFix is permitted in accordance with this Agreement.</span>
       </li>
       <li>
-        <strong>Account access</strong>
-        <span>The licence is linked to the user&#x27;s account and may be limited, suspended, or terminated if the Agreement is breached or if security, legal, or operational risks arise.</span>
+        <strong>Account access and licence termination</strong>
+        <span>Use of account-protected functions requires the user&#x27;s own account. Any restriction, suspension, or termination of the licence or account access is subject to the grounds, procedures, and safeguards in Sections 11, 17, and 20 and applicable law. These measures do not cancel existing obligations or exclude support requests, privacy requests, or other rights that cannot lawfully be excluded. Viewing public legal documents does not require an account.</span>
       </li>
       <li>
         <strong>Updates</strong>
-        <span>ClearFix may update, change, remove, or add functions, including order, proposal, message, payment, moderation, notification, and profile functions.</span>
+        <span>The Operator may update, change, remove, or add ClearFix functions, including order, proposal, message, payment, moderation, notification, and profile functions, subject to Section 17. Changes to the Agreement itself are governed by Section 21, including its requirements concerning notice and express acceptance.</span>
       </li>
       </ul>
     </section>
