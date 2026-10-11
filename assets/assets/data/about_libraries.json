@@ -54,6 +54,13 @@
       "licenseUrl": "https://github.com/firebase/firebase-cpp-sdk/blob/main/LICENSE"
     },
     {
+      "name": "Microsoft Visual C++ Runtime",
+      "kind": "resource",
+      "licenseName": "Microsoft Visual C++ Runtime license",
+      "websiteUrl": "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist",
+      "licenseUrl": "https://visualstudio.microsoft.com/license-terms/vs2022-cruntime/"
+    },
+    {
       "name": "Roboto",
       "kind": "resource",
       "licenseName": "Apache-2.0",
@@ -474,6 +481,14 @@
       "licenseUrl": "https://pub.dev/packages/bloc_test/license"
     },
     {
+      "name": "console",
+      "kind": "dev_package",
+      "version": "4.1.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/console",
+      "licenseUrl": "https://pub.dev/packages/console/license"
+    },
+    {
       "name": "fake_cloud_firestore",
       "kind": "dev_package",
       "version": "4.0.0",
@@ -514,6 +529,14 @@
       "licenseUrl": "https://pub.dev/packages/flutter_lints/license"
     },
     {
+      "name": "get_it",
+      "kind": "dev_package",
+      "version": "8.3.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/get_it",
+      "licenseUrl": "https://pub.dev/packages/get_it/license"
+    },
+    {
       "name": "image_picker_platform_interface",
       "kind": "dev_package",
       "version": "2.11.1",
@@ -535,6 +558,14 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/mocktail",
       "licenseUrl": "https://pub.dev/packages/mocktail/license"
+    },
+    {
+      "name": "msix",
+      "kind": "dev_package",
+      "version": "3.16.12",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/msix",
+      "licenseUrl": "https://github.com/YehudaKremer/msix/blob/master/LICENSE"
     },
     {
       "name": "plugin_platform_interface",
