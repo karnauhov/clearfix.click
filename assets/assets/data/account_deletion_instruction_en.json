@@ -1,0 +1,38 @@
+{
+  "title": "ClearFix account deletion",
+  "sections": [
+    {
+      "heading": "Request account deletion",
+      "paragraphs": [
+        "You can request deletion of your ClearFix account and its associated personal data in the app or by email. You do not need to reinstall or open the app to send an email request."
+      ],
+      "bullets": [
+        {"label": "In the app", "body": "Open Profile, select Edit Profile, and choose Delete account. Follow the instructions shown in ClearFix."},
+        {"label": "By email", "body": "Email [clearfix.ca@gmail.com](mailto:clearfix.ca@gmail.com?subject=ClearFix%20account%20deletion) and state that you want your ClearFix account deleted. Identify the account concerned, for example by its account email address."},
+        {"label": "Account ownership", "body": "We may request information reasonably needed to verify your identity and authority. Do not send passwords, full card numbers, card security codes, or unnecessary identity documents."}
+      ]
+    },
+    {
+      "heading": "Data removed with the account",
+      "paragraphs": [
+        "Account deletion removes your user profile, account files, settings, and the orders you created as a customer, including their ordinary photos and records. Finalized financial records follow the retention rules below.",
+        "If you participated in another customer's order, shared business history may remain for the other participant, service integrity, disputes, accounting, security, or legal purposes. Retained shared records are stripped of account-profile identifiers where those identifiers are no longer needed, and your account is shown as deleted. Existing ordinary conversations with a deleted participant become read-only.",
+        "If active orders, an unfinished settlement, an unpaid commission, or another account condition prevents self-service deletion, contact the email address above about your request."
+      ]
+    },
+    {
+      "heading": "Records retained and retention periods",
+      "paragraphs": [
+        "Finalized settlements, commission payments, invoices, receipts, refunds, chargebacks, tax records, and supporting financial records are retained for at least six years from the end of the last tax year to which they relate. A longer period may apply when required by law, an unresolved dispute, an audit, a legal hold, or a valid government requirement.",
+        "Limited consent, moderation, privacy-request, and response records may remain when reasonably necessary for compliance, safety, or a claim. Shared service history retained for other participants follows the ongoing service-history purposes and limitations described in the Privacy Policy. Retained business and legal records are access-restricted and are not used to restore the deleted account.",
+        "Sentry diagnostic events and ordinary Google Cloud application logs are retained for up to 30 days. Google's required audit and system log bucket retains its logs for 400 days. Scheduled Firestore backups, if enabled, are retained for no more than 30 days. Support mailbox records are retained for up to 24 months after a request is closed, unless a longer business or legal retention rule applies."
+      ]
+    },
+    {
+      "heading": "Privacy information and contact",
+      "paragraphs": [
+        "Read the [ClearFix Privacy Policy](https://www.clearfix.click/privacy_policy.html) for the full deletion, retention, external-service, and privacy-rights information. Send questions or difficulties with a deletion request to [clearfix.ca@gmail.com](mailto:clearfix.ca@gmail.com)."
+      ]
+    }
+  ]
+}

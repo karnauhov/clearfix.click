@@ -1,6 +1,14 @@
 {
   "libraries": [
     {
+      "name": "Firebase Apple SDK",
+      "kind": "sdk",
+      "version": "12.9.0",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://github.com/firebase/firebase-ios-sdk",
+      "licenseUrl": "https://github.com/firebase/firebase-ios-sdk/blob/main/LICENSE"
+    },
+    {
       "name": "Google Identity Services",
       "kind": "sdk",
       "licenseName": "Google APIs Terms of Service",
@@ -183,6 +191,14 @@
       "licenseName": "MIT",
       "websiteUrl": "https://pub.dev/packages/cupertino_icons",
       "licenseUrl": "https://pub.dev/packages/cupertino_icons/license"
+    },
+    {
+      "name": "device_info_plus",
+      "kind": "package",
+      "version": "11.5.0",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://pub.dev/packages/device_info_plus",
+      "licenseUrl": "https://github.com/fluttercommunity/plus_plugins/blob/main/packages/device_info_plus/device_info_plus/LICENSE"
     },
     {
       "name": "dropdown_button2",

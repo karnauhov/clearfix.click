@@ -57,6 +57,44 @@
           "removedSections": [],
           "preReleaseReviews": [
             {
+              "reviewedOn": "2026-10-11",
+              "sourceCommit": "cc455997",
+              "changedSections": [],
+              "derivedSurfaces": ["web/account_deletion_instruction.html"],
+              "canonicalSourceSections": ["7", "9"],
+              "locales": ["en"],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "Уточнена английская вспомогательная инструкция удаления для требований Google Play: название ClearFix, запрос по email вне приложения, проверка владения и раскрытие сохраняемых записей и сроков. Добавленное раскрытие классифицировано как смысловое для этой поверхности. Каноническая Privacy Policy и ее правила обработки не изменены; инструкция приведена к существующим разделам 7 и 9 первой pre-release редакции. Версия и дата этой редакции сохраняются, механизм согласия не меняется, production-выпуск отсутствует. Перед публикацией вспомогательной страницы требуются подтверждение владельца и квалифицированный канадский юридический review.",
+              "legalSources": [
+                {
+                  "url": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+                  "jurisdiction": "Google Play, глобальные требования к ресурсу удаления аккаунта",
+                  "accessedOn": "2026-10-11",
+                  "relevance": "Запрос удаления вне приложения, идентификация приложения, типы удаляемых и сохраняемых данных и дополнительные периоды хранения."
+                },
+                {
+                  "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records/where-keep-your-records-long-request-permission-destroy-them-early.html",
+                  "jurisdiction": "Канада, федеральные требования CRA к обязательным деловым записям",
+                  "accessedOn": "2026-10-11",
+                  "relevance": "Общий срок шесть лет после конца последнего соответствующего налогового года и возможные более длительные сроки; проверка не является заключением по всем канадским обязанностям."
+                }
+              ],
+              "validation": {
+                "integrityGrammarClarityLogic": "Пройдено в ограниченном English scope: последовательные способы запроса, объем обычного удаления и исключения финансовых записей, без обещания мгновенного или полного удаления всех данных.",
+                "productFactsAndCrossDocuments": "Пройдено по Privacy Policy en, разделам 7 и 9, docs/security/security-and-access.md и docs/product/order-financial-settlement.md. Полные карточные данные не запрашиваются; backend cleanup сохраняет финализированные финансовые записи.",
+                "translation": "Не применимо: вспомогательная статическая страница существует только на английском, локализованные Privacy Policy и License Agreement не изменялись и здесь не утверждаются.",
+                "versionConsent": "Первая производственная редакция Privacy Policy 2026-09-27 вступает в силу 2026-12-21; ее текст, версия, changedSections и consent flow сохранены.",
+                "renderingAccessibility": "Пройдено для английской вспомогательной страницы в Chrome: широкий viewport 1905 px, узкий 360 px, четыре секции и все ссылки доступны, горизонтального overflow нет. Light проверена на исходной странице; dark и типографика 200% проверены через временные локальные копии с теми же CSS правилами и увеличенными размерами текста. Это не проверка системного переключения темы или browser zoom. Клавиатурный Tab последовательно достигает Back, email и Privacy Policy; многострочный focus виден. Для этой новой поверхности добавлены отдельные системные link/focus tokens: контраст ссылки 8.75:1 в light и 6.09:1 в dark. Временные копии удаляются после QA. Остальные юридические поверхности здесь не изменялись и не утверждаются.",
+                "automatedValidation": "Пройдено: dart analyze, UI legacy guardrail, flutter test (1894 теста), отдельный тест инструкции после настройки link/focus tokens, check_legal_document_html_sync.py и extract_changelog_section.py --check-only. Общий renderer сохраняет прежний результат для существующих документов по умолчанию; доступные link tokens включены только для новой вспомогательной инструкции. Существующий coverage/lcov.info показывает 75.35% lib coverage. Coverage повторно не запускался: runtime lib не изменен и существующий отчет превышает порог 70%.",
+                "notApplicable": "Новые получатели данных, новые сроки канонической политики, изменение оператора, платежной роли, комиссий, ответственности, споров и runtime-функциональности не входят в изменение."
+              },
+              "publicationApproval": "Локальный черновик. Подтверждение владельца и квалифицированный канадский юридический review не получены; публичный сайт не обновлялся."
+            },
+            {
               "reviewedOn": "2026-10-07",
               "sourceCommit": "604632df9f9d4e6cbcaa97a37db212b4760d0402",
               "changedSections": ["2"],
