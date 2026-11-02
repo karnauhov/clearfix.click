@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-02T03:07:11Z",
-  "estimated_startup_total_bytes": 6126437,
+  "generated_at_utc": "2026-11-02T04:49:53Z",
+  "estimated_startup_total_bytes": 6126439,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 15668,
-    "raw_size_bytes": 61901,
-    "gzip_size_bytes": 15668
+    "size_bytes": 15670,
+    "raw_size_bytes": 61902,
+    "gzip_size_bytes": 15670
   },
   "required_resources": [
     {
