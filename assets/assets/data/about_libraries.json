@@ -1,43 +1,19 @@
 {
   "libraries": [
     {
+      "name": "Dart",
+      "kind": "sdk",
+      "licenseName": "BSD-3-Clause",
+      "websiteUrl": "https://dart.dev",
+      "licenseUrl": "https://github.com/dart-lang/sdk/blob/main/LICENSE"
+    },
+    {
       "name": "Firebase Apple SDK",
       "kind": "sdk",
       "version": "12.9.0",
       "licenseName": "Apache-2.0",
       "websiteUrl": "https://github.com/firebase/firebase-ios-sdk",
       "licenseUrl": "https://github.com/firebase/firebase-ios-sdk/blob/main/LICENSE"
-    },
-    {
-      "name": "Google Identity Services",
-      "kind": "sdk",
-      "licenseName": "Google APIs Terms of Service",
-      "websiteUrl": "https://developers.google.com/identity/gsi/web",
-      "licenseUrl": "https://developers.google.com/terms"
-    },
-    {
-      "name": "PDF-LIB",
-      "kind": "package",
-      "version": "1.17.1",
-      "licenseName": "MIT",
-      "websiteUrl": "https://pdf-lib.js.org",
-      "licenseUrl": "https://github.com/Hopding/pdf-lib/blob/master/LICENSE.md"
-    },
-    {
-      "name": "sharp",
-      "kind": "package",
-      "version": "0.35.4",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://sharp.pixelplumbing.com",
-      "licenseUrl": "https://github.com/lovell/sharp/blob/main/LICENSE"
-    },
-    {
-      "name": "Stripe Node.js SDK",
-      "kind": "package",
-      "version": "22.6.2",
-      "licenseName": "MIT",
-      "websiteUrl": "https://github.com/stripe/stripe-node",
-      "licenseUrl": "https://github.com/stripe/stripe-node/blob/master/LICENSE"
     },
     {
       "name": "Flutter",
@@ -47,11 +23,11 @@
       "licenseUrl": "https://github.com/flutter/flutter/blob/master/LICENSE"
     },
     {
-      "name": "Dart",
+      "name": "Google Identity Services",
       "kind": "sdk",
-      "licenseName": "BSD-3-Clause",
-      "websiteUrl": "https://dart.dev",
-      "licenseUrl": "https://github.com/dart-lang/sdk/blob/main/LICENSE"
+      "licenseName": "Google APIs Terms of Service",
+      "websiteUrl": "https://developers.google.com/identity/gsi/web",
+      "licenseUrl": "https://developers.google.com/terms"
     },
     {
       "name": "Firebase C++ SDK",
@@ -62,18 +38,27 @@
       "licenseUrl": "https://github.com/firebase/firebase-cpp-sdk/blob/main/LICENSE"
     },
     {
+      "name": "IANA Language Subtag Registry",
+      "kind": "resource",
+      "version": "2026-08-08",
+      "licenseName": "Public domain / CC0",
+      "websiteUrl": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+      "licenseUrl": "https://www.iana.org/help/licensing-terms"
+    },
+    {
+      "name": "ISO 639-3 language classification",
+      "kind": "resource",
+      "version": "2026-09-11 snapshot",
+      "licenseName": "Free use of ISO language codes",
+      "websiteUrl": "https://iso639-3.sil.org/code_tables/download_tables",
+      "licenseUrl": "https://www.iso.org/iso-639-language-code"
+    },
+    {
       "name": "Microsoft Visual C++ Runtime",
       "kind": "resource",
       "licenseName": "Microsoft Visual C++ Runtime license",
       "websiteUrl": "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist",
       "licenseUrl": "https://visualstudio.microsoft.com/license-terms/vs2022-cruntime/"
-    },
-    {
-      "name": "Roboto",
-      "kind": "resource",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://fonts.google.com/specimen/Roboto",
-      "licenseUrl": "https://github.com/googlefonts/roboto/blob/main/LICENSE"
     },
     {
       "name": "Noto Sans Devanagari",
@@ -90,6 +75,28 @@
       "licenseUrl": "https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE"
     },
     {
+      "name": "PDFium",
+      "kind": "resource",
+      "licenseName": "BSD-3-Clause and third-party licenses",
+      "websiteUrl": "https://pdfium.googlesource.com/pdfium/",
+      "licenseUrl": "https://pdfium.googlesource.com/pdfium/+/refs/heads/main/LICENSE"
+    },
+    {
+      "name": "Roboto",
+      "kind": "resource",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://fonts.google.com/specimen/Roboto",
+      "licenseUrl": "https://github.com/googlefonts/roboto/blob/main/LICENSE"
+    },
+    {
+      "name": "SIL LangTags writing systems",
+      "kind": "resource",
+      "version": "2026-06-09",
+      "licenseName": "MIT",
+      "websiteUrl": "https://github.com/silnrsi/langtags",
+      "licenseUrl": "https://github.com/silnrsi/langtags/blob/master/LICENSE"
+    },
+    {
       "name": "SVG Repo icon resources",
       "kind": "resource",
       "licenseName": "SVG Repo License",
@@ -97,28 +104,12 @@
       "licenseUrl": "https://www.svgrepo.com/page/licensing"
     },
     {
-      "name": "Google Auth Library for Node.js",
-      "kind": "package",
-      "version": "10.9.1",
-      "licenseName": "Apache-2.0",
-      "websiteUrl": "https://github.com/googleapis/google-auth-library-nodejs",
-      "licenseUrl": "https://github.com/googleapis/google-auth-library-nodejs/blob/main/LICENSE"
-    },
-    {
-      "name": "GeoFire Common",
-      "kind": "package",
-      "version": "6.0.0",
-      "licenseName": "MIT",
-      "websiteUrl": "https://github.com/firebase/geofire-js",
-      "licenseUrl": "https://github.com/firebase/geofire-js/blob/master/LICENSE"
-    },
-    {
-      "name": "tz-lookup",
-      "kind": "package",
-      "version": "6.1.25",
-      "licenseName": "CC0-1.0",
-      "websiteUrl": "https://www.npmjs.com/package/tz-lookup",
-      "licenseUrl": "https://github.com/darkskyapp/tz-lookup-oss/blob/master/LICENSE"
+      "name": "Unicode CLDR language names",
+      "kind": "resource",
+      "version": "48.2.0",
+      "licenseName": "Unicode-3.0",
+      "websiteUrl": "https://github.com/unicode-org/cldr-json",
+      "licenseUrl": "https://github.com/unicode-org/cldr-json/blob/48.2.0/LICENSE"
     },
     {
       "name": "aligned_tooltip",
@@ -161,20 +152,20 @@
       "licenseUrl": "https://pub.dev/packages/cloud_functions/license"
     },
     {
+      "name": "code_assets",
+      "kind": "package",
+      "version": "2.0.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/code_assets",
+      "licenseUrl": "https://pub.dev/packages/code_assets/license"
+    },
+    {
       "name": "collection",
       "kind": "package",
       "version": "1.19.1",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/collection",
       "licenseUrl": "https://pub.dev/packages/collection/license"
-    },
-    {
-      "name": "crypto",
-      "kind": "package",
-      "version": "^3.0.6",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/crypto",
-      "licenseUrl": "https://pub.dev/packages/crypto/license"
     },
     {
       "name": "cross_file",
@@ -185,12 +176,28 @@
       "licenseUrl": "https://pub.dev/packages/cross_file/license"
     },
     {
+      "name": "crypto",
+      "kind": "package",
+      "version": "^3.0.6",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/crypto",
+      "licenseUrl": "https://pub.dev/packages/crypto/license"
+    },
+    {
       "name": "cupertino_icons",
       "kind": "package",
       "version": "1.0.8",
       "licenseName": "MIT",
       "websiteUrl": "https://pub.dev/packages/cupertino_icons",
       "licenseUrl": "https://pub.dev/packages/cupertino_icons/license"
+    },
+    {
+      "name": "cupertino_ui",
+      "kind": "package",
+      "version": "1.0.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/cupertino_ui",
+      "licenseUrl": "https://pub.dev/packages/cupertino_ui/license"
     },
     {
       "name": "device_info_plus",
@@ -225,20 +232,20 @@
       "licenseUrl": "https://pub.dev/packages/file_picker/license"
     },
     {
-      "name": "firebase_auth",
-      "kind": "package",
-      "version": "6.0.2",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/firebase_auth",
-      "licenseUrl": "https://pub.dev/packages/firebase_auth/license"
-    },
-    {
       "name": "firebase_app_check",
       "kind": "package",
       "version": "0.4.1+5",
       "licenseName": "BSD-3-Clause",
       "websiteUrl": "https://pub.dev/packages/firebase_app_check",
       "licenseUrl": "https://pub.dev/packages/firebase_app_check/license"
+    },
+    {
+      "name": "firebase_auth",
+      "kind": "package",
+      "version": "6.0.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/firebase_auth",
+      "licenseUrl": "https://pub.dev/packages/firebase_auth/license"
     },
     {
       "name": "firebase_core",
@@ -289,6 +296,14 @@
       "licenseUrl": "https://pub.dev/packages/flutter_image_compress/license"
     },
     {
+      "name": "flutter_map",
+      "kind": "package",
+      "version": "^8.3.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/flutter_map",
+      "licenseUrl": "https://pub.dev/packages/flutter_map/license"
+    },
+    {
       "name": "flutter_svg",
       "kind": "package",
       "version": "2.1.0",
@@ -313,6 +328,14 @@
       "licenseUrl": "https://pub.dev/packages/from_css_color/license"
     },
     {
+      "name": "GeoFire Common",
+      "kind": "package",
+      "version": "6.0.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://github.com/firebase/geofire-js",
+      "licenseUrl": "https://github.com/firebase/geofire-js/blob/master/LICENSE"
+    },
+    {
       "name": "geolocator",
       "kind": "package",
       "version": "^14.0.2",
@@ -321,28 +344,20 @@
       "licenseUrl": "https://pub.dev/packages/geolocator/license"
     },
     {
-      "name": "flutter_map",
-      "kind": "package",
-      "version": "^8.3.1",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/flutter_map",
-      "licenseUrl": "https://pub.dev/packages/flutter_map/license"
-    },
-    {
-      "name": "latlong2",
-      "kind": "package",
-      "version": "^0.10.1",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/latlong2",
-      "licenseUrl": "https://pub.dev/packages/latlong2/license"
-    },
-    {
       "name": "go_router",
       "kind": "package",
       "version": "12.1.3",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/go_router",
       "licenseUrl": "https://pub.dev/packages/go_router/license"
+    },
+    {
+      "name": "Google Auth Library for Node.js",
+      "kind": "package",
+      "version": "10.9.1",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://github.com/googleapis/google-auth-library-nodejs",
+      "licenseUrl": "https://github.com/googleapis/google-auth-library-nodejs/blob/main/LICENSE"
     },
     {
       "name": "google_fonts",
@@ -359,6 +374,14 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/google_sign_in",
       "licenseUrl": "https://pub.dev/packages/google_sign_in/license"
+    },
+    {
+      "name": "hooks",
+      "kind": "package",
+      "version": "2.2.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/hooks",
+      "licenseUrl": "https://pub.dev/packages/hooks/license"
     },
     {
       "name": "http",
@@ -393,20 +416,28 @@
       "licenseUrl": "https://pub.dev/packages/json_path/license"
     },
     {
+      "name": "latlong2",
+      "kind": "package",
+      "version": "^0.10.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/latlong2",
+      "licenseUrl": "https://pub.dev/packages/latlong2/license"
+    },
+    {
+      "name": "material_ui",
+      "kind": "package",
+      "version": "1.2.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/material_ui",
+      "licenseUrl": "https://pub.dev/packages/material_ui/license"
+    },
+    {
       "name": "mime",
       "kind": "package",
       "version": "^1.0.4",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/mime",
       "licenseUrl": "https://pub.dev/packages/mime/license"
-    },
-    {
-      "name": "pdf",
-      "kind": "package",
-      "version": "^3.12.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/pdf",
-      "licenseUrl": "https://pub.dev/packages/pdf/license"
     },
     {
       "name": "package_info_plus",
@@ -417,12 +448,84 @@
       "licenseUrl": "https://pub.dev/packages/package_info_plus/license"
     },
     {
+      "name": "pdf",
+      "kind": "package",
+      "version": "^3.12.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdf",
+      "licenseUrl": "https://pub.dev/packages/pdf/license"
+    },
+    {
+      "name": "PDF-LIB",
+      "kind": "package",
+      "version": "1.17.1",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pdf-lib.js.org",
+      "licenseUrl": "https://github.com/Hopding/pdf-lib/blob/master/LICENSE.md"
+    },
+    {
+      "name": "pdfium_dart",
+      "kind": "package",
+      "version": "0.3.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfium_dart",
+      "licenseUrl": "https://pub.dev/packages/pdfium_dart/license"
+    },
+    {
+      "name": "pdfium_flutter",
+      "kind": "package",
+      "version": "0.3.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfium_flutter",
+      "licenseUrl": "https://pub.dev/packages/pdfium_flutter/license"
+    },
+    {
+      "name": "pdfrx",
+      "kind": "package",
+      "version": "2.6.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfrx",
+      "licenseUrl": "https://pub.dev/packages/pdfrx/license"
+    },
+    {
+      "name": "pdfrx_engine",
+      "kind": "package",
+      "version": "0.6.0",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/pdfrx_engine",
+      "licenseUrl": "https://pub.dev/packages/pdfrx_engine/license"
+    },
+    {
+      "name": "posix",
+      "kind": "package",
+      "version": "6.5.2",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/posix",
+      "licenseUrl": "https://pub.dev/packages/posix/license"
+    },
+    {
       "name": "provider",
       "kind": "package",
       "version": "6.1.5",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/provider",
       "licenseUrl": "https://pub.dev/packages/provider/license"
+    },
+    {
+      "name": "record_use",
+      "kind": "package",
+      "version": "1.1.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/record_use",
+      "licenseUrl": "https://pub.dev/packages/record_use/license"
+    },
+    {
+      "name": "sentry_flutter",
+      "kind": "package",
+      "version": "9.30.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/sentry_flutter",
+      "licenseUrl": "https://pub.dev/packages/sentry_flutter/license"
     },
     {
       "name": "shared_preferences",
@@ -433,12 +536,20 @@
       "licenseUrl": "https://pub.dev/packages/shared_preferences/license"
     },
     {
-      "name": "sentry_flutter",
+      "name": "sharp",
       "kind": "package",
-      "version": "9.30.0",
+      "version": "0.35.4",
+      "licenseName": "Apache-2.0",
+      "websiteUrl": "https://sharp.pixelplumbing.com",
+      "licenseUrl": "https://github.com/lovell/sharp/blob/main/LICENSE"
+    },
+    {
+      "name": "Stripe Node.js SDK",
+      "kind": "package",
+      "version": "22.6.2",
       "licenseName": "MIT",
-      "websiteUrl": "https://pub.dev/packages/sentry_flutter",
-      "licenseUrl": "https://pub.dev/packages/sentry_flutter/license"
+      "websiteUrl": "https://github.com/stripe/stripe-node",
+      "licenseUrl": "https://github.com/stripe/stripe-node/blob/master/LICENSE"
     },
     {
       "name": "super_clipboard",
@@ -471,6 +582,14 @@
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/timeago",
       "licenseUrl": "https://pub.dev/packages/timeago/license"
+    },
+    {
+      "name": "tz-lookup",
+      "kind": "package",
+      "version": "6.1.25",
+      "licenseName": "CC0-1.0",
+      "websiteUrl": "https://www.npmjs.com/package/tz-lookup",
+      "licenseUrl": "https://github.com/darkskyapp/tz-lookup-oss/blob/master/LICENSE"
     },
     {
       "name": "url_launcher",
@@ -568,6 +687,14 @@
       "licenseUrl": "https://github.com/flutter/flutter/blob/master/LICENSE"
     },
     {
+      "name": "JUnit (Android tests)",
+      "kind": "dev_package",
+      "version": "4.13.2",
+      "licenseName": "EPL-1.0",
+      "websiteUrl": "https://github.com/junit-team/junit4",
+      "licenseUrl": "https://github.com/junit-team/junit4/blob/r4.13.2/LICENSE-junit.txt"
+    },
+    {
       "name": "mocktail",
       "kind": "dev_package",
       "version": "1.0.4",
@@ -592,14 +719,6 @@
       "licenseUrl": "https://pub.dev/packages/plugin_platform_interface/license"
     },
     {
-      "name": "shared_preferences_platform_interface",
-      "kind": "dev_package",
-      "version": "^2.4.1",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/shared_preferences_platform_interface",
-      "licenseUrl": "https://pub.dev/packages/shared_preferences_platform_interface/license"
-    },
-    {
       "name": "sentry_dart_plugin",
       "kind": "dev_package",
       "version": "3.4.0",
@@ -608,131 +727,20 @@
       "licenseUrl": "https://pub.dev/packages/sentry_dart_plugin/license"
     },
     {
+      "name": "shared_preferences_platform_interface",
+      "kind": "dev_package",
+      "version": "^2.4.1",
+      "licenseName": "Package license",
+      "websiteUrl": "https://pub.dev/packages/shared_preferences_platform_interface",
+      "licenseUrl": "https://pub.dev/packages/shared_preferences_platform_interface/license"
+    },
+    {
       "name": "url_launcher_platform_interface",
       "kind": "dev_package",
       "version": "^2.3.2",
       "licenseName": "Package license",
       "websiteUrl": "https://pub.dev/packages/url_launcher_platform_interface",
       "licenseUrl": "https://pub.dev/packages/url_launcher_platform_interface/license"
-    },
-    {
-      "name": "code_assets",
-      "kind": "package",
-      "version": "2.0.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/code_assets",
-      "licenseUrl": "https://pub.dev/packages/code_assets/license"
-    },
-    {
-      "name": "cupertino_ui",
-      "kind": "package",
-      "version": "1.0.2",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/cupertino_ui",
-      "licenseUrl": "https://pub.dev/packages/cupertino_ui/license"
-    },
-    {
-      "name": "hooks",
-      "kind": "package",
-      "version": "2.2.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/hooks",
-      "licenseUrl": "https://pub.dev/packages/hooks/license"
-    },
-    {
-      "name": "material_ui",
-      "kind": "package",
-      "version": "1.2.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/material_ui",
-      "licenseUrl": "https://pub.dev/packages/material_ui/license"
-    },
-    {
-      "name": "pdfium_dart",
-      "kind": "package",
-      "version": "0.3.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/pdfium_dart",
-      "licenseUrl": "https://pub.dev/packages/pdfium_dart/license"
-    },
-    {
-      "name": "pdfium_flutter",
-      "kind": "package",
-      "version": "0.3.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/pdfium_flutter",
-      "licenseUrl": "https://pub.dev/packages/pdfium_flutter/license"
-    },
-    {
-      "name": "pdfrx",
-      "kind": "package",
-      "version": "2.6.1",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/pdfrx",
-      "licenseUrl": "https://pub.dev/packages/pdfrx/license"
-    },
-    {
-      "name": "pdfrx_engine",
-      "kind": "package",
-      "version": "0.6.0",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/pdfrx_engine",
-      "licenseUrl": "https://pub.dev/packages/pdfrx_engine/license"
-    },
-    {
-      "name": "posix",
-      "kind": "package",
-      "version": "6.5.2",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/posix",
-      "licenseUrl": "https://pub.dev/packages/posix/license"
-    },
-    {
-      "name": "record_use",
-      "kind": "package",
-      "version": "1.1.1",
-      "licenseName": "Package license",
-      "websiteUrl": "https://pub.dev/packages/record_use",
-      "licenseUrl": "https://pub.dev/packages/record_use/license"
-    },
-    {
-      "name": "PDFium",
-      "kind": "resource",
-      "licenseName": "BSD-3-Clause and third-party licenses",
-      "websiteUrl": "https://pdfium.googlesource.com/pdfium/",
-      "licenseUrl": "https://pdfium.googlesource.com/pdfium/+/refs/heads/main/LICENSE"
-    },
-    {
-      "name": "IANA Language Subtag Registry",
-      "kind": "resource",
-      "version": "2026-08-08",
-      "licenseName": "Public domain / CC0",
-      "websiteUrl": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
-      "licenseUrl": "https://www.iana.org/help/licensing-terms"
-    },
-    {
-      "name": "ISO 639-3 language classification",
-      "kind": "resource",
-      "version": "2026-09-11 snapshot",
-      "licenseName": "Free use of ISO language codes",
-      "websiteUrl": "https://iso639-3.sil.org/code_tables/download_tables",
-      "licenseUrl": "https://www.iso.org/iso-639-language-code"
-    },
-    {
-      "name": "SIL LangTags writing systems",
-      "kind": "resource",
-      "version": "2026-06-09",
-      "licenseName": "MIT",
-      "websiteUrl": "https://github.com/silnrsi/langtags",
-      "licenseUrl": "https://github.com/silnrsi/langtags/blob/master/LICENSE"
-    },
-    {
-      "name": "Unicode CLDR language names",
-      "kind": "resource",
-      "version": "48.2.0",
-      "licenseName": "Unicode-3.0",
-      "websiteUrl": "https://github.com/unicode-org/cldr-json",
-      "licenseUrl": "https://github.com/unicode-org/cldr-json/blob/48.2.0/LICENSE"
     }
   ]
 }
