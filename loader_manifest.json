@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-02T04:49:53Z",
-  "estimated_startup_total_bytes": 6126439,
+  "generated_at_utc": "2026-11-03T15:24:01Z",
+  "estimated_startup_total_bytes": 6127157,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 15670,
-    "raw_size_bytes": 61902,
-    "gzip_size_bytes": 15670
+    "size_bytes": 15668,
+    "raw_size_bytes": 61901,
+    "gzip_size_bytes": 15668
   },
   "required_resources": [
     {
@@ -126,15 +126,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1393,
+      "size_bytes": 1390,
       "raw_size_bytes": 7523,
-      "gzip_size_bytes": 1393
+      "gzip_size_bytes": 1390
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 2256254,
-      "raw_size_bytes": 8430367,
-      "gzip_size_bytes": 2256254
+      "size_bytes": 2256977,
+      "raw_size_bytes": 8433884,
+      "gzip_size_bytes": 2256977
     },
     {
       "path": "manifest.json",
