@@ -655,6 +655,124 @@
                 "notApplicable": "Новые сроки хранения, права на контент, платежные ставки, налоги, возраст, реквизиты и механизм согласия не изменяются. Это не acceptance-сценарий: preflight и сценарные данные не требуются. Runtime, Firebase resources/rules/Functions, ARB, навигация, зависимости, шрифты и визуальные токены не меняются: deploy, gen-l10n, новые integration tests и acknowledgements не применимы. Отдельный отчёт не создаётся. Commit/push и публикация не запрошены. Запись задачи AI11 не изменяется по прямому поручению владельца."
               },
               "publicationApproval": "Локальные исправления разрешены прямым поручением владельца. Это проверка раздела 6 и его связей, а не утверждение всей политики или её исполнимости во всех юрисдикциях. Перед публикацией по стандарту сохраняются квалифицированная юридическая проверка применимых канадских юрисдикций и независимая человеческая проверка критических переводов; здесь они не получены. Новая редакция не публикуется."
+            },
+            {
+              "reviewedOn": "2026-11-03",
+              "sourceCommit": "18709f023292b42efdb9c131b88635a82e028d40",
+              "changedSections": [
+                "7"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "По прямому поручению владельца проверен раздел 7 во всех шести языках. Уточнены пределы необходимого хранения, фактические условия и этапы удаления аккаунта, сохранение ограниченной публичной записи удалённого заказа в истории другого участника, внутреннего UID и пользовательского текста вместо обещания полной анонимности, обязательные сроки и ограниченные исключения для поддержки, периодическая очистка Checkout и различие квитанции и её URL. Это смысловые уточнения, а не только стилистика. Владелец подтвердил отсутствие production-пользователей и поручил сохранить даты: changedOn и effectiveVersion остаются 2026-09-27, takesEffectOn остаётся 2026-12-21. Исправляется первая неопубликованная редакция; новая версия, notice и reconsent до запуска не вводятся. Все будущие production-пользователи принимают окончательную первую редакцию с записью точных версий обоих документов. Раздел 7 уже включён в changedSections текущей редакции; прежние reviews и история не меняются. reviewedOn является датой этой проверки, а не датой обновления документа.",
+              "legalSources": [
+                {
+                  "url": "https://lois-laws.justice.gc.ca/eng/acts/p-8.6/page-7.html",
+                  "jurisdiction": "Канада, федеральное право в пределах применимости PIPEDA",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Schedule 1, 4.5: необходимые цели и сроки хранения, сроки доступа и уничтожение ненужной информации. Открытый аккаунт или резервная копия не являются самостоятельным разрешением неограниченного хранения."
+                },
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-64/page-1.html",
+                  "jurisdiction": "Канада, Breach of Security Safeguards Regulations в пределах применимости PIPEDA",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Section 6: запись каждого нарушения мер защиты хранится 24 месяца после дня установления факта нарушения; этот срок не смешивается с 30-дневной диагностикой Sentry или 24 месяцами после закрытия support-запроса."
+                },
+                {
+                  "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records/where-keep-your-records-long-request-permission-destroy-them-early.html",
+                  "jurisdiction": "Канада, федеральные налоговые требования CRA",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Общее правило шести лет с конца последнего относящегося к записи налогового года и специальные случаи более длительного хранения. Текст не обещает автоматическое удаление ровно через шесть лет."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/00_03063_01",
+                  "jurisdiction": "British Columbia, частный сектор в пределах применимости PIPA",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Section 35: обязательный срок доступа к информации, использованной для непосредственно затрагивающего лицо решения, имеет приоритет перед удалением; ненужная информация не хранится без ограничений."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/en/pdf/cs/P-39.1.pdf",
+                  "jurisdiction": "Québec, частный сектор в пределах применимости закона P-39.1",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Sections 11 и 23 проверены по официальному индексированному PDF: обязательное хранение информации решения, достижение целей, уничтожение и необратимость анонимизации. Прямое открытие текущей HTML-редакции не удалось; индексированный PDF актуализирован по состоянию на 2025-09-01, поэтому он не выдаётся за полную проверку текущего права Québec. Неизменность этого требования дополнительно подтверждается Joint Investigation Report PIPA2026-IR-01 регуляторов от мая 2026. В тексте нет обещания необратимой анонимизации; требуется квалифицированная проверка актуальной применимой редакции до публикации."
+                },
+                {
+                  "url": "https://oipc.ab.ca/legislation/pipa/",
+                  "jurisdiction": "Alberta, частный сектор и физическое лицо в коммерческой деятельности в пределах применимости PIPA",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Подтверждена необходимость учитывать провинциальный режим оператора. PDF закона по официальной ссылке регулятора не открылся; непроверенные конкретные сроки Alberta не добавлены и полное заключение по её праву не заявляется."
+                },
+                {
+                  "url": "https://docs.cloud.google.com/logging/docs/store-log-entries",
+                  "jurisdiction": "Google Cloud, условия и технические свойства поставщика",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Различены _Default с настраиваемым сроком и _Required с неизменяемыми 400 днями. Не все audit logs относятся к _Required."
+                },
+                {
+                  "url": "https://www.sentry.help/en/articles/13964323-how-long-are-errors-events-stored-in-sentry",
+                  "jurisdiction": "Sentry SaaS, сроки диагностических событий",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Error events на Developer хранятся 30 дней; другие тарифы и типы данных имеют другие сроки. Указан текущий тариф, без универсальной гарантии 30 дней для всех сервисов Sentry."
+                },
+                {
+                  "url": "https://docs.stripe.com/receipts",
+                  "jurisdiction": "Stripe, опубликованное поведение hosted receipts",
+                  "accessedOn": "2026-11-03",
+                  "relevance": "Срок ссылки 30 дней; новая ссылка отправляется на email исходной транзакции. Отсутствие срока действия самой квитанции не приравнивается к гарантии бессрочного хранения всех данных Stripe."
+                }
+              ],
+              "checks": {
+                "scopeAndIntegrity": "Пройдено: отдельно сопоставлены все пять прежних абзацев и девять исправленных абзацев каждой локали. Изменён только раздел 7; остальные 11 разделов каждой политики сохранены. Изменение заголовка только в hi делает термин хранения понятным. Добавлена одинаковая во всех локалях подстановка privacyContactEmail, существующая accountDeletionUrl сохранена. Даты, версия, заголовки и нумерация остальных разделов не меняются; ARB не затрагиваются. Синхронизированы JSON-источник и производный HTML связанной инструкции удаления: этапы, ограниченная очистка, сохранение публичного исторического указателя и приоритет обязательных сроков. В самой политике другие разделы не редактировались.",
+                "grammarAndLogic": "Пройдено: единый принцип необходимого срока распространяется на открытые и неактивные аккаунты, резервные копии и внутренние записи после удаления события у поставщика. Разделены запрос, поэтапная очистка, чужая общая история, финансовые записи, технические данные, поддержка и Stripe. Обязательное хранение отделено от ограниченной возможности сохранить нужный документ. Семидневный hold не объявлен законным основанием отказа в privacy-правах. Техническая очистка и срок URL не приравниваются к немедленному стиранию всех копий или бессрочному хранению.",
+                "productFacts": [
+                  {
+                    "fact": "Недавнее подтверждение входа; черновики/активные собственные и назначенные заказы; незавершённые расчёты, споры, долг и семь дней после закрытия приостанавливают self-service deletion.",
+                    "evidence": "firebase/functions/src/users/account_deletion.js: inspectAccountDeletionBlockers, validateAccountDeletionRequest; users/account_deletion_holds.js: ORDER_CLOSURE_ACCOUNT_DELETION_HOLD_MS = 7 дней.",
+                    "status": "подтверждено текущим кодом"
+                  },
+                  {
+                    "fact": "Resumable cleanup удаляет профиль, user storage и собственные заказы; finalized order_settlements остаются. Очистка снимков удаляет профильные поля, сохраняет UID, текст и документы. Обычные разговоры получают participant_deleted/read-only. До удаления собственного заказа сохраняется ограниченная публичная история другого участника с title/status/dates/closure reasons/comments и отметкой unavailable; текст комментариев не объявлен полностью анонимным.",
+                    "evidence": "firebase/functions/src/users/account_deletion.js: ACCOUNT_DELETION_PHASES, _deleteOrderArtifactsPage, _sanitizedParticipantSnapshot, _anonymizeProviderOrdersPage, _anonymizeProviderProposalsPage, _anonymizeParticipantConversationsPage; users/on_user_deleted.js; docs/backend/firestore-data-model.md. firebase/functions/src/profiles/public_profile_projection.js: publicHistoryEntry и projectPublicOrder; существующая redactPublicClosureComment не является гарантией удаления всех персональных сведений.",
+                    "status": "подтверждено текущим кодом; полной анонимизации нет"
+                  },
+                  {
+                    "fact": "Временные маршруты Checkout имеют expires_at_ms через 30 дней и периодическую очистку раз в сутки с ограничением batch; очистка не удаляет финансовый ledger или receipt URL.",
+                    "evidence": "firebase/functions/src/orders/commission_payment_v1.js: RETURN_EXPIRY_MS, RETURN_CLEANUP_OPTIONS, cleanupCommissionCheckoutReturnsHandler.",
+                    "status": "подтверждено текущим кодом; точный момент физического удаления не обещается"
+                  },
+                  {
+                    "fact": "Sentry Developer 30 дней; _Default 30 и _Required 400; backup не более 30 дней при включении; поддержка до 24 месяцев; финансовые записи минимум шесть лет.",
+                    "evidence": "docs/operations/release-and-deploy.md: утверждённые сроки и историческая live-проверка 09.10.2026. Технические свойства поставщиков сверены с текущими источниками Sentry/Google/Stripe.",
+                    "status": "Подтверждённый операционный график сохранён; новые read-only gcloud.logging.buckets.describe для _Default и _Required не выполнились: в gcloud нет выбранного авторизованного аккаунта. Это ограничение CLI-доступа, а не доказательство изменения production-настроек. Свежая live-проверка настроек, подписки Sentry и работы support mailbox не заявляется."
+                  }
+                ],
+                "legalAndCrossDocument": "Пройдено в пределах исправления раскрытия: принцип ограниченного хранения сверен с PIPEDA, шестилетний минимум с CRA, обязательные записи нарушений мер защиты с SOR/2018-64, приоритет срока доступа с BC PIPA. Правила удаления и сохранения сверены с разделами 3, 4, 6, 8, 9 и 12 политики, разделами 10, 11, 16 и 20 соглашения и публичной инструкцией удаления. Права, контакты, доступ поддержки и ограничения финансовых документов не расширены. Необходимая применимость провинциальных законов отделена от неподтверждённого утверждения полного соответствия по всей Канаде.",
+                "translations": {
+                  "en": "Канонический текст: purpose-limited retention; recent authentication and seven-day closure hold; staged cleanup, only customer-owned orders; shared snapshots lose profile fields but text and linking IDs can remain; no anonymity promise; mandatory retention controls; 24-month breach record clock starts at determination; Developer/default/required/backup/support schedules distinct; Checkout cleanup periodic and hosted receipt distinct from expiring URL. Дополнительно сверено отдельно: limited public history can remain for another participant even after a customer deletes the source order, with title/outcome/dates/closure reasons/comments and an unavailable marker, subject to the same purpose, time and access limits. This is not restoration of the deleted user’s account.",
+                  "fr": "Самостоятельная смысловая сверка: demande distincte du nettoyage; limites légales et nécessité même pour compte inactif; authentification récente, brouillons/commandes attribuées, règlements/différends/soldes et délai de sept jours; copies des renseignements des participants, pas anonymisation générale; périodes obligatoires prioritaires et LPRPDE 24 mois après constat; délais techniques distincts; suppression des routes prévue, et non garantie au jour 30; reçu distinct du lien. Сохранены канадские renseignements personnels, courriel, rétrofacturations; ambiguïté de règlements исправлена финансовым контекстом. Дополнительно сверено отдельно: limited public history can remain for another participant even after a customer deletes the source order, with title/outcome/dates/closure reasons/comments and an unavailable marker, subject to the same purpose, time and access limits. This is not restoration of the deleted user’s account.",
+                  "uk": "Самостоятельная смысловая сверка: only necessary/legal retention, account inactivity no unlimited basis; request/authentication and seven-day hold; staged removal only own orders; participant snapshot cleanup leaves user-written text and linking IDs; mandatory retention and conditional PIPEDA breach record; technical and support clocks; periodic routing deletion and 30-day receipt URL. Устранены непереведённое chargeback без объяснения, график как калька, перегляд модерації и двусмысленные остаточные записи. Дополнительно сверено отдельно: limited public history can remain for another participant even after a customer deletes the source order, with title/outcome/dates/closure reasons/comments and an unavailable marker, subject to the same purpose, time and access limits. This is not restoration of the deleted user’s account.",
+                  "ru": "Самостоятельная смысловая сверка: хранение ограничено целью/законом независимо от открытого аккаунта; запрос и этапы очистки различены; перечислены реальные причины паузы и семь дней; чужая общая история, UID и введённый текст не обещаны анонимными; обязательные сроки приоритетны, PIPEDA 24 месяца от установления нарушения; технические сроки не равны мгновенному удалению; support exception ограничен объёмом и сроком; Checkout-маршрут не возврат денег, URL не сама квитанция. Исправлены разрешение требования, записи юридического согласия, возвратные платежи и сегменты журналов. Дополнительно сверено отдельно: limited public history can remain for another participant even after a customer deletes the source order, with title/outcome/dates/closure reasons/comments and an unavailable marker, subject to the same purpose, time and access limits. This is not restoration of the deleted user’s account.",
+                  "hi": "Самостоятельная смысловая сверка: necessary/legal periods only; open account does not justify unnecessary retention; recent verified sign-in and seven-day hold; staged cleanup removes only customer orders and participant profile copies, not all text/internal IDs; history not necessarily anonymous; mandatory records and conditional PIPEDA 24-month clock; separate Developer/log/backup/support periods; periodic Checkout-route cleanup not exact deadline; receipt not indefinite-record guarantee. Заголовок अवधारण और विलोपन и кальки अनुसूची/विन्यस्त заменены понятным языком хранения и удаления; возврат средств отделён от chargeback, ग्राहक ऐप от роли заказчика. Модальность आवश्यक/अनिवार्य/सकता है сверена отдельно. Дополнительно сверено отдельно: limited public history can remain for another participant even after a customer deletes the source order, with title/outcome/dates/closure reasons/comments and an unavailable marker, subject to the same purpose, time and access limits. This is not restoration of the deleted user’s account.",
+                  "zh_Hans": "Самостоятельная смысловая сверка: retention only while reasonably necessary or legally required; active/inactive account no independent authorization; recent authentication and seven-day wait, stages rather than immediate erasure; only own customer orders removed; profile snapshots cleared without claiming anonymous text or IDs; statutory records control, PIPEDA clock at determination; precise Developer/_Default/_Required/backup/support periods; periodic temporary-route deletion distinct from payment refund; receipt expiry distinct from URL expiry and provider retention. 内容管理 унифицировано с 内容审核, 清理与删除、退款与返回路由、最多与至少、可能与法定要求 различены. Дополнительно сверено отдельно: limited public history can remain for another participant even after a customer deletes the source order, with title/outcome/dates/closure reasons/comments and an unavailable marker, subject to the same purpose, time and access limits. This is not restoration of the deleted user’s account.",
+                  "independentHumanReview": "Смысловые пересказы каждой локали сопоставлены с английским источником агентом. Это не независимая проверка свободно владеющим языком человеком или квалифицированным юридическим переводчиком."
+                },
+                "versionAndConsent": "Пройдено по прямому pre-release решению владельца: даты, effectiveVersion, список changedSections, запись доказательств принятия и код consent gate сохранены. Новая review-запись не создаёт новую редакцию. Смысловые изменения классифицированы явно; notice/reconsent существующим test-аккаунтам не вводятся. Будущие production-пользователи принимают окончательную первую редакцию.",
+                "renderingAndAccessibility": "Пройдено в проверенном объёме: 12 widget-вариантов раздела 7 для шести локалей на широком светлом 1000x800 и узком тёмном 320x600 экране с TextScaler 2; все абзацы, ссылки, копируемый текст и прокрутка до конца сохранены без overflow. Штатный PdfPrivacyPolicyExportService сформировал шесть полных текущих документов, всего 63 страницы. pypdf подтвердил каждый из девяти исправленных абзацев каждой локали после нормализации только пробелов и подстановки двух ссылок; outline определил границы раздела. Poppler отрендерил 17 страниц с разделом и переходами; все страницы визуально просмотрены в шести составных листах, включая глифы Devanagari/китайского, длинные URL, начало и продолжение абзацев. Обрезки, наложения и потери глифов не найдены. Английский HTML открыт по локальному HTTP в собственной сессии Chrome ClearFix PP7 7148 и просмотрен по всей длине раздела; это было до последних точечных уточнений support-исключения и публичной исторической записи. Финальные HTML проверены синхронизацией с JSON и тестами статических страниц. Полная повторная ручная проверка финального HTML, приложения и отдельная assistive-technology проверка не заявляются. Вкладка закрыта, HTTP-сервер остановлен, управление освобождено сразу после просмотра; новые окна не управлялись. Визуальные токены, renderer, consent gate и пути до регистрации не изменялись.",
+                "automatedValidation": "Пройдено: dart analyze без замечаний; полный повторный flutter test --no-pub 2305/2305. В первом полном прогоне 2304 пройденных и одно устаревшее ожидание заголовка hi; ожидание обновлено, повторный полный прогон зелёный. После последнего уточнения публичной истории прошёл целевой набор metadata, repository, страниц, штатного PDF-сервиса, общего renderer, статических HTML и шести текущих PDF-экспортов: 290/290. check_ui_legacy_violations.py, extract_changelog_section.py --check-only, check_legal_document_html_sync.py и git diff --check успешны. Машинная сверка с sourceCommit подтверждает изменение только раздела 7 всех шести политик, девять абзацев, читаемый Unicode, две одинаковые подстановки, отсутствие длинных тире и неизменность всех прежних дат и review-записей metadata. Прочитан весь текущий состав Git diff, включая добавленное другим изменением правило Windows background console gate в AGENTS.md; staging, commit и push не выполнялись. Важных untracked-файлов нет. Использованы flutter-internationalization, flutter-testing и PDF QA. В отдельном временном runner после проверки способа запуска native WinEventHook/EnumWindows наблюдали всё актуальное дерево собственных процессов с учётом времени создания PID, без снимков, ввода и смены фокуса; на финальном целевом прогоне и PDF QA видимых консольных окон и событий захвата фокуса не зарегистрировано. Общий release service и чужие процессы не менялись. Имеющееся lib coverage 38397/50959 = 75.35%; coverage повторно не запускался для правок юридического текста без новых runtime-ветвей. CHANGELOG просмотрен, существующая заметка охватывает юридические документы.",
+                "notApplicable": "Это вычитка раздела 7, а не acceptance-сценарий: запуск реального приложения, preflight, сценарные данные и приёмочная таблица не применяются. Runtime, API, Firebase resources/rules/Functions, ARB, навигация, зависимости, шрифты и визуальные токены не изменялись: deploy, gen-l10n, новые integration tests и acknowledgements не требуются. UI-сообщения UserFeedback не изменяются, поэтому user-feedback-localization не применяется. Обязательства по оплате услуг, ставка комиссии, возраст, оператор и международная география не меняются. Отдельный отчёт не создаётся. Commit/push и публикация не запрошены. AI11 прочитан только для подтверждения CLF129 и версии; общая приёмочная задача не изменяется и не закрывается."
+              },
+              "publicationApproval": "Локальные исправления прямо разрешены владельцем. Проверка ограничена разделом 7 и связанными положениями; это не утверждение всей политики, полного соответствия во всех юрисдикциях или подтверждение текущих live-настроек поставщиков. До публикации сохраняются требования стандарта к квалифицированной юридической проверке применимых канадских юрисдикций и независимой человеческой проверке критических переводов. Они этой проверкой не получены; новая редакция не публикуется."
             }
           ],
           "editorialReviews": [

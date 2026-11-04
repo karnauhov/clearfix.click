@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-03T15:24:01Z",
-  "estimated_startup_total_bytes": 6127157,
+  "generated_at_utc": "2026-11-04T06:27:55Z",
+  "estimated_startup_total_bytes": 6190413,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 15668,
-    "raw_size_bytes": 61901,
+    "raw_size_bytes": 61902,
     "gzip_size_bytes": 15668
   },
   "required_resources": [
@@ -126,15 +126,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1390,
+      "size_bytes": 1391,
       "raw_size_bytes": 7523,
-      "gzip_size_bytes": 1390
+      "gzip_size_bytes": 1391
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 2256977,
-      "raw_size_bytes": 8433884,
-      "gzip_size_bytes": 2256977
+      "size_bytes": 2256203,
+      "raw_size_bytes": 8449044,
+      "gzip_size_bytes": 2256203
     },
     {
       "path": "manifest.json",
@@ -256,20 +256,20 @@
   ],
   "external_resources": [
     {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js",
-      "size_bytes": 23206
+      "url": "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js",
+      "size_bytes": 23820
     },
     {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-auth.js",
-      "size_bytes": 41009
+      "url": "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js",
+      "size_bytes": 41720
     },
     {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-firestore.js",
-      "size_bytes": 116519
+      "url": "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js",
+      "size_bytes": 179110
     },
     {
-      "url": "https://www.gstatic.com/firebasejs/12.12.0/firebase-storage.js",
-      "size_bytes": 14025
+      "url": "https://www.gstatic.com/firebasejs/12.19.0/firebase-storage.js",
+      "size_bytes": 14138
     },
     {
       "url": "https://accounts.google.com/gsi/client",
