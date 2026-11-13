@@ -248,6 +248,21 @@
       "licenseUrl": "https://pub.dev/packages/firebase_auth/license"
     },
     {
+      "name": "Sign in with Apple button artwork",
+      "kind": "resource",
+      "licenseName": "Apple Sign in with Apple button usage guidelines",
+      "websiteUrl": "https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo.",
+      "licenseUrl": "https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple"
+    },
+    {
+      "name": "sign_in_with_apple",
+      "kind": "package",
+      "version": "8.2.0",
+      "licenseName": "MIT",
+      "websiteUrl": "https://pub.dev/packages/sign_in_with_apple",
+      "licenseUrl": "https://pub.dev/packages/sign_in_with_apple/license"
+    },
+    {
       "name": "firebase_core",
       "kind": "package",
       "version": "4.5.0",

@@ -189,7 +189,7 @@
     {
       "heading": "8. Provider Commission and Financial Terms",
       "paragraphs": [
-        "The commission payable by the provider to the Operator is {specialistCommissionPercent} of the Commission base under the rate and rules version recorded by ClearFix on the server in the agreed order terms. The minimum payment rules below also apply. All calculation amounts are stored as whole Canadian dollar cents (CAD). The same formula applies to successful completion, cancellation by the customer, and cancellation by the provider: Commission base = actual payment received - sales tax included in that payment - allowable materials deduction. Cancellation before a provider is appointed requires no financial settlement in ClearFix. This does not extinguish any payment or refund obligation arising under applicable law or a separate agreement.",
+        "The commission payable by the provider to the Operator is {specialistCommissionPercent} of the Commission base under the rate and rules version recorded by ClearFix on the server in the agreed order terms. The minimum payment rules below also apply. All calculation amounts are stored as whole Canadian dollar cents (CAD). The same formula applies to successful completion, cancellation by the customer, and cancellation by the provider: Commission base = actual payment received - sales tax included in that payment - allowable materials deduction. ClearFix does not create a settlement record for an order cancelled before a provider is appointed. This does not extinguish any payment or refund obligation arising under applicable law or a separate agreement.",
         "Actual payment is the total paid to the provider for the entire order, including deposits and separate transfers, less refunds already made to the customer. It excludes promised future payments and purchases the customer makes directly from a store. An unreturned deposit is not automatically compensation: settlement remains pending until the parties agree its refund or final retention as compensation for services or cancellation. Final agreed retention is included under the same formula. This calculation does not authorize retention contrary to the transaction terms or applicable law. For hourly orders, actual total payment is used without requiring a time log for commission calculation.",
         "The materials deduction is the documented cost to the provider of materials attributable to the order. Customer purchases, returned goods, personal expenses, reusable tools and purchase tax recoverable by the provider are excluded. The provider’s markup remains in the Commission base. The provider declares one total materials deduction and supplies receipts; item-by-item transcription is not required.",
         "For this commission calculation, the sales-tax deduction is the exact sales tax lawfully included in the stated payment and supported by the provider’s invoice or other legally required tax document, taking account of refunds and adjustments. ClearFix does not determine the provider’s tax status, rates or tax obligations. Taxes on the provider’s income are not deductible from the Commission base. One document may support both tax and materials if it contains the necessary information. Technical file validation does not establish the truth or eligibility of a claimed expense.",
@@ -303,78 +303,81 @@
     {
       "heading": "13. Safety, Prohibited Work, and Urgent Situations",
       "paragraphs": [
-        "Users must comply with safety rules, building rules, workplace requirements, technical standards, and applicable law. Work requiring a licence, permit, certified specialist, inspection, or insurance must be performed only by persons who meet those requirements.",
-        "ClearFix is not an emergency service. If there is a threat to life, health, property, public safety, gas, electricity, fire, flooding, crime, or another urgent situation, the user must contact the appropriate emergency services, utilities, property manager, insurer, or qualified specialist."
+        "Users must comply with the safety and occupational health requirements, site rules, technical standards and laws that apply where the work is performed. Only people who are legally authorized and appropriately qualified may perform the work. The customer and the provider must each meet the requirements that apply to them for the work, including any requirements for licences, permits, certification, inspections, insurance or supervision.",
+        "ClearFix is not an emergency service. If there is an immediate threat to life, health, safety or property, call the local emergency number immediately (911 where available). Do not wait for a response through ClearFix. For other urgent situations, contact the appropriate utility provider, property manager, insurer, qualified specialist or other relevant service."
       ],
       "bullets": [
         {
           "label": "Prohibited categories",
-          "body": "It is prohibited to use ClearFix for unlawful work, dangerous work without proper qualification, weapons, controlled substances, sexual services, exploitation, surveillance without consent, rights violations, or other activities prohibited by the Operator."
+          "body": "Do not use ClearFix to request, offer, arrange or carry out unlawful work, dangerous work without appropriate qualifications, activities involving weapons or controlled substances, sexual services, exploitation of people, surveillance without consent, violations of others’ rights or any other activity prohibited by the Operator under this Agreement or other applicable ClearFix rules. Moderation measures are subject to Sections 11 and 20."
         },
         {
-          "label": "Hazardous materials",
-          "body": "Work involving asbestos, mold, biological hazards, structural risks, gas, high-voltage systems, regulated HVAC systems, elevators, fire systems, or other hazardous materials and systems requires appropriate qualification and legal compliance."
+          "label": "Hazardous work",
+          "body": "Work involving asbestos, mould, biological hazards, structural hazards, gas systems, high-voltage equipment, regulated heating, ventilation and air conditioning (HVAC) systems, elevators, fire protection systems or similar hazards may be performed only by people with the appropriate qualifications and in compliance with applicable legal and safety requirements."
         },
         {
-          "label": "Right to refuse",
-          "body": "The provider may refuse or stop work if conditions are unsafe, unlawful, materially different from the order, or if the customer fails to provide necessary access or information."
+          "label": "Right to refuse or stop work",
+          "body": "The provider may refuse to start work or may stop it if the work cannot be performed safely or lawfully, if actual conditions differ materially from those described in the order, or if the customer does not provide the access or information needed to perform the work. This does not limit anyone’s safety rights or relieve anyone of their safety duties under applicable law. Any consequences for cancellation, payment, refunds or compensation are governed by Sections 8 and 15, the transaction terms and applicable law."
         }
       ]
     },
     {
       "heading": "14. Disputes Between Customer and Provider",
       "paragraphs": [
-        "Disputes about price, quality, timing, materials, access, acceptance, defects, warranty, damage, cancellation, refund, or payment are resolved directly between the customer and provider. ClearFix may provide communication tools and records but is not required to adjudicate the dispute.",
-        "The Operator may, at its discretion, review messages, order data, photos, proposals, completion status, and other records to decide platform actions, including moderation, access restriction, commission calculation, or support recommendations.",
-        "Any assistance by ClearFix in communication or review does not make ClearFix a party to the transaction and does not create a duty to compensate the customer, provider, or third party."
+        "Disputes about price, quality, timing, materials, access to the site, acceptance of the result, defects, warranty, damage, cancellation, refunds, or payment concern the transaction between the customer and provider and are governed by its terms and applicable law. ClearFix may provide communication tools and records, but does not act as a court or arbitrator and is not required to adjudicate the dispute.",
+        "This section does not require users to resolve a dispute solely between themselves or to complete a ClearFix complaint or support process before seeking a legal remedy. Users retain access to competent courts, authorities, and other remedies available under applicable law. A ClearFix complaint, support request, or platform review does not itself suspend a legal limitation period.",
+        "Where access is technically authorized, lawful, and reasonably necessary for the relevant purpose, authorized personnel may review messages, order data, photos, proposals, completion status, and other relevant records to decide platform actions, including moderation, access restrictions, financial settlement review, commission calculation, or support recommendations. Access to and use of information remain subject to Section 16 and the Privacy Policy; financial settlement and commission decisions remain subject to Section 8. A platform review does not replace either party's required payment confirmation or finally determine their legal dispute.",
+        "Assistance by ClearFix in communication or review does not by itself make the Operator a party to the transaction or require the Operator to compensate a customer, provider, or third party for another user's acts or omissions. This does not exclude the Operator's duties or liability for its own acts or omissions under applicable law, or any liability or remedy that cannot lawfully be excluded or limited, as set out in Section 18. Disputes with the Operator are governed by Section 22."
       ],
       "bullets": [
         {
           "label": "User evidence",
-          "body": "Users should keep contracts, invoices, receipts, photos before and after work, correspondence, warranties, permits, and other evidence relevant to the transaction."
+          "body": "Users are encouraged to keep contracts, invoices, receipts, photos before and after work, correspondence, warranties, permits, and other evidence relevant to the transaction. Evidence must be collected, kept, and shared lawfully, with appropriate protection of personal information. This recommendation does not require ClearFix to retain records indefinitely; its retention and deletion practices remain governed by the Privacy Policy and applicable law."
         },
         {
           "label": "Damage and insurance",
-          "body": "Claims for damage to property, injury, defects, non-payment, or poor performance must be directed to the responsible user, insurer, competent authority, or court."
+          "body": "Depending on the circumstances, a user may seek a remedy for property damage, personal injury, defects, non-payment, or improper performance from the person legally responsible, submit a claim to the relevant insurer, or refer the matter to a competent authority or court under the applicable procedure. This does not exclude a claim against the Operator for its own acts or omissions, promise insurance coverage, or guarantee compensation."
         },
         {
           "label": "Platform measures",
-          "body": "Regardless of the outcome of a user dispute, ClearFix may take platform measures if the behaviour creates risk for users, the Operator, or the service."
+          "body": "Regardless of the outcome of a user dispute, ClearFix may take measures to address risks to users, the Operator, or the service, in good faith and at its reasonable discretion, subject to the grounds, proportionality, notice, and review safeguards in Sections 11 and 20. A good-faith complaint, dispute, or exercise of a legal remedy does not by itself establish a violation. Users may request review through the support contact in Section 23. Financial settlement and commission-payment controls remain governed by Section 8."
         }
       ]
     },
     {
       "heading": "15. Cancellation, Archiving, and Termination of an Order",
       "paragraphs": [
-        "An order may be saved as a draft, published, edited, cancelled, moved to work in progress, completed, terminated, or archived according to the functions available in the interface and the current order status.",
-        "Archiving or cancellation in ClearFix is a platform status and does not automatically terminate obligations that arose directly between the customer and provider, including payment, refund, warranty, liability, taxes, or document obligations."
+        "Depending on its current status and the options available in ClearFix, an order can be saved as a draft, published, edited, marked as completed or cancelled, or moved to the archive. In ClearFix, a published order changes to the in-progress status when the selected specialist accepts the appointment request.",
+        "A change to the order status in ClearFix, including closure or archiving, does not by itself determine whether any contract between the customer and the provider was validly cancelled or terminated, or which rights and obligations remain. Those rights and obligations may concern payments, refunds, warranties, liability, taxes, or the provision or retention of documents."
       ],
       "bullets": [
         {
-          "label": "Before selection",
-          "body": "A customer may cancel or change a published order before selecting a provider, subject to interface limitations and good-faith obligations to users already in communication."
+          "label": "Before a provider is appointed",
+          "body": "While an order is published and no provider has been appointed in ClearFix, the customer can make the changes allowed by the interface or cancel the order there. The customer must act in good faith toward users they are already communicating with about the order."
         },
         {
-          "label": "After selection",
-          "body": "After accepting a proposal or starting work, cancellation, termination, payment, refund, and compensation terms are resolved between the customer and provider, unless mandatory law or separate ClearFix rules apply."
+          "label": "After a provider is appointed",
+          "body": "While an order with an appointed provider is in progress in ClearFix, the customer can record a cancellation and the provider can record a withdrawal, even if work has yet to begin. The parties’ contract and applicable law govern how that contract may be cancelled or terminated, any required notice, and any payments, refunds or compensation. The order may be closed in ClearFix even if the customer and provider have yet to settle payments or refunds. The customer pays the provider directly. ClearFix does not collect payments from the customer. Section 8 explains how the parties report payment and refund information in ClearFix and when the provider pays commission to the Operator. Section 14 covers disputes. This section preserves all rights that cannot lawfully be limited, including any such right to cancel or receive a refund."
         }
       ]
     },
     {
       "heading": "16. Privacy and Personal Information",
       "paragraphs": [
-        "Personal information processing in ClearFix is described in the Privacy Policy: [{privacyPolicyUrl}]({privacyPolicyUrl}). By accepting the Agreement, the user confirms that they reviewed the Privacy Policy. Acceptance of this Agreement does not create consent for an optional privacy purpose that applicable law requires ClearFix to present separately.",
-        "The user understands that order, profile, proposal, message, photo, technical, diagnostic, payment-status, and usage data may be processed to provide the service, show orders to relevant providers, support communication, ensure safety, conduct moderation, calculate and collect provider commissions, diagnose failures through Sentry, prevent fraud, and comply with law.",
-        "The Privacy Policy also applies to specialists not yet appointed as providers: their professional information, service categories and area, languages, and uploaded documents. Professional profiles and attachments are visible to active signed-in users. While an order complaint is active, active signed-in users who can access the order can read the complaint dialogue, but only the customer and appointed provider can post. Proposal, agreement, order performance, and actual settlement data are processed as described in the Privacy Policy."
+        "Personal information processing in ClearFix is described in the [Privacy Policy]({privacyPolicyUrl}). By accepting the Agreement, the user confirms having read the Privacy Policy. Accepting this Agreement or acknowledging the Privacy Policy does not by itself constitute consent to optional processing of personal information. Where applicable law requires separate consent, ClearFix must obtain that consent from the user separately.",
+        "ClearFix may process order, profile, proposal, message, photo, technical, diagnostic, payment-status, and usage data for the purposes and within the limits described in the Privacy Policy, including providing the service, showing relevant orders to specialists, supporting communication and safety, conducting moderation, calculating and collecting commissions payable by providers, diagnosing failures through Sentry, preventing fraud, and complying with law. Information sent to Sentry is subject to the diagnostic-data safeguards described in the Privacy Policy.",
+        "The Privacy Policy also covers personal information about specialists before they are appointed as providers, including their professional information, service categories and area, languages, and uploaded professional documents. Professional profiles and documents attached to those profiles are visible to active signed-in users. This does not make all account information or all uploaded documents public.",
+        "While an order complaint dialogue is active, active signed-in users who can access the order can read that dialogue, but only the customer and appointed provider can post complaint messages. Ordinary private correspondence does not become public. After the complaint is resolved, its messages are hidden from ordinary users; any continued retention remains subject to the Privacy Policy and applicable law.",
+        "Within ClearFix, access to proposal, agreed-term, order-performance, and actual settlement data depends on the user's role and the order stage, as described in the Privacy Policy. The customer can see the payment amounts declared by both parties, whether those amounts match, and the settlement status. The full calculation, deductions, and supporting financial documents are accessible only to the appointed provider and specifically authorized support personnel."
       ],
       "bullets": [
         {
           "label": "Other users' data",
-          "body": "Users must use other users' personal information only for the relevant order and must not sell, publish, transfer, or use it for spam, harassment, discrimination, or unrelated marketing."
+          "body": "Users must use other users' personal information only as reasonably necessary for the relevant order and must not sell it or use it for spam, harassment, discrimination, or unrelated marketing. Publishing or disclosing that information requires a lawful basis and must be limited to what is reasonably necessary for the permitted purpose. These rules do not prevent lawful disclosures necessary for support, safety, the protection of legal rights, or compliance with law."
         },
         {
-          "label": "Legal requests",
-          "body": "The Operator may disclose data where required by law, court order, competent authority request, rights protection, safety, fraud prevention, or enforcement of the Agreement."
+          "label": "Lawful disclosure",
+          "body": "The Operator may disclose personal information to comply with applicable law, respond to legally valid requests from courts or competent authorities, protect legal rights or safety, prevent fraud, or enforce the Agreement, but only to the extent reasonably necessary and with the consent or other legal authority required in the circumstances. The fact that an authority requests information does not by itself authorize disclosure without consent. The purposes, recipients, access restrictions, and retention periods described in the Privacy Policy continue to apply."
         }
       ]
     },

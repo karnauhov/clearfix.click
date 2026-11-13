@@ -773,6 +773,234 @@
                 "notApplicable": "Это вычитка раздела 7, а не acceptance-сценарий: запуск реального приложения, preflight, сценарные данные и приёмочная таблица не применяются. Runtime, API, Firebase resources/rules/Functions, ARB, навигация, зависимости, шрифты и визуальные токены не изменялись: deploy, gen-l10n, новые integration tests и acknowledgements не требуются. UI-сообщения UserFeedback не изменяются, поэтому user-feedback-localization не применяется. Обязательства по оплате услуг, ставка комиссии, возраст, оператор и международная география не меняются. Отдельный отчёт не создаётся. Commit/push и публикация не запрошены. AI11 прочитан только для подтверждения CLF129 и версии; общая приёмочная задача не изменяется и не закрывается."
               },
               "publicationApproval": "Локальные исправления прямо разрешены владельцем. Проверка ограничена разделом 7 и связанными положениями; это не утверждение всей политики, полного соответствия во всех юрисдикциях или подтверждение текущих live-настроек поставщиков. До публикации сохраняются требования стандарта к квалифицированной юридической проверке применимых канадских юрисдикций и независимой человеческой проверке критических переводов. Они этой проверкой не получены; новая редакция не публикуется."
+            },
+            {
+              "reviewedOn": "2026-11-08",
+              "sourceCommit": "b3c3867f9c04acc1f39fb253174e53932b372c4b",
+              "changedSections": [
+                "8"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "По прямому поручению владельца повторно проверен раздел 8 всех шести локалей. Помимо замены технических калек уточнены пределы минимизации Sentry и действия при нарушениях безопасности. По последующему уточнению владельца последний абзац изложен прямо и спокойно: меры защиты, оценка рисков, фиксация инцидента и необходимые уведомления. Удалены отдельное утверждение о невозможности гарантировать безопасность и конструкция об отсутствии освобождения от законных обязанностей; условия и сроки уведомления сохранены. Совокупное изменение относительно sourceCommit классифицировано как смысловое. Владелец подтвердил отсутствие production-пользователей и поручил не менять даты: changedOn и effectiveVersion остаются 2026-09-27, takesEffectOn остаётся 2026-12-21. Новая версия, notice и повторное согласие test-пользователей до запуска не вводятся. Production-пользователи принимают окончательную первую редакцию с записью точных версий обоих документов. Раздел 8 уже включён в changedSections, прежняя история сохраняется. reviewedOn относится к проверке, а не к дате обновления документа.",
+              "legalSources": [
+                {
+                  "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/principles/p_safeguards/",
+                  "jurisdiction": "Канада, федеральное право в пределах применимости PIPEDA",
+                  "accessedOn": "2026-11-08",
+                  "relevance": "Принцип 4.7: меры защиты должны соответствовать чувствительности информации и учитывать риски. Невозможность абсолютной безопасности не заменяет обязанность защищать информацию; достаточность всех организационных и технических мер этой вычиткой не сертифицируется."
+                },
+                {
+                  "url": "https://www.laws.justice.gc.ca/eng/acts/p-8.6/FullText.html?wbdisable=true",
+                  "jurisdiction": "Канада, PIPEDA, sections 10.1-10.3 и Schedule 1, 4.7",
+                  "accessedOn": "2026-11-08",
+                  "relevance": "Проверено по официальному индексированному тексту: оценка существенного вреда, отчёт регулятору, уведомление лиц и других необходимых получателей, записи нарушений. Перечень в разделе 8 открыт словом including и не отменяет других обязанностей. Универсальный порог либо единый срок для всех юрисдикций не устанавливается."
+                },
+                {
+                  "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-for-businesses/privacy-breaches-at-your-business/gd_pb_201810/",
+                  "jurisdiction": "Канада, официальные разъяснения OPC о нарушениях мер защиты",
+                  "accessedOn": "2026-11-08",
+                  "relevance": "Записи всех нарушений отличаются от обязательных уведомлений при реальном риске существенного вреда. Сохранение записей согласовано с разделом 7; конфиденциальность диагностических данных не объявляется гарантированной."
+                },
+                {
+                  "url": "https://oipc.ab.ca/breach-notification/",
+                  "jurisdiction": "Alberta, частный сектор в пределах применимости PIPA",
+                  "accessedOn": "2026-11-08",
+                  "relevance": "Section 34.1: уведомление Commissioner без необоснованной задержки при RROSH; section 37.1: полномочие потребовать уведомления лиц. Раздел не смешивает этот порядок с федеральным. Официальный PDF закона по ссылке OIPC недоступен инструменту; полная правовая оценка Alberta не заявляется."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01",
+                  "jurisdiction": "British Columbia, частный сектор в пределах применимости PIPA",
+                  "accessedOn": "2026-11-08",
+                  "relevance": "Section 34 предусматривает разумные меры защиты. Не утверждается, что провинциальный PIPA сам по себе вводит идентичную PIPEDA обязанность уведомлять о каждом инциденте."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/en/pdf/cs/P-39.1.pdf",
+                  "jurisdiction": "Québec, частный сектор в пределах применимости P-39.1",
+                  "accessedOn": "2026-11-08",
+                  "relevance": "В официальном индексированном PDF, актуализированном 2025-09-01, sections 3.5-3.8 различают меры реагирования, оценку риска, уведомление и реестр. Текущие HTML/PDF напрямую не открылись. Это дополнительная сверка смысла, не подтверждение отсутствия последующих изменений; квалифицированная проверка текущей применимой редакции требуется до публикации."
+                }
+              ],
+              "checks": {
+                "scopeIntegrityGrammarLogic": "Пройдено в scope раздела 8: английский проверен первым, каждая локаль отдельно сопоставлена с одной финальной редакцией. В разделе три абзаца: доступ, диагностика, меры защиты и реагирование на инциденты. При последующем уточнении изменён только третий абзац каждой локали; первые два, заголовки, appName, ссылки 2/6 и остальные разделы сохранены. Новая редакция третьего абзаца не содержит двух удалённых отрицательных конструкций и сохраняет одних субъектов, оценку риска, запись инцидента и законные условия/сроки уведомлений.",
+                "productFacts": "Подтверждено кодом: Firebase Authentication; Firestore/Storage rules и закрытые финансовые коллекции; validateOrderViewRequest, safeLocation и settlementForRole ограничивают запросы/состав ответа по правам; order_settlement_v1 требует financial_support claim, причину и audit для служебного доступа; commission_payment_v1 проверяет подпись через stripe.webhooks.constructEvent. Текст говорит о проверке входа/прав в серверных операциях, а не об аутентификации каждого публичного webhook или фонового trigger. Sentry sendDefaultPii=false, screenshots/viewHierarchy/logs/interaction отключены, event.user удаляется; произвольный текст исключений может содержать персональную информацию. Live IAM/настройки Sentry, фактическая организация всех доступов и готовность внутреннего процесса реагирования заново не проверялись и не объявляются подтверждёнными.",
+                "legalAndCrossDocuments": "Пройдено в ограниченном scope: меры защиты и действия при инциденте изложены утвердительно. Отдельное предупреждение о невозможности полной безопасности и повторная формула о неосвобождении от закона удалены по прямому поручению владельца. Новая формулировка не обещает абсолютную безопасность: соразмерные меры, оценка рисков и записи об инциденте отделены от уведомлений, условия и сроки которых определяет закон. Текст не вводит единый порог уведомления для всех провинций. Сверены разделы 2, 3, 4, 6, 7, 9, 11 и 12 политики и 16/18 соглашения: объём доступа, остаточные риски Sentry, обязательное хранение записей и права пользователя сохраняются. Непроверенные сертификация, сквозное шифрование, готовность специальной команды реагирования или профессиональное юридическое заключение не заявляются.",
+                "translation": {
+                  "en": "Канонический английский проверен первым. Серверные проверки, доступные данные, проверка подписи, supporting documents и ограничения диагностики описаны явно. Финальный абзац по уточнению владельца содержит три прямых предложения: соразмерные меры защиты; оценка рисков и запись инцидента; уведомление лиц и privacy authorities по условиям и срокам закона. Конструкции No internet service can guarantee и This does not remove our duties удалены.",
+                  "fr": "Отдельно проверен канадский французский. Устранены projections, fonctions serveur authentifiées и неясное accès du soutien; используются autorisations d’accès, personnel de soutien, pièces justificatives financières и données de diagnostic. Последний абзац отдельно сверен после уточнения владельца. Смысловой пересказ: Protective measures are matched to sensitivity and processing risk. A personal-information security breach triggers risk assessment and an incident record. Individuals are notified and privacy authorities receive a report when and within the period the law requires. No separate statement about impossible guarantees or non-waiver of duties remains.",
+                  "uk": "Отдельно проверен украинский. Проєкції, фінансові докази и мінімізована щодо конфіденційності конфігурація заменены доступными данными, підтвердними документами и конкретными настройками Sentry. Последний абзац отдельно сверен после уточнения владельца. Смысловой пересказ: Proportionate safeguards address sensitivity and processing risks. If personal-information security is breached, risks are assessed and the incident is recorded. Notice to affected people and reporting to privacy authorities follow statutory conditions and deadlines. The two negative disclaimer constructions are removed.",
+                  "ru": "Отдельно проверен русский. Аутентифицированные функции и проекции заменены проверками входа/прав и составом доступных данных; финансовые доказательства - подтверждающими документами; доступ поддержки - доступом сотрудников. Последний абзац отдельно сверен после уточнения владельца. Смысловой пересказ: Safeguards reflect information sensitivity and processing risk. A security breach leads to risk assessment and an incident record. Notifications to affected people and reports to privacy authorities are made in the circumstances and within the time limits required by law. There is no stand-alone impossibility-of-security or non-exemption sentence.",
+                  "hi": "Отдельно проверен хинди. Удалена буквальная भूमिका-सीमित प्रक्षेपण; प्रमाणित не выдаёт функции за сертифицированные; सहायता относится к сотрудникам, निदान - к диагностике приложения. Длинный перечень обязанностей разбит на предложения с сохранением условий и сроков закона. Последний абзац отдельно сверен после уточнения владельца. Смысловой пересказ: Safeguards account for sensitivity and processing risks. If personal information security is breached, risks are assessed and a record of the event is kept. Affected individuals and the relevant privacy authorities are notified or reported to under statutory circumstances and timing. Guarantees and non-waiver are no longer discussed.",
+                  "zh_Hans": "Отдельно проверен упрощённый китайский. 身份验证 сведено к проверке входа и прав, 签名的 webhook - к проверке подписи, 内容管理 унифицировано с 内容审核; 支持访问 заменено доступом сотрудников поддержки. Последний абзац отдельно сверен после уточнения владельца. Смысловой пересказ: The service applies safeguards proportionate to sensitivity and processing risk. On a personal-information security incident it assesses risk and keeps incident records. It informs affected individuals and reports to privacy regulators in legally specified circumstances and time frames. The former negative guarantee and non-exemption wording is removed.",
+                  "independentHumanReview": "Не получена: смысловая сверка каждой локали выполнена агентом и не является независимой человеческой или профессиональной юридической проверкой. По прямому поручению владельца создана CLF235 в версии 1.2.0 для вычитки человеком - квалифицированным юристом с привлечением юридических переводчиков; агенту запрещено считать собственные проверки выполнением той задачи."
+                },
+                "versionAndConsent": "Пройдено по явному решению владельца до запуска: все прежние даты и версии сохраняются, новый номер редакции и новый consent gate не вводятся. Материальные изменения не маскируются как только редакционные. Предыдущие review-записи сохраняются; новый reviewedOn не является policyLastUpdated.",
+                "renderingAndAccessibility": "Пройдено после финального уточнения последнего абзаца: штатный AppLegalDocumentView повторно отрендерен для шести локалей на широком светлом экране 1000px и узком тёмном экране 320px с TextScaler 2. Все 12 актуальных PNG визуально просмотрены; три абзаца сохранены, уменьшенный по длине финальный абзац читается без потери текста. Штатный PdfPrivacyPolicyExportService сформировал шесть полных политик, всего 63 страницы. pypdf подтвердил все 18 текущих абзацев после нормализации только пробелов и подстановки appName. Poppler отрендерил восемь страниц с разделом 8 и переходами: en 8, fr 10, uk 10, ru 10-11, hi 8-9, zh_Hans 7; все страницы просмотрены. Кириллица, Devanagari и китайские глифы, начало и продолжение абзацев сохранены без потери или наложений. Текстовый экспорт, прокрутка и отсутствие overflow проверены штатными тестами. HTML заново получен из английского JSON и проверен синхронизацией. Live-приложение и браузер не управлялись; отдельная проверка assistive technologies не заявляется. PDF и проверочные изображения остаются локально под .gitignore.",
+                "automatedValidation": "Пройдено: dart analyze на проектном Flutter 3.47.8 без замечаний; полный flutter test --no-pub -r expanded 2359/2359, включая 12 добавленных вариантов раздела 8 в существующем renderer-тесте. Отдельный временный QA-export 6/6. check_ui_legacy_violations.py, extract_changelog_section.py --check-only, check_legal_document_html_sync.py и git diff --check успешны. Сравнение с sourceCommit подтверждает изменение только раздела 8 каждой из шести политик, три абзаца, один appName, одинаковые ссылки 2/6, читаемый Unicode без длинных тире или replacement characters. Все проверочные изображения и PDF остаются локально под .gitignore. Первый запуск через PATH использовал Flutter 3.47.2 вместо проектного 3.47.8 и завершился ошибкой SDK hash до тестов; причина установлена по package_config, использован закреплённый SDK, временно изолированные файлы hooks cache восстановлены. Исходники runtime, SDK и зависимости для этого не менялись. Native WinEventHook/EnumWindows без снимков и ввода проверили отсутствие видимых собственных консолей и перехвата фокуса: до запуска прошёл конечный probe с вложенными Python/Git/cmd и idle-паузами, реальный полный прогон охватил 113 процессов без событий нарушения. Резидентные observers и release service не менялись. Имеющееся coverage lib 38397/50959 = 75.35%; повторный coverage для текстовых изменений не выполнялся. После добавления review-записи пройдена отдельная проверка metadata/repository/static HTML: 21/21; native-наблюдение дополнительного прогона не зарегистрировало видимых консолей или перехвата фокуса. После уточнения владельца о тоне последнего абзаца пройдены целевые metadata/repository/renderer/PDF/page/static HTML тесты: 319/319, отдельный актуальный QA-export 6/6 и повторная синхронизация HTML. После финального грамматического уточнения русского абзаца повторно пройдены 319/319 целевых тестов и RU QA-export 1/1. Native-наблюдение финального прогона охватило 13 процессов без видимых консолей и событий перехвата фокуса. Полный прогон 2359/2359 и dart analyze относятся к предшествующей редакции того же рабочего цикла; после точечной текстовой правки Dart-код не менялся, полный набор повторно не запускался.",
+                "notApplicable": "Это ограниченная вычитка раздела 8, не acceptance-сценарий. Подготовка сценарных данных, acceptance preflight и приёмочная таблица не применяются. Runtime, UI-компоненты, маршруты, Firebase rules/Functions, ARB, зависимости, шрифты и визуальные токены не изменяются: deploy, gen-l10n, новые integration tests и acknowledgements не требуются. Новых сообщений UserFeedback нет. CHANGELOG уже охватывает юридические документы, новая отдельная заметка не нужна. Отдельный отчёт не создаётся. Commit/push и публикация не выполняются. Владелец отнёс работу к CLF129 и запретил отчитываться в этой задаче; её описание и статус не менялись. Создание и уточнение отдельной CLF235 для человека-юриста выполнены по отдельному прямому поручению."
+              },
+              "publicationApproval": "Локальное исправление разрешено владельцем. Публикация не запрошена и не выполнялась. Проверка раздела 8 не утверждает всю политику, не является аудитом безопасности или полным подтверждением соблюдения права во всех юрисдикциях. Требуемые стандартом квалифицированная юридическая проверка и независимая человеческая проверка критических переводов ещё не получены; они не подменяются результатами агента."
+            },
+            {
+              "reviewedOn": "2026-11-13",
+              "sourceCommit": "ee826497a513f18f92e1a27353fd44ed8c968701",
+              "changedSections": [
+                "9"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "derivedSurfaces": [
+                "web/privacy_policy.html",
+                "app document view",
+                "clipboard text",
+                "localized PDF export"
+              ],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "Смысловые уточнения прав доступа, отзыва согласия, переносимости, распространения и обжалования внесены в первую редакцию до запуска. По прямому поручению владельца и с учётом отсутствия производственных пользователей дата обновления и версия 2026-09-27, дата вступления в силу 2026-12-21 и список изменённых разделов сохранены. Для этой правки не вводятся отдельное уведомление и повторное согласие тестовых аккаунтов. При запуске пользователи явно принимают окончательную первую редакцию с записью версий обоих документов.",
+              "legalSources": [
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/FullText.html",
+                  "jurisdiction": "Канада, федеральный PIPEDA",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Sections 8, 9 и 11, Schedule 1, 4.3.8, 4.9 и 4.10: доступ, исправление, сведения об использовании и раскрытии, отзыв с учётом допустимых ограничений и уведомления, расследование жалоб, сроки, допустимая плата и сохранение данных для реализации средств защиты."
+                },
+                {
+                  "url": "https://www.alberta.ca/accessing-your-personal-information",
+                  "jurisdiction": "Альберта, разъяснение правительства о PIPA частного сектора",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Письменный доступ и исправление, помощь заявителю, допустимые исключения, плата, срок 45 дней и продление при наличии основания. Прямое открытие PDF закона у King's Printer было недоступно."
+                },
+                {
+                  "url": "https://oipc.ab.ca/resource/guidance-for-landlords-and-tenants/",
+                  "jurisdiction": "Альберта, разъяснение OIPC по PIPA",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Описание общего правила section 9 об отзыве или изменении согласия, уведомлении о последствиях и сохранении юридических обязанностей; отраслевые примеры этого руководства к ClearFix не переносятся."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01",
+                  "jurisdiction": "Британская Колумбия, PIPA частного сектора",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Sections 9, 23-32, 35, 46-47: отзыв, доступ и исправление, помощь, законные ограничения, сроки, сборы, хранение и обращение за пересмотром."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/P-39.1",
+                  "jurisdiction": "Квебек, P-39.1, официальная версия от 15 октября 2026",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Статьи 8, 27-36 и 42-43 регулируют переносимость электронных данных, полученных от заявителя, исключение при серьёзных практических затруднениях, прекращение распространения, исключение или возврат ссылки в индекс, ответ и пересмотр. Условия прекращения распространения и изменения индексации указаны в статье 28.1."
+                },
+                {
+                  "url": "https://www.priv.gc.ca/en/report-a-concern/leg_info_201405/",
+                  "jurisdiction": "Канада, федеральный уполномоченный и провинциальные регуляторы",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Официальный справочник помогает определить орган по обстоятельствам жалобы. Общий адрес регулятора заменён ссылкой на этот справочник в приложении и HTML."
+                }
+              ],
+              "checks": {
+                "scopeIntegrityGrammarLogic": "Английский источник проверен первым. В шести JSON изменён только раздел 9. Порядок одинаков: настройки, общие права, переносимость, распространение и индексация, отзыв, обращение, ответ и сохранение данных, регулятор. Согласованы ссылки на раздел 7 и статью 28.1, цели и периоды хранения, адрес, условия полномочий представителя и возможность обратиться при отсутствии ответа. Отдельное согласие, когда требуется, согласовано с разделом 16 соглашения, права при ограничении доступа - с разделом 20, контакт - с разделом 12 политики и разделом 1 соглашения.",
+                "productFacts": "Профиль, заказы и смена языка соответствуют экранам, AppLocalizations и SharedPreferences. GeolocatorCurrentLocationProvider проверяет разрешение, а параметры устройства или браузера позволяют его отозвать. Локальный сброс касается сохранённых на устройстве настроек. Раздел 7 соответствует штатному удалению профиля и ограничениям account_deletion.js. AppConstants и раздел 12 дают общий email ответственного. В коде изученного потока удаления не найдено отдельной блокировки на основании открытого запроса доступа или исправления. До публикации требуется подтвердить рабочий процесс оператора по учёту запросов, сохранению, поиску и выдаче данных. Переносимость и индексация описаны как обращения по закону.",
+                "translation": {
+                  "en": "Названы применимый закон, сведения об использовании и получателях, условия Квебека, полномочия представителя и последствия отзыва. Один длинный абзац разделён по действиям пользователя.",
+                  "fr": "Independent reading: the governing law determines access and correction; Quebec portability covers electronically held data collected from the requester, with legal recipients, serious practical difficulty, and derived-data limits. The user may request stopping dissemination or changing link indexing and pursue a complaint or review. Уточнены rectification, communiquer, hyperlien, désindexation, réindexation, recours и responsable de la protection des renseignements personnels.",
+                  "uk": "Independent reading: device permission and consent are separate; withdrawal stops covered processing subject to lawful continuation and Section 7. Complaints and requests go to the responsible person even without an account. Убраны кальки загальновживаний, комп’ютеризований и не надати дозвіл, уточнены електронне зберігання, передавання, повноваження и перегляд.",
+                  "ru": "Independent reading: the index request concerns a link tied to the individual’s name; portability concerns electronically held data collected from the requester, with legal recipients and a serious-practical-difficulty exception. A missed deadline can be brought to the competent authority. Убраны компьютеризированная информация, деиндексация информации и практики защиты; обозначены объект индексации, представитель и причина сохранения данных при запросе.",
+                  "hi": "Independent reading: a requester can obtain eligible electronic information in a structured common format or have it sent to a lawful recipient. Withdrawing consent may end feature access; processing ends unless law allows or requires continuation. Clarification and review are available. Название регулятора переведено, स्टोरेज оставлено как понятный термин интерфейса, уточнены पूर्व सूचना, полномочия представителя и ссылка в индексе.",
+                  "zh_Hans": "Independent reading: stop dissemination or remove an index link tied to your name, with reinstatement in qualifying cases; ask a competent regulator for review after an unresolved response or missed deadline. 用电子形式保存替代计算机化; 索引链接 указан как объект запроса; разрешение или требование закона относится к хранению, а не к сделке или спору."
+                },
+                "legalAssessment": "Правила и сроки различаются в зависимости от применимого закона. Квебекские условия не перенесены автоматически на остальные провинции. Плата, продление, проверка полномочий и продолжающаяся после отзыва обработка подчинены соответствующему закону. Сохранение информации по запросу на доступ соответствует обязательству сохранить возможность обжалования; реальное исполнение оператором ещё требует проверки.",
+                "versionConsent": "В существующей редакции и истории сохранены changedOn, effectiveVersion, takesEffectOn, перечень изменённых разделов, notice и reconsent. reviewedOn фиксирует дату вычитки. Запись принятия и публичный маршрут согласия сохранены.",
+                "renderingAccessibility": "Английская локальная HTML-страница проверена в изолированном Chrome на 1120 px в светлой теме и 320 px в тёмной с текстом 200%. Восемь абзацев и обе ссылки на месте, горизонтального переполнения нет, Tab даёт видимый контур фокуса на обеих ссылках. Штатный Flutter renderer проверен на 1000 px в светлой теме и 320 px в тёмной с текстом 200% для шести локалей. Из шести полных PDF штатного экспорта извлечены и сверены с текстом для копирования заголовок, все восемь абзацев и оба адреса. Просмотрены страницы раздела и перехода к следующему разделу. Встроенные ссылки Flutter используют TapGestureRecognizer и не получают отдельного клавиатурного фокуса. Проверка физического устройства и скринридера не проводилась.",
+                "automatedValidation": "Пройдены dart analyze, полный flutter test на закреплённом Flutter 3.47.8 (2403 теста), повторный целевой прогон после финальных уточнений текста (361 тест, включая экспорт) и отдельный прогон 12 вариантов отображения раздела 9. Пройдены синхронизация обеих пар JSON/HTML, проверка UI-ограничений, секции changelog, git diff --check и сравнение шести JSON и английского HTML с исходным коммитом. Native Windows probe проверил 24 цикла вложенных процессов и idle-паузы. Во время тестов и проверки HTML собственных событий показа консоли или перехвата фокуса не зарегистрировано.",
+                "notApplicable": "Приёмочные действия с данными, изменение backend, ARB, маршрутов, дизайна, шрифтов, зависимостей, публикация и новая проверка coverage для локальной правки раздела не применялись."
+              },
+              "publicationApproval": "Локальная вычитка раздела 9. До публикации в рамках CLF235 остаются квалифицированная юридическая проверка по применимым канадским юрисдикциям, независимая человеческая сверка критических переводов и подтверждение процесса оператора для запросов, отзыва и обязательного сохранения данных."
+            },
+            {
+              "reviewedOn": "2026-11-13",
+              "sourceCommit": "8a3e165d7e23dfa8150212cc006ee1a7c75a60cb",
+              "changedSections": [
+                "6"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "derivedSurfaces": [
+                "web/privacy_policy.html",
+                "app document view",
+                "clipboard text",
+                "localized PDF export"
+              ],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "Владелец 13.11.2026 согласовал английскую правку о Sign in with Apple и поручил обновить все языки и статическую страницу. Уточняется получатель и обработка данных в первой редакции до публичного запуска, а не уже опубликованная политика. Сохраняются версия первой редакции 2026-09-27, вступление в силу 21.12.2026 и выделение раздела 6 в существующем сравнении. Отдельное повторное согласие тестовых аккаунтов не вводится; производственные пользователи должны принять окончательную первую редакцию. Перед публикацией владелец попросил показать результат.",
+              "ownerApproval": "Английский абзац раздела 6 согласован владельцем в чате CLF58 13.11.2026. Финальная отправка и публичный выпуск не выполняются до показа подготовленного результата.",
+              "legalSources": [
+                {
+                  "url": "https://www.apple.com/legal/privacy/data/en/sign-in-with-apple/",
+                  "jurisdiction": "Правила сервиса Apple",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Идентификатор, добровольное предоставление имени и email, скрытый адрес, пересылка и связь с существующим аккаунтом."
+                },
+                {
+                  "url": "https://firebase.google.com/docs/auth/ios/apple",
+                  "jurisdiction": "Документация Firebase Authentication",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Nonce, Apple credential, согласие на привязку скрытого адреса и настройка Private Email Relay и отзыва."
+                },
+                {
+                  "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-for-businesses/appropriate-handling-of-personal-information/collecting-personal-information-and-consent/consent/gl_omc_201805/",
+                  "jurisdiction": "Канада, совместное руководство OPC, Alberta и British Columbia",
+                  "accessedOn": "2026-11-13",
+                  "relevance": "Понятные цели, категории данных, получатели и последствия согласия. Требования конкретного применимого закона не подменяются руководством."
+                }
+              ],
+              "checks": {
+                "scopeIntegrityGrammarLogic": "Английский абзац проверен первым; в каждой локали заменён только четвёртый пункт раздела 6. Сохранены структура, заголовки, реквизиты, placeholders, остальные получатели, условия согласия и ограничения ответственности. Личная почта и relay-адрес различаются; пересылка не заявлена как безусловная гарантия. Имя и email передаются по выбору пользователя; подключение к аккаунту требует его запроса.",
+                "productFacts": "NativeAppleOAuthSignIn запрашивает email/fullName при первом входе; Firebase получает credential с одноразовым nonce. FirebaseAuthRepository.linkWithApple сохраняет текущий UID, а EditProfileWidget запрашивает подтверждение. На iOS Simulator и подписанном Mac подтверждён один скрытый адрес; владелец подтвердил получение одного письма Firebase. OAuth code flow настроен отдельно; фактический отзыв при удалении не проверялся по прямому запрету удалять тестовый профиль.",
+                "crossDocument": "Сверены разделы 2, 4, 6, 7, 9 и 11 политики и раздел 16 соглашения. Описание ограничено входом и связью аккаунтов, не разрешает новые цели рекламы и не заменяет отдельное согласие. Раздел 7 не получает неподтверждённой гарантии успешного отзыва Apple.",
+                "translation": {
+                  "en": "Owner-approved source: provider data for login; Apple identifier and optional name/email; relay replaces personal email; possible forwarding; login or requested linking; Apple source link.",
+                  "fr": "Independent reading: the chosen provider handles login data; Apple gives an account identifier and only willingly shared name/email; relay replaces personal email; forwarding is possible; connection or requested association with an existing account. Канадский французский, adresse courriel и renseignements согласованы с документом.",
+                  "uk": "Independent reading: provider processes login data, Apple supplies identifier and optionally shared name/email, relay replaces personal address, forwarding is possible, connection to the existing account is requested by the user. Вхід, обліковий запис и пересилання согласованы; обязанность делиться личной почтой не добавлена.",
+                  "ru": "Independent reading: provider handles required login data; Apple gives an identifier and chosen name/email; a relay address replaces personal email; forwarding is possible; linking happens on request. Согласованы поставщик, учётная запись, ClearFix и конфиденциальность.",
+                  "hi": "Independent reading: the provider processes data needed to sign in; Apple supplies an account identifier and optionally shared name/email; relay instead of personal email; messages may be forwarded; login or user-requested linking. Сохранены условность साझा करना, ваш запрос и различие адресов.",
+                  "zh_Hans": "Independent reading: selected provider processes login data; Apple supplies an identifier plus name/email only when shared; relay instead of personal address, possible forwarding, login or requested linking to the existing account. 账户标识符、邮件转发地址、应你的请求 передают те же условия."
+                },
+                "versionAndConsent": "Первая production-редакция и дата вступления в силу сохраняются с письменным обоснованием в decisionReason. Изменение классифицировано как смысловое. Сохранён существующий механизм записи версии согласия и доступ к документам до входа.",
+                "legalAndHumanReview": "Квалифицированное юридическое заключение и независимая человеческая сверка критических переводов отсутствуют. Существующие требования перед публичным выпуском в CLF235 не закрыты этим изменением. Согласие владельца на текст не описывается как юридическое заключение.",
+                "renderingAccessibility": "Шесть полных PDF экспортированы штатным PdfPrivacyPolicyExportService, страницы нового абзаца отрендерены pdftoppm и визуально проверены, включая hi/zh_Hans. Статический английский HTML проверен в Chrome при обычной ширине и 320px: горизонтального переполнения нет, ссылка доступна с клавиатуры. Widget-проверки охватывают шесть языков в широкой светлой и узкой тёмной теме с увеличенным текстом. JSON и статический HTML синхронизированы.",
+                "automatedValidation": "2428 Flutter-тестов с включённым Apple прошли, включая страницы, репозиторий, копирование, PDF и статический HTML. Dart analyze: ошибок и предупреждений нет, остаются существующие информационные уведомления SDK. check_legal_document_html_sync.py, check_ui_legacy_violations.py, extract_changelog_section.py --check-only и check_apple_project.py прошли.",
+                "notApplicable": "Изменение прав, ответственности, платежей, хранения, оператора, юрисдикции, маршрутов и ARB-сообщений отсутствует. Эти части не переписывались. Не выполнялись удаление тестового профиля, реальный отзыв Apple и публичная публикация."
+              },
+              "publicationApproval": "Разрешённая подготовка и предпросмотр. Перед публичным выпуском сохраняются незавершённые проверки CLF235 и просьба владельца показать финальный результат."
             }
           ],
           "editorialReviews": [
@@ -867,7 +1095,7 @@
           "noticeRequired": false,
           "reconsentRequired": false,
           "decisionReason": "Pre-release: all current accounts and acceptance records are test data. This is the first production edition, and every production user must expressly accept it.",
-          "changedSections": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "16", "17", "18", "19", "20", "21", "22", "23"],
+          "changedSections": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"],
           "addedSections": [],
           "removedSections": [],
           "preReleaseReviews": [
@@ -1999,6 +2227,379 @@
                 "humanLegalAndTranslationReview": "Не получены в этой задаче. Перед публикацией смысловых правок требуются квалифицированный юрист соответствующей канадской юрисдикции и независимая человеческая проверка критических переводов по стандарту проекта; работа модели не выдаётся за эти подтверждения.",
                 "notApplicable": "Новые реквизиты, бизнес-география, комиссии, налоги, приём платежей, передача данных, сроки хранения, согласия, маршруты, ARB/feedback-сообщения, backend и deploy не изменяются. user-feedback-localization неприменим к статическому тексту юридического JSON; gen-l10n не нужен. Новые UI-паттерны не вводятся; renderer и PDF проверяются существующими компонентами. CHANGELOG уже содержит заметку о юридических документах; техническая заметка не добавляется. Полное принятие всего Соглашения и пользовательский acceptance-run вне scope."
               }
+            },
+            {
+              "reviewedOn": "2026-11-04",
+              "sourceCommit": "cfba39fb2f54c0d49f6e64c2d9bb934aac24b007",
+              "scope": "Раздел 13 Лицензионного соглашения: английский источник, пять переводов, связанные положения и отображение.",
+              "changeClassification": "substantive",
+              "decisionReason": "Уточнены порядок обращения за экстренной помощью, обязанности сторон и пределы права остановить работу. Владелец подтвердил отсутствие production-пользователей и поручил сохранить дату. Правки входят в ту же первую предпубликационную редакцию: версия 2026-09-27 и дата вступления в силу 2026-12-21 сохраняются, отдельное уведомление и повторное согласие не требуются. Новые production-пользователи явно принимают итоговую редакцию; существующий механизм записи принятой версии сохранён.",
+              "changedSections": [
+                "13"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "facts": {
+                "rolesAndQualifications": "Разделы 2, 3, 6 и 7 различают специалиста до выбора и назначенного исполнителя, устанавливают обязанности заказчика по проверке и раскрытию известных рисков и самостоятельные обязанности исполнителя. ClearFix не обещает подтвердить квалификацию, выдать разрешение, проверить страхование или контролировать работы. Требования к допуску, проверкам и страхованию распределены по применимым правилам, а не возложены все на физическое лицо, выполняющее работу.",
+                "emergency": "В проверенных маршрутах и коде заказов, сообщений и поддержки отсутствует экстренная диспетчеризация. Публичный документ направляет к местным экстренным службам при непосредственной угрозе, не требует ожидать ответа ClearFix; перечень иных контактов относится к другим срочным ситуациям.",
+                "moderation": "Запрещённые виды использования сформулированы как правила платформы; они не объявлены исчерпывающим перечнем правонарушений или технической блокировкой всех таких заказов. Ссылки на разделы 11 и 20 сохраняют требования к основаниям, мерам, уведомлению и пересмотру. Разделы 10 и 16 и Политика конфиденциальности продолжают регулировать обработку данных; согласие на наблюдение из принятия Соглашения не следует.",
+                "refusalAndSettlement": "Право не начинать или остановить работу не подменяет процедуру отмены и финансового расчёта. В OrderCreateCubit.cancelOrder используется действующий поток закрытия заказа. Разделы 8, 14 и 15, условия сделки и обязательные нормы применяются к расчёту и спорам как прежде. Права и обязанности по безопасности сохраняются независимо от статуса заказа."
+              },
+              "legalSources": [
+                {
+                  "url": "https://www.alberta.ca/when-to-call-911",
+                  "jurisdiction": "Альберта",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Непосредственная угроза требует экстренного вызова; не всякое срочное событие требует 911."
+                },
+                {
+                  "url": "https://www.alberta.ca/evacuation",
+                  "jurisdiction": "Альберта",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Официальное руководство различает непосредственную угрозу жизни или имуществу и обращения к поставщикам коммунальных услуг."
+                },
+                {
+                  "url": "https://crtc.gc.ca/eng/phone/911/",
+                  "jurisdiction": "Канада, CRTC",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "911 указан как экстренный номер там, где доступен; базовая инструкция использует местный номер по месту происшествия."
+                },
+                {
+                  "url": "https://safetycodes.ab.ca/permits-inspections/permit-information/",
+                  "jurisdiction": "Альберта, Safety Codes Council",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Требования к разрешениям и проверкам зависят от работ и места; обязанности могут касаться подрядчика и владельца."
+                },
+                {
+                  "url": "https://tradesecrets.alberta.ca/trades-in-alberta/compulsory-certification-trades",
+                  "jurisdiction": "Альберта, Tradesecrets",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Законный допуск к отдельным регулируемым работам может включать зарегистрированных учеников под требуемым надзором; обязательная личная сертификация каждого не предполагается."
+                },
+                {
+                  "url": "https://search-ohs-laws.alberta.ca/legislation/occupational-health-and-safety-act/part-3-dangerous-work-and-disciplinary-action/",
+                  "jurisdiction": "Альберта, OHS Act, §§ 17-19",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Договорное право исполнителя отказаться или остановиться не заменяет установленный законом порядок отказа работника от опасной работы и защиту от дисциплинарных мер."
+                },
+                {
+                  "url": "https://search-ohs-laws.alberta.ca/legislation/occupational-health-and-safety-code/part-4-chemical-hazards-biological-hazards-and-harmful-substances/",
+                  "jurisdiction": "Альберта, OHS Code, Part 4",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Работы с асбестом и плесенью иллюстрируют зависимость мер, квалификации, обучения и уведомления от обстоятельств."
+                },
+                {
+                  "url": "https://www.alberta.ca/unfair-business-practices",
+                  "jurisdiction": "Альберта, Service Alberta",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Право прекратить работу не подменяет обязательные права потребителя, условия возврата и иные предусмотренные законом средства защиты."
+                },
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/acts/C-46/section-184.html",
+                  "jurisdiction": "Канада, Criminal Code, § 184",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Запрет наблюдения без согласия сформулирован как правило ClearFix; он не приравнивает все случаи наблюдения к уголовно наказуемому перехвату."
+                },
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/acts/C-38.8/section-4.html",
+                  "jurisdiction": "Канада, Controlled Drugs and Substances Act, § 4",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Контролируемый статус вещества не означает незаконность любого обращения с ним. Перечень § 13 описывает условия использования ClearFix."
+                },
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/acts/C-46/section-286.1.html",
+                  "jurisdiction": "Канада, Criminal Code, § 286.1; иммунитет по § 286.5 проверен отдельно",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Уголовный запрет покупки сексуальных услуг за вознаграждение и исключения для предложения собственных услуг не подменяются перечнем договорных запретов ClearFix."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+                  "jurisdiction": "Квебек, Charter of the French language, § 55",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Проверка перевода не подтверждает, что процесс предоставления французской версии и принятия другого языка соответствует требованиям там, где они применимы."
+                },
+                {
+                  "url": "https://www.canada.ca/fr/services/sante/publications/vie-saine/document-orientation-amelioration-qualite-air-interieur-immeubles-bureaux.html",
+                  "jurisdiction": "Канада, Santé Canada",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Подтверждена канадская терминология chauffage, ventilation et climatisation (CVC)."
+                },
+                {
+                  "url": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html",
+                  "jurisdiction": "W3C, технический стандарт доступности, WCAG 2.2, 1.4.4",
+                  "accessedOn": "2026-11-04",
+                  "relevance": "Увеличение текста до 200% проверено на отсутствие потерь и наложения текста. Это проверка конкретного поведения, а не аудит соответствия WCAG целиком."
+                }
+              ],
+              "checks": {
+                "integrityGrammarClarityLogic": "В каждой локали сохранены заголовок, два абзаца, три пункта и их порядок. Параллельны основания отказа, порог экстренности, контактный приоритет и ссылки 11, 20, 8 и 15. В разделе нет placeholders или URL. Список запретов охватывает запрос, предложение, организацию и выполнение; допуск к опасной работе зависит от квалификации и соблюдения требований.",
+                "productFactsAndCrossDocuments": "Проверено по связанным условиям Соглашения и Политики конфиденциальности, коду публичного маршрута, репозитория документа, экспорта, экрана согласия и отмены заказа. Не вводятся новые функции, проверка документов платформой, мониторинг экстренных обращений, отдельная санкция, автоматическая отмена или денежная гарантия.",
+                "legalAssessment": "Сверены федеральные и альбертские источники по вызову помощи, допуску, разрешениям, опасным работам, отказу и обязательным правам. Нормы Альберты не перенесены автоматически на остальные провинции и территории; критерий - требования места работ и иное применимое право. Полная оценка исполнимости и юридическая квалификация действий за рамками проверки.",
+                "translations": {
+                  "en": "Separate the emergency call from other urgent contacts; both sides meet their own requirements, and only legally eligible and appropriately qualified people perform the work. Platform prohibitions and safeguards apply to use of ClearFix. Hazardous work requires competence and compliance. A provider may decline or stop on the listed grounds; statutory rights/duties and separate settlement rules remain.",
+                  "fr": "Immediate danger means calling the local emergency number now, with no wait for ClearFix; other urgent contacts depend on the situation. The customer and prestataire each meet their applicable requirements; authorization, qualifications and supervision are distinct. The rule covers requesting through performing, with moderation under §§ 11/20; hazardous work requires qualification and compliance. The prestataire may decline or interrupt; safety law and cancellation/payment/refunds/compensation remain separate. CVC раскрыто, fournisseur de services publics однозначно обозначает поставщика.",
+                  "uk": "Call local emergency services immediately for immediate danger; use the suitable other contact for other urgent cases. Applicable site rules and requirements attach to each party; legal eligibility and skill attach to the performer. Prohibited uses, regulated hazards and §§ 11/20 remain distinct. The provider may decline or stop; safety rights/duties and financial effects under §§ 8/15 remain. Исправлено управление в перечнях и раскрыт HVAC; правочин отличён от замовлення.",
+                  "ru": "Immediate threat requires a call to local emergency services, with no waiting in ClearFix. Other urgent situations go to the appropriate contact. Legally eligible and qualified people perform work; requirements apply separately to each party. Platform use prohibitions include all four actions, with moderation safeguards; regulated hazardous work needs qualification and compliance. The provider may decline or stop; statutory safety rights/duties and the existing rules for financial consequences survive. Исправлены кальки правил здания, инспекции и условий, отличающихся от заказа.",
+                  "hi": "Call the local emergency number without delay if there is an immediate threat, without waiting in ClearFix. Other urgent situations use the applicable utility/other contact. Separate duties of customer/provider, authorization and skill, work supervision, four prohibited uses, moderation limits, safety and financial consequences match the English. कार्यस्थल और व्यावसायिक स्वास्थ्य, अग्नि सुरक्षा प्रणालियाँ и раскрытие HVAC уточняют предмет, а काम शुरू करने से इनकार или रोकना различают две стадии.",
+                  "zh_Hans": "Immediate threat requires an immediate local emergency call; no waiting through ClearFix; other urgent cases go to the relevant service. Qualification and legal permission belong to the people doing the work, requirements attach separately to each party. The list prohibits requesting/offering/arranging/carrying out the listed activities, and safeguards still apply. Hazardous work requires competence and compliance. The provider may decline to begin or stop; safety law and financial consequences remain separate. 执照、许可、认证 разведены; 高压电气设备 исключает толкование как системы высокого давления."
+                },
+                "versionConsent": "Раздел 13 помечен изменённым относительно предыдущей редакции. Дата документа, дата вступления в силу, effectiveVersion, порядок принятия, предыдущая редакция и запись согласия сохраняются. Публичные ссылки и доступ до принятия не изменены.",
+                "renderingAccessibility": "Пройдено для раздела 13: Flutter отобразил все абзацы, подписи и пункты шести локалей при 1000x800 в светлой теме и 320x600 в тёмной теме с TextScaler 2; текст полностью доступен при прокрутке и копировании. В изолированном Chromium проверены три статические страницы на 1120 px в светлой теме и 320 px в тёмной при увеличении текста до 200%, без наложения строк и горизонтальной прокрутки, с видимым фокусом ссылки возврата. Общий HTML-шаблон исправлен; содержимое Privacy Policy и инструкции удаления аккаунта сохранено. Штатный экспорт создал шесть полных PDF (116 страниц); в каждом PDF извлечён и сверен весь раздел 13 в исходном порядке. Двенадцать страниц с началом, продолжением и переходами просмотрены визуально; итоговый перенос исправленного абзаца на хинди перепроверен. Нативный пользовательский сценарий и полный аудит доступности не проводились.",
+                "automatedValidation": "dart analyze без замечаний; UI legacy guardrail, проверка CHANGELOG, HTML sync и git diff --check пройдены. Полный flutter test: 2321 успешный тест, два несовпадения из-за повторения 911 в ранних версиях hi и zh_Hans. После их исправления пройдена 271 целевая проверка метаданных, структуры, widget renderer и статического HTML. После последнего уточнения хинди пройдены 264 проверки репозитория, widget renderer и шести PDF-экспортов; итоговые PDF повторно сверены с JSON. Проверка относительно sourceCommit подтвердила изменение только раздела 13 во всех языковых JSON, сохранение прежних дат и истории; в статических страницах Privacy Policy и удаления изменился только CSS. Покрытие повторно не измерялось: изменение не вводит новые ветви Flutter-кода.",
+                "humanLegalAndTranslationReview": "До публикации требуется проверка квалифицированным юристом по применимой канадской юрисдикции и независимая человеческая сверка критических переводов, включая инструкции в экстренной ситуации и права при остановке работ. Для применимости требований Квебека отдельно проверяется фактическая выдача французской редакции при принятии договора.",
+                "notApplicable": "Новые реквизиты, география, ARB, новые маршруты, обработка данных, денежные условия и backend не изменяются. Новых ссылок или полей согласия в разделе нет. CHANGELOG уже описывает версионируемые юридические документы; отдельная заметка не добавляется. Публикация и пользовательский acceptance-сценарий не запрошены."
+              }
+            },
+            {
+              "reviewedOn": "2026-11-05",
+              "sourceCommit": "db73e6b318bc15943138455e0264e7d45103779d",
+              "scope": "Раздел 14 Лицензионного соглашения: английский источник, отдельная сверка пяти переводов, связанные разделы соглашения и Privacy Policy, HTML, Flutter renderer, копирование и PDF.",
+              "changeClassification": "substantive",
+              "decisionReason": "По прямому поручению владельца исправляется первая неопубликованная редакция: production-пользователей нет. Уточнения средств правовой защиты, ответственности Оператора, пределов доступа к данным и мер платформы являются смысловыми. changedOn и effectiveVersion остаются 2026-09-27, takesEffectOn остаётся 2026-12-21; даты документа и константы не меняются. Уведомление и повторное согласие отсутствующих production-пользователей не требуются. Будущие production-пользователи явно принимают окончательную первую редакцию, действующая запись точных версий и времени принятия сохраняется. Раздел 14 добавлен в changedSections как действительно изменённый относительно предыдущей редакции. reviewedOn обозначает проверку, а не новую дату документа. Решение не переносится на опубликованные договоры.",
+              "changedSections": [
+                "14"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "facts": {
+                "transactionAndOperator": "Подтверждено разделами 2, 3, 8, 18 и 22: заказчик и исполнитель заключают сделку между собой; Оператор оказывает услугу платформы, получает свою комиссию и сохраняет собственные обязанности. Содействие не становится самостоятельным основанием ответственности за действия другого пользователя, но не освобождает от ответственности за собственные действия или бездействие.",
+                "complaints": "firebase/functions/src/complaints/order_complaints_v1.js, complaintPartyRole, submit/resolve/read: жалоба - диалог по заказу; писать могут заказчик и назначенный исполнитель, активный диалог доступен другим пользователям с правом просмотра заказа. Техническое закрытие жалобы не является судебным разрешением спора. Более широкая видимость жалобы раскрыта в Privacy Policy § 3 и соглашении § 16; личная переписка не становится публичной по § 14.",
+                "settlement": "firebase/functions/src/orders/order_settlement_v1.js: финансовый support-доступ требует financial_support=true, обоснования и записи support_audit с actor_uid/action/reason. order_settlement.js и § 8 сохраняют самостоятельные подтверждения платежей обеими сторонами, отдельную проверку доказательств и контроль оплаты комиссии. § 14 не вводит полномочия поддержки подменять подтверждения либо окончательно разрешать правовой спор.",
+                "privacyAndEvidence": "Privacy Policy §§ 3, 5, 6, 7 и 9 и соглашение §§ 10, 11, 16 регулируют необходимые цели, ролевой доступ, законное основание, хранение, удаление и права. Рекомендация пользователю сохранять доказательства не обещает бессрочного хранения ClearFix, общего доступа к частным документам или новой обработки.",
+                "moderation": "Соглашение §§ 9, 11 и 20 уже ограничивает санкции разумными основаниями, соразмерностью, уведомлением и пересмотром, отличает добросовестное разногласие от обхода и финансовый контроль от модерации. § 14 подчинён этим гарантиям и не объявляет сам факт жалобы, спора или законного обращения нарушением.",
+                "insurance": "Разделы 3, 7, 17 и 18 не содержат действующей общей страховой программы ClearFix или обещания компенсации. Обращение к страховщику зависит от обстоятельств и покрытия; упоминание суда либо органа не обещает его компетенции по каждому требованию."
+              },
+              "legalSources": [
+                {
+                  "url": "https://www.alberta.ca/unfair-business-practices",
+                  "jurisdiction": "Альберта, Consumer Protection Act, официальное разъяснение Service Alberta",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Обязательные права потребителя не отменяются договором, неоднозначность толкуется в его пользу. Нельзя превращать разграничение ролей в общее освобождение Оператора."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/en/pdf/cs/P-40.1.pdf/1000",
+                  "jurisdiction": "Квебек, Consumer Protection Act, §§ 10, 11, 11.1; официальная редакция по состоянию на 2026-10-15",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Запрет освобождения торговца за собственные действия, одностороннего окончательного установления нарушения/фактов и обязательного арбитража либо ограничения суда. Условия платформы не обозначаются окончательным разрешением правового спора. Конкретная применимость к сторонам требует квалифицированной проверки."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/04002_01",
+                  "jurisdiction": "Британская Колумбия, Business Practices and Consumer Protection Act, § 3; редакция по состоянию на 2026-10-27",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Отказ от предусмотренных законом прав недействителен, кроме прямо разрешённых исключений."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/04002_02",
+                  "jurisdiction": "Британская Колумбия, Business Practices and Consumer Protection Act, §§ 14.1-14.4; редакция по состоянию на 2026-10-27",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Потребительский договор не должен навязывать арбитраж или иной процесс разрешения спора. § 14 прямо не требует исчерпать внутреннюю жалобу или поддержку перед правовой защитой; коллективные и иные законные средства не исключаются."
+                },
+                {
+                  "url": "https://www.albertacourts.ca/cj/areas-of-law/civil/claims/before-you-sue",
+                  "jurisdiction": "Альберта, Court of Justice, civil claims",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Судебная защита, альтернативные обращения, относимые доказательства и ограниченные сроки требований. Внутренняя жалоба ClearFix сама по себе не обещает приостановления срока; конкретный срок не навязывается для всех юрисдикций."
+                },
+                {
+                  "url": "https://oipc.ab.ca/overview-privacy-laws/",
+                  "jurisdiction": "Альберта, Personal Information Protection Act, официальный регулятор OIPC",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Помимо согласия или законного исключения, нужна разумная цель; техническая возможность прочитать данные не означает права делать это произвольно."
+                },
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/section-5.html",
+                  "jurisdiction": "Канада, PIPEDA, § 5(3), где применяется федеральный закон",
+                  "accessedOn": "2026-11-05",
+                  "relevance": "Сбор, использование и раскрытие допустимы только для целей, уместных по оценке разумного лица в соответствующих обстоятельствах."
+                }
+              ],
+              "checks": {
+                "integrity": "Все шесть версий имеют одинаковые четыре абзаца и три пункта, без потери структуры, условий, отрицаний, исключений и ссылок на разделы. Раздел 14 не содержит placeholders, новых сумм, дат, обязательных сроков или внешних ссылок. Динамическая и статическая пары юридических документов проверяются штатным HTML sync.",
+                "grammarClarityLogic": "Исправлены неполные обозначения доступа и приёмки, возврата средств и рекомендаций поддержки. Отдельно разграничены спор сторон, платформа и собственная ответственность Оператора. Уточнена область добросовестности для каждого из трёх действий в fr/uk/ru/hi. Общая оговорка «в пределах закона» не используется вместо конкретных исправлений.",
+                "productAndCrossDocuments": "Сверены все разделы соглашения, особенно §§ 2, 3, 8, 9, 10, 11, 13, 15, 16, 18, 20, 22, 23, и связанные положения Privacy Policy. Платформенная проверка, санкции, платёжные подтверждения, доступ и хранение сохраняют существующие ограничения. Runtime, правила доступа, ставка комиссии, возвраты и процедуры согласия не изменяются.",
+                "legal": "Исправлены риски исключительного личного урегулирования, абсолютного отказа от компенсации, произвольного доступа к данным и неограниченных санкций. Средства защиты и ответственность за собственные действия сохранены явно. Это проверка конкретного раздела по указанным источникам, не заключение о соответствии всего договора всем законам провинций и территорий.",
+                "localeMeaningChecks": {
+                  "fr": "The transaction dispute remains governed by its terms and law. ClearFix is not a court or arbitrator; its process is not a prerequisite to remedies and does not itself stop limitation periods. Only authorized lawful necessary review may support platform actions; confirmations and legal disputes are not replaced. Own operator liability survives. Evidence retention is recommended, lawful and secure, with no indefinite platform storage or insurance promise. Measures follow safeguards; each listed good-faith action alone proves no violation. Рекомендации поддержки обозначены как рекомендации команды, а indemniser ограничено разграничением ответственности.",
+                  "uk": "Users retain legal remedies without exhausting ClearFix procedures; a complaint alone does not stop limitation periods. Authorized necessary lawful review remains subject to privacy and settlement rules, not a legal adjudication. Assistance alone creates neither transaction-party status nor liability for another user, with own operator duties preserved. Evidence retention is a recommendation; protection and law remain mandatory. Claims can include the Operator for its own conduct; insurance and compensation are not guaranteed. All three good-faith actions and review safeguards are preserved. Сохранён определённый в § 2 термин «транзакція».",
+                  "ru": "Transaction terms and law govern the parties' dispute; no exclusive private resolution or mandatory ClearFix exhaustion. Courts and authorities remain available and platform contact alone does not suspend limitation periods. Authorized lawful necessary review cannot replace party confirmations or legal adjudication. Assistance alone does not transfer the transaction or another user's liability to the Operator, but own duties remain. Evidence retention is recommended with lawful secure handling and no indefinite platform storage. Insurance and compensation are not promised. Reasonable safeguarded measures do not equate each good-faith action with a violation. Возврат уточнён как возврат средств.",
+                  "hi": "Disputes concern the transaction; ClearFix is not a court or arbitrator and its complaint process is not a condition of legal remedies. Contact alone does not suspend limitation periods. Review requires technical authority, legality and reasonable necessity, retains privacy and settlement restrictions and cannot substitute payment confirmation or adjudication. Assistance alone does not shift another user's liability; own operator duties and mandatory remedies survive. Keeping evidence is advice, lawful secure handling is required, storage is not indefinite. Claims, insurance limits, proportional measures, review and good faith apply as in English. धनवापसी обозначает возврат денег, उपयोगकर्ताओं के साक्ष्य - доказательства пользователей; модальность рекомендации не заменена обязанностью хранить всё.",
+                  "zh_Hans": "Transaction terms and law govern the dispute. ClearFix is not court/arbitrator; no requirement to exhaust its process, no automatic suspension of limitation periods. Authorized lawful necessary access remains limited by privacy and settlement rules and cannot replace confirmations or decide the legal dispute. Assistance alone does not impose transaction-party status or liability for another user; own operator responsibility and non-excludable remedies remain. Evidence storage is recommended, handling must be lawful, no indefinite platform duty. Claims and insurance are optional routes, no coverage or recovery promise. Safeguarded reasonable measures and good-faith remedies survive. 保修或其他保证 охватывает гарантию без сужения до ремонта, 建议 отличает рекомендацию от 必须/должен."
+                },
+                "versionConsent": "Дата обновления, effective date, effectiveVersion, предыдущая редакция, публичные URL, доступ до согласия и механизм записи согласия сохранены. § 14 добавлен в список изменённых разделов. Решение владельца о первой редакции без пользователей отражено выше.",
+                "renderingAccessibility": "Пройдено для § 14 во всех шести локалях: существующий Flutter renderer сохраняет каждый абзац, подпись и пункт при 1000x800 в светлой теме и 320x600 в тёмной теме с TextScaler 2; последний пункт доступен прокруткой, plain-text экспорт не теряет текст. В собственной изолированной headless-сессии CLF129-license14-01a1aa4b проверен реальный HTML при 1120 px/light/100% и 320 px/dark/200%: четыре абзаца и три пункта, без горизонтальной прокрутки и пересечений блоков; оба снимка просмотрены. Штатный экспорт создал шесть полных PDF (121 страница); весь § 14 каждого PDF извлечён и сверен с окончательным JSON в исходном порядке. Визуально просмотрены 11 страниц, содержащих раздел и переход к § 15; после уточнения добросовестности окончательные fr/uk/ru/hi заново экспортированы и просмотрены. Новых интерактивных ссылок в § 14 нет, существующий публичный доступ и навигация не менялись. Нативный пользовательский сценарий и полный аудит assistive technologies не проводились.",
+                "automatedValidation": "Пройдены dart analyze (No issues found), полный flutter test (2335 тестов), 297 целевых проверок метаданных, структуры всех переводов, Flutter renderer/копирования, HTML и PDF-сервисов; шесть дополнительных штатных PDF-экспортов и полная текстовая сверка § 14. HTML sync, UI legacy guardrail, CHANGELOG check и git diff --check пройдены. JSON сравнены с HEAD: во всех шести изменён только § 14; даты, версии и прежняя история сохранены, в метаданные добавлен только § 14 и эта запись проверки. Начальный запуск общей Flutter 3.47.2 не прошёл ограничение SDK; использован проектный Flutter 3.47.8. Устаревший скомпилированный локальный hook pdfium_dart с несовместимым SDK hash сохранён вне cache и штатно пересоздан; зависимости и runtime не изменялись. Native console regression перед работой и наблюдение собственных деревьев не обнаружили видимых консольных окон или перехвата фокуса.",
+                "humanLegalAndTranslationReview": "Перед публикацией смысловых условий об ответственности, спорах, санкциях и данных стандарт проекта требует квалифицированного юридического заключения по применимой канадской юрисдикции и независимой человеческой сверки критических переводов. Они этой модельной проверкой не выполнены. Полная доступность всего приложения, все провинциальные процедуры и фактическая выдача французской редакции при принятии договора не считаются проверенными этим заданием.",
+                "notApplicable": "Пользовательский acceptance-сценарий, preflight, подготовка данных и live Firebase/Sentry проверки не запрошены. Новых экранов, функций runtime, ARB, зависимостей, backend, файлов дизайна и publishable ресурсов нет. Новые gen-l10n, integration-сценарии и deploy не нужны. Покрытие повторно не измеряется для текстовой правки. PDF и PNG - локальные QA-материалы под .gitignore, отдельный юридический отчёт не создаётся. В AI11 выполнено только подтверждение CLF129/project3/version1.1.0; большая задача остаётся in_progress, чеклист и вложения не меняются. Commit, push и публикация не запрошены."
+              }
+            },
+            {
+              "reviewedOn": "2026-11-09",
+              "sourceCommit": "60dbf5cc412f48a80bc79f24dd228ac01ab04557",
+              "changedSections": ["8", "15"],
+              "locales": ["en", "fr", "uk", "ru", "hi", "zh_Hans"],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "Уточнены последствия отмены, обязанности сторон и сохранение прав. По уточнению владельца в разделе 15 прямо указано, что заказчик платит исполнителю, а ClearFix не принимает оплату от заказчика ни на одном этапе. Формулировка в разделе 8 описывает создание записи о расчёте. Владелец подтвердил, что производственных пользователей пока нет, и разрешил сохранить даты первой редакции. Раздел 15 добавлен в перечень изменений, раздел 8 уже входит в него. Первое производственное согласие по-прежнему должно быть явным. Версия и механизм записи согласия сохранены.",
+              "legalSources": [
+                {
+                  "url": "https://www.alberta.ca/consumer-bill-of-rights",
+                  "jurisdiction": "Альберта",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "Защита по Consumer Protection Act сохраняется. Права отмены зависят от вида и условий потребительского договора. В раздел не добавлен единый срок отмены для всех заказов."
+                },
+                {
+                  "url": "https://open.alberta.ca/publications/internet-shopping",
+                  "jurisdiction": "Альберта",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "Разъяснение Internet Sales Contract Regulation подтверждает отдельные условия отмены интернет-договоров, уведомления и возврата в пределах применимости регламента."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/fr/pdf/lc/CCQ-1991.pdf",
+                  "jurisdiction": "Квебек",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "Статьи 2125, 2126 и 2129 различают условия одностороннего расторжения для клиента и исполнителя и регулируют его финансовые последствия. Запись об отказе исполнителя в приложении не означает безусловное право расторгнуть договор."
+                },
+                {
+                  "url": "https://www.legisquebec.gouv.qc.ca/fr/pdf/lc/P-40.1.pdf",
+                  "jurisdiction": "Квебек",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "Статья 11.4 запрещает исключать применение статей 2125 и 2129 Гражданского кодекса. Статьи с 54.8 по 54.14 устанавливают специальные правила отмены, уведомления и возврата для подпадающих под них дистанционных потребительских договоров."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/04002_04",
+                  "jurisdiction": "Британская Колумбия",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "Статьи 18.4, 49 и 50 отдельно определяют основания отмены, уведомление поставщика и возврат денег по дистанционным договорам."
+                },
+                {
+                  "url": "https://www.ontario.ca/laws/statute/02c30",
+                  "jurisdiction": "Онтарио",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "Статьи с 37 по 40 предусматривают особые правила для подпадающих под них интернет-договоров, включая отмену при нарушении требований к раскрытию или копии договора."
+                },
+                {
+                  "url": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/18613/1/document.do",
+                  "jurisdiction": "Верховный суд Канады, общее право",
+                  "accessedOn": "2026-11-09",
+                  "relevance": "C.M. Callow Inc. v. Zollinger, 2020 SCC 45, в частности пункты с 49 по 51, связывает обязанность честного исполнения с договором. Добросовестность до назначения сохранена как требование самого Соглашения к общению по заказу без утверждения о наличии отдельного договора."
+                }
+              ],
+              "checks": {
+                "integrityGrammarClarityLogic": "Сохранены заголовок, два абзаца, два пункта и нумерация во всех локалях. Новый критерий до и после назначения относится к действиям и статусу в ClearFix. Оговорка о применимом праве и обязательных правах не зависит от наличия кнопки, финансового расчёта или согласия другой стороны на запись об отмене. Сроков, сумм и placeholders в разделе нет. Отсылки к разделам 8 и 14 сверены.",
+                "productFactsAndCrossDocuments": "Проверены order_award_v1.js, order_edit_policy.dart, firestore_orders_repository.dart, firestore.rules, order_closure_v1.js и order_settlement_v1.js. Выбор предложения сам по себе не меняет статус, принятие запроса переводит заказ в работу, до назначения отмена не создаёт финансового расчёта, после назначения закрытие и расчёт имеют отдельные состояния. Согласовано с разделами 2, 3, с 6 по 9, с 12 по 14, 20 и 22 Соглашения и разделами 3 и 7 Политики конфиденциальности. В действующих подписях и диалогах заказа встречаются формулировки о расторгнутом договоре. Раздел 15 ограничивает выводы из таких статусов. Тексты сценария закрытия находятся за пределами запрошенной правки раздела.",
+                "legalAssessment": "Не устанавливается единый канадский срок или способ уведомления, и не предполагается, что ClearFix вправе отменить договор пользователей или заменить их денежные обязательства. Для точного применения норм к отдельным сделкам и проверки критических переводов до публикации требуются канадский юрист и независимая человеческая сверка. В этом задании эти проверки не выполнены.",
+                "translation": {
+                  "en": "Канонический текст различает назначение в приложении, запись об отмене или отказе, действительность прекращения договора, обязательные уведомления и незавершённые расчёты.",
+                  "fr": "Separate reading: the selected specialist accepts assignment; customer cancellation and provider withdrawal can be recorded before work starts; legal effects, notices, payments and refunds follow the contract and applicable law. Attribution, résolution, résiliation, remboursement и règlement financier разграничены, отсылки используют section как в остальном документе.",
+                  "uk": "Separate reading: appointment follows acceptance of the request; active assigned orders may be cancelled by the customer or left by the provider; status alone does not settle legal effects, refunds or compensation. Уточнены призначення, повернення коштів и права, які за законом не можна обмежити.",
+                  "ru": "Separate reading: selection is followed by acceptance of the appointment request; closing the order need not settle outstanding amounts; cancellation, notices and remaining rights depend on the contract and law. Устранены двусмысленные выбор, возврат и условия разрешаются, действия сторон названы прямо.",
+                  "hi": "Separate reading: appointment requires the specialist’s acceptance; recording customer cancellation or provider withdrawal does not itself decide whether the contract legally ends; actual work can be unstarted and payment unresolved. नियुक्ति, धनवापसी, कानूनी देयता и वित्तीय निपटान разграничены.",
+                  "zh_Hans": "Separate reading: acceptance of the assignment request starts the in-progress status, either appointed party can record its own closure action, and applicable law still governs notices and legally protected remedies. 指派, 退款, 保修或其他保证 и 财务结算 отделяют статус и юридические последствия."
+                },
+                "versionConsent": "Сохранены changedOn, effectiveVersion, takesEffectOn, доступ до согласия и прежняя история. Смысловое уточнение первой редакции не инициирует рассылку или повторное согласие отсутствующих производственных пользователей.",
+                "paymentWording": "Сверено в en, fr, uk, ru, hi и zh_Hans: заказчик платит исполнителю напрямую, ClearFix не принимает оплату от заказчика, стороны указывают сведения об оплате и возвратах в приложении, комиссию Оператору уплачивает исполнитель по правилам раздела 8. Из пункта до назначения в разделе 15 удалена фраза, которую можно прочитать как исключение из обязанности заказчика платить платформе. Раздел 8 говорит о записи, которую ClearFix не создаёт при отмене до назначения. Платёжные обязанности и правила работы приложения не меняются.",
+                "renderingAccessibility": "Проверены все шесть локалей в Flutter renderer на широком светлом экране и на узком тёмном экране с масштабом текста 2. Последний пункт доступен прокруткой, копируемый текст сохраняет оба абзаца и оба пункта. Из шести штатных PDF извлечён весь раздел 15 и сверен с окончательным JSON. Визуально проверены 11 страниц с разделом или переходом к разделу 16. Английский HTML просмотрен в изолированной браузерной сессии при ширине 1120 px в светлой теме и 320 px в тёмной теме с размером текста 200%. Горизонтальной прокрутки нет, клавиатурный фокус на ссылке возврата виден. В разделе 15 новых ссылок нет. Реальное прохождение сценария закрытия заказа и отдельный аудит скринридером не проводились.",
+                "automatedValidation": "До последнего уточнения формулировок об оплате прошли dart analyze и полный flutter test с дополнительными PDF-экспортами (2377 проверок). После уточнения прошли 307 целевых тестов, включая проверку отображения разделов 8 и 15 во всех локалях, шесть PDF-экспортов и тест статического HTML. Текст первого абзаца раздела 8 и всего раздела 15 в PDF совпадает с окончательными JSON. Повторно просмотрены страницы раздела 15 во всех локалях и английский HTML в светлой и тёмной темах. Пройдены HTML sync, UI legacy guardrail, проверка CHANGELOG и git diff --check. Сверка с исходным коммитом подтвердила, что изменены только первый абзац раздела 8 и раздел 15 в шести текстах соглашения. Даты, версии и предыдущие записи сохранены. Нативная проверка Windows и наблюдение за запущенными процессами не обнаружили видимых консолей или перехвата фокуса.",
+                "notApplicable": "Нет новой обработки данных, ставок, штрафов, UI-компонентов, маршрутов, ключей ARB, Firebase-изменений или публикации. Правила закрытия заказа и финансового расчёта сверены по коду; повторный пользовательский acceptance не входил в запрос."
+              }
+            },
+            {
+              "reviewedOn": "2026-11-10",
+              "sourceCommit": "5b5c5902eb377457d8dbd8861a9e147f6c621d81",
+              "changedSections": [
+                "16"
+              ],
+              "locales": [
+                "en",
+                "fr",
+                "uk",
+                "ru",
+                "hi",
+                "zh_Hans"
+              ],
+              "changeClassification": "substantive",
+              "effectiveVersion": "2026-09-27",
+              "takesEffectOn": "2026-12-21",
+              "noticeRequired": false,
+              "reconsentRequired": false,
+              "decisionReason": "Уточнены обязательное согласие пользователя, основания и пределы раскрытия информации, законные обращения пользователей и границы видимости данных. Русское «отдельного согласия ClearFix» ошибочно меняло лицо, предоставляющее согласие. Это смысловые исправления, а не только редактура. По прямому поручению владельца даты обновления, версия и дата вступления первой редакции сохранены: production ещё не запущен и производственных пользователей нет. Раздел 16 уже отмечен как изменённый относительно предыдущей редакции. Первое производственное принятие должно оставаться явным; существующий способ записи версии и доказательств принятия не изменяется.",
+              "legalSources": [
+                {
+                  "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/page-1.html",
+                  "jurisdiction": "Канада, федеральное право PIPEDA",
+                  "accessedOn": "2026-11-10",
+                  "relevance": "Статьи 5(3), 6.1 и 7: допустимая цель, осмысленное согласие и конкретные основания обработки или раскрытия без согласия. Сам по себе запрос государственного органа не заменяет законных условий раскрытия."
+                },
+                {
+                  "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-for-businesses/appropriate-handling-of-personal-information/collecting-personal-information-and-consent/consent/gl_omc_201805/",
+                  "jurisdiction": "Канада, совместное руководство OPC и регуляторов Альберты и Британской Колумбии",
+                  "accessedOn": "2026-11-10",
+                  "relevance": "Согласие должно объяснять сведения, получателей, цели и последствия; для обработки, не необходимой для сервиса, предоставляется отдельный понятный выбор. Прочтение политики и принятие условий сами по себе не подменяют требуемого согласия."
+                },
+                {
+                  "url": "https://www.alberta.ca/disclosing-personal-information",
+                  "jurisdiction": "Альберта, PIPA, официальное разъяснение правительства",
+                  "accessedOn": "2026-11-10",
+                  "relevance": "Раскрытие ограничено разумной целью и необходимым объёмом; обычно нужно согласие, исключения без согласия предусмотрены законом. Страница доступна в актуальном поисковом индексе; прямое открытие через web-инструмент завершилось тайм-аутом, полный текст страницы не заявлен проверенным."
+                },
+                {
+                  "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/03063_01",
+                  "jurisdiction": "Британская Колумбия, Personal Information Protection Act",
+                  "accessedOn": "2026-11-10",
+                  "relevance": "Статьи 6-9, 17 и 18 разграничивают согласие, допустимые цели раскрытия и исключения без согласия. Закон прочитан в редакции, актуальной на 2026-11-03."
+                },
+                {
+                  "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/consentement-personnes-entreprises",
+                  "jurisdiction": "Квебек, официальный регулятор CAI, частные предприятия",
+                  "accessedOn": "2026-11-10",
+                  "relevance": "Необходимость обработки оценивается до согласия; согласие должно отвечать требованиям закона, включая отдельное письменное представление запроса. Отдельное согласие исходит от пользователя."
+                },
+                {
+                  "url": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/utilisation-communication-renseignements-personnels",
+                  "jurisdiction": "Квебек, официальный регулятор CAI, частные предприятия",
+                  "accessedOn": "2026-11-10",
+                  "relevance": "Использование и передача требуют согласия либо конкретного предусмотренного законом исключения; общий интерес к безопасности или исполнению договора не является самостоятельным неограниченным разрешением на раскрытие."
+                }
+              ],
+              "checks": {
+                "scopeIntegrityGrammarClarity": "Во всех шести JSON изменён только раздел 16. Три исходных абзаца переработаны в пять: согласие, цели и Sentry, профессиональные профили, жалобы, ролевой доступ к расчёту. Сохранены заголовок, два пункта и единственный URL политики; подпись ссылки теперь понятна без чтения адреса. Даты, суммы, номера других разделов, реквизиты и остальные JSON-разделы не меняются. Устранены фрагментарные конструкции, неясные субъекты, необоснованное обещание безопасности и неоднозначное объединение запретов.",
+                "logicAndCrossDocuments": "Сверены положения английского Соглашения о согласии и его изменении (§§ 1, 21, 23), ролях (§§ 2, 3, 6, 7), платежах (§§ 8, 9), контенте и модерации (§§ 10-12), прекращении и ответственности (§§ 17-20, 22), а также Privacy Policy, особенно §§ 2, 3, 5-9, 11, 12. Раздел 16 не создаёт самостоятельных целей, получателей, сроков или гарантии анонимности. Профильные документы отличаются от финансовых доказательств; обычная переписка отличается от открытого для предусмотренных зрителей активного диалога жалобы. Правомерная необходимая передача для поддержки, безопасности, защиты прав и соблюдения закона не запрещается правилом о чужих данных.",
+                "productFacts": {
+                  "profiles": "public_profiles_v1.js проверяет авторизацию, существование аккаунта, режим удаления, владельца при редактировании и профильные документы; account_moderation_guard.js ограничивает доступ. Профессиональные вложения читаются через контролируемый backend; это не общедоступные файлы всего аккаунта. storage.rules сохраняет owner-only доступ к пользовательскому Storage вне специальных маршрутов.",
+                  "complaints": "order_complaints_v1.js: authorizeComplaintRead проверяет доступ к заказу; loadComplaintView возвращает сообщения только действующего active_dialog, а dialogActionPolicy разрешает писать участникам с ролями customer/provider. После разрешения жалобы обычный интерфейс не возвращает её сообщения. Отдельные conversations/messages в firestore.rules читаются участниками.",
+                  "settlements": "order_settlement_v1.js, firestore.rules и storage.rules отделяют назначенного исполнителя от заказчика и случайного пользователя. Финансовый support-доступ требует financial_support, причины обращения и support_audit. Ограниченный показ заказчику заявленных сумм, совпадения и статуса не равен доступу к полному расчёту и подтверждающим документам.",
+                  "monitoringAndConsent": "sentry_app_runner.dart выключает default PII, screenshot, hierarchy, SDK logs и interaction capture и убирает структурированного user из error events; абсолютное отсутствие персональной информации не обещается. LegalConsentGate, AppConstants и legal_document_metadata сохраняют принятие текущей редакции; новый optional-consent интерфейс не добавлялся и его универсальная юридическая достаточность не заявляется."
+                },
+                "legalAssessment": "Проверены основания согласия, ограничения целей/объёма и условия раскрытия в федеральном праве, Альберте, Британской Колумбии и Квебеке. Общая договорная оговорка не заменяет конкретного законного основания и не отменяет privacy-права, ограничения доступа или хранения. Проверка не является заключением юриста и не доказывает полное соответствие всех практик во всех канадских провинциях и при доступе из других стран.",
+                "translation": {
+                  "en": "Канонический текст сначала исправлен относительно политики и реализации. Он различает прочтение, отдельное согласие пользователя, ограниченную обработку, профильные/финансовые документы и правомерное раскрытие. Количество абзацев и пунктов одинаково в переводах.",
+                  "fr": "Separate reading: acknowledging the policy or accepting the contract alone does not consent to optional processing; ClearFix obtains separately required consent from the user. Active signed-in viewers see professional attachments and accessible active complaint dialogues, while full financial records remain restricted. Necessary lawful disclosures are distinguished from selling or misuse. Канадские renseignements personnels, téléversés, personnel de soutien и communication согласованы; устранены калька données relatives à la technique и грамматически неясная цепочка l’exige.",
+                  "uk": "Separate reading: ClearFix must separately obtain the user’s consent where law requires it; specialists are covered before appointment. Professional files and accessible active complaints have wider visibility than full settlement evidence. Disclosure needs a legal basis and necessary scope, with lawful support or rights-protection disclosures preserved. Уточнены обов’язковість, оприлюднення/розкриття, відрахування и підтвердні документи; нескладні прямі конструкції замінюють кальки.",
+                  "ru": "Separate reading: the user supplies any required separate consent; ClearFix does not consent on the user’s behalf. Professional profile attachments are visible to active signed-in viewers, ordinary private messages are not public, and full financial evidence is restricted. Neither an authority request nor contractual enforcement alone permits disclosure without consent. Исправлено согласия ClearFix, приложения заменено документами профиля, а общий запрет передачи разделён на продажу/злоупотребление и правомерное необходимое раскрытие.",
+                  "hi": "Separate reading: optional processing needs separately obtained user consent where law requires; data processing remains within policy purposes and safeguards. Professional profile documents and readable active complaints differ from private correspondence and full settlement records. Users must limit others’ data use; lawful necessary disclosures remain possible. Advisory चाहिए заменено обязательным करना होगा; medical-sounding नैदानिक заменено निदान संबंधी; पक्षों की सहमत शर्तें отделены от данного समझौता, финансовый расчёт и его подтверждающие документы названы прямо.",
+                  "zh_Hans": "Separate reading: agreement acceptance and policy acknowledgement alone are not consent to optional processing; any legally required separate consent comes from the user. Profile attachments and permitted active complaint reading do not expose every file or private conversation. Full calculation access remains role-restricted; a government request alone does not authorize disclosure without consent. 可选的个人信息处理 заменяет неопределённое 可选隐私目的; 约定条款 отделяет условия сделки от 本协议; Запрет продажи и иного злоупотребления сохранён."
+                },
+                "versionConsent": "Даты changedOn, effectiveVersion и takesEffectOn первой редакции сохранены по поручению владельца; notice и reconsent отсутствующим производственным пользователям не требуются. Факт и пределы этой pre-release проверки записаны здесь без создания новой редакции, самостоятельного отчёта или изменения механизма сохранения принятия.",
+                "renderingAccessibility": "Проверены 12 вариантов штатного Flutter renderer: шесть локалей при 1000 px в светлой теме и 320 px в тёмной теме с TextScaler 2, полный текст и прокрутка до последнего пункта. Дополнительно визуально просмотрены локальные рендеры раздела с загруженными Unicode-шрифтами. Из шести PDF штатного экспорта извлечены и сверены заголовок, все пять абзацев, подписи и оба пункта раздела 16; страницы раздела и перехода к разделу 17 просмотрены визуально. Окончательный английский HTML проверен в собственной headless-сессии Chrome ClearFix-License16-c0f242: 1120 px/light и 320 px/dark/200%, горизонтального переполнения нет; ссылка Privacy Policy имеет ожидаемый URL, получает клавиатурный фокус и видимый контур. Ручная проверка приложения на физическом устройстве и отдельный аудит скринридером не проводились.",
+                "automatedValidation": "Пройдены dart analyze, полный flutter test (2383 тестов, включая 12 новых вариантов раздела 16), штатный экспорт шести PDF, дополнительная визуализация шести локалей, check_ui_legacy_violations.py, extract_changelog_section.py --check-only, check_legal_document_html_sync.py и git diff --check. Сверка JSON относительно исходного коммита подтверждает изменение только раздела 16 во всех локалях, сохранение дат и прежней истории. Windows native regression и наблюдение собственного дерева команд не выявили видимых консолей или перехвата фокуса. Повторный coverage не запускался для ограниченной правки юридических assets без изменения runtime-логики.",
+                "notApplicable": "Не добавлялись новые поля, категории или цели обработки, получатели, сроки, платежи, санкции, маршруты, UI-компоненты, ARB-ключи, зависимости и Firebase-ресурсы. Приёмочный сценарий с изменением реальных данных не запрошен и не запускался. Публикация и изменение производственных настроек не входят в запрос; deploy и повторный coverage для ограниченной правки assets без runtime-изменений не применялись."
+              },
+              "publicationApproval": "Запрошенная внутренняя проверка и исправление раздела выполнены в рамках подготовки первой редакции. До публикации смысловых privacy-положений стандарт проекта требует канадского юриста и независимой человеческой сверки критических переводов; эти подтверждения в данном задании не получены. Соответствующая предрелизная работа уже выделена в CLF235. Текст не объявляется юридически сертифицированным или готовым к выпуску без этих проверок."
             }
           ]
         }

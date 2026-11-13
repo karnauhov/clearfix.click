@@ -32,14 +32,14 @@
       min-width: 0;
       background: var(--surface);
       color: var(--on-surface);
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 0.875rem;
+      line-height: 1.4286;
     }
 
     .top-bar {
       min-height: 56px;
       display: grid;
-      grid-template-columns: 48px 1fr 48px;
+      grid-template-columns: 48px minmax(0, 1fr) 48px;
       align-items: center;
       padding: 4px;
       background: var(--primary);
@@ -49,8 +49,9 @@
     .top-bar h1 {
       margin: 0;
       text-align: center;
-      font-size: 22px;
-      line-height: 28px;
+      overflow-wrap: anywhere;
+      font-size: 1.375rem;
+      line-height: 1.2727;
       font-weight: 600;
     }
 
@@ -103,8 +104,8 @@
     .policy-card h2 {
       margin: 0;
       color: var(--on-surface);
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.125rem;
+      line-height: 1.3333;
       font-weight: 600;
     }
 
@@ -150,8 +151,8 @@
     .policy-card strong {
       display: block;
       color: var(--on-surface);
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 1rem;
+      line-height: 1.375;
       font-weight: 600;
     }
 
@@ -329,7 +330,7 @@
       </li>
       <li>
         <strong>Sign-in providers</strong>
-        <span>If you choose Google or Facebook sign-in, the related provider processes the account data required for that sign-in feature.</span>
+        <span>If you choose Google, Facebook, or Apple sign-in, that provider processes the account data needed for sign-in. On supported Apple devices, Apple gives ClearFix an account identifier and, when you choose to share them, your name and email address. If you choose Hide My Email, ClearFix receives an Apple relay address instead of your personal email address. Apple can forward messages sent to that relay address. ClearFix uses the information from Apple to sign you in or, at your request, link Apple sign-in to your existing ClearFix account. See <a href="https://www.apple.com/legal/privacy/data/en/sign-in-with-apple/">Sign in with Apple and Privacy</a>.</span>
       </li>
       <li>
         <strong>Stripe</strong>
@@ -361,13 +362,21 @@
 
     <section class="policy-card policy-card--changed">
       <h2>8. Security *</h2>
-      <p>ClearFix uses Firebase Authentication, Firestore and Storage rules, authenticated server functions, role-scoped projections, signed Stripe webhooks, restricted support access, and privacy-minimized Sentry configuration to limit access and protect personal information. Financial evidence, moderation state, and diagnostic access are restricted according to role and purpose. No internet service can be guaranteed to be completely secure, but we work to keep protections appropriate to the sensitivity of the information.</p>
+      <p>ClearFix uses access controls to help protect personal information. These include Firebase Authentication, Firestore and Storage access rules, server-side checks of sign-in status and access permissions, limits on the data available to each user according to their role, verification of Stripe webhook signatures, and restricted access for support personnel. Access to financial supporting documents, moderation information, and diagnostic data is limited according to the person&#x27;s role and the purpose of access.</p>
+      <p>The app&#x27;s Sentry configuration limits the personal information sent for diagnostics, as described in Sections 2 and 6. These controls do not guarantee that diagnostic data contains no personal information.</p>
+      <p>We maintain safeguards appropriate to the sensitivity of the information and the risks involved in processing it. If a personal information security breach occurs, we assess the risks and keep a record of the incident. We notify affected individuals and report to the relevant privacy authorities in the circumstances and within the time limits required by law.</p>
     </section>
 
     <section class="policy-card policy-card--changed">
       <h2>9. Your Choices and Rights *</h2>
-      <p>You can update many details in your account profile and order screens. You can change language in the app, deny or revoke location permission in your device or browser settings, and clear local browser or app storage if you want to reset local preferences.</p>
-      <p>Canadian privacy laws, including PIPEDA and applicable provincial laws, may give you rights to access personal information, request correction, withdraw consent where consent is the basis for processing, ask questions, challenge our privacy practices, and, where applicable, request computerized personal information in a structured and commonly used technological format or request cessation of dissemination or de-indexing. Withdrawal may prevent continued use of functions that require the information, and some records may still be retained where permitted or required for existing transactions, accounting, security, moderation, disputes, or law. To exercise a right or make a privacy complaint, contact <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a> and describe the request and the account it concerns without sending passwords or unnecessary identity documents. We may request information reasonably needed to verify identity and authority. We will respond within the time required by applicable law, investigate privacy complaints, and explain any lawful refusal, limitation, extension, or fee. If you are not satisfied, you may contact the Office of the Privacy Commissioner of Canada at <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a> or the applicable provincial regulator.</p>
+      <p>You can update many details in your account profile and on order screens and change the app language. You can decline access to your location when asked or revoke it in your device or browser settings. Clearing local storage can reset preferences stored on that device or browser. See Section 7 for how to request account deletion.</p>
+      <p>Your rights depend on the privacy law that applies to your request, such as the federal Personal Information Protection and Electronic Documents Act (PIPEDA) or an applicable provincial law. You can ask whether we hold personal information about you, request access to it, ask how we use or have used it and to whom we have disclosed it, or request a correction, subject to the limits of the applicable law. You can also ask questions or complain about how we handle personal information.</p>
+      <p>If Quebec’s private-sector privacy law applies, you can request a copy in a structured, commonly used technological format of personal information we collected from you and hold electronically. You can ask us to send it to you or to a person or organization legally authorized to collect it. This right excludes information created or inferred from personal information about you and is subject to the statutory exception for serious practical difficulties.</p>
+      <p>Under the same Quebec law, you can ask us to stop disseminating personal information about you or to remove from an index a link associated with your name that gives access to that information. In certain cases you can also ask us to put a link back in the index. Section 28.1 of that law sets the conditions for these requests.</p>
+      <p>You can withdraw consent for processing that relies on it, subject to any notice requirements and limits permitted by applicable law. We will explain the consequences of withdrawal, which may include losing access to features that need the information. Once the withdrawal takes effect, we will stop the processing it covers unless the law permits or requires us to continue. We may still keep certain records for the purposes and periods described in Section 7 where the law permits or requires it.</p>
+      <p>To make a privacy request or complaint, write to our Privacy Officer at <a href="mailto:clearfix.ca@gmail.com">clearfix.ca@gmail.com</a>. Describe your request or concern and identify the account it relates to, if there is one. Please do not send passwords or unnecessary identity documents. We may ask for information reasonably needed to verify your identity and, if you are acting for someone else, your authority to do so.</p>
+      <p>We will investigate privacy complaints and respond within the time required by applicable law. We will explain any refusal, limitation, extension, or fee to the extent the law allows. Where required by law, we will keep information covered by an access or correction request for as long as necessary to let you exercise your review rights. We will give you any advance notice of fees and information about review options and deadlines that the law requires.</p>
+      <p>If our response does not resolve your concern, or if we do not respond within the applicable time limit, you can complain to or seek review from the competent privacy regulator. The <a href="https://www.priv.gc.ca/en/report-a-concern/leg_info_201405/">Office of the Privacy Commissioner of Canada’s guide to finding the right regulator</a> can help you identify the federal or provincial office that handles your concern.</p>
     </section>
 
     <section class="policy-card policy-card--changed">
