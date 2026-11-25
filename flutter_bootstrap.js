@@ -47,6 +47,7 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
   const loaderProgress = document.getElementById('app-loader-progress');
   const loaderProgressFill = document.getElementById('app-loader-progress-fill');
   const loaderProgressText = document.getElementById('app-loader-progress-text');
+  const loaderRetry = document.getElementById('app-loader-retry');
   const flutterReadySelector = 'flutter-view, flt-glass-pane';
   const loaderManifestUrl = 'loader_manifest.json';
   const loaderStartTimeMs = nowMs();
@@ -61,36 +62,48 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
   const copyByLocale = {
     en: {
       loadingWebApp: 'Loading web application...',
+      startupFailed: 'ClearFix could not start. Check your connection and try again.',
+      retry: 'Retry',
       progressAriaLabel: 'Web app loading progress',
       versionPrefix: 'Version',
       versionFallback: 'Version -- (--)',
     },
     fr: {
       loadingWebApp: "Chargement de l'application web...",
+      startupFailed: "ClearFix n’a pas pu démarrer. Vérifiez votre connexion et réessayez.",
+      retry: 'Réessayer',
       progressAriaLabel: "Progression du chargement de l'application web",
       versionPrefix: 'Version',
       versionFallback: 'Version -- (--)',
     },
     uk: {
       loadingWebApp: 'Завантажуємо веб-застосунок...',
+      startupFailed: 'Не вдалося запустити ClearFix. Перевірте з’єднання й повторіть спробу.',
+      retry: 'Спробувати ще раз',
       progressAriaLabel: 'Прогрес завантаження веб-застосунку',
       versionPrefix: 'Версія',
       versionFallback: 'Версія -- (--)',
     },
     ru: {
       loadingWebApp: 'Загружаем веб-приложение...',
+      startupFailed: 'Не удалось запустить ClearFix. Проверьте подключение и повторите попытку.',
+      retry: 'Повторить',
       progressAriaLabel: 'Прогресс загрузки веб-приложения',
       versionPrefix: 'Версия',
       versionFallback: 'Версия -- (--)',
     },
     hi: {
       loadingWebApp: 'वेब ऐप लोड हो रहा है...',
+      startupFailed: 'ClearFix शुरू नहीं हो सका। अपना इंटरनेट कनेक्शन जाँचें और फिर कोशिश करें।',
+      retry: 'पुनः प्रयास करें',
       progressAriaLabel: 'वेब ऐप लोडिंग प्रगति',
       versionPrefix: 'संस्करण',
       versionFallback: 'संस्करण -- (--)',
     },
     zh_Hans: {
       loadingWebApp: '正在加载 Web 应用...',
+      startupFailed: '无法启动 ClearFix。请检查网络连接后重试。',
+      retry: '重试',
       progressAriaLabel: 'Web 应用加载进度',
       versionPrefix: '版本',
       versionFallback: '版本 -- (--)',
@@ -149,13 +162,25 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
 
   let loaderCanDismiss = false;
   let loaderDismissed = false;
+  let loaderFailed = false;
   let observer;
   requestProgressFrame();
 
-  _flutter.loader.load({
+  const startupEntrypointUrls = new Set(
+    (_flutter.buildConfig?.builds ?? [])
+      .filter((build) => build.compileTarget !== 'dart2wasm')
+      .map((build) => new URL(build.mainJsPath ?? 'main.dart.js', document.baseURI).href),
+  );
+  window.addEventListener('error', handleEntrypointError, true);
+  if (loaderRetry) {
+    loaderRetry.textContent = copy.retry;
+    loaderRetry.addEventListener('click', () => window.location.reload());
+  }
+
+  void _flutter.loader.load({
     serviceWorkerSettings: {
       serviceWorkerVersion: parseServiceWorkerVersion(
-        `"2415867825" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
+        `"749588744" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */`,
       ),
     },
     onEntrypointLoaded: async (engineInitializer) => {
@@ -169,11 +194,31 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
         requestAnimationFrame(() =>
             requestAnimationFrame(dismissLoaderWhenFlutterReady));
       } catch (_) {
-        // Keep splash visible on bootstrap failure.
-        stopProgressTimer();
+        showStartupError();
       }
     },
-  });
+  }).catch(showStartupError);
+
+  function handleEntrypointError(event) {
+    if (event.target instanceof HTMLScriptElement &&
+        startupEntrypointUrls.has(event.target.src)) {
+      showStartupError();
+    }
+  }
+
+  function showStartupError() {
+    if (!loader || loaderDismissed || loaderFailed) {
+      return;
+    }
+    loaderFailed = true;
+    window.removeEventListener('error', handleEntrypointError, true);
+    stopProgressTimer();
+    if (loaderProgress) loaderProgress.hidden = true;
+    if (loaderProgressText) loaderProgressText.hidden = true;
+    if (loaderMessage) loaderMessage.textContent = copy.startupFailed;
+    if (loaderRetry) loaderRetry.hidden = false;
+    loader.setAttribute('aria-busy', 'false');
+  }
 
   function resolveLocale() {
     const languageTag = (
@@ -562,7 +607,7 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
     progressFrameRequestId = window.requestAnimationFrame((frameTimeMs) => {
       progressFrameRequestId = null;
       tickProgress(frameTimeMs);
-      if (!loaderDismissed && loader) {
+      if (!loaderDismissed && !loaderFailed && loader) {
         requestProgressFrame();
       }
     });
@@ -1409,6 +1454,8 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
       if (
         !localeCopy ||
         !localeCopy.loadingWebApp ||
+        !localeCopy.startupFailed ||
+        !localeCopy.retry ||
         !localeCopy.progressAriaLabel ||
         !localeCopy.versionPrefix ||
         !localeCopy.versionFallback
@@ -1445,6 +1492,7 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
     }
 
     loaderDismissed = true;
+    window.removeEventListener('error', handleEntrypointError, true);
     stopProgressTimer();
     setProgressImmediate(100);
     observer?.disconnect();
@@ -1452,6 +1500,6 @@ _flutter.buildConfig = {"engineRevision":"cf636b1dfb818dd6a3ff16e390e93b1a036969
     window.setTimeout(() => loader?.remove(), 320);
   }
 })();
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7125b7cf-3666-54c2-b056-0e804ca5ba13")}catch(e){}}();
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="cbd81715-ab2b-582e-8b88-5dec79f5648b")}catch(e){}}();
 //# sourceMappingURL=flutter.js.map
-//# debugId=7125b7cf-3666-54c2-b056-0e804ca5ba13
+//# debugId=cbd81715-ab2b-582e-8b88-5dec79f5648b
